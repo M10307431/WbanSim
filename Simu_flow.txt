@@ -1,0 +1,21 @@
+1. gen task in node, node in GW
+
+2. GW -> offload decision (task flag)
+
+3. dispach task to Q 
+
+4. scheduler + TBS
+
+5. offload transmission
+
+6. cloud compu
+
+--------------------------------
+
+scheduler > offload, migrate, TBS
+
+--------------------------------
+
+energy > scheduler
+
+--------------------------------

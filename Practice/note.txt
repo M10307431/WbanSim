@@ -1,0 +1,2 @@
+* connect to nRF51 board
+sudo gatttool -b <bdaddr> --interactive -t random --listen

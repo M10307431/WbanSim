@@ -1,0 +1,5 @@
+﻿  WBAN_Gen.cpp
+l:\m10307431\wban\wban_gen\wban_gen\wban_gen.cpp(26): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_gen\wban_gen\wban_gen.cpp(96): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_gen\wban_gen\wban_gen.cpp(141): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
+  WBAN_Gen.vcxproj -> L:\M10307431\WBAN\WBAN_Gen\Debug\WBAN_Gen.exe
