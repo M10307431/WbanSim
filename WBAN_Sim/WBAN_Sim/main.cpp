@@ -32,8 +32,11 @@ int HyperPeriod = 4000;
 /*=================================
           Parameter
 =================================*/
+//--------Power--------------
 #define p_idle	1.55	//(W)
 #define p_comp	2.9
+#define p_trans	
+//--------time---------------
 
 /*=================================
 		Main function
@@ -62,7 +65,6 @@ int main(){
 		//printf("printing...\n");
 		Print_WBAN();
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
-
 
 	}
 	Clear();
