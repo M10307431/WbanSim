@@ -8,12 +8,13 @@
 #include <algorithm>
 
 #include "Struct_Gen.h"
+#include "OFLDecision.h"
 
 using namespace std;
 
 Node* NodeHead = new Node;	// Node head
 Node* GW = new Node;		// Gateway
-Task* taskgen = new Task;		// task 
+Task* taskgen = new Task;	// task 
 
 /*=================================
 		  Setting
@@ -32,12 +33,14 @@ int HyperPeriod = 4000;
 /*=================================
           Parameter
 =================================*/
-//--------Power--------------
-#define p_idle	1.55	//(W)
-#define p_comp	2.9
-#define p_trans	
-//--------time---------------
 
+const float speedRatio = 10;	// remoteSpeed / localSpeed
+//--------Power-------------------------------------------------------
+const float p_idle = 1.55;	// idle (W)
+const float p_comp	= 2.9-1.55;	// full load
+const float p_trans = 0.3;	// wifi trans	
+//--------time---------------
+const float t_trans = 25; // wifi trans time (ms)
 /*=================================
 		Main function
 ==================================*/
@@ -57,13 +60,21 @@ int main(){
 			return 0;
 	}
 	
-	for(int set=0;set<Set;++set){
+	for(int set=0;set<Set;++set) {
 		printf("------------- Set %03d -------------\n",set+1);
 		Create();
 		//printf("gen...\n");
 		WBAN_Gen();
 		//printf("printing...\n");
 		Print_WBAN();
+
+		GW = NodeHead;
+		while(GW->nextNode != NULL) {
+			GW = GW->nextNode;
+			OFLD(GW);
+		}
+		printOFLD();
+
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 
 	}

@@ -10,6 +10,8 @@ struct Task{
 	float uti;
 
 	bool offload;
+	float localEng;
+	float remoteEng;
 	
 	Task(){
 		id = 0;
@@ -17,6 +19,8 @@ struct Task{
 		exec = 0;
 		uti = 0;
 		offload = false;
+		localEng = 0;
+		remoteEng = 0;
 	}
 };
 
