@@ -62,14 +62,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dispatcher.cpp" />
+    <ClCompile Include="Dispatch.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OFLDecision.cpp" />
     <ClCompile Include="Sched.cpp" />
     <ClCompile Include="WBAN_Gen.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dispatcher.h" />
+    <ClInclude Include="Dispatch.h" />
     <ClInclude Include="OFLDecision.h" />
     <ClInclude Include="Sched.h" />
     <ClInclude Include="Struct_Gen.h" />

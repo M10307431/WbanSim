@@ -20,7 +20,7 @@ float calEnergy(bool remote, int exec, float Eng) {
 	}
 	else{
 		
-		Eng =  (p_idle + p_trans)*t_trans + (p_idle + p_trans)*t_trans;	//+ (p_idle + p_comp)*(exec/speedRatio)
+		Eng =  (p_idle + p_trans + p_comp)*t_trans + (p_idle + p_trans + p_comp)*t_trans;	//+ (p_idle + p_comp)*(exec/speedRatio)
 		return Eng;
 	}
 }
@@ -33,11 +33,18 @@ void OFLD(Node* GW){
 	else{
 		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 			int exec = it->exec;
+			
 			// calculate energy
 			it->localEng = calEnergy(0, exec, Eng);
 			it->remoteEng = calEnergy(1, exec, Eng);
+			
 			// set offloading flag
-			it->offload = (it->localEng > it->remoteEng)? true : false;
+			if((it->localEng > it->remoteEng)){
+				it->offload = (exec > 2*t_trans+(exec/speedRatio))? true : false;	// offloading is slower than origin
+			}
+			else{
+				it->offload = false;
+			}
 		}
 	}
 
@@ -49,7 +56,7 @@ void printOFLD(){
 	fs << "---------- O F L D ------------" << endl;
 	while (GW != NULL){
 		
-		fs << "GW " << GW->id << endl;
+		fs << "GW" << GW->id << endl;
 		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 
 			fs << "T" << it->id << " " << it->offload << " " << it->localEng << " " << it->remoteEng << "\n";
