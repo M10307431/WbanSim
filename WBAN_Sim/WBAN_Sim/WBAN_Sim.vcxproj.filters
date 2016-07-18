@@ -38,10 +38,13 @@
     <ClInclude Include="Sched.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="Struct_Gen.h">
+    <ClInclude Include="Dispatch.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="Dispatch.h">
+    <ClInclude Include="Struct.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Gen.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

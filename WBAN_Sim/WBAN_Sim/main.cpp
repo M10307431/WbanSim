@@ -7,11 +7,18 @@
 #include <vector>
 #include <algorithm>
 
-#include "Struct_Gen.h"
+#include "Struct.h"
+#include "Gen.h"
 #include "OFLDecision.h"
+#include "Dispatch.h"
+#include "Sched.h"
 
 using namespace std;
 
+
+/*=================================
+		  System componet
+==================================*/
 Node* NodeHead = new Node;	// Node head
 Node* GW = new Node;		// Gateway
 Task* taskgen = new Task;	// task 
@@ -29,6 +36,8 @@ float lowest_U = 0.01;	// lowest Utilization
 
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
+
+int schedPolicy = 1;	// 1:EDF
 
 /*=================================
           Parameter
@@ -72,8 +81,10 @@ int main(){
 		while(GW->nextNode != NULL) {
 			GW = GW->nextNode;
 			OFLD(GW);
+			dispatch(GW);
 		}
 		printOFLD();
+		printDispatch();
 
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 

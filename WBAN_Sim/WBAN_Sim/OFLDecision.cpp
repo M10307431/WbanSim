@@ -4,7 +4,7 @@
 #include <vector>
 #include <fstream>
 
-#include "Struct_Gen.h"
+#include "Struct.h"
 #include "OFLDecision.h"
 
 using namespace std;
@@ -64,5 +64,4 @@ void printOFLD(){
 		cout<<endl;
 		GW = GW->nextNode;
 	}
-	cout<<endl;
 }

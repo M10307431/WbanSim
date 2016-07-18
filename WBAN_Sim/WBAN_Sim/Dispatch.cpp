@@ -4,11 +4,57 @@
 #include <vector>
 #include <fstream>
 
-#include "Struct_Gen.h"
+#include "Struct.h"
 #include "Dispatch.h"
 
 using namespace std;
 
-void dispatch(){
+void q_init(Node* GW){
 	
+	GW->local_q.ready_q.clear();
+	GW->local_q.wait_q.clear();
+
+	GW->remote_q.ready_q.clear();
+	GW->remote_q.wait_q.clear();
+
+	GW->total_U = 0;
+}
+
+void dispatch(Node* GW){
+	
+	q_init(GW);
+
+	for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
+		if(it->offload == true){
+			GW->remote_q.ready_q.push_back(*it);
+		}
+		else{
+			GW->local_q.ready_q.push_back(*it);
+		}
+	}
+}
+
+void printDispatch(){
+	
+	GW = NodeHead->nextNode;
+	fs << "---------- Dispach ------------" << endl;
+	while (GW != NULL){
+		
+		fs << "GW" << GW->id << endl;
+		fs << "Local" << endl;
+
+		for(deque<Task>::iterator it=GW->local_q.ready_q.begin(); it!=GW->local_q.ready_q.end(); ++it){
+
+			fs << it->id << " " ;
+		}
+		fs << endl << "Remote" << endl;
+		
+		for(deque<Task>::iterator it=GW->remote_q.ready_q.begin(); it!=GW->remote_q.ready_q.end(); ++it){
+
+			fs << it->id << " " ;
+		}
+		fs << endl;
+		GW = GW->nextNode;
+	}
+	fs << endl;
 }

@@ -72,7 +72,8 @@
     <ClInclude Include="Dispatch.h" />
     <ClInclude Include="OFLDecision.h" />
     <ClInclude Include="Sched.h" />
-    <ClInclude Include="Struct_Gen.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="Gen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

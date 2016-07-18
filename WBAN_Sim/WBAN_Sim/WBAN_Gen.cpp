@@ -7,27 +7,9 @@
 #include <algorithm>
 #include <fstream>
 
-#include "Struct_Gen.h"
+#include "Struct.h"
+#include "Gen.h"
 using namespace std;
-
-extern Node* NodeHead; 	// Node head
-extern Node* GW;		// Gateway
-extern Task* taskgen;		// task 
-
-/*=================================
-		Parameter Setting
-==================================*/
-extern fstream fs;
-extern int Set;
-extern int NodeNum;	// # of GW Node
-extern int TaskNum;	// # of Tasks in each GW
-extern float total_U;	// total Utilization
-extern float lowest_U;	// lowest Utilization
-
-extern int period[];
-extern int HyperPeriod;
-
-
 
 /*======== subfunction ============*/
 bool cmp(float i, float j) {return i > j;}
