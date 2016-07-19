@@ -6,6 +6,8 @@ extern fstream fs;
 
 void q_init(Node* GW);
 
+void setPrio(Task task);
+
 void dispatch(Node* GW);
 
 void printDispatch();

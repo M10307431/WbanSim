@@ -9,15 +9,36 @@
 
 using namespace std;
 
-void EDF(){
 
+void sched_new(){
+
+
+
+}
+
+/*=====================
+	    Policy
+=====================*/
+void EDF(){
+	timeTick = 0;
+
+	while(timeTick <= HyperPeriod){
+	
+	
+	}
 
 }
 
 void scheduler(int policy){
 	switch (policy)
 	{
+	case 0:
+		break;
+
 	case 1:
+		break;
+
+	case 2:
 		EDF();
 		break;
 	

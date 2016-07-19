@@ -9,6 +9,7 @@ struct Task{
 	int period;
 	int exec;
 	float uti;
+	int prio;
 
 	bool offload;
 	float localEng;
@@ -19,6 +20,7 @@ struct Task{
 		period = 0;
 		exec = 0;
 		uti = 0;
+		prio = 0;
 		offload = false;
 		localEng = 0;
 		remoteEng = 0;

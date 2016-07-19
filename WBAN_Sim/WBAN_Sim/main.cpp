@@ -36,8 +36,9 @@ float lowest_U = 0.01;	// lowest Utilization
 
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
+int timeTick = 0;
 
-int schedPolicy = 1;	// 1:EDF
+int schedPolicy = 2;	// 1:EDF
 
 /*=================================
           Parameter

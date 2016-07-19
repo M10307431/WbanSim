@@ -20,15 +20,22 @@ void q_init(Node* GW){
 	GW->total_U = 0;
 }
 
+void setPrio(Task task){
+	
+	task.prio = 1;
+}
+
 void dispatch(Node* GW){
 	
 	q_init(GW);
 
 	for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 		if(it->offload == true){
+			setPrio(*it);
 			GW->remote_q.ready_q.push_back(*it);
 		}
 		else{
+			setPrio(*it);
 			GW->local_q.ready_q.push_back(*it);
 		}
 	}
