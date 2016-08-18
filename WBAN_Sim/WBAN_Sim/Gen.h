@@ -2,6 +2,7 @@
 extern Node* NodeHead; 	// Node head
 extern Node* GW;		// Gateway
 extern Task* taskgen;		// task 
+extern Task* idleTask;
 
 /*=================================
 		Parameter Setting

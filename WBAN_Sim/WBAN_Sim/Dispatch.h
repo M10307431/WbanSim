@@ -6,7 +6,7 @@ extern fstream fs;
 
 void q_init(Node* GW);
 
-void setPrio(Task task);
+int setPrio(deque<Task>::iterator task);
 
 void dispatch(Node* GW);
 

@@ -29,6 +29,8 @@ void Create(){
 		GW->preNode = NodeHead->preNode;
 		GW->nextNode = NULL;
 		GW->id = n;
+		GW->currTask = new Task;
+		GW->currTask = idleTask;
 		NodeHead->preNode->nextNode = GW;
 		NodeHead->preNode = GW;
 
@@ -38,6 +40,14 @@ void Create(){
 			GW->task_q.push_back(*taskgen);
 		}
 	}
+
+	idleTask->id = 999;
+	idleTask->period = 9999;
+	idleTask->deadline = 9999;
+	idleTask->exec = 9999;
+	idleTask->remaining =9999;
+	idleTask->offload = false;
+	idleTask->_setPrio(999);
 }
 
 /*=================================
@@ -66,7 +76,9 @@ void WBAN_Gen(){
 		for(int t=0; t<TaskNum; ++t){
 			GW->task_q.at(t).id = t;										// task id
 			GW->task_q.at(t).period = P.at(t);								// task period
+			GW->task_q.at(t).deadline = P.at(t);
 			GW->task_q.at(t).exec = U.at(t) * P.at(t);						// task execution
+			GW->task_q.at(t).remaining = U.at(t) * P.at(t);
 			GW->task_q.at(t).uti = (float)GW->task_q.at(t).exec/P.at(t);	// task utilization
 			GW->total_U += GW->task_q.at(t).uti;							// node total utilization
 		}

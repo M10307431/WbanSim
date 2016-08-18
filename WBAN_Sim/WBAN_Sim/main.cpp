@@ -21,7 +21,9 @@ using namespace std;
 ==================================*/
 Node* NodeHead = new Node;	// Node head
 Node* GW = new Node;		// Gateway
-Task* taskgen = new Task;	// task 
+Task* taskgen = new Task;	// task
+Task* idleTask = new Task;	// idle task
+
 
 /*=================================
 		  Setting
@@ -51,6 +53,8 @@ const float p_comp	= 2.9-1.55;	// full load
 const float p_trans = 0.3;	// wifi trans	
 //--------time---------------
 const float t_trans = 25; // wifi trans time (ms)
+
+const int offloadTransfer = 25;
 /*=================================
 		Main function
 ==================================*/
@@ -83,6 +87,7 @@ int main(){
 			GW = GW->nextNode;
 			OFLD(GW);
 			dispatch(GW);
+			scheduler(schedPolicy);
 		}
 		printOFLD();
 		printDispatch();

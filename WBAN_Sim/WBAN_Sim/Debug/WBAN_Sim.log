@@ -1,13 +1,3 @@
-﻿  WBAN_Gen.cpp
-l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(69): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-  Sched.cpp
-  OFLDecision.cpp
-  main.cpp
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(34): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(45): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(46): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(47): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(55): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
-  Dispatch.cpp
-  正在產生程式碼...
+﻿  Sched.cpp
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(60): warning C4244: '-=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
   WBAN_Sim.vcxproj -> L:\M10307431\WBAN\WBAN_Sim\Debug\WBAN_Sim.exe
