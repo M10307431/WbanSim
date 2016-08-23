@@ -1,4 +1,3 @@
-
 extern Node* NodeHead;
 extern Node* GW;		// Gateway
 extern Task* taskgen;	// task
@@ -18,3 +17,5 @@ void scheduler(int policy);
 =====================*/
 
 void EDF();
+
+void printSched();

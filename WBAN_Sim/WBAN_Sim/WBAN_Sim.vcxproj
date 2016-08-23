@@ -69,6 +69,7 @@
     <ClCompile Include="WBAN_Gen.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Debug.h" />
     <ClInclude Include="Dispatch.h" />
     <ClInclude Include="OFLDecision.h" />
     <ClInclude Include="Sched.h" />

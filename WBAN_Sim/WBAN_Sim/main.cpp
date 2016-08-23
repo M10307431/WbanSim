@@ -12,9 +12,9 @@
 #include "OFLDecision.h"
 #include "Dispatch.h"
 #include "Sched.h"
+#include "Debug.h"
 
 using namespace std;
-
 
 /*=================================
 		  System componet
@@ -39,8 +39,12 @@ float lowest_U = 0.01;	// lowest Utilization
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
 int timeTick = 0;
+//-------- Sched Policy --------------------------
+#define	Nofld	0
+#define	Ofld	1
+#define EDF		2
 
-int schedPolicy = 2;	// 1:EDF
+int schedPolicy = EDF;	// EDF
 
 /*=================================
           Parameter
@@ -51,7 +55,7 @@ const float speedRatio = 10;	// remoteSpeed / localSpeed
 const float p_idle = 1.55;	// idle (W)
 const float p_comp	= 2.9-1.55;	// full load
 const float p_trans = 0.3;	// wifi trans	
-//--------time---------------
+//--------Time--------------------------------------------------------
 const float t_trans = 25; // wifi trans time (ms)
 
 const int offloadTransfer = 25;
@@ -87,10 +91,12 @@ int main(){
 			GW = GW->nextNode;
 			OFLD(GW);
 			dispatch(GW);
-			scheduler(schedPolicy);
 		}
+
 		printOFLD();
 		printDispatch();
+
+		scheduler(schedPolicy);
 
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 

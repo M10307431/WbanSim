@@ -9,7 +9,14 @@
 
 #include "Struct.h"
 #include "Gen.h"
+#include "Debug.h"
 using namespace std;
+
+#define DEBUG 1
+
+#ifdef DEBUG
+#define debug(x) printf x
+#endif
 
 /*======== subfunction ============*/
 bool cmp(float i, float j) {return i > j;}

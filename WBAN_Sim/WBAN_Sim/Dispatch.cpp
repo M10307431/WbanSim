@@ -6,8 +6,15 @@
 
 #include "Struct.h"
 #include "Dispatch.h"
+#include "Debug.h"
 
 using namespace std;
+
+#define DEBUG 1
+
+#ifdef DEBUG
+#define debug(x) printf x
+#endif
 
 void q_init(Node* GW){
 	
