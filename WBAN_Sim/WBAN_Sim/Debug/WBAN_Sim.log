@@ -1,23 +1,7 @@
 ﻿  main.cpp
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(37): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(55): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(56): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(39): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(57): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(67): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
-  WBAN_Gen.cpp
-l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(15): warning C4005: 'DEBUG' : 巨集重複定義
-          l:\m10307431\wban\wban_sim\wban_sim\debug.h(1) : 請參閱 'DEBUG' 之前的定義
-l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(18): warning C4005: 'debug' : 巨集重複定義
-          l:\m10307431\wban\wban_sim\wban_sim\debug.h(6) : 請參閱 'debug' 之前的定義
-l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(87): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(88): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-  Sched.cpp
-l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(99): warning C4244: '-=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-  Dispatch.cpp
-l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(13): warning C4005: 'DEBUG' : 巨集重複定義
-          l:\m10307431\wban\wban_sim\wban_sim\debug.h(1) : 請參閱 'DEBUG' 之前的定義
-l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(16): warning C4005: 'debug' : 巨集重複定義
-          l:\m10307431\wban\wban_sim\wban_sim\debug.h(6) : 請參閱 'debug' 之前的定義
-l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(42): warning C4809: switch 陳述式有重複的 'default' 標籤; 已提供所有可能的 'case' 標籤
-  正在產生程式碼...
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(58): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(59): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(69): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
   WBAN_Sim.vcxproj -> L:\M10307431\WBAN\WBAN_Sim\Debug\WBAN_Sim.exe

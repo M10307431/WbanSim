@@ -53,11 +53,15 @@ void dispatch(Node* GW){
 	for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 		if(it->offload == true){
 			it->_setPrio(setPrio(it));
+			it->cnt++;
 			GW->remote_q.ready_q.push_back(*it);
+			GW->result.totalTask++; 
 		}
 		else{
 			it->_setPrio(setPrio(it));
+			it->cnt++;
 			GW->local_q.ready_q.push_back(*it);
+			GW->result.totalTask++;
 		}
 	}
 }

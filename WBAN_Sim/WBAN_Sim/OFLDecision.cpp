@@ -45,6 +45,14 @@ void OFLD(Node* GW){
 			else{
 				it->offload = false;
 			}
+
+			//////////////////////////////////////
+			if(policyOFLD==0){
+				it->offload = false;
+			}
+			if(policyOFLD==2){
+				it->offload = true;
+			}
 		}
 	}
 

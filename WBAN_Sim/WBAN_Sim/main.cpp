@@ -16,6 +16,8 @@
 
 using namespace std;
 
+int policyOFLD = 1;	// 0:nver, 1:normal, 2:always
+
 /*=================================
 		  System componet
 ==================================*/
@@ -77,7 +79,7 @@ int main(){
 			system("PAUSE");
 			return 0;
 	}
-	
+
 	for(int set=0;set<Set;++set) {
 		printf("------------- Set %03d -------------\n",set+1);
 		Create();
@@ -97,6 +99,76 @@ int main(){
 		printDispatch();
 
 		scheduler(schedPolicy);
+
+		// calculate meet_ratio & lifetime
+		GW = NodeHead;
+		while(GW->nextNode != NULL) {
+			GW = GW->nextNode;
+			GW->result.calculate();
+			printResult(GW);
+		}
+
+		////////////////////////////////////////
+		fs << "--------- Never OFLD ----------\n";
+		policyOFLD = 0;
+		GW = NodeHead;
+		while(GW->nextNode != NULL) {
+			GW = GW->nextNode;
+			GW->Cloud.clear();
+			GW->TBS.clear();
+			GW->local_q.ready_q.clear();
+			GW->local_q.wait_q.clear();
+			GW->remote_q.ready_q.clear();
+			GW->remote_q.wait_q.clear();
+			GW->result.clear();
+			GW->currTask = idleTask;
+			OFLD(GW);
+			dispatch(GW);
+		}
+
+		printOFLD();
+		printDispatch();
+
+		scheduler(schedPolicy);
+
+		// calculate meet_ratio & lifetime
+		GW = NodeHead;
+		while(GW->nextNode != NULL) {
+			GW = GW->nextNode;
+			GW->result.calculate();
+			printResult(GW);
+		}
+
+		////////////////////////////////////////
+		fs << "--------- Always OFLD ----------\n";
+		policyOFLD = 2;
+		GW = NodeHead;
+		while(GW->nextNode != NULL) {
+			GW = GW->nextNode;
+			GW->Cloud.clear();
+			GW->TBS.clear();
+			GW->local_q.ready_q.clear();
+			GW->local_q.wait_q.clear();
+			GW->remote_q.ready_q.clear();
+			GW->remote_q.wait_q.clear();
+			GW->result.clear();
+			GW->currTask = idleTask;
+			OFLD(GW);
+			dispatch(GW);
+		}
+
+		printOFLD();
+		printDispatch();
+
+		scheduler(schedPolicy);
+
+		// calculate meet_ratio & lifetime
+		GW = NodeHead;
+		while(GW->nextNode != NULL) {
+			GW = GW->nextNode;
+			GW->result.calculate();
+			printResult(GW);
+		}
 
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 

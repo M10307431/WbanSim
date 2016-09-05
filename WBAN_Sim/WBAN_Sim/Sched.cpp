@@ -26,7 +26,14 @@ void sched_new(Node* GW){
 			if(it->deadline <= timeTick){				// task arrival
 				it->deadline += it->period;				
 				it->remaining = it->exec;
+				
+				if(timeTick%HyperPeriod != 0){
+					GW->result.totalTask++;
+					it->cnt += 1;
+				}
+
 				GW->remote_q.ready_q.push_back(*it);	// push to ready_q
+
 				deque<Task>::iterator nextIt = it+1;	// save next it
 				GW->remote_q.wait_q.erase(it,it+1);		// remove from wait_q
 				if(!GW->remote_q.wait_q.empty()) {		
@@ -48,7 +55,14 @@ void sched_new(Node* GW){
 			if(it->deadline <= timeTick){				// task arrival
 				it->deadline += it->period;				
 				it->remaining = it->exec;
+				
+				if(timeTick%HyperPeriod != 0){
+					GW->result.totalTask++;
+					it->cnt += 1;
+				}
+				
 				GW->local_q.ready_q.push_back(*it);		// push to ready_q
+
 				deque<Task>::iterator nextIt = it+1;	// save next it
 				GW->local_q.wait_q.erase(it,it+1);		// remove from wait_q
 				if(!GW->local_q.wait_q.empty()) {		
@@ -70,6 +84,7 @@ void sched_new(Node* GW){
 	}
 	GW->TBS.clear();
 	debug(("TBS1\r\n"));
+
 	// sorting task from minDeadline to maxDeadline
 	sort(GW->remote_q.ready_q.begin(), GW->remote_q.ready_q.end(), minDeadline);
 	sort(GW->local_q.ready_q.begin(), GW->local_q.ready_q.end(), minDeadline);
@@ -79,16 +94,30 @@ void sched_new(Node* GW){
 		if(GW->currTask != idleTask) {	
 			GW->remote_q.ready_q.push_back(*GW->currTask);
 		}
-		GW->currTask = &GW->remote_q.ready_q.front();
+		GW->currTask = &GW->remote_q.ready_q.front(); Time("context switch");
 		GW->remote_q.ready_q.pop_front();
+		if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)){
+			debug(("miss_rq !\r\n")); Time("miss_rq");
+			GW->result.miss++;
+			GW->remote_q.wait_q.push_back(*GW->currTask);
+			GW->currTask = idleTask;
+			sched_new(GW);
+		}
 
 	}
 	else if ((!GW->local_q.ready_q.empty()) && (GW->local_q.ready_q.begin()->deadline < GW->currTask->deadline) && (!GW->currTask->offload)) {
 		if(GW->currTask != idleTask) {	
 			GW->local_q.ready_q.push_back(*GW->currTask);
 		}
-		GW->currTask = &GW->local_q.ready_q.front();
+		GW->currTask = &GW->local_q.ready_q.front(); Time("context switch");
 		GW->local_q.ready_q.pop_front();
+		if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)){
+			debug(("miss_lq !\r\n")); Time("miss_lq");
+			GW->result.miss++;
+			GW->local_q.wait_q.push_back(*GW->currTask);
+			GW->currTask = idleTask;
+			sched_new(GW);
+		}	
 	}
 }
 
@@ -123,6 +152,17 @@ void cludServer(Node* GW){
 }
 
 /*=====================
+	    Migration
+=====================*/
+
+void migration(Node* src, Node* dest){
+	
+
+	dest->TBS.push_back(*src->currTask);
+	src->currTask = idleTask;
+}
+
+/*=====================
 	    Policy
 =====================*/
 void EDF(){
@@ -131,25 +171,43 @@ void EDF(){
 	while(timeTick <= HyperPeriod){
 		GW = NodeHead;
 		debug(("head\r\n"));
-		//while (GW->nextNode != NULL){
+		while (GW->nextNode != NULL){
 			GW = GW->nextNode;
-			while(timeTick <= HyperPeriod){
+
+			//while(timeTick <= HyperPeriod){
+			//	
+			if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)) {	
+				if(GW->currTask->offload){
+					debug(("miss_r !\r\n")); Time("miss_r");
+					GW->result.miss++;
+					GW->remote_q.wait_q.push_back(*GW->currTask);
+					GW->currTask = idleTask;
+				}
+				else {
+					debug(("miss_l !\r\n")); Time("miss_l");
+					GW->result.miss++;
+					GW->local_q.wait_q.push_back(*GW->currTask);
+					GW->currTask = idleTask;				
+				}
+			}
 			sched_new(GW);				// schedule new task
 			debug(("Sched_new !\r\n"));
 			cludServer(GW);				// cloud computing
 			debug(("TimeTick : %d\t GW_%d\t T_%d\r\n", timeTick, GW->id, GW->currTask->id));
-			printSched();
+			//printSched("");
 			if(GW->currTask->offload){
 				GW->currTask->remaining--;
 				debug(("--_r !\r\n"));
+				GW->result.energy += p_trans;	// calculate GW offloading energy
 				if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->remaining > offloadTransfer){
-					debug(("offload !\r\n"));
+					debug(("offload !\r\n")); Time("offload");
 					GW->Cloud.push_back(*GW->currTask);
 					GW->currTask = idleTask;
 					
 				}
 				else if(GW->currTask->remaining <= 0){
-					debug(("finish_r !\r\n"));
+					debug(("finish_r !\r\n")); Time("finish_r");
+					GW->result.meet++;
 					GW->remote_q.wait_q.push_back(*GW->currTask);
 					GW->currTask = idleTask;
 					
@@ -158,16 +216,21 @@ void EDF(){
 			else{
 				GW->currTask->remaining--;
 				debug(("--_l !\r\n"));
+				
+				GW->result.energy += (GW->currTask == idleTask)? p_idle : p_comp;  // calculate GW computing energy
+				
 				if(GW->currTask->remaining <= 0){
-					debug(("finish_l !\r\n"));
+					debug(("finish_l !\r\n")); Time("finish_l");
+					GW->result.meet++;
 					GW->local_q.wait_q.push_back(*GW->currTask);
 					GW->currTask = idleTask;
 					
-				}
+				}	
 			}
-			timeTick++;
-			idleTask->remaining =9999;
+			//timeTick++;
+			//idleTask->remaining =9999;
 		}
+		//GW->result.calculate();		
 		debug(("Next !\r\n"));	
 		timeTick++;
 		idleTask->remaining =9999;
@@ -194,7 +257,20 @@ void scheduler(int policy){
 	}
 }
 
-void printSched() {
+void printSched(char* state) {
+	if(GW->id != 0){
+		return;
+	}
+	fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->id << "_" << GW->currTask->cnt << "\t" << state << endl;
+}
 
-	fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->id << endl;
+void printResult(Node* GW){
+	fs << "=========== GW_" << GW->id << " ===========\n";
+	fs << "Total Task : " << GW->result.totalTask << endl;
+	fs << "Meet Task : " << GW->result.meet << endl;
+	fs << "Miss Task : " << GW->result.miss << endl;
+	fs << "Meet Ratio : " << GW->result.meet_ratio << endl;
+	fs << "Energy Consumption : " << GW->result.energy << endl;
+	fs << "Lifetime : " << GW->result.lifetime << endl;
+	
 }
