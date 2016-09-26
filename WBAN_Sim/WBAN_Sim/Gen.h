@@ -7,7 +7,8 @@ extern Task* idleTask;
 /*=================================
 		Parameter Setting
 ==================================*/
-extern fstream fs;
+extern fstream fs, input;
+extern char *inputPath;
 extern int Set;
 extern int NodeNum;	// # of GW Node
 extern int TaskNum;	// # of Tasks in each GW
@@ -22,7 +23,9 @@ extern int HyperPeriod;
 ==================================*/
 void Create();
 void WBAN_Gen();
+void WBAN_Load();
 
+void Output_WBAN();
 void Print_WBAN();
 
 void Clear(); 

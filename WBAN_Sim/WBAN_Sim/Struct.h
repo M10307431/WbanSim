@@ -1,20 +1,27 @@
 
 using namespace std;
 
+extern const int offloadTransfer;
+
 /*=================================
 		Structure
 ==================================*/
 struct Task{
 	int id;
 	int cnt;
+	int parent;
+	
 	int period;
 	int deadline;
+	int virtualD;
 	int exec;
 	int remaining;
 	float uti;
 	int prio;
 
 	bool offload;
+	int target;
+
 	float localEng;
 	float remoteEng;
 	
@@ -23,10 +30,13 @@ struct Task{
 	};
 
 	Task(){
-		id = 0;
-		cnt = 0;
+		id = -1;
+		cnt = -1;
+		parent =-1;
+		target = -1;
 		period = 0;
 		deadline = 0;
+		virtualD = 0;
 		exec = 0;
 		remaining = 0;
 		uti = 0;
@@ -75,6 +85,7 @@ struct Result{
 struct Node{
 	int id;
 	float total_U;
+	float current_U;
 	Task* currTask;
 	deque<Task> task_q;
 	Result result;
@@ -91,12 +102,40 @@ struct Node{
 	Node(){
 		id = 0;
 		total_U = 0.0;
+		current_U = 0.0;
 		task_q.clear();
 		Cloud.clear();
 		TBS.clear();
 		nextNode = NULL;
 		preNode = NULL;
 		result.clear();
+	}
+
+	void update_U(){
+		current_U = currTask->uti;
+
+		for(deque<Task>::iterator it=local_q.ready_q.begin(); it!=local_q.ready_q.end();){
+			current_U += it->uti;
+		}
+		for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end();){
+			current_U += it->uti;
+		}
+		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end();){
+			if(it->parent != id){
+				current_U += (float)(it->exec)/it->period;
+			}
+			else {
+				current_U +=  (float)offloadTransfer/it->period;
+			}
+		}
+		for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end();){
+			if(it->parent != id){
+				current_U += (float)(it->exec)/it->period;
+			}
+			else {
+				current_U +=  (float)offloadTransfer/it->period;
+			}
+		}
 	}
 };
 

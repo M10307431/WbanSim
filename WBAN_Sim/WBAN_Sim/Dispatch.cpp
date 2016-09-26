@@ -54,12 +54,16 @@ void dispatch(Node* GW){
 		if(it->offload == true){
 			it->_setPrio(setPrio(it));
 			it->cnt++;
+			it->parent = GW->id;
+			it->target = 0;						// cloud
 			GW->remote_q.ready_q.push_back(*it);
 			GW->result.totalTask++; 
 		}
 		else{
 			it->_setPrio(setPrio(it));
 			it->cnt++;
+			it->parent = GW->id;
+			it->target = GW->id;
 			GW->local_q.ready_q.push_back(*it);
 			GW->result.totalTask++;
 		}

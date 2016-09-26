@@ -154,12 +154,31 @@ void cludServer(Node* GW){
 /*=====================
 	    Migration
 =====================*/
+Node *dest = new Node;
+
+Node findMigraDest(Task *task){
+	
+	dest = NodeHead;
+	while (dest->nextNode != NULL) {
+		dest = dest->nextNode;
+		if(dest->id == task->target){
+			return *dest;
+		}
+	}
+	dest = NULL;
+	return *dest;
+}
 
 void migration(Node* src, Node* dest){
 	
-
 	dest->TBS.push_back(*src->currTask);
 	src->currTask = idleTask;
+}
+
+void estimateMigration() {
+
+
+
 }
 
 /*=====================
@@ -171,9 +190,15 @@ void EDF(){
 	while(timeTick <= HyperPeriod){
 		GW = NodeHead;
 		debug(("head\r\n"));
+
+		//while (GW->nextNode != NULL){
+		//	GW = GW->nextNode;
+		//	GW->update_U();				// update current total utilization
+		//}
+		
+		GW = NodeHead;
 		while (GW->nextNode != NULL){
 			GW = GW->nextNode;
-
 			//while(timeTick <= HyperPeriod){
 			//	
 			if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)) {	
@@ -190,8 +215,10 @@ void EDF(){
 					GW->currTask = idleTask;				
 				}
 			}
+
 			sched_new(GW);				// schedule new task
 			debug(("Sched_new !\r\n"));
+			
 			cludServer(GW);				// cloud computing
 			debug(("TimeTick : %d\t GW_%d\t T_%d\r\n", timeTick, GW->id, GW->currTask->id));
 			//printSched("");
@@ -235,7 +262,8 @@ void EDF(){
 		timeTick++;
 		idleTask->remaining =9999;
 	}
-
+	dest = NULL;
+	delete dest;
 }
 
 void scheduler(int policy){

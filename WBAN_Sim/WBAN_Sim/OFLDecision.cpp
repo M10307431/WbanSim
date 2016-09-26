@@ -9,6 +9,10 @@
 
 using namespace std;
 
+#define myOFLD 1
+#define NOFLD 0
+#define AOFLD 2
+
 float Eng = 0;	// (mJ)
 
 float calEnergy(bool remote, int exec, float Eng) {
@@ -47,10 +51,10 @@ void OFLD(Node* GW){
 			}
 
 			//////////////////////////////////////
-			if(policyOFLD==0){
+			if(policyOFLD==NOFLD){
 				it->offload = false;
 			}
-			if(policyOFLD==2){
+			if(policyOFLD==AOFLD){
 				it->offload = true;
 			}
 		}

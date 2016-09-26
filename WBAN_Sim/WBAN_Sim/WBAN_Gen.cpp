@@ -55,6 +55,7 @@ void Create(){
 	idleTask->remaining =9999;
 	idleTask->offload = false;
 	idleTask->_setPrio(999);
+	idleTask->uti = 0;
 }
 
 /*=================================
@@ -64,6 +65,7 @@ void WBAN_Gen(){
 	GW = NodeHead;
 	while (GW->nextNode != NULL){
 		GW = GW->nextNode;
+
 		float remain_U = total_U;
 		vector<float> U;
 		vector<int> P;
@@ -79,13 +81,16 @@ void WBAN_Gen(){
 		// shorter period has larger utilization
 		sort(P.begin(),P.end());
 		sort(U.begin(),U.end(),cmp);
+
 		// set task parameters to node
 		for(int t=0; t<TaskNum; ++t){
 			GW->task_q.at(t).id = t;										// task id
+			GW->task_q.at(t).cnt = 0;										// task counter
+			GW->task_q.at(t).parent = GW->id;								// GW id
 			GW->task_q.at(t).period = P.at(t);								// task period
-			GW->task_q.at(t).deadline = P.at(t);
+			GW->task_q.at(t).deadline = P.at(t);							// task deadline
 			GW->task_q.at(t).exec = U.at(t) * P.at(t);						// task execution
-			GW->task_q.at(t).remaining = U.at(t) * P.at(t);
+			GW->task_q.at(t).remaining = U.at(t) * P.at(t);					// task remaining time
 			GW->task_q.at(t).uti = (float)GW->task_q.at(t).exec/P.at(t);	// task utilization
 			GW->total_U += GW->task_q.at(t).uti;							// node total utilization
 		}
@@ -93,6 +98,47 @@ void WBAN_Gen(){
 	}
 }
 
+/*=================================
+  Load Node & Task from input.txt
+==================================*/
+void WBAN_Load(){
+	
+	GW = NodeHead;
+	char inputBuf[50];
+	char* value = (char*)malloc(50);
+	int taskID = 0;
+	input.clear();
+	while (!input.eof()) {
+		input.getline(inputBuf, sizeof(inputBuf));
+		value = strtok(inputBuf, " ");
+		if(strcmp(value, "GW") == 0){
+			GW = GW->nextNode;
+			taskID = 0;
+		}
+		if(strcmp(value, "Task") == 0){
+			GW->task_q.at(taskID).id = taskID;								// task id
+			GW->task_q.at(taskID).cnt = 0;									// task counter
+			GW->task_q.at(taskID).parent = GW->id;							// GW id
+			
+			value = strtok(NULL, " ");
+			GW->task_q.at(taskID).exec = atoi(value);						// task execution
+			GW->task_q.at(taskID).remaining = atoi(value);					// task remaining time
+
+			value = strtok(NULL, " ");
+			GW->task_q.at(taskID).period = atoi(value);						// task period
+			GW->task_q.at(taskID).deadline = atoi(value);					// task deadline
+			
+			GW->task_q.at(taskID).uti = (float)GW->task_q.at(taskID).exec/GW->task_q.at(taskID).period;	// task utilization
+			GW->total_U += GW->task_q.at(taskID).uti;						// node total utilization
+			taskID++;
+		}
+		if(strcmp(value, "-------------") == 0){
+			input.getline(inputBuf, sizeof(inputBuf));
+			input.getline(inputBuf, sizeof(inputBuf));
+			break;
+		}
+	}
+}
 /*=================================
 		Clear all nodes
 ==================================*/
@@ -111,13 +157,30 @@ void Clear(){
 ==================================*/
 void Print_WBAN(){
 	GW = NodeHead->nextNode;
-	fs << NodeNum << " " << TaskNum << endl;
 	while (GW != NULL){
 		cout << "Gateway Node : "<< GW->id << "\tU = " << GW->total_U << endl;
 		fs << "GW " << GW->total_U << endl;
 		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 			cout << "\t T" << it->id << " = (" << it->exec << ", " << it->period << ", " << it->uti << ")\n";
 			fs << "Task "<< it->exec << " " << it->period << " " << it->uti << "\n";
+		}
+		cout<<endl;
+		GW = GW->nextNode;
+	}
+	cout<<endl;
+}
+/*=================================
+		Output Gen Result
+==================================*/
+
+void Output_WBAN(){
+	GW = NodeHead->nextNode;
+	while (GW != NULL){
+		cout << "Gateway Node : "<< GW->id << "\tU = " << GW->total_U << endl;
+		input << "GW " << GW->total_U << endl;
+		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
+			cout << "\t T" << it->id << " = (" << it->exec << ", " << it->period << ", " << it->uti << ")\n";
+			input << "Task "<< it->exec << " " << it->period << " " << it->uti << "\n";
 		}
 		cout<<endl;
 		GW = GW->nextNode;
