@@ -114,26 +114,26 @@ struct Node{
 	void update_U(){
 		current_U = currTask->uti;
 
-		for(deque<Task>::iterator it=local_q.ready_q.begin(); it!=local_q.ready_q.end();){
+		for(deque<Task>::iterator it=local_q.ready_q.begin(); it!=local_q.ready_q.end(); ++it){
 			current_U += it->uti;
 		}
-		for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end();){
+		for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end(); ++it){
 			current_U += it->uti;
 		}
-		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end();){
+		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end(); ++it){
 			if(it->parent != id){
 				current_U += (float)(it->exec)/it->period;
 			}
 			else {
-				current_U +=  (float)offloadTransfer/it->period;
+				current_U +=  (float)offloadTransfer*2/it->period;
 			}
 		}
-		for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end();){
+		for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end(); ++it){
 			if(it->parent != id){
 				current_U += (float)(it->exec)/it->period;
 			}
 			else {
-				current_U +=  (float)offloadTransfer/it->period;
+				current_U +=  (float)offloadTransfer*2/it->period;
 			}
 		}
 	}

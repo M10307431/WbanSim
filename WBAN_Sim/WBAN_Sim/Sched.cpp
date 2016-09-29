@@ -155,31 +155,63 @@ void cludServer(Node* GW){
 	    Migration
 =====================*/
 Node *dest = new Node;
+Node *src = new Node;
 
-Node findMigraDest(Task *task){
+//============================== Evaluate migration target ============================
+void EvaluationFog(Task *task){
+	
+	float temp_U = 1.0;
+	dest = NodeHead;
+	while (dest->nextNode != NULL) {
+		dest = dest->nextNode;
+		if((dest->id != task->parent)&&(dest->current_U < temp_U)&&(1.0-dest->current_U > task->uti)){
+			task->target = dest->id;
+			task->virtualD = (task->remaining-2*fogTransfer)/(1.0-dest->current_U);
+			if(task->virtualD > task->deadline-fogTransfer ) {
+				task->virtualD = task->deadline-fogTransfer;
+			}
+		}
+	}
+	// can not find proper dest >> local running
+	if(task->target == -1){
+		task->target = task->parent;
+	}
+	dest = NULL;
+}
+//============================== Retuen migration target ============================
+Node *findMigraDest(Task *task){
 	
 	dest = NodeHead;
 	while (dest->nextNode != NULL) {
 		dest = dest->nextNode;
 		if(dest->id == task->target){
-			return *dest;
+			return dest;
 		}
 	}
 	dest = NULL;
-	return *dest;
+	return dest;
 }
 
-void migration(Node* src, Node* dest){
+Node *backMigraSrc(Task *task){
+	src = NodeHead;
+	while (src->nextNode != NULL) {
+		src = src->nextNode;
+		if(src->id == task->parent){
+			return src;
+		}
+	}
+	debug(("Migration back Error!!\r\n"));
+	src = NULL;
+	return src;
+}
+
+void Migration(Node* src, Node* dest){
 	
 	dest->TBS.push_back(*src->currTask);
 	src->currTask = idleTask;
 }
 
-void estimateMigration() {
 
-
-
-}
 
 /*=====================
 	    Policy
@@ -191,10 +223,10 @@ void EDF(){
 		GW = NodeHead;
 		debug(("head\r\n"));
 
-		//while (GW->nextNode != NULL){
-		//	GW = GW->nextNode;
-		//	GW->update_U();				// update current total utilization
-		//}
+		while (GW->nextNode != NULL){
+			GW = GW->nextNode;
+			GW->update_U();				// update current total utilization
+		}
 		
 		GW = NodeHead;
 		while (GW->nextNode != NULL){
@@ -222,29 +254,75 @@ void EDF(){
 			cludServer(GW);				// cloud computing
 			debug(("TimeTick : %d\t GW_%d\t T_%d\r\n", timeTick, GW->id, GW->currTask->id));
 			//printSched("");
+
+			// Offloading task
 			if(GW->currTask->offload){
+				// Evaluate Fog migration target at first running
+				if((GW->currTask->remaining == GW->currTask->exec)&&(GW->currTask->target != -1)){
+					EvaluationFog(GW->currTask);
+				}
+				
 				GW->currTask->remaining--;
 				debug(("--_r !\r\n"));
-				GW->result.energy += p_trans;	// calculate GW offloading energy
-				if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->remaining > offloadTransfer){
-					debug(("offload !\r\n")); Time("offload");
-					GW->Cloud.push_back(*GW->currTask);
-					GW->currTask = idleTask;
-					
+				GW->result.energy += (p_idle+(float)p_comp/4.0);	// calculate GW offloading energy (proccessing(light loading) + transmission)
+
+				//============ Fog offfloading =============
+				if(GW->currTask->target != -1){
+					// Migration to Fog device
+					if((GW->currTask->remaining <= GW->currTask->exec-fogTransfer) && (GW->currTask->remaining > fogTransfer) && (GW->currTask->parent != GW->id)){
+						debug(("offload_fog !\r\n")); Time("offload_fog");
+						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
+						int temp_D = GW->currTask->deadline;		// store origin deadline
+						GW->currTask->deadline = GW->currTask->virtualD;
+						GW->currTask->virtualD = temp_D;
+						Migration(GW, findMigraDest(GW->currTask));
+					}
+					// Migration back
+					else if((GW->currTask->remaining <= fogTransfer)&&(GW->currTask->parent != GW->id)){
+						debug(("back_fog !\r\n")); Time("back_fog");
+						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
+						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
+						Migration(GW, backMigraSrc(GW->currTask));
+					}
+					else if(GW->currTask->remaining <= 0){
+						debug(("finish_fog !\r\n")); Time("finish_fog");
+						GW->result.meet++;
+						GW->remote_q.wait_q.push_back(*GW->currTask);
+						GW->currTask = idleTask;
+					}
+					/*else if(GW->currTask->parent != GW->id){
+						debug(("Error_fog !\r\n")); Time("error_fog");
+					}*/
 				}
-				else if(GW->currTask->remaining <= 0){
-					debug(("finish_r !\r\n")); Time("finish_r");
-					GW->result.meet++;
-					GW->remote_q.wait_q.push_back(*GW->currTask);
-					GW->currTask = idleTask;
-					
+
+				//============ Cloud offfloading ===========
+				else{
+					// offload to cloud
+					if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->remaining > offloadTransfer){
+						debug(("offload_cloud !\r\n")); Time("offload_cloud");
+						GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
+						GW->Cloud.push_back(*GW->currTask);
+						GW->currTask = idleTask;
+					}
+					// offloading task finish
+					else if(GW->currTask->remaining <= 0){
+						debug(("finish_cluod !\r\n")); Time("finish_cloud");
+						GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
+						GW->result.meet++;
+						GW->remote_q.wait_q.push_back(*GW->currTask);
+						GW->currTask = idleTask;
+					}
+					/*else
+						debug(("Error_cloud !\r\n")); Time("error_cluod");*/
 				}
 			}
+
+			//local task
 			else{
 				GW->currTask->remaining--;
 				debug(("--_l !\r\n"));
 				
-				GW->result.energy += (GW->currTask == idleTask)? p_idle : p_comp;  // calculate GW computing energy
+				GW->result.energy += (GW->currTask == idleTask)? p_idle : (p_comp+p_idle);  // calculate GW computing energy
 				
 				if(GW->currTask->remaining <= 0){
 					debug(("finish_l !\r\n")); Time("finish_l");

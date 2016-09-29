@@ -67,6 +67,7 @@ const float p_trans = 0.3;	// wifi trans
 const float t_trans = 25; // wifi trans time (ms)
 
 const int offloadTransfer = 25;
+const int fogTransfer = 7;
 /*=================================
 		Main function
 ==================================*/

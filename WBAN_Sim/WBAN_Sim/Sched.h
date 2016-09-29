@@ -8,6 +8,7 @@ extern int HyperPeriod;
 extern int timeTick;
 
 extern const int offloadTransfer;
+extern const int fogTransfer;
 extern const float speedRatio;	// remoteSpeed / localSpeed
 
 void scheduler(int policy);
