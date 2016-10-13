@@ -33,7 +33,7 @@ Task* idleTask = new Task;	// idle task
 /*=================================
 		  Setting
 ==================================*/
-bool inputLoad = true;	// 0: Gen, 1: inputfile 
+bool inputLoad = 1;	// 0: Gen, 1: inputfile 
 string GENfile="..\\WBAN_GenResult\\";	//放到前一目錄下的GenResult目錄，產生txt檔
 char* configPath = "config.txt";
 char* inputPath = "input.txt";

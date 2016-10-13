@@ -29,6 +29,9 @@ void EDF();
 void sched_new(Node* GW);
 void cludServer(Node* GW);
 void migration(Node* src, Node* dest);
+void EvaluationFog(Task *task);
+Node *findMigraDest(Task *task);
+Node *backMigraSrc(Task *task);
 
 void printSched(char* state);
 void printResult(Node* GW);

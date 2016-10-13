@@ -42,10 +42,15 @@ void Create(){
 		NodeHead->preNode = GW;
 
 		/*---------------- Gen task -----------------*/
-		for(int t=0; t<TaskNum; ++t){
-			taskgen = new Task;
-			GW->task_q.push_back(*taskgen);
+		
+		// last GW as a fog server without any tasks
+		if(GW->id < NodeNum-1){
+			for(int t=0; t<TaskNum; ++t){
+				taskgen = new Task;
+				GW->task_q.push_back(*taskgen);
+			}
 		}
+
 	}
 
 	idleTask->id = 999;
@@ -65,6 +70,10 @@ void WBAN_Gen(){
 	GW = NodeHead;
 	while (GW->nextNode != NULL){
 		GW = GW->nextNode;
+
+		// last GW as a fog server without any tasks
+		if(GW->nextNode == NULL)
+			break;
 
 		float remain_U = total_U;
 		vector<float> U;
@@ -96,6 +105,7 @@ void WBAN_Gen(){
 		}
 		
 	}
+
 }
 
 /*=================================
@@ -138,6 +148,7 @@ void WBAN_Load(){
 			break;
 		}
 	}
+	
 }
 /*=================================
 		Clear all nodes

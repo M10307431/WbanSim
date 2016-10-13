@@ -77,13 +77,13 @@ void sched_new(Node* GW){
 			}
 		}
 	}
-	debug(("TBS0\r\n"));
-	// TBS -> remote_q
-	for(deque<Task>::iterator it=GW->TBS.begin(); it!=GW->TBS.end();++it){
-		GW->remote_q.ready_q.push_back(*it);
-	}
-	GW->TBS.clear();
-	debug(("TBS1\r\n"));
+	//debug(("TBS0\r\n"));
+	//// TBS -> remote_q
+	//for(deque<Task>::iterator it=GW->TBS.begin(); it!=GW->TBS.end();++it){
+	//	GW->remote_q.ready_q.push_back(*it);
+	//}
+	//GW->TBS.clear();
+	//debug(("TBS1\r\n"));
 
 	// sorting task from minDeadline to maxDeadline
 	sort(GW->remote_q.ready_q.begin(), GW->remote_q.ready_q.end(), minDeadline);
@@ -94,12 +94,26 @@ void sched_new(Node* GW){
 		if(GW->currTask != idleTask) {	
 			GW->remote_q.ready_q.push_back(*GW->currTask);
 		}
-		GW->currTask = &GW->remote_q.ready_q.front(); Time("context switch");
+		GW->currTask = &GW->remote_q.ready_q.front(); Time("context switch"); // get the min deadline task
 		GW->remote_q.ready_q.pop_front();
+		
+		// not finish task
 		if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)){
 			debug(("miss_rq !\r\n")); Time("miss_rq");
-			GW->result.miss++;
-			GW->remote_q.wait_q.push_back(*GW->currTask);
+			// fog migration task miss -> parent GW waiting_q
+			if(GW->currTask->parent != GW->id){
+				Node *parent = new Node;
+				parent = backMigraSrc(GW->currTask);
+				parent->result.miss++;
+				GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
+				parent->remote_q.wait_q.push_back(*GW->currTask);
+				parent =NULL;
+				delete parent;
+			}
+			else{
+				GW->result.miss++;
+				GW->remote_q.wait_q.push_back(*GW->currTask);
+			}
 			GW->currTask = idleTask;
 			sched_new(GW);
 		}
@@ -154,55 +168,56 @@ void cludServer(Node* GW){
 /*=====================
 	    Migration
 =====================*/
-Node *dest = new Node;
-Node *src = new Node;
+Node *target = new Node;
+Node *parent = new Node;
 
 //============================== Evaluate migration target ============================
 void EvaluationFog(Task *task){
 	
 	float temp_U = 1.0;
-	dest = NodeHead;
-	while (dest->nextNode != NULL) {
-		dest = dest->nextNode;
-		if((dest->id != task->parent)&&(dest->current_U < temp_U)&&(1.0-dest->current_U > task->uti)){
-			task->target = dest->id;
-			task->virtualD = (task->remaining-2*fogTransfer)/(1.0-dest->current_U);
+	target = NodeHead;
+	while (target->nextNode != NULL) {
+		target = target->nextNode;
+		if((target->id != task->parent)&&(target->current_U < temp_U)&&(1.0-target->current_U > task->uti)){
+			task->target = target->id;
+			task->virtualD = (task->remaining-2*fogTransfer)/(1.0-target->current_U);
 			if(task->virtualD > task->deadline-fogTransfer ) {
 				task->virtualD = task->deadline-fogTransfer;
 			}
 		}
 	}
 	// can not find proper dest >> local running
-	if(task->target == -1){
+	if(task->target == 999){
 		task->target = task->parent;
 	}
-	dest = NULL;
+	target = NULL;
 }
 //============================== Retuen migration target ============================
 Node *findMigraDest(Task *task){
 	
-	dest = NodeHead;
-	while (dest->nextNode != NULL) {
-		dest = dest->nextNode;
-		if(dest->id == task->target){
-			return dest;
+	target = NodeHead;
+	while (target->nextNode != NULL) {
+		target = target->nextNode;
+		if(target->id == task->target){
+			return target;
 		}
 	}
-	dest = NULL;
-	return dest;
+	Time(("Migration Error!!\r\n"));
+	target = NULL;
+	return target;
 }
 
 Node *backMigraSrc(Task *task){
-	src = NodeHead;
-	while (src->nextNode != NULL) {
-		src = src->nextNode;
-		if(src->id == task->parent){
-			return src;
+	parent = NodeHead;
+	while (parent->nextNode != NULL) {
+		parent = parent->nextNode;
+		if(parent->id == task->parent){
+			return parent;
 		}
 	}
-	debug(("Migration back Error!!\r\n"));
-	src = NULL;
-	return src;
+	Time(("Migration back Error!!\r\n"));
+	parent = NULL;
+	return parent;
 }
 
 void Migration(Node* src, Node* dest){
@@ -225,6 +240,13 @@ void EDF(){
 
 		while (GW->nextNode != NULL){
 			GW = GW->nextNode;
+			debug(("TBS0\r\n"));
+			// TBS -> remote_q
+			for(deque<Task>::iterator it=GW->TBS.begin(); it!=GW->TBS.end();++it){
+				GW->remote_q.ready_q.push_front(*it);
+			}
+			GW->TBS.clear();
+			debug(("TBS1\r\n"));
 			GW->update_U();				// update current total utilization
 		}
 		
@@ -236,16 +258,26 @@ void EDF(){
 			if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)) {	
 				if(GW->currTask->offload){
 					debug(("miss_r !\r\n")); Time("miss_r");
-					GW->result.miss++;
-					GW->remote_q.wait_q.push_back(*GW->currTask);
-					GW->currTask = idleTask;
+					if(GW->currTask->parent != GW->id){
+						Node *parent = new Node;
+						parent = backMigraSrc(GW->currTask);
+						parent->result.miss++;
+						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
+						parent->remote_q.wait_q.push_back(*GW->currTask);
+						parent =NULL;
+						delete parent;
+					}
+					else{
+						GW->result.miss++;
+						GW->remote_q.wait_q.push_back(*GW->currTask);
+					}
 				}
 				else {
 					debug(("miss_l !\r\n")); Time("miss_l");
 					GW->result.miss++;
-					GW->local_q.wait_q.push_back(*GW->currTask);
-					GW->currTask = idleTask;				
+					GW->local_q.wait_q.push_back(*GW->currTask);				
 				}
+				GW->currTask = idleTask;
 			}
 
 			sched_new(GW);				// schedule new task
@@ -269,20 +301,22 @@ void EDF(){
 				//============ Fog offfloading =============
 				if(GW->currTask->target != -1){
 					// Migration to Fog device
-					if((GW->currTask->remaining <= GW->currTask->exec-fogTransfer) && (GW->currTask->remaining > fogTransfer) && (GW->currTask->parent != GW->id)){
-						debug(("offload_fog !\r\n")); Time("offload_fog");
+					if((GW->currTask->remaining <= (GW->currTask->exec-fogTransfer)) && (GW->currTask->remaining > fogTransfer) && (GW->currTask->target != GW->id)){
+						debug(("offload_fog !\r\n")); char *state=""; Time("offload_fog");
 						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
 						int temp_D = GW->currTask->deadline;		// store origin deadline
+						GW->currTask->virtualD = GW->currTask->deadline-fogTransfer;
 						GW->currTask->deadline = GW->currTask->virtualD;
 						GW->currTask->virtualD = temp_D;
 						Migration(GW, findMigraDest(GW->currTask));
 					}
 					// Migration back
 					else if((GW->currTask->remaining <= fogTransfer)&&(GW->currTask->parent != GW->id)){
-						debug(("back_fog !\r\n")); Time("back_fog");
+						debug(("back_fog !\r\n")); char *state=""; Time("back_fog");
 						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
 						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
 						Migration(GW, backMigraSrc(GW->currTask));
+						GW->currTask = idleTask;
 					}
 					else if(GW->currTask->remaining <= 0){
 						debug(("finish_fog !\r\n")); Time("finish_fog");
@@ -340,8 +374,10 @@ void EDF(){
 		timeTick++;
 		idleTask->remaining =9999;
 	}
-	dest = NULL;
-	delete dest;
+	target = NULL;
+	parent = NULL;
+	delete target;
+	delete parent;
 }
 
 void scheduler(int policy){
@@ -364,10 +400,13 @@ void scheduler(int policy){
 }
 
 void printSched(char* state) {
-	if(GW->id != 0){
-		return;
+	if(GW->id >= 0){
+		if(GW->currTask->target != -1)
+			fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "->" << GW->currTask->parent << "_" << GW->currTask->target << "\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining <<  endl;
+		else
+			fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "\t\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining << endl;
 	}
-	fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->id << "_" << GW->currTask->cnt << "\t" << state << endl;
+	
 }
 
 void printResult(Node* GW){

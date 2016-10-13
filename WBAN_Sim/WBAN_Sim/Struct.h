@@ -2,6 +2,7 @@
 using namespace std;
 
 extern const int offloadTransfer;
+extern const int fogTransfer;
 
 /*=================================
 		Structure
@@ -108,6 +109,7 @@ struct Node{
 		TBS.clear();
 		nextNode = NULL;
 		preNode = NULL;
+		currTask = NULL;
 		result.clear();
 	}
 
@@ -122,7 +124,7 @@ struct Node{
 		}
 		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end(); ++it){
 			if(it->parent != id){
-				current_U += (float)(it->exec)/it->period;
+				current_U += (float)(it->exec-2*fogTransfer)/it->period;
 			}
 			else {
 				current_U +=  (float)offloadTransfer*2/it->period;
@@ -130,7 +132,7 @@ struct Node{
 		}
 		for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end(); ++it){
 			if(it->parent != id){
-				current_U += (float)(it->exec)/it->period;
+				current_U += (float)(it->exec-2*fogTransfer)/it->period;
 			}
 			else {
 				current_U +=  (float)offloadTransfer*2/it->period;
