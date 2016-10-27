@@ -53,18 +53,21 @@ void dispatch(Node* GW){
 	for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 		if(it->offload == true){
 			it->_setPrio(setPrio(it));
-			it->cnt++;
+			//it->cnt++;
 			it->parent = GW->id;
+			it->virtualD = it->deadline;
+			it->deadline = (it->target != -1)? (it->period-fogTransfer-(it->exec-2*fogTransfer)) : (it->period-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);
 			GW->remote_q.ready_q.push_back(*it);
 			GW->result.totalTask++; 
 		}
 		else{
 			it->_setPrio(setPrio(it));
-			it->cnt++;
+			//it->cnt++;
 			it->parent = GW->id;
 			GW->local_q.ready_q.push_back(*it);
 			GW->result.totalTask++;
 		}
+		GW->currTask = idleTask;
 	}
 }
 

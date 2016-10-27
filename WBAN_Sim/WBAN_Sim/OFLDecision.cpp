@@ -11,7 +11,8 @@ using namespace std;
 
 #define myOFLD 1
 #define NOFLD 0
-#define AOFLD 2
+#define AOFLDC 2
+#define AOFLDF	3
 
 float Eng = 0;	// (mJ)
 
@@ -43,22 +44,29 @@ void OFLD(Node* GW){
 			it->remoteEng = calEnergy(1, exec, Eng);
 			
 			// set offloading flag
-			if((it->localEng > it->remoteEng)){
-				it->offload = true;
-				it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
-				it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
-				it->virtualD = (it->target != -1)? (it->deadline-offloadTransfer): (it->deadline-fogTransfer);
-			}
-			else{
-				it->offload = false;
-			}
-
 			//////////////////////////////////////
 			if(policyOFLD==NOFLD){
 				it->offload = false;
 			}
-			if(policyOFLD==AOFLD){
+			else if(policyOFLD==AOFLDC){
 				it->offload = true;
+			}
+			else if(policyOFLD==AOFLDF){
+				it->offload = true;
+				it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
+				it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
+				//it->virtualD = (it->target != -1)? (it->deadline-offloadTransfer): (it->deadline-fogTransfer);
+			}
+			else if(policyOFLD==myOFLD){
+				if((it->localEng > it->remoteEng)){
+					it->offload = true;
+					it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
+					it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
+					//it->virtualD = (it->target != -1)? (it->deadline-offloadTransfer): (it->deadline-fogTransfer);
+				}
+				else{
+					it->offload = false;
+				}
 			}
 		}
 	}

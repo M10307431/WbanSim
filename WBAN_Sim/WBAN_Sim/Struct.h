@@ -1,6 +1,7 @@
 
 using namespace std;
 
+extern int timeTick;
 extern const int offloadTransfer;
 extern const int fogTransfer;
 
@@ -86,7 +87,15 @@ struct Result{
 struct Node{
 	int id;
 	float total_U;
-	float current_U;
+
+	/*=========== Migration Weight ========================*/
+	int speed;				// exection speed
+	int batt;			// bttery level (remaing energy)
+	int block;				// blocking time
+	float migration_factor;	// migration_factor
+	float current_U;		// current utilization
+	float migratWeight;		// migration weight
+
 	Task* currTask;
 	deque<Task> task_q;
 	Result result;
@@ -102,6 +111,11 @@ struct Node{
 
 	Node(){
 		id = 0;
+		speed = 1;
+		batt = 100;
+		block = 0;
+		migration_factor = 0.0;		// 1.0 <<---energy------------load--->> 0.0
+		migratWeight = 0.0;
 		total_U = 0.0;
 		current_U = 0.0;
 		task_q.clear();
@@ -125,6 +139,7 @@ struct Node{
 		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end(); ++it){
 			if(it->parent != id){
 				current_U += (float)(it->exec-2*fogTransfer)/it->period;
+				//current_U += (float)(it->remaining-fogTransfer)/(speed*(it->deadline-timeTick));
 			}
 			else {
 				current_U +=  (float)offloadTransfer*2/it->period;
@@ -137,6 +152,44 @@ struct Node{
 			else {
 				current_U +=  (float)offloadTransfer*2/it->period;
 			}
+		}
+	}
+
+	void MW(int battSum, float utiSum, int pt){
+		
+		if(currTask->id != 999 && currTask->deadline < pt){			// idle task
+			block = currTask->remaining;
+		}
+		else{
+			block = 0;
+		}
+
+		for(deque<Task>::iterator it=local_q.ready_q.begin(); it!=local_q.ready_q.end(); ++it){
+			if(it->deadline <= pt && it->deadline >= timeTick){
+				block += it->remaining;
+			}
+		}
+		/*for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end(); ++it){
+			if(it->deadline <= pt && it->deadline >= timeTick){
+				block += it->remaining;
+			}
+		}*/
+		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end(); ++it){
+			if(it->deadline <= pt && it->deadline >= timeTick){
+				block += it->remaining;
+			}
+		}
+		/*for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end(); ++it){
+			if(it->deadline <= pt && it->deadline >= timeTick){
+				block += it->remaining;
+			}
+		}*/
+
+		if((pt-timeTick) != 0){
+			migratWeight = migration_factor*((float)batt/battSum)-(1.0-migration_factor)*(current_U/utiSum)-((float)block/(pt-timeTick));
+		}
+		else{
+			migratWeight = -999;
 		}
 	}
 };

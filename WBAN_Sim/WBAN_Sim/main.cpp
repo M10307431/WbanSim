@@ -16,10 +16,11 @@
 
 using namespace std;
 
-#define myOFLD 1
 #define NOFLD 0
-#define AOFLD 2
-int policyOFLD = myOFLD;	// 0:nver, 1:normal, 2:always
+#define myOFLD 1
+#define AOFLDC 2
+#define AOFLDF 3
+int policyOFLD = NOFLD;	// 0:nver, 1:my, 2:always
 
 /*=================================
 		  System componet
@@ -58,7 +59,7 @@ int schedPolicy = EDF;	// EDF
           Parameter
 =================================*/
 
-const float speedRatio = 10;	// remoteSpeed / localSpeed
+const float speedRatio = 5;	// remoteSpeed / localSpeed
 //--------Power-------------------------------------------------------
 const float p_idle = 1.55;	// idle (W)
 const float p_comp	= 2.9-1.55;	// full load
@@ -106,7 +107,8 @@ int main(){
 			value = strtok(strBuf, " = ");
 			value = strtok(NULL, " = ");
 			if(strcmp(value, "myOFLD") == 0){policyOFLD = myOFLD;}
-			else if(strcmp(value, "AOFLD") == 0){policyOFLD = AOFLD;}
+			else if(strcmp(value, "AOFLDC") == 0){policyOFLD = AOFLDC;}
+			else if(strcmp(value, "AOFLDF") == 0){policyOFLD = AOFLDF;}
 			else if(strcmp(value, "NOFLD") == 0){policyOFLD = NOFLD;}
 
 			config.getline(strBuf, sizeof(strBuf));
@@ -144,7 +146,7 @@ int main(){
 
 
 	//--------------------------------------------------------------------------- Store Result
-	string filename = "Result_GW-"+to_string(NodeNum)+"_Task-"+to_string(TaskNum)+"_Set"+to_string(Set)+".txt";	// filename of Gen
+	string filename = "Result_GW-"+to_string(NodeNum)+"_Task-"+to_string(TaskNum)+"_Set"+to_string(Set)+"_"+to_string(policyOFLD)+".txt";	// filename of Gen
 	string GENBuffer = GENfile + filename;	//Gen ¸ô®|+ÀÉ¦W
 	char *GENbuffer=(char*)GENBuffer.c_str();
 	fs.clear();
@@ -171,7 +173,7 @@ int main(){
 		}
 		
 
-		policyOFLD = myOFLD;
+		//policyOFLD = myOFLD;
 		GW = NodeHead;
 		while(GW->nextNode != NULL) {
 			GW = GW->nextNode;

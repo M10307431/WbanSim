@@ -14,7 +14,7 @@ using namespace std;
 
 
 /*======== subfunction ============*/
-bool minDeadline(Task i, Task j) {return i.deadline < j.deadline;}
+bool minDeadline(Task i, Task j) {return (i.deadline < j.deadline || (i.deadline == j.deadline && i.remaining < j.remaining));}
 
 void sched_new(Node* GW){
 	// task awake or sleep?
@@ -24,15 +24,21 @@ void sched_new(Node* GW){
 
 		for(deque<Task>::iterator it=GW->remote_q.wait_q.begin(); it!=GW->remote_q.wait_q.end();){
 			if(it->deadline <= timeTick){				// task arrival
-				it->deadline += it->period;				
+				it->deadline += it->period;
+				it->virtualD = it->deadline;
 				it->remaining = it->exec;
-				
-				if(timeTick%HyperPeriod != 0){
+				it->cnt += 1;
+
+				if(it->deadline <= HyperPeriod){
 					GW->result.totalTask++;
-					it->cnt += 1;
 				}
 
-				GW->remote_q.ready_q.push_back(*it);	// push to ready_q
+				it->deadline = (it->target != -1)? (it->virtualD-fogTransfer-(it->exec-2*fogTransfer)) : (it->virtualD-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);	//virtual deadline
+
+				GW->remote_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
+				GW->remote_q.ready_q.push_back(*it);					// push to ready_q
+				GW->currTask = &GW->remote_q.ready_q.front();
+				GW->remote_q.ready_q.pop_front();
 
 				deque<Task>::iterator nextIt = it+1;	// save next it
 				GW->remote_q.wait_q.erase(it,it+1);		// remove from wait_q
@@ -55,13 +61,16 @@ void sched_new(Node* GW){
 			if(it->deadline <= timeTick){				// task arrival
 				it->deadline += it->period;				
 				it->remaining = it->exec;
-				
-				if(timeTick%HyperPeriod != 0){
+				it->cnt += 1;
+
+				if(it->deadline <= HyperPeriod){
 					GW->result.totalTask++;
-					it->cnt += 1;
 				}
-				
-				GW->local_q.ready_q.push_back(*it);		// push to ready_q
+
+				GW->local_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
+				GW->local_q.ready_q.push_back(*it);					// push to ready_q
+				GW->currTask = &GW->local_q.ready_q.front();
+				GW->local_q.ready_q.pop_front();
 
 				deque<Task>::iterator nextIt = it+1;	// save next it
 				GW->local_q.wait_q.erase(it,it+1);		// remove from wait_q
@@ -77,13 +86,6 @@ void sched_new(Node* GW){
 			}
 		}
 	}
-	//debug(("TBS0\r\n"));
-	//// TBS -> remote_q
-	//for(deque<Task>::iterator it=GW->TBS.begin(); it!=GW->TBS.end();++it){
-	//	GW->remote_q.ready_q.push_back(*it);
-	//}
-	//GW->TBS.clear();
-	//debug(("TBS1\r\n"));
 
 	// sorting task from minDeadline to maxDeadline
 	sort(GW->remote_q.ready_q.begin(), GW->remote_q.ready_q.end(), minDeadline);
@@ -91,14 +93,20 @@ void sched_new(Node* GW){
 	
 	// find minDeadline task to execute
 	if((!GW->remote_q.ready_q.empty()) && (GW->remote_q.ready_q.begin()->deadline < GW->currTask->deadline)) {   
-		if(GW->currTask != idleTask) {	
-			GW->remote_q.ready_q.push_back(*GW->currTask);
+		if(GW->currTask != idleTask){
+			if(GW->currTask->offload){
+				GW->remote_q.ready_q.push_back(*GW->currTask);
+			}
+			else {
+				GW->local_q.ready_q.push_back(*GW->currTask);
+			}
 		}
+
 		GW->currTask = &GW->remote_q.ready_q.front(); Time("context switch"); // get the min deadline task
 		GW->remote_q.ready_q.pop_front();
 		
 		// not finish task
-		if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)){
+		if((GW->currTask->deadline <= timeTick)&&(GW->currTask->remaining > 0)){
 			debug(("miss_rq !\r\n")); Time("miss_rq");
 			// fog migration task miss -> parent GW waiting_q
 			if(GW->currTask->parent != GW->id){
@@ -119,13 +127,19 @@ void sched_new(Node* GW){
 		}
 
 	}
-	else if ((!GW->local_q.ready_q.empty()) && (GW->local_q.ready_q.begin()->deadline < GW->currTask->deadline) && (!GW->currTask->offload)) {
-		if(GW->currTask != idleTask) {	
-			GW->local_q.ready_q.push_back(*GW->currTask);
+
+	if ((!GW->local_q.ready_q.empty()) && (GW->local_q.ready_q.begin()->deadline < GW->currTask->deadline)) {
+		if(GW->currTask->id != 999) {	
+			if(GW->currTask->offload){
+				GW->remote_q.ready_q.push_back(*GW->currTask);
+			}
+			else {
+				GW->local_q.ready_q.push_back(*GW->currTask);
+			}
 		}
 		GW->currTask = &GW->local_q.ready_q.front(); Time("context switch");
 		GW->local_q.ready_q.pop_front();
-		if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)){
+		if((GW->currTask->deadline <= timeTick)&&(GW->currTask->remaining > 0)){
 			debug(("miss_lq !\r\n")); Time("miss_lq");
 			GW->result.miss++;
 			GW->local_q.wait_q.push_back(*GW->currTask);
@@ -170,25 +184,36 @@ void cludServer(Node* GW){
 =====================*/
 Node *target = new Node;
 Node *parent = new Node;
+int battSum = 0;
+float utiSum = 0.0;
 
 //============================== Evaluate migration target ============================
 void EvaluationFog(Task *task){
-	
-	float temp_U = 1.0;
 	target = NodeHead;
+
+	while(target->nextNode != NULL){
+		target = target->nextNode;
+		target->MW(battSum, utiSum, task->deadline);
+		//printf("(%d,%f,%d,%f)\t",target->batt,target->current_U,target->block,target->migratWeight);
+	}
+	
+	target = NodeHead;
+	float temp_MW = target->nextNode->migratWeight;
 	while (target->nextNode != NULL) {
 		target = target->nextNode;
-		if((target->id != task->parent)&&(target->current_U < temp_U)&&(1.0-target->current_U > task->uti)){
+		if((target->id != task->parent)&&(target->migratWeight > temp_MW)&&(1.0-target->current_U > task->uti)){
 			task->target = target->id;
-			task->virtualD = (task->remaining-2*fogTransfer)/(1.0-target->current_U);
+			/*task->virtualD = (task->remaining-2*fogTransfer)/(1.0-target->current_U);
 			if(task->virtualD > task->deadline-fogTransfer ) {
 				task->virtualD = task->deadline-fogTransfer;
-			}
+			}*/
 		}
 	}
+	
 	// can not find proper dest >> local running
-	if(task->target == 999){
+	if(task->target == 999 || task->target == task->parent){
 		task->target = task->parent;
+		task->deadline = task->virtualD;	// original deadline
 	}
 	target = NULL;
 }
@@ -234,20 +259,40 @@ void Migration(Node* src, Node* dest){
 void EDF(){
 	timeTick = 0;
 	
-	while(timeTick <= HyperPeriod){
+	while(timeTick <= HyperPeriod+1){
+		/*if(timeTick == HyperPeriod){
+			int a =1;
+		}*/
 		GW = NodeHead;
+		battSum = 0;
+		utiSum = 0.0;
 		debug(("head\r\n"));
 
 		while (GW->nextNode != NULL){
 			GW = GW->nextNode;
 			debug(("TBS0\r\n"));
 			// TBS -> remote_q
-			for(deque<Task>::iterator it=GW->TBS.begin(); it!=GW->TBS.end();++it){
-				GW->remote_q.ready_q.push_front(*it);
+			while(!GW->TBS.empty()){
+				
+				GW->remote_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
+				//virtual deadline
+				if((GW->TBS.front().target != -1) && (GW->TBS.front().remaining > fogTransfer)){
+					GW->TBS.front().deadline = GW->TBS.front().virtualD-fogTransfer;	
+				}
+				else{
+					GW->TBS.front().deadline = GW->TBS.front().virtualD;
+				}
+			
+				GW->remote_q.ready_q.push_back(GW->TBS.front());
+				GW->currTask = &GW->remote_q.ready_q.front();
+				GW->remote_q.ready_q.pop_front();
+				GW->TBS.pop_front();
 			}
-			GW->TBS.clear();
 			debug(("TBS1\r\n"));
+
 			GW->update_U();				// update current total utilization
+			battSum += GW->batt;
+			utiSum += GW->current_U;
 		}
 		
 		GW = NodeHead;
@@ -255,7 +300,7 @@ void EDF(){
 			GW = GW->nextNode;
 			//while(timeTick <= HyperPeriod){
 			//	
-			if((GW->currTask->deadline < timeTick)&&(GW->currTask->remaining > 0)) {	
+			if((GW->currTask->deadline <= timeTick)&&(GW->currTask->remaining > 0)) {	
 				if(GW->currTask->offload){
 					debug(("miss_r !\r\n")); Time("miss_r");
 					if(GW->currTask->parent != GW->id){
@@ -263,12 +308,18 @@ void EDF(){
 						parent = backMigraSrc(GW->currTask);
 						parent->result.miss++;
 						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
+						//GW->currTask->deadline += GW->currTask->period;
+						//GW->currTask->virtualD = GW->currTask->deadline;
+						//GW->currTask->deadline = GW->currTask->virtualD-fogTransfer-(GW->currTask->exec-2*fogTransfer);		// virtual deadline
+						//GW->currTask->remaining = GW->currTask->exec;
+						//GW->currTask->cnt +=1;
 						parent->remote_q.wait_q.push_back(*GW->currTask);
 						parent =NULL;
 						delete parent;
 					}
 					else{
 						GW->result.miss++;
+						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
 						GW->remote_q.wait_q.push_back(*GW->currTask);
 					}
 				}
@@ -294,7 +345,7 @@ void EDF(){
 					EvaluationFog(GW->currTask);
 				}
 				
-				GW->currTask->remaining--;
+				GW->currTask->remaining -= GW->speed;
 				debug(("--_r !\r\n"));
 				GW->result.energy += (p_idle+(float)p_comp/4.0);	// calculate GW offloading energy (proccessing(light loading) + transmission)
 
@@ -304,17 +355,18 @@ void EDF(){
 					if((GW->currTask->remaining <= (GW->currTask->exec-fogTransfer)) && (GW->currTask->remaining > fogTransfer) && (GW->currTask->target != GW->id)){
 						debug(("offload_fog !\r\n")); char *state=""; Time("offload_fog");
 						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
-						int temp_D = GW->currTask->deadline;		// store origin deadline
-						GW->currTask->virtualD = GW->currTask->deadline-fogTransfer;
-						GW->currTask->deadline = GW->currTask->virtualD;
-						GW->currTask->virtualD = temp_D;
+						//int temp_D = GW->currTask->deadline;		// store origin deadline
+						//GW->currTask->virtualD = GW->currTask->deadline-fogTransfer;
+						//GW->currTask->deadline = GW->currTask->virtualD;
+						//GW->currTask->virtualD = temp_D;
 						Migration(GW, findMigraDest(GW->currTask));
 					}
 					// Migration back
 					else if((GW->currTask->remaining <= fogTransfer)&&(GW->currTask->parent != GW->id)){
 						debug(("back_fog !\r\n")); char *state=""; Time("back_fog");
 						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
-						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
+						//GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
+						GW->currTask->remaining = (GW->currTask->remaining < fogTransfer)? fogTransfer : GW->currTask->remaining;
 						Migration(GW, backMigraSrc(GW->currTask));
 						GW->currTask = idleTask;
 					}
@@ -332,7 +384,7 @@ void EDF(){
 				//============ Cloud offfloading ===========
 				else{
 					// offload to cloud
-					if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->remaining > offloadTransfer){
+					if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->deadline < GW->currTask->virtualD){
 						debug(("offload_cloud !\r\n")); Time("offload_cloud");
 						GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
 						GW->Cloud.push_back(*GW->currTask);
@@ -353,7 +405,7 @@ void EDF(){
 
 			//local task
 			else{
-				GW->currTask->remaining--;
+				GW->currTask->remaining -= GW->speed;
 				debug(("--_l !\r\n"));
 				
 				GW->result.energy += (GW->currTask == idleTask)? p_idle : (p_comp+p_idle);  // calculate GW computing energy
@@ -401,10 +453,17 @@ void scheduler(int policy){
 
 void printSched(char* state) {
 	if(GW->id >= 0){
+		int t;
+		if(state == "context switch" || state == "miss_lq" || state == "miss_rq" || state =="miss_r" || state =="miss_l"){
+			t= timeTick;
+		}
+		else{
+			t = timeTick+1; 
+		}
 		if(GW->currTask->target != -1)
-			fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "->" << GW->currTask->parent << "_" << GW->currTask->target << "\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining <<  endl;
+			fs << "TimeTick = " << t << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "->" << GW->currTask->parent << "_" << GW->currTask->target << "\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining <<  endl;
 		else
-			fs << "TimeTick = " << timeTick << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "\t\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining << endl;
+			fs << "TimeTick = " << t << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "\t\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining << endl;
 	}
 	
 }

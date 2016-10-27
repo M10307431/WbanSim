@@ -1,0 +1,7200 @@
+GW 1.99125
+Task 93 200 0.465
+Task 178 400 0.445
+Task 163 400 0.4075
+Task 143 400 0.3575
+Task 117 400 0.2925
+Task 19 800 0.02375
+GW 1.97
+Task 67 100 0.67
+Task 56 100 0.56
+Task 29 100 0.29
+Task 21 100 0.21
+Task 27 200 0.135
+Task 84 800 0.105
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 269.7 160
+T1 1 516.2 160
+T2 1 472.7 160
+T3 1 414.7 160
+T4 1 339.3 160
+T5 1 55.1 160
+GW1
+T0 1 194.3 160
+T1 1 162.4 160
+T2 1 84.1 160
+T3 1 60.9 160
+T4 1 78.3 160
+T5 1 243.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 65
+Meet Task : 66
+Miss Task : 0
+Meet Ratio : 1.01538
+Energy Consumption : 8199.75
+Lifetime : 0.100979
+=========== GW_1 ===========
+Total Task : 185
+Meet Task : 0
+Miss Task : 185
+Meet Ratio : 0
+Energy Consumption : 8311.27
+Lifetime : 0.0996237
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+001
+-------------
+GW 1.98
+Task 83 100 0.83
+Task 66 100 0.66
+Task 31 100 0.31
+Task 13 100 0.13
+Task 5 200 0.025
+Task 10 400 0.025
+GW 1.98375
+Task 85 100 0.85
+Task 51 100 0.51
+Task 93 200 0.465
+Task 41 400 0.1025
+Task 13 400 0.0325
+Task 19 800 0.02375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 240.7 160
+T1 1 191.4 160
+T2 1 89.9 160
+T3 1 37.7 160
+T4 1 14.5 160
+T5 1 29 160
+GW1
+T0 1 246.5 160
+T1 1 147.9 160
+T2 1 269.7 160
+T3 1 118.9 160
+T4 1 37.7 160
+T5 1 55.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 190
+Meet Task : 0
+Miss Task : 190
+Meet Ratio : 0
+Energy Consumption : 8453.77
+Lifetime : 0.0979444
+=========== GW_1 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+002
+-------------
+GW 1.99
+Task 52 100 0.52
+Task 101 200 0.505
+Task 152 400 0.38
+Task 208 800 0.26
+Task 160 800 0.2
+Task 100 800 0.125
+GW 1.98125
+Task 62 100 0.62
+Task 51 100 0.51
+Task 39 100 0.39
+Task 30 100 0.3
+Task 103 800 0.12875
+Task 26 800 0.0325
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 150.8 160
+T1 1 292.9 160
+T2 1 440.8 160
+T3 1 603.2 160
+T4 1 464 160
+T5 1 290 160
+GW1
+T0 1 179.8 160
+T1 1 147.9 160
+T2 1 113.1 160
+T3 1 87 160
+T4 1 298.7 160
+T5 1 75.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 85
+Meet Task : 75
+Miss Task : 10
+Meet Ratio : 0.882353
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 170
+Meet Task : 0
+Miss Task : 170
+Meet Ratio : 0
+Energy Consumption : 8221.27
+Lifetime : 0.100714
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+003
+-------------
+GW 1.9875
+Task 66 100 0.66
+Task 46 100 0.46
+Task 171 400 0.4275
+Task 97 400 0.2425
+Task 81 800 0.10125
+Task 77 800 0.09625
+GW 1.9825
+Task 63 100 0.63
+Task 56 100 0.56
+Task 31 100 0.31
+Task 27 100 0.27
+Task 23 200 0.115
+Task 39 400 0.0975
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 191.4 160
+T1 1 133.4 160
+T2 1 495.9 160
+T3 1 281.3 160
+T4 1 234.9 160
+T5 1 223.3 160
+GW1
+T0 1 182.7 160
+T1 1 162.4 160
+T2 1 89.9 160
+T3 1 78.3 160
+T4 1 66.7 160
+T5 1 113.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 110
+Meet Task : 70
+Miss Task : 40
+Meet Ratio : 0.636364
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 190
+Meet Task : 0
+Miss Task : 190
+Meet Ratio : 0
+Energy Consumption : 8453.77
+Lifetime : 0.0979444
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+004
+-------------
+GW 1.99
+Task 151 200 0.755
+Task 93 200 0.465
+Task 124 400 0.31
+Task 97 400 0.2425
+Task 161 800 0.20125
+Task 13 800 0.01625
+GW 1.98
+Task 61 100 0.61
+Task 60 100 0.6
+Task 42 100 0.42
+Task 30 200 0.15
+Task 20 200 0.1
+Task 80 800 0.1
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 437.9 160
+T1 1 269.7 160
+T2 1 359.6 160
+T3 1 281.3 160
+T4 1 466.9 160
+T5 1 37.7 160
+GW1
+T0 1 176.9 160
+T1 1 174 160
+T2 1 121.8 160
+T3 1 87 160
+T4 1 58 160
+T5 1 232 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 70
+Meet Task : 71
+Miss Task : 0
+Meet Ratio : 1.01429
+Energy Consumption : 8346.97
+Lifetime : 0.0991976
+=========== GW_1 ===========
+Total Task : 165
+Meet Task : 20
+Miss Task : 145
+Meet Ratio : 0.121212
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+005
+-------------
+GW 1.99125
+Task 164 200 0.82
+Task 103 200 0.515
+Task 68 200 0.34
+Task 87 400 0.2175
+Task 26 400 0.065
+Task 27 800 0.03375
+GW 1.995
+Task 113 200 0.565
+Task 217 400 0.5425
+Task 188 400 0.47
+Task 303 800 0.37875
+Task 21 800 0.02625
+Task 10 800 0.0125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 475.6 160
+T1 1 298.7 160
+T2 1 197.2 160
+T3 1 252.3 160
+T4 1 75.4 160
+T5 1 78.3 160
+GW1
+T0 1 327.7 160
+T1 1 629.3 160
+T2 1 545.2 160
+T3 1 878.7 160
+T4 1 60.9 160
+T5 1 29 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 85
+Meet Task : 75
+Miss Task : 10
+Meet Ratio : 0.882353
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 55
+Meet Task : 57
+Miss Task : 0
+Meet Ratio : 1.03636
+Energy Consumption : 7790.92
+Lifetime : 0.106277
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+006
+-------------
+GW 1.9775
+Task 70 100 0.7
+Task 68 100 0.68
+Task 64 200 0.32
+Task 44 200 0.22
+Task 7 200 0.035
+Task 9 400 0.0225
+GW 1.98625
+Task 67 100 0.67
+Task 51 100 0.51
+Task 83 200 0.415
+Task 239 800 0.29875
+Task 48 800 0.06
+Task 26 800 0.0325
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 203 160
+T1 1 197.2 160
+T2 1 185.6 160
+T3 1 127.6 160
+T4 1 20.3 160
+T5 1 26.1 160
+GW1
+T0 1 194.3 160
+T1 1 147.9 160
+T2 1 240.7 160
+T3 1 693.1 160
+T4 1 139.2 160
+T5 1 75.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 151
+Meet Task : 46
+Miss Task : 105
+Meet Ratio : 0.304636
+Energy Consumption : 8498.77
+Lifetime : 0.0974258
+=========== GW_1 ===========
+Total Task : 115
+Meet Task : 55
+Miss Task : 60
+Meet Ratio : 0.478261
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+007
+-------------
+GW 1.98
+Task 57 100 0.57
+Task 47 100 0.47
+Task 88 200 0.44
+Task 59 200 0.295
+Task 68 400 0.17
+Task 28 800 0.035
+GW 1.99625
+Task 139 200 0.695
+Task 233 400 0.5825
+Task 322 800 0.4025
+Task 124 800 0.155
+Task 113 800 0.14125
+Task 16 800 0.02
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 165.3 160
+T1 1 136.3 160
+T2 1 255.2 160
+T3 1 171.1 160
+T4 1 197.2 160
+T5 1 81.2 160
+GW1
+T0 1 403.1 160
+T1 1 675.7 160
+T2 1 933.8 160
+T3 1 359.6 160
+T4 1 327.7 160
+T5 1 46.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 42
+Miss Task : 93
+Meet Ratio : 0.311111
+Energy Consumption : 8461.27
+Lifetime : 0.0978576
+=========== GW_1 ===========
+Total Task : 50
+Meet Task : 51
+Miss Task : 0
+Meet Ratio : 1.02
+Energy Consumption : 7715.55
+Lifetime : 0.107316
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+008
+-------------
+GW 1.9925
+Task 113 200 0.565
+Task 198 400 0.495
+Task 155 400 0.3875
+Task 109 400 0.2725
+Task 85 400 0.2125
+Task 24 400 0.06
+GW 1.99
+Task 71 100 0.71
+Task 99 200 0.495
+Task 150 400 0.375
+Task 100 400 0.25
+Task 35 400 0.0875
+Task 58 800 0.0725
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 327.7 160
+T1 1 574.2 160
+T2 1 449.5 160
+T3 1 316.1 160
+T4 1 246.5 160
+T5 1 69.6 160
+GW1
+T0 1 205.9 160
+T1 1 287.1 160
+T2 1 435 160
+T3 1 290 160
+T4 1 101.5 160
+T5 1 168.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 70
+Meet Task : 71
+Miss Task : 0
+Meet Ratio : 1.01429
+Energy Consumption : 8287.87
+Lifetime : 0.099905
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 65
+Miss Task : 30
+Meet Ratio : 0.684211
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+009
+-------------
+GW 1.98625
+Task 89 100 0.89
+Task 89 200 0.445
+Task 76 200 0.38
+Task 30 200 0.15
+Task 34 400 0.085
+Task 29 800 0.03625
+GW 1.98
+Task 75 100 0.75
+Task 58 100 0.58
+Task 52 100 0.52
+Task 8 100 0.08
+Task 6 200 0.03
+Task 16 800 0.02
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 258.1 160
+T1 1 258.1 160
+T2 1 220.4 160
+T3 1 87 160
+T4 1 98.6 160
+T5 1 84.1 160
+GW1
+T0 1 217.5 160
+T1 1 168.2 160
+T2 1 150.8 160
+T3 1 23.2 160
+T4 1 17.4 160
+T5 1 46.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 115
+Meet Task : 45
+Miss Task : 70
+Meet Ratio : 0.391304
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_1 ===========
+Total Task : 187
+Meet Task : 23
+Miss Task : 164
+Meet Ratio : 0.122995
+Energy Consumption : 8326.27
+Lifetime : 0.0994442
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+010
+-------------
+GW 1.9825
+Task 89 100 0.89
+Task 113 200 0.565
+Task 50 200 0.25
+Task 25 200 0.125
+Task 18 200 0.09
+Task 25 400 0.0625
+GW 1.98
+Task 44 100 0.44
+Task 43 100 0.43
+Task 85 200 0.425
+Task 73 200 0.365
+Task 115 400 0.2875
+Task 26 800 0.0325
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 258.1 160
+T1 1 327.7 160
+T2 1 145 160
+T3 1 72.5 160
+T4 1 52.2 160
+T5 1 72.5 160
+GW1
+T0 1 127.6 160
+T1 1 124.7 160
+T2 1 246.5 160
+T3 1 211.7 160
+T4 1 333.5 160
+T5 1 75.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 130
+Meet Task : 39
+Miss Task : 91
+Meet Ratio : 0.3
+Energy Consumption : 8596.27
+Lifetime : 0.0963208
+=========== GW_1 ===========
+Total Task : 135
+Meet Task : 23
+Miss Task : 112
+Meet Ratio : 0.17037
+Energy Consumption : 8461.27
+Lifetime : 0.0978576
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+011
+-------------
+GW 1.9825
+Task 71 100 0.71
+Task 88 200 0.44
+Task 160 400 0.4
+Task 102 400 0.255
+Task 38 400 0.095
+Task 33 400 0.0825
+GW 1.98875
+Task 70 100 0.7
+Task 162 400 0.405
+Task 128 400 0.32
+Task 121 400 0.3025
+Task 120 800 0.15
+Task 89 800 0.11125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 205.9 160
+T1 1 255.2 160
+T2 1 464 160
+T3 1 295.8 160
+T4 1 110.2 160
+T5 1 95.7 160
+GW1
+T0 1 203 160
+T1 1 469.8 160
+T2 1 371.2 160
+T3 1 350.9 160
+T4 1 348 160
+T5 1 258.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 60
+Miss Task : 40
+Meet Ratio : 0.6
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 80
+Meet Task : 80
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+012
+-------------
+GW 1.9725
+Task 66 100 0.66
+Task 45 100 0.45
+Task 29 100 0.29
+Task 46 200 0.23
+Task 175 800 0.21875
+Task 99 800 0.12375
+GW 1.99
+Task 76 100 0.76
+Task 123 200 0.615
+Task 84 400 0.21
+Task 84 400 0.21
+Task 58 400 0.145
+Task 40 800 0.05
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 191.4 160
+T1 1 130.5 160
+T2 1 84.1 160
+T3 1 133.4 160
+T4 1 507.5 160
+T5 1 287.1 160
+GW1
+T0 1 220.4 160
+T1 1 356.7 160
+T2 1 243.6 160
+T3 1 243.6 160
+T4 1 168.2 160
+T5 1 116 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 150
+Meet Task : 20
+Miss Task : 130
+Meet Ratio : 0.133333
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 65
+Miss Task : 30
+Meet Ratio : 0.684211
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+013
+-------------
+GW 1.9775
+Task 87 100 0.87
+Task 56 100 0.56
+Task 31 100 0.31
+Task 35 200 0.175
+Task 18 400 0.045
+Task 7 400 0.0175
+GW 1.99
+Task 85 100 0.85
+Task 63 200 0.315
+Task 105 400 0.2625
+Task 83 400 0.2075
+Task 143 800 0.17875
+Task 141 800 0.17625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 252.3 160
+T1 1 162.4 160
+T2 1 89.9 160
+T3 1 101.5 160
+T4 1 52.2 160
+T5 1 20.3 160
+GW1
+T0 1 246.5 160
+T1 1 182.7 160
+T2 1 304.5 160
+T3 1 240.7 160
+T4 1 414.7 160
+T5 1 408.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 160
+Meet Task : 20
+Miss Task : 140
+Meet Ratio : 0.125
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 90
+Meet Task : 70
+Miss Task : 20
+Meet Ratio : 0.777778
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+014
+-------------
+GW 1.9875
+Task 92 100 0.92
+Task 130 200 0.65
+Task 55 200 0.275
+Task 31 400 0.0775
+Task 20 400 0.05
+Task 6 400 0.015
+GW 1.99375
+Task 336 400 0.84
+Task 263 400 0.6575
+Task 113 400 0.2825
+Task 47 400 0.1175
+Task 40 800 0.05
+Task 37 800 0.04625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 266.8 160
+T1 1 377 160
+T2 1 159.5 160
+T3 1 89.9 160
+T4 1 58 160
+T5 1 17.4 160
+GW1
+T0 1 974.4 160
+T1 1 762.7 160
+T2 1 327.7 160
+T3 1 136.3 160
+T4 1 116 160
+T5 1 107.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 110
+Meet Task : 70
+Miss Task : 40
+Meet Ratio : 0.636364
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 50
+Meet Task : 50
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 7797.52
+Lifetime : 0.106188
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+015
+-------------
+GW 1.98
+Task 78 100 0.78
+Task 80 200 0.4
+Task 71 200 0.355
+Task 102 400 0.255
+Task 50 400 0.125
+Task 52 800 0.065
+GW 1.98375
+Task 85 100 0.85
+Task 105 200 0.525
+Task 88 200 0.44
+Task 45 400 0.1125
+Task 13 400 0.0325
+Task 19 800 0.02375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 226.2 160
+T1 1 232 160
+T2 1 205.9 160
+T3 1 295.8 160
+T4 1 145 160
+T5 1 150.8 160
+GW1
+T0 1 246.5 160
+T1 1 304.5 160
+T2 1 255.2 160
+T3 1 130.5 160
+T4 1 37.7 160
+T5 1 55.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 105
+Meet Task : 60
+Miss Task : 45
+Meet Ratio : 0.571429
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 65
+Miss Task : 40
+Meet Ratio : 0.619048
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+016
+-------------
+GW 1.98625
+Task 78 100 0.78
+Task 28 100 0.28
+Task 54 200 0.27
+Task 104 400 0.26
+Task 92 400 0.23
+Task 133 800 0.16625
+GW 1.99
+Task 59 100 0.59
+Task 94 200 0.47
+Task 150 400 0.375
+Task 145 400 0.3625
+Task 45 400 0.1125
+Task 64 800 0.08
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 226.2 160
+T1 1 81.2 160
+T2 1 156.6 160
+T3 1 301.6 160
+T4 1 266.8 160
+T5 1 385.7 160
+GW1
+T0 1 171.1 160
+T1 1 272.6 160
+T2 1 435 160
+T3 1 420.5 160
+T4 1 130.5 160
+T5 1 185.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 65
+Miss Task : 30
+Meet Ratio : 0.684211
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+017
+-------------
+GW 1.9875
+Task 165 200 0.825
+Task 151 200 0.755
+Task 53 200 0.265
+Task 15 200 0.075
+Task 7 200 0.035
+Task 13 400 0.0325
+GW 1.98
+Task 82 100 0.82
+Task 67 100 0.67
+Task 80 200 0.4
+Task 24 400 0.06
+Task 8 400 0.02
+Task 4 400 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 478.5 160
+T1 1 437.9 160
+T2 1 153.7 160
+T3 1 43.5 160
+T4 1 20.3 160
+T5 1 37.7 160
+GW1
+T0 1 237.8 160
+T1 1 194.3 160
+T2 1 232 160
+T3 1 69.6 160
+T4 1 23.2 160
+T5 1 11.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 112
+Meet Task : 115
+Miss Task : 0
+Meet Ratio : 1.02679
+Energy Consumption : 8740.39
+Lifetime : 0.0947326
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 50
+Miss Task : 80
+Meet Ratio : 0.384615
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+018
+-------------
+GW 1.99
+Task 94 100 0.94
+Task 132 200 0.66
+Task 120 400 0.3
+Task 23 400 0.0575
+Task 7 400 0.0175
+Task 12 800 0.015
+GW 1.995
+Task 56 100 0.56
+Task 86 200 0.43
+Task 56 200 0.28
+Task 197 800 0.24625
+Task 197 800 0.24625
+Task 186 800 0.2325
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 272.6 160
+T1 1 382.8 160
+T2 1 348 160
+T3 1 66.7 160
+T4 1 20.3 160
+T5 1 34.8 160
+GW1
+T0 1 162.4 160
+T1 1 249.4 160
+T2 1 162.4 160
+T3 1 571.3 160
+T4 1 571.3 160
+T5 1 539.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 95
+Meet Task : 97
+Miss Task : 0
+Meet Ratio : 1.02105
+Energy Consumption : 8771.17
+Lifetime : 0.0944001
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 67
+Miss Task : 28
+Meet Ratio : 0.705263
+Energy Consumption : 8663.77
+Lifetime : 0.0955704
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+019
+-------------
+GW 1.98125
+Task 88 100 0.88
+Task 82 100 0.82
+Task 26 200 0.13
+Task 25 200 0.125
+Task 6 400 0.015
+Task 9 800 0.01125
+GW 1.98375
+Task 87 100 0.87
+Task 79 100 0.79
+Task 96 400 0.24
+Task 16 400 0.04
+Task 9 400 0.0225
+Task 17 800 0.02125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 237.8 160
+T2 1 75.4 160
+T3 1 72.5 160
+T4 1 17.4 160
+T5 1 26.1 160
+GW1
+T0 1 252.3 160
+T1 1 229.1 160
+T2 1 278.4 160
+T3 1 46.4 160
+T4 1 26.1 160
+T5 1 49.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 44
+Miss Task : 91
+Meet Ratio : 0.325926
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 115
+Meet Task : 63
+Miss Task : 52
+Meet Ratio : 0.547826
+Energy Consumption : 8626.27
+Lifetime : 0.0959858
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+020
+-------------
+GW 1.9925
+Task 80 100 0.8
+Task 54 100 0.54
+Task 100 200 0.5
+Task 43 400 0.1075
+Task 14 400 0.035
+Task 8 800 0.01
+GW 1.98875
+Task 78 100 0.78
+Task 109 200 0.545
+Task 169 400 0.4225
+Task 48 400 0.12
+Task 32 400 0.08
+Task 33 800 0.04125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 232 160
+T1 1 156.6 160
+T2 1 290 160
+T3 1 124.7 160
+T4 1 40.6 160
+T5 1 23.2 160
+GW1
+T0 1 226.2 160
+T1 1 316.1 160
+T2 1 490.1 160
+T3 1 139.2 160
+T4 1 92.8 160
+T5 1 95.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 65
+Miss Task : 30
+Meet Ratio : 0.684211
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+021
+-------------
+GW 1.9925
+Task 45 100 0.45
+Task 44 100 0.44
+Task 84 200 0.42
+Task 149 400 0.3725
+Task 166 800 0.2075
+Task 82 800 0.1025
+GW 1.99125
+Task 92 100 0.92
+Task 111 200 0.555
+Task 48 200 0.24
+Task 154 800 0.1925
+Task 50 800 0.0625
+Task 17 800 0.02125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 130.5 160
+T1 1 127.6 160
+T2 1 243.6 160
+T3 1 432.1 160
+T4 1 481.4 160
+T5 1 237.8 160
+GW1
+T0 1 266.8 160
+T1 1 321.9 160
+T2 1 139.2 160
+T3 1 446.6 160
+T4 1 145 160
+T5 1 49.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 42
+Miss Task : 78
+Meet Ratio : 0.35
+Energy Consumption : 8581.27
+Lifetime : 0.0964892
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 65
+Miss Task : 30
+Meet Ratio : 0.684211
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+022
+-------------
+GW 1.97875
+Task 85 100 0.85
+Task 71 100 0.71
+Task 48 200 0.24
+Task 29 200 0.145
+Task 9 400 0.0225
+Task 9 800 0.01125
+GW 1.9875
+Task 77 100 0.77
+Task 52 100 0.52
+Task 45 100 0.45
+Task 37 200 0.185
+Task 17 400 0.0425
+Task 16 800 0.02
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 246.5 160
+T1 1 205.9 160
+T2 1 139.2 160
+T3 1 84.1 160
+T4 1 26.1 160
+T5 1 26.1 160
+GW1
+T0 1 223.3 160
+T1 1 150.8 160
+T2 1 130.5 160
+T3 1 107.3 160
+T4 1 49.3 160
+T5 1 46.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 44
+Miss Task : 91
+Meet Ratio : 0.325926
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 155
+Meet Task : 23
+Miss Task : 132
+Meet Ratio : 0.148387
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+023
+-------------
+GW 1.99125
+Task 69 100 0.69
+Task 267 400 0.6675
+Task 120 400 0.3
+Task 66 400 0.165
+Task 78 800 0.0975
+Task 57 800 0.07125
+GW 1.99375
+Task 193 200 0.965
+Task 135 400 0.3375
+Task 104 400 0.26
+Task 60 400 0.15
+Task 121 800 0.15125
+Task 104 800 0.13
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 200.1 160
+T1 1 774.3 160
+T2 1 348 160
+T3 1 191.4 160
+T4 1 226.2 160
+T5 1 165.3 160
+GW1
+T0 1 559.7 160
+T1 1 391.5 160
+T2 1 301.6 160
+T3 1 174 160
+T4 1 350.9 160
+T5 1 301.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 80
+Meet Task : 80
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 60
+Meet Task : 60
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8116.27
+Lifetime : 0.102017
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+024
+-------------
+GW 1.98875
+Task 91 100 0.91
+Task 164 200 0.82
+Task 36 200 0.18
+Task 14 400 0.035
+Task 20 800 0.025
+Task 15 800 0.01875
+GW 1.97625
+Task 89 100 0.89
+Task 73 100 0.73
+Task 20 100 0.2
+Task 11 200 0.055
+Task 11 200 0.055
+Task 37 800 0.04625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 263.9 160
+T1 1 475.6 160
+T2 1 104.4 160
+T3 1 40.6 160
+T4 1 58 160
+T5 1 43.5 160
+GW1
+T0 1 258.1 160
+T1 1 211.7 160
+T2 1 58 160
+T3 1 31.9 160
+T4 1 31.9 160
+T5 1 107.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 85
+Miss Task : 15
+Meet Ratio : 0.85
+Energy Consumption : 8791.27
+Lifetime : 0.0941843
+=========== GW_1 ===========
+Total Task : 165
+Meet Task : 50
+Miss Task : 115
+Meet Ratio : 0.30303
+Energy Consumption : 8498.77
+Lifetime : 0.0974258
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+025
+-------------
+GW 1.99125
+Task 181 200 0.905
+Task 345 400 0.8625
+Task 39 400 0.0975
+Task 70 800 0.0875
+Task 21 800 0.02625
+Task 10 800 0.0125
+GW 1.9775
+Task 72 100 0.72
+Task 55 100 0.55
+Task 47 100 0.47
+Task 61 400 0.1525
+Task 26 400 0.065
+Task 16 800 0.02
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 524.9 160
+T1 1 1000.5 160
+T2 1 113.1 160
+T3 1 203 160
+T4 1 60.9 160
+T5 1 29 160
+GW1
+T0 1 208.8 160
+T1 1 159.5 160
+T2 1 136.3 160
+T3 1 176.9 160
+T4 1 75.4 160
+T5 1 46.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 55
+Meet Task : 57
+Miss Task : 0
+Meet Ratio : 1.03636
+Energy Consumption : 7790.92
+Lifetime : 0.106277
+=========== GW_1 ===========
+Total Task : 145
+Meet Task : 30
+Miss Task : 115
+Meet Ratio : 0.206897
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+026
+-------------
+GW 1.98125
+Task 74 100 0.74
+Task 40 100 0.4
+Task 31 100 0.31
+Task 112 400 0.28
+Task 117 800 0.14625
+Task 84 800 0.105
+GW 1.99125
+Task 95 100 0.95
+Task 135 200 0.675
+Task 43 200 0.215
+Task 47 400 0.1175
+Task 19 800 0.02375
+Task 8 800 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 214.6 160
+T1 1 116 160
+T2 1 89.9 160
+T3 1 324.8 160
+T4 1 339.3 160
+T5 1 243.6 160
+GW1
+T0 1 275.5 160
+T1 1 391.5 160
+T2 1 124.7 160
+T3 1 136.3 160
+T4 1 55.1 160
+T5 1 23.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 140
+Meet Task : 30
+Miss Task : 110
+Meet Ratio : 0.214286
+Energy Consumption : 8641.27
+Lifetime : 0.0958192
+=========== GW_1 ===========
+Total Task : 100
+Meet Task : 70
+Miss Task : 30
+Meet Ratio : 0.7
+Energy Consumption : 8723.77
+Lifetime : 0.094913
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+027
+-------------
+GW 1.99125
+Task 174 200 0.87
+Task 85 200 0.425
+Task 165 400 0.4125
+Task 77 400 0.1925
+Task 40 800 0.05
+Task 33 800 0.04125
+GW 1.98125
+Task 90 100 0.9
+Task 59 100 0.59
+Task 41 100 0.41
+Task 14 400 0.035
+Task 11 400 0.0275
+Task 15 800 0.01875
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 504.6 160
+T1 1 246.5 160
+T2 1 478.5 160
+T3 1 223.3 160
+T4 1 116 160
+T5 1 95.7 160
+GW1
+T0 1 261 160
+T1 1 171.1 160
+T2 1 118.9 160
+T3 1 40.6 160
+T4 1 31.9 160
+T5 1 43.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 70
+Meet Task : 70
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8435.02
+Lifetime : 0.0981621
+=========== GW_1 ===========
+Total Task : 145
+Meet Task : 36
+Miss Task : 109
+Meet Ratio : 0.248276
+Energy Consumption : 8633.77
+Lifetime : 0.0959024
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+028
+-------------
+GW 1.98375
+Task 79 100 0.79
+Task 110 200 0.55
+Task 176 400 0.44
+Task 51 400 0.1275
+Task 16 400 0.04
+Task 29 800 0.03625
+GW 1.99
+Task 90 100 0.9
+Task 120 200 0.6
+Task 52 200 0.26
+Task 46 400 0.115
+Task 74 800 0.0925
+Task 18 800 0.0225
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 229.1 160
+T1 1 319 160
+T2 1 510.4 160
+T3 1 147.9 160
+T4 1 46.4 160
+T5 1 84.1 160
+GW1
+T0 1 261 160
+T1 1 348 160
+T2 1 150.8 160
+T3 1 133.4 160
+T4 1 214.6 160
+T5 1 52.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 95
+Meet Task : 75
+Miss Task : 20
+Meet Ratio : 0.789474
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 100
+Meet Task : 60
+Miss Task : 40
+Meet Ratio : 0.6
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+029
+-------------
+GW 1.995
+Task 118 200 0.59
+Task 110 200 0.55
+Task 194 400 0.485
+Task 113 400 0.2825
+Task 54 800 0.0675
+Task 16 800 0.02
+GW 1.98375
+Task 53 100 0.53
+Task 38 100 0.38
+Task 33 100 0.33
+Task 60 200 0.3
+Task 97 400 0.2425
+Task 161 800 0.20125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 342.2 160
+T1 1 319 160
+T2 1 562.6 160
+T3 1 327.7 160
+T4 1 156.6 160
+T5 1 46.4 160
+GW1
+T0 1 153.7 160
+T1 1 110.2 160
+T2 1 95.7 160
+T3 1 174 160
+T4 1 281.3 160
+T5 1 466.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 70
+Meet Task : 71
+Miss Task : 0
+Meet Ratio : 1.01429
+Energy Consumption : 8353.05
+Lifetime : 0.0991255
+=========== GW_1 ===========
+Total Task : 155
+Meet Task : 20
+Miss Task : 135
+Meet Ratio : 0.129032
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+030
+-------------
+GW 1.98625
+Task 93 100 0.93
+Task 164 200 0.82
+Task 30 200 0.15
+Task 7 200 0.035
+Task 28 800 0.035
+Task 13 800 0.01625
+GW 1.98375
+Task 55 100 0.55
+Task 52 100 0.52
+Task 67 200 0.335
+Task 49 200 0.245
+Task 134 800 0.1675
+Task 133 800 0.16625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 269.7 160
+T1 1 475.6 160
+T2 1 87 160
+T3 1 20.3 160
+T4 1 81.2 160
+T5 1 37.7 160
+GW1
+T0 1 159.5 160
+T1 1 150.8 160
+T2 1 194.3 160
+T3 1 142.1 160
+T4 1 388.6 160
+T5 1 385.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 111
+Meet Task : 81
+Miss Task : 30
+Meet Ratio : 0.72973
+Energy Consumption : 8798.77
+Lifetime : 0.094104
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 56
+Miss Task : 74
+Meet Ratio : 0.430769
+Energy Consumption : 8573.77
+Lifetime : 0.0965736
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+031
+-------------
+GW 1.9925
+Task 148 200 0.74
+Task 136 200 0.68
+Task 84 200 0.42
+Task 31 400 0.0775
+Task 15 400 0.0375
+Task 30 800 0.0375
+GW 1.975
+Task 66 100 0.66
+Task 50 100 0.5
+Task 89 200 0.445
+Task 55 200 0.275
+Task 51 800 0.06375
+Task 25 800 0.03125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 429.2 160
+T1 1 394.4 160
+T2 1 243.6 160
+T3 1 89.9 160
+T4 1 43.5 160
+T5 1 87 160
+GW1
+T0 1 191.4 160
+T1 1 145 160
+T2 1 258.1 160
+T3 1 159.5 160
+T4 1 147.9 160
+T5 1 72.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 85
+Meet Task : 86
+Miss Task : 0
+Meet Ratio : 1.01176
+Energy Consumption : 8732.59
+Lifetime : 0.0948173
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 55
+Miss Task : 75
+Meet Ratio : 0.423077
+Energy Consumption : 8558.77
+Lifetime : 0.0967428
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+032
+-------------
+GW 1.98875
+Task 82 100 0.82
+Task 73 100 0.73
+Task 50 200 0.25
+Task 70 800 0.0875
+Task 43 800 0.05375
+Task 38 800 0.0475
+GW 1.985
+Task 92 100 0.92
+Task 63 100 0.63
+Task 40 200 0.2
+Task 35 400 0.0875
+Task 30 400 0.075
+Task 58 800 0.0725
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 237.8 160
+T1 1 211.7 160
+T2 1 145 160
+T3 1 203 160
+T4 1 124.7 160
+T5 1 110.2 160
+GW1
+T0 1 266.8 160
+T1 1 182.7 160
+T2 1 116 160
+T3 1 101.5 160
+T4 1 87 160
+T5 1 168.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 115
+Meet Task : 55
+Miss Task : 60
+Meet Ratio : 0.478261
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8641.27
+Lifetime : 0.0958192
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+033
+-------------
+GW 1.9925
+Task 81 100 0.81
+Task 35 100 0.35
+Task 60 200 0.3
+Task 79 400 0.1975
+Task 134 800 0.1675
+Task 134 800 0.1675
+GW 1.9925
+Task 87 100 0.87
+Task 66 100 0.66
+Task 82 200 0.41
+Task 6 200 0.03
+Task 5 400 0.0125
+Task 8 800 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 234.9 160
+T1 1 101.5 160
+T2 1 174 160
+T3 1 229.1 160
+T4 1 388.6 160
+T5 1 388.6 160
+GW1
+T0 1 252.3 160
+T1 1 191.4 160
+T2 1 237.8 160
+T3 1 17.4 160
+T4 1 14.5 160
+T5 1 23.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 50
+Miss Task : 70
+Meet Ratio : 0.416667
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 136
+Meet Task : 76
+Miss Task : 60
+Meet Ratio : 0.558824
+Energy Consumption : 8723.77
+Lifetime : 0.094913
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+034
+-------------
+GW 1.98875
+Task 75 100 0.75
+Task 139 200 0.695
+Task 58 200 0.29
+Task 79 400 0.1975
+Task 17 400 0.0425
+Task 11 800 0.01375
+GW 1.99
+Task 94 100 0.94
+Task 173 200 0.865
+Task 29 200 0.145
+Task 3 200 0.015
+Task 3 200 0.015
+Task 4 400 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 217.5 160
+T1 1 403.1 160
+T2 1 168.2 160
+T3 1 229.1 160
+T4 1 49.3 160
+T5 1 31.9 160
+GW1
+T0 1 272.6 160
+T1 1 501.7 160
+T2 1 84.1 160
+T3 1 8.7 160
+T4 1 8.7 160
+T5 1 11.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 105
+Meet Task : 73
+Miss Task : 32
+Meet Ratio : 0.695238
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 132
+Meet Task : 112
+Miss Task : 20
+Meet Ratio : 0.848485
+Energy Consumption : 8993.77
+Lifetime : 0.0920637
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+035
+-------------
+GW 1.9925
+Task 82 100 0.82
+Task 236 400 0.59
+Task 395 800 0.49375
+Task 50 800 0.0625
+Task 11 800 0.01375
+Task 10 800 0.0125
+GW 1.98
+Task 138 200 0.69
+Task 122 200 0.61
+Task 79 200 0.395
+Task 23 200 0.115
+Task 20 200 0.1
+Task 14 200 0.07
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 237.8 160
+T1 1 684.4 160
+T2 1 1145.5 160
+T3 1 145 160
+T4 1 31.9 160
+T5 1 29 160
+GW1
+T0 1 400.2 160
+T1 1 353.8 160
+T2 1 229.1 160
+T3 1 66.7 160
+T4 1 58 160
+T5 1 40.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 70
+Meet Task : 72
+Miss Task : 0
+Meet Ratio : 1.02857
+Energy Consumption : 8248.8
+Lifetime : 0.100378
+=========== GW_1 ===========
+Total Task : 122
+Meet Task : 88
+Miss Task : 34
+Meet Ratio : 0.721311
+Energy Consumption : 8663.77
+Lifetime : 0.0955704
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+036
+-------------
+GW 1.98
+Task 92 100 0.92
+Task 52 100 0.52
+Task 38 200 0.19
+Task 72 400 0.18
+Task 62 400 0.155
+Task 12 800 0.015
+GW 1.98875
+Task 83 100 0.83
+Task 139 200 0.695
+Task 59 200 0.295
+Task 40 400 0.1
+Task 23 400 0.0575
+Task 9 800 0.01125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 266.8 160
+T1 1 150.8 160
+T2 1 110.2 160
+T3 1 208.8 160
+T4 1 179.8 160
+T5 1 34.8 160
+GW1
+T0 1 240.7 160
+T1 1 403.1 160
+T2 1 171.1 160
+T3 1 116 160
+T4 1 66.7 160
+T5 1 26.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 68
+Miss Task : 37
+Meet Ratio : 0.647619
+Energy Consumption : 8708.77
+Lifetime : 0.0950765
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+037
+-------------
+GW 1.98625
+Task 43 100 0.43
+Task 40 100 0.4
+Task 68 200 0.34
+Task 62 200 0.31
+Task 104 400 0.26
+Task 197 800 0.24625
+GW 1.975
+Task 90 100 0.9
+Task 76 100 0.76
+Task 23 200 0.115
+Task 19 200 0.095
+Task 23 400 0.0575
+Task 19 400 0.0475
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 124.7 160
+T1 1 116 160
+T2 1 197.2 160
+T3 1 179.8 160
+T4 1 301.6 160
+T5 1 571.3 160
+GW1
+T0 1 261 160
+T1 1 220.4 160
+T2 1 66.7 160
+T3 1 55.1 160
+T4 1 66.7 160
+T5 1 55.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 40
+Miss Task : 95
+Meet Ratio : 0.296296
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_1 ===========
+Total Task : 140
+Meet Task : 47
+Miss Task : 93
+Meet Ratio : 0.335714
+Energy Consumption : 8326.27
+Lifetime : 0.0994442
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+038
+-------------
+GW 1.9825
+Task 68 100 0.68
+Task 130 200 0.65
+Task 82 200 0.41
+Task 73 400 0.1825
+Task 14 400 0.035
+Task 10 400 0.025
+GW 1.9775
+Task 81 100 0.81
+Task 49 100 0.49
+Task 73 200 0.365
+Task 38 200 0.19
+Task 45 400 0.1125
+Task 4 400 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 197.2 160
+T1 1 377 160
+T2 1 237.8 160
+T3 1 211.7 160
+T4 1 40.6 160
+T5 1 29 160
+GW1
+T0 1 234.9 160
+T1 1 142.1 160
+T2 1 211.7 160
+T3 1 110.2 160
+T4 1 130.5 160
+T5 1 11.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 110
+Meet Task : 80
+Miss Task : 30
+Meet Ratio : 0.727273
+Energy Consumption : 8761.27
+Lifetime : 0.0945068
+=========== GW_1 ===========
+Total Task : 140
+Meet Task : 46
+Miss Task : 94
+Meet Ratio : 0.328571
+Energy Consumption : 8611.27
+Lifetime : 0.096153
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+039
+-------------
+GW 1.99125
+Task 59 100 0.59
+Task 55 100 0.55
+Task 64 200 0.32
+Task 103 400 0.2575
+Task 85 400 0.2125
+Task 49 800 0.06125
+GW 1.98875
+Task 61 100 0.61
+Task 96 200 0.48
+Task 91 200 0.455
+Task 94 400 0.235
+Task 156 800 0.195
+Task 11 800 0.01375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 171.1 160
+T1 1 159.5 160
+T2 1 185.6 160
+T3 1 298.7 160
+T4 1 246.5 160
+T5 1 142.1 160
+GW1
+T0 1 176.9 160
+T1 1 278.4 160
+T2 1 263.9 160
+T3 1 272.6 160
+T4 1 452.4 160
+T5 1 31.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 60
+Miss Task : 65
+Meet Ratio : 0.48
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 100
+Meet Task : 60
+Miss Task : 40
+Meet Ratio : 0.6
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+040
+-------------
+GW 1.97875
+Task 76 100 0.76
+Task 41 100 0.41
+Task 32 100 0.32
+Task 60 200 0.3
+Task 103 800 0.12875
+Task 48 800 0.06
+GW 1.99375
+Task 78 100 0.78
+Task 106 200 0.53
+Task 143 400 0.3575
+Task 69 400 0.1725
+Task 36 400 0.09
+Task 51 800 0.06375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 220.4 160
+T1 1 118.9 160
+T2 1 92.8 160
+T3 1 174 160
+T4 1 298.7 160
+T5 1 139.2 160
+GW1
+T0 1 226.2 160
+T1 1 307.4 160
+T2 1 414.7 160
+T3 1 200.1 160
+T4 1 104.4 160
+T5 1 147.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 150
+Meet Task : 20
+Miss Task : 130
+Meet Ratio : 0.133333
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 65
+Miss Task : 30
+Meet Ratio : 0.684211
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+041
+-------------
+GW 1.9775
+Task 77 100 0.77
+Task 65 100 0.65
+Task 37 200 0.185
+Task 31 200 0.155
+Task 24 200 0.12
+Task 39 400 0.0975
+GW 1.985
+Task 62 100 0.62
+Task 104 200 0.52
+Task 111 400 0.2775
+Task 110 400 0.275
+Task 141 800 0.17625
+Task 93 800 0.11625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 223.3 160
+T1 1 188.5 160
+T2 1 107.3 160
+T3 1 89.9 160
+T4 1 69.6 160
+T5 1 113.1 160
+GW1
+T0 1 179.8 160
+T1 1 301.6 160
+T2 1 321.9 160
+T3 1 319 160
+T4 1 408.9 160
+T5 1 269.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 150
+Meet Task : 40
+Miss Task : 110
+Meet Ratio : 0.266667
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 90
+Meet Task : 70
+Miss Task : 20
+Meet Ratio : 0.777778
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+042
+-------------
+GW 1.97875
+Task 88 100 0.88
+Task 42 100 0.42
+Task 37 100 0.37
+Task 31 200 0.155
+Task 45 400 0.1125
+Task 33 800 0.04125
+GW 1.99125
+Task 71 100 0.71
+Task 51 100 0.51
+Task 56 200 0.28
+Task 103 400 0.2575
+Task 76 400 0.19
+Task 35 800 0.04375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 121.8 160
+T2 1 107.3 160
+T3 1 89.9 160
+T4 1 130.5 160
+T5 1 95.7 160
+GW1
+T0 1 205.9 160
+T1 1 147.9 160
+T2 1 162.4 160
+T3 1 298.7 160
+T4 1 220.4 160
+T5 1 101.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 155
+Meet Task : 20
+Miss Task : 135
+Meet Ratio : 0.129032
+Energy Consumption : 8521.27
+Lifetime : 0.0971686
+=========== GW_1 ===========
+Total Task : 125
+Meet Task : 55
+Miss Task : 70
+Meet Ratio : 0.44
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+043
+-------------
+GW 1.97625
+Task 96 100 0.96
+Task 47 100 0.47
+Task 44 200 0.22
+Task 67 400 0.1675
+Task 32 400 0.08
+Task 63 800 0.07875
+GW 1.99625
+Task 131 200 0.655
+Task 241 400 0.6025
+Task 428 800 0.535
+Task 133 800 0.16625
+Task 15 800 0.01875
+Task 15 800 0.01875
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 278.4 160
+T1 1 136.3 160
+T2 1 127.6 160
+T3 1 194.3 160
+T4 1 92.8 160
+T5 1 182.7 160
+GW1
+T0 1 379.9 160
+T1 1 698.9 160
+T2 1 1241.2 160
+T3 1 385.7 160
+T4 1 43.5 160
+T5 1 43.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8641.27
+Lifetime : 0.0958192
+=========== GW_1 ===========
+Total Task : 50
+Meet Task : 52
+Miss Task : 0
+Meet Ratio : 1.04
+Energy Consumption : 7629.52
+Lifetime : 0.108526
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+044
+-------------
+GW 1.9775
+Task 92 100 0.92
+Task 39 100 0.39
+Task 31 100 0.31
+Task 61 200 0.305
+Task 17 400 0.0425
+Task 4 400 0.01
+GW 1.98
+Task 79 100 0.79
+Task 46 100 0.46
+Task 69 200 0.345
+Task 64 200 0.32
+Task 17 400 0.0425
+Task 9 400 0.0225
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 266.8 160
+T1 1 113.1 160
+T2 1 89.9 160
+T3 1 176.9 160
+T4 1 49.3 160
+T5 1 11.6 160
+GW1
+T0 1 229.1 160
+T1 1 133.4 160
+T2 1 200.1 160
+T3 1 185.6 160
+T4 1 49.3 160
+T5 1 26.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 160
+Meet Task : 20
+Miss Task : 140
+Meet Ratio : 0.125
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 140
+Meet Task : 50
+Miss Task : 90
+Meet Ratio : 0.357143
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+045
+-------------
+GW 1.98375
+Task 66 100 0.66
+Task 66 100 0.66
+Task 93 200 0.465
+Task 63 400 0.1575
+Task 10 400 0.025
+Task 13 800 0.01625
+GW 1.995
+Task 192 200 0.96
+Task 371 400 0.9275
+Task 21 400 0.0525
+Task 16 800 0.02
+Task 16 800 0.02
+Task 12 800 0.015
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 191.4 160
+T1 1 191.4 160
+T2 1 269.7 160
+T3 1 182.7 160
+T4 1 29 160
+T5 1 37.7 160
+GW1
+T0 1 556.8 160
+T1 1 1075.9 160
+T2 1 60.9 160
+T3 1 46.4 160
+T4 1 46.4 160
+T5 1 34.8 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 59
+Miss Task : 66
+Meet Ratio : 0.472
+Energy Consumption : 8596.27
+Lifetime : 0.0963208
+=========== GW_1 ===========
+Total Task : 55
+Meet Task : 59
+Miss Task : 0
+Meet Ratio : 1.07273
+Energy Consumption : 7544.59
+Lifetime : 0.109748
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+046
+-------------
+GW 1.98
+Task 86 100 0.86
+Task 43 100 0.43
+Task 31 100 0.31
+Task 59 400 0.1475
+Task 49 400 0.1225
+Task 44 400 0.11
+GW 1.9875
+Task 82 100 0.82
+Task 93 200 0.465
+Task 78 200 0.39
+Task 79 400 0.1975
+Task 41 400 0.1025
+Task 10 800 0.0125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 249.4 160
+T1 1 124.7 160
+T2 1 89.9 160
+T3 1 171.1 160
+T4 1 142.1 160
+T5 1 127.6 160
+GW1
+T0 1 237.8 160
+T1 1 269.7 160
+T2 1 226.2 160
+T3 1 229.1 160
+T4 1 118.9 160
+T5 1 29 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 150
+Meet Task : 30
+Miss Task : 120
+Meet Ratio : 0.2
+Energy Consumption : 8483.77
+Lifetime : 0.0975981
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 55
+Miss Task : 50
+Meet Ratio : 0.52381
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+047
+-------------
+GW 1.99125
+Task 81 100 0.81
+Task 93 200 0.465
+Task 163 400 0.4075
+Task 178 800 0.2225
+Task 40 800 0.05
+Task 29 800 0.03625
+GW 1.9825
+Task 64 100 0.64
+Task 60 100 0.6
+Task 55 100 0.55
+Task 18 200 0.09
+Task 21 400 0.0525
+Task 20 400 0.05
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 234.9 160
+T1 1 269.7 160
+T2 1 472.7 160
+T3 1 516.2 160
+T4 1 116 160
+T5 1 84.1 160
+GW1
+T0 1 185.6 160
+T1 1 174 160
+T2 1 159.5 160
+T3 1 52.2 160
+T4 1 60.9 160
+T5 1 58 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 85
+Meet Task : 75
+Miss Task : 10
+Meet Ratio : 0.882353
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 160
+Meet Task : 23
+Miss Task : 137
+Meet Ratio : 0.14375
+Energy Consumption : 8326.27
+Lifetime : 0.0994442
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+048
+-------------
+GW 1.96875
+Task 72 100 0.72
+Task 36 100 0.36
+Task 32 100 0.32
+Task 49 200 0.245
+Task 96 400 0.24
+Task 67 800 0.08375
+GW 1.995
+Task 293 400 0.7325
+Task 285 400 0.7125
+Task 142 400 0.355
+Task 63 800 0.07875
+Task 48 800 0.06
+Task 45 800 0.05625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 208.8 160
+T1 1 104.4 160
+T2 1 92.8 160
+T3 1 142.1 160
+T4 1 278.4 160
+T5 1 194.3 160
+GW1
+T0 1 849.7 160
+T1 1 826.5 160
+T2 1 411.8 160
+T3 1 182.7 160
+T4 1 139.2 160
+T5 1 130.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 155
+Meet Task : 20
+Miss Task : 135
+Meet Ratio : 0.129032
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_1 ===========
+Total Task : 45
+Meet Task : 45
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 7638.15
+Lifetime : 0.108403
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+049
+-------------
+GW 1.9825
+Task 62 100 0.62
+Task 48 100 0.48
+Task 156 400 0.39
+Task 252 800 0.315
+Task 134 800 0.1675
+Task 8 800 0.01
+GW 1.9825
+Task 63 100 0.63
+Task 47 100 0.47
+Task 70 200 0.35
+Task 210 800 0.2625
+Task 169 800 0.21125
+Task 47 800 0.05875
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 179.8 160
+T1 1 139.2 160
+T2 1 452.4 160
+T3 1 730.8 160
+T4 1 388.6 160
+T5 1 23.2 160
+GW1
+T0 1 182.7 160
+T1 1 136.3 160
+T2 1 203 160
+T3 1 609 160
+T4 1 490.1 160
+T5 1 136.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 105
+Meet Task : 74
+Miss Task : 31
+Meet Ratio : 0.704762
+Energy Consumption : 8723.77
+Lifetime : 0.094913
+=========== GW_1 ===========
+Total Task : 115
+Meet Task : 58
+Miss Task : 57
+Meet Ratio : 0.504348
+Energy Consumption : 8588.77
+Lifetime : 0.0964049
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+050
+-------------
+GW 1.9875
+Task 183 200 0.915
+Task 139 200 0.695
+Task 103 400 0.2575
+Task 33 400 0.0825
+Task 10 400 0.025
+Task 10 800 0.0125
+GW 1.9825
+Task 68 100 0.68
+Task 56 100 0.56
+Task 101 200 0.505
+Task 55 400 0.1375
+Task 49 800 0.06125
+Task 31 800 0.03875
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 530.7 160
+T1 1 403.1 160
+T2 1 298.7 160
+T3 1 95.7 160
+T4 1 29 160
+T5 1 29 160
+GW1
+T0 1 197.2 160
+T1 1 162.4 160
+T2 1 292.9 160
+T3 1 159.5 160
+T4 1 142.1 160
+T5 1 89.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 75
+Meet Task : 77
+Miss Task : 0
+Meet Ratio : 1.02667
+Energy Consumption : 8301.15
+Lifetime : 0.0997452
+=========== GW_1 ===========
+Total Task : 120
+Meet Task : 55
+Miss Task : 65
+Meet Ratio : 0.458333
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+051
+-------------
+GW 1.98625
+Task 70 100 0.7
+Task 108 200 0.54
+Task 173 400 0.4325
+Task 85 400 0.2125
+Task 48 800 0.06
+Task 33 800 0.04125
+GW 1.99125
+Task 142 200 0.71
+Task 100 200 0.5
+Task 194 400 0.485
+Task 204 800 0.255
+Task 23 800 0.02875
+Task 10 800 0.0125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 203 160
+T1 1 313.2 160
+T2 1 501.7 160
+T3 1 246.5 160
+T4 1 139.2 160
+T5 1 95.7 160
+GW1
+T0 1 411.8 160
+T1 1 290 160
+T2 1 562.6 160
+T3 1 591.6 160
+T4 1 66.7 160
+T5 1 29 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 90
+Meet Task : 70
+Miss Task : 20
+Meet Ratio : 0.777778
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 65
+Meet Task : 67
+Miss Task : 0
+Meet Ratio : 1.03077
+Energy Consumption : 8113.72
+Lifetime : 0.102049
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+052
+-------------
+GW 1.9825
+Task 63 100 0.63
+Task 58 100 0.58
+Task 67 200 0.335
+Task 176 800 0.22
+Task 123 800 0.15375
+Task 51 800 0.06375
+GW 1.97875
+Task 85 100 0.85
+Task 79 100 0.79
+Task 25 100 0.25
+Task 10 200 0.05
+Task 4 200 0.02
+Task 15 800 0.01875
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 182.7 160
+T1 1 168.2 160
+T2 1 194.3 160
+T3 1 510.4 160
+T4 1 356.7 160
+T5 1 147.9 160
+GW1
+T0 1 246.5 160
+T1 1 229.1 160
+T2 1 72.5 160
+T3 1 29 160
+T4 1 11.6 160
+T5 1 43.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 115
+Meet Task : 60
+Miss Task : 55
+Meet Ratio : 0.521739
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 165
+Meet Task : 20
+Miss Task : 145
+Meet Ratio : 0.121212
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+053
+-------------
+GW 1.9775
+Task 60 100 0.6
+Task 75 200 0.375
+Task 73 200 0.365
+Task 142 400 0.355
+Task 66 400 0.165
+Task 47 400 0.1175
+GW 1.9775
+Task 82 100 0.82
+Task 165 200 0.825
+Task 37 200 0.185
+Task 41 400 0.1025
+Task 13 400 0.0325
+Task 10 800 0.0125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 174 160
+T1 1 217.5 160
+T2 1 211.7 160
+T3 1 411.8 160
+T4 1 191.4 160
+T5 1 136.3 160
+GW1
+T0 1 237.8 160
+T1 1 478.5 160
+T2 1 107.3 160
+T3 1 118.9 160
+T4 1 37.7 160
+T5 1 29 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 110
+Meet Task : 60
+Miss Task : 50
+Meet Ratio : 0.545455
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 75
+Miss Task : 30
+Meet Ratio : 0.714286
+Energy Consumption : 8791.27
+Lifetime : 0.0941843
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+054
+-------------
+GW 1.98625
+Task 94 100 0.94
+Task 44 100 0.44
+Task 99 400 0.2475
+Task 164 800 0.205
+Task 83 800 0.10375
+Task 40 800 0.05
+GW 1.985
+Task 79 100 0.79
+Task 83 200 0.415
+Task 77 200 0.385
+Task 75 200 0.375
+Task 2 200 0.01
+Task 4 400 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 272.6 160
+T1 1 127.6 160
+T2 1 287.1 160
+T3 1 475.6 160
+T4 1 240.7 160
+T5 1 116 160
+GW1
+T0 1 229.1 160
+T1 1 240.7 160
+T2 1 223.3 160
+T3 1 217.5 160
+T4 1 5.8 160
+T5 1 11.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 105
+Meet Task : 65
+Miss Task : 40
+Meet Ratio : 0.619048
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 131
+Meet Task : 72
+Miss Task : 60
+Meet Ratio : 0.549618
+Energy Consumption : 8843.77
+Lifetime : 0.0936252
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+055
+-------------
+GW 1.98375
+Task 77 100 0.77
+Task 61 100 0.61
+Task 47 100 0.47
+Task 66 800 0.0825
+Task 23 800 0.02875
+Task 18 800 0.0225
+GW 1.98875
+Task 78 100 0.78
+Task 39 100 0.39
+Task 59 200 0.295
+Task 41 200 0.205
+Task 40 200 0.2
+Task 95 800 0.11875
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 223.3 160
+T1 1 176.9 160
+T2 1 136.3 160
+T3 1 191.4 160
+T4 1 66.7 160
+T5 1 52.2 160
+GW1
+T0 1 226.2 160
+T1 1 113.1 160
+T2 1 171.1 160
+T3 1 118.9 160
+T4 1 116 160
+T5 1 275.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 35
+Miss Task : 100
+Meet Ratio : 0.259259
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 145
+Meet Task : 40
+Miss Task : 105
+Meet Ratio : 0.275862
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+056
+-------------
+GW 1.98875
+Task 59 100 0.59
+Task 171 400 0.4275
+Task 162 400 0.405
+Task 294 800 0.3675
+Task 150 800 0.1875
+Task 9 800 0.01125
+GW 1.985
+Task 81 100 0.81
+Task 44 100 0.44
+Task 21 100 0.21
+Task 80 400 0.2
+Task 155 800 0.19375
+Task 105 800 0.13125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 171.1 160
+T1 1 495.9 160
+T2 1 469.8 160
+T3 1 852.6 160
+T4 1 435 160
+T5 1 26.1 160
+GW1
+T0 1 234.9 160
+T1 1 127.6 160
+T2 1 60.9 160
+T3 1 232 160
+T4 1 449.5 160
+T5 1 304.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 75
+Meet Task : 76
+Miss Task : 0
+Meet Ratio : 1.01333
+Energy Consumption : 8498.25
+Lifetime : 0.0974318
+=========== GW_1 ===========
+Total Task : 140
+Meet Task : 33
+Miss Task : 107
+Meet Ratio : 0.235714
+Energy Consumption : 8326.27
+Lifetime : 0.0994442
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+057
+-------------
+GW 1.97875
+Task 71 100 0.71
+Task 55 100 0.55
+Task 56 200 0.28
+Task 40 200 0.2
+Task 56 400 0.14
+Task 79 800 0.09875
+GW 1.985
+Task 92 100 0.92
+Task 34 100 0.34
+Task 64 200 0.32
+Task 40 200 0.2
+Task 67 400 0.1675
+Task 30 800 0.0375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 205.9 160
+T1 1 159.5 160
+T2 1 162.4 160
+T3 1 116 160
+T4 1 162.4 160
+T5 1 229.1 160
+GW1
+T0 1 266.8 160
+T1 1 98.6 160
+T2 1 185.6 160
+T3 1 116 160
+T4 1 194.3 160
+T5 1 87 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 46
+Miss Task : 89
+Meet Ratio : 0.340741
+Energy Consumption : 8446.27
+Lifetime : 0.0980314
+=========== GW_1 ===========
+Total Task : 135
+Meet Task : 40
+Miss Task : 95
+Meet Ratio : 0.296296
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+058
+-------------
+GW 1.9925
+Task 159 200 0.795
+Task 139 200 0.695
+Task 36 200 0.18
+Task 65 400 0.1625
+Task 83 800 0.10375
+Task 45 800 0.05625
+GW 1.985
+Task 91 100 0.91
+Task 138 200 0.69
+Task 41 200 0.205
+Task 41 400 0.1025
+Task 18 400 0.045
+Task 26 800 0.0325
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 461.1 160
+T1 1 403.1 160
+T2 1 104.4 160
+T3 1 188.5 160
+T4 1 240.7 160
+T5 1 130.5 160
+GW1
+T0 1 263.9 160
+T1 1 400.2 160
+T2 1 118.9 160
+T3 1 118.9 160
+T4 1 52.2 160
+T5 1 75.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 80
+Meet Task : 80
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 64
+Miss Task : 41
+Meet Ratio : 0.609524
+Energy Consumption : 8708.77
+Lifetime : 0.0950765
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+059
+-------------
+GW 1.9875
+Task 73 100 0.73
+Task 58 100 0.58
+Task 87 200 0.435
+Task 70 400 0.175
+Task 42 800 0.0525
+Task 12 800 0.015
+GW 1.99375
+Task 72 100 0.72
+Task 234 400 0.585
+Task 208 400 0.52
+Task 93 800 0.11625
+Task 25 800 0.03125
+Task 17 800 0.02125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 211.7 160
+T1 1 168.2 160
+T2 1 252.3 160
+T3 1 203 160
+T4 1 121.8 160
+T5 1 34.8 160
+GW1
+T0 1 208.8 160
+T1 1 678.6 160
+T2 1 603.2 160
+T3 1 269.7 160
+T4 1 72.5 160
+T5 1 49.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 55
+Miss Task : 65
+Meet Ratio : 0.458333
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_1 ===========
+Total Task : 75
+Meet Task : 76
+Miss Task : 0
+Meet Ratio : 1.01333
+Energy Consumption : 8514.45
+Lifetime : 0.0972464
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+060
+-------------
+GW 1.99125
+Task 82 100 0.82
+Task 96 200 0.48
+Task 83 200 0.415
+Task 134 800 0.1675
+Task 79 800 0.09875
+Task 8 800 0.01
+GW 1.9875
+Task 90 100 0.9
+Task 172 200 0.86
+Task 34 200 0.17
+Task 15 400 0.0375
+Task 4 400 0.01
+Task 8 800 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 237.8 160
+T1 1 278.4 160
+T2 1 240.7 160
+T3 1 388.6 160
+T4 1 229.1 160
+T5 1 23.2 160
+GW1
+T0 1 261 160
+T1 1 498.8 160
+T2 1 98.6 160
+T3 1 43.5 160
+T4 1 11.6 160
+T5 1 23.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 95
+Meet Task : 74
+Miss Task : 21
+Meet Ratio : 0.778947
+Energy Consumption : 8746.27
+Lifetime : 0.0946689
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 90
+Miss Task : 15
+Meet Ratio : 0.857143
+Energy Consumption : 8828.77
+Lifetime : 0.0937842
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+061
+-------------
+GW 1.99625
+Task 53 100 0.53
+Task 197 400 0.4925
+Task 144 400 0.36
+Task 233 800 0.29125
+Task 144 800 0.18
+Task 114 800 0.1425
+GW 1.97
+Task 82 100 0.82
+Task 53 100 0.53
+Task 46 100 0.46
+Task 24 200 0.12
+Task 8 400 0.02
+Task 8 400 0.02
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 153.7 160
+T1 1 571.3 160
+T2 1 417.6 160
+T3 1 675.7 160
+T4 1 417.6 160
+T5 1 330.6 160
+GW1
+T0 1 237.8 160
+T1 1 153.7 160
+T2 1 133.4 160
+T3 1 69.6 160
+T4 1 23.2 160
+T5 1 23.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 75
+Meet Task : 75
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8594.4
+Lifetime : 0.0963418
+=========== GW_1 ===========
+Total Task : 160
+Meet Task : 20
+Miss Task : 140
+Meet Ratio : 0.125
+Energy Consumption : 8573.77
+Lifetime : 0.0965736
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+062
+-------------
+GW 1.97375
+Task 76 100 0.76
+Task 71 100 0.71
+Task 29 100 0.29
+Task 48 400 0.12
+Task 22 400 0.055
+Task 31 800 0.03875
+GW 1.9825
+Task 87 100 0.87
+Task 69 100 0.69
+Task 64 200 0.32
+Task 25 400 0.0625
+Task 11 400 0.0275
+Task 10 800 0.0125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 220.4 160
+T1 1 205.9 160
+T2 1 84.1 160
+T3 1 139.2 160
+T4 1 63.8 160
+T5 1 89.9 160
+GW1
+T0 1 252.3 160
+T1 1 200.1 160
+T2 1 185.6 160
+T3 1 72.5 160
+T4 1 31.9 160
+T5 1 29 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 145
+Meet Task : 30
+Miss Task : 115
+Meet Ratio : 0.206897
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+063
+-------------
+GW 1.99125
+Task 92 100 0.92
+Task 64 200 0.32
+Task 106 400 0.265
+Task 95 400 0.2375
+Task 113 800 0.14125
+Task 86 800 0.1075
+GW 1.975
+Task 84 100 0.84
+Task 55 100 0.55
+Task 40 100 0.4
+Task 16 200 0.08
+Task 31 400 0.0775
+Task 22 800 0.0275
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 266.8 160
+T1 1 185.6 160
+T2 1 307.4 160
+T3 1 275.5 160
+T4 1 327.7 160
+T5 1 249.4 160
+GW1
+T0 1 243.6 160
+T1 1 159.5 160
+T2 1 116 160
+T3 1 46.4 160
+T4 1 89.9 160
+T5 1 63.8 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 90
+Meet Task : 70
+Miss Task : 20
+Meet Ratio : 0.777778
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 155
+Meet Task : 20
+Miss Task : 135
+Meet Ratio : 0.129032
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+064
+-------------
+GW 1.985
+Task 88 100 0.88
+Task 75 100 0.75
+Task 38 200 0.19
+Task 108 800 0.135
+Task 13 800 0.01625
+Task 11 800 0.01375
+GW 1.995
+Task 168 200 0.84
+Task 291 400 0.7275
+Task 176 800 0.22
+Task 89 800 0.11125
+Task 57 800 0.07125
+Task 20 800 0.025
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 217.5 160
+T2 1 110.2 160
+T3 1 313.2 160
+T4 1 37.7 160
+T5 1 31.9 160
+GW1
+T0 1 487.2 160
+T1 1 843.9 160
+T2 1 510.4 160
+T3 1 258.1 160
+T4 1 165.3 160
+T5 1 58 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 115
+Meet Task : 58
+Miss Task : 57
+Meet Ratio : 0.504348
+Energy Consumption : 8701.27
+Lifetime : 0.0951585
+=========== GW_1 ===========
+Total Task : 50
+Meet Task : 51
+Miss Task : 0
+Meet Ratio : 1.02
+Energy Consumption : 7723.65
+Lifetime : 0.107203
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+065
+-------------
+GW 1.99125
+Task 77 100 0.77
+Task 290 400 0.725
+Task 89 400 0.2225
+Task 127 800 0.15875
+Task 82 800 0.1025
+Task 10 800 0.0125
+GW 1.9925
+Task 81 100 0.81
+Task 91 200 0.455
+Task 150 400 0.375
+Task 78 400 0.195
+Task 106 800 0.1325
+Task 20 800 0.025
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 223.3 160
+T1 1 841 160
+T2 1 258.1 160
+T3 1 368.3 160
+T4 1 237.8 160
+T5 1 29 160
+GW1
+T0 1 234.9 160
+T1 1 263.9 160
+T2 1 435 160
+T3 1 226.2 160
+T4 1 307.4 160
+T5 1 58 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 75
+Meet Task : 76
+Miss Task : 0
+Meet Ratio : 1.01333
+Energy Consumption : 8500.27
+Lifetime : 0.0974086
+=========== GW_1 ===========
+Total Task : 90
+Meet Task : 75
+Miss Task : 15
+Meet Ratio : 0.833333
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+066
+-------------
+GW 1.985
+Task 92 100 0.92
+Task 53 100 0.53
+Task 58 200 0.29
+Task 52 400 0.13
+Task 26 400 0.065
+Task 40 800 0.05
+GW 1.9875
+Task 65 100 0.65
+Task 93 200 0.465
+Task 146 400 0.365
+Task 95 400 0.2375
+Task 89 400 0.2225
+Task 19 400 0.0475
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 266.8 160
+T1 1 153.7 160
+T2 1 168.2 160
+T3 1 150.8 160
+T4 1 75.4 160
+T5 1 116 160
+GW1
+T0 1 188.5 160
+T1 1 269.7 160
+T2 1 423.4 160
+T3 1 275.5 160
+T4 1 258.1 160
+T5 1 55.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 41
+Miss Task : 84
+Meet Ratio : 0.328
+Energy Consumption : 8453.77
+Lifetime : 0.0979444
+=========== GW_1 ===========
+Total Task : 100
+Meet Task : 70
+Miss Task : 30
+Meet Ratio : 0.7
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+067
+-------------
+GW 1.9775
+Task 64 100 0.64
+Task 53 100 0.53
+Task 61 200 0.305
+Task 79 400 0.1975
+Task 61 400 0.1525
+Task 122 800 0.1525
+GW 1.98625
+Task 91 100 0.91
+Task 43 100 0.43
+Task 25 100 0.25
+Task 56 400 0.14
+Task 112 800 0.14
+Task 93 800 0.11625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 185.6 160
+T1 1 153.7 160
+T2 1 176.9 160
+T3 1 229.1 160
+T4 1 176.9 160
+T5 1 353.8 160
+GW1
+T0 1 263.9 160
+T1 1 124.7 160
+T2 1 72.5 160
+T3 1 162.4 160
+T4 1 324.8 160
+T5 1 269.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 54
+Miss Task : 71
+Meet Ratio : 0.432
+Energy Consumption : 8558.77
+Lifetime : 0.0967428
+=========== GW_1 ===========
+Total Task : 140
+Meet Task : 30
+Miss Task : 110
+Meet Ratio : 0.214286
+Energy Consumption : 8641.27
+Lifetime : 0.0958192
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+068
+-------------
+GW 1.98625
+Task 84 100 0.84
+Task 84 100 0.84
+Task 13 100 0.13
+Task 32 400 0.08
+Task 51 800 0.06375
+Task 26 800 0.0325
+GW 1.985
+Task 64 100 0.64
+Task 110 200 0.55
+Task 62 200 0.31
+Task 90 400 0.225
+Task 140 800 0.175
+Task 68 800 0.085
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 243.6 160
+T1 1 243.6 160
+T2 1 37.7 160
+T3 1 92.8 160
+T4 1 147.9 160
+T5 1 75.4 160
+GW1
+T0 1 185.6 160
+T1 1 319 160
+T2 1 179.8 160
+T3 1 261 160
+T4 1 406 160
+T5 1 197.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 140
+Meet Task : 34
+Miss Task : 106
+Meet Ratio : 0.242857
+Energy Consumption : 8408.77
+Lifetime : 0.0984686
+=========== GW_1 ===========
+Total Task : 100
+Meet Task : 59
+Miss Task : 41
+Meet Ratio : 0.59
+Energy Consumption : 8663.77
+Lifetime : 0.0955704
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+069
+-------------
+GW 1.98875
+Task 49 100 0.49
+Task 79 200 0.395
+Task 73 200 0.365
+Task 129 400 0.3225
+Task 187 800 0.23375
+Task 146 800 0.1825
+GW 1.9975
+Task 157 200 0.785
+Task 102 200 0.51
+Task 176 400 0.44
+Task 50 400 0.125
+Task 56 800 0.07
+Task 54 800 0.0675
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 142.1 160
+T1 1 229.1 160
+T2 1 211.7 160
+T3 1 374.1 160
+T4 1 542.3 160
+T5 1 423.4 160
+GW1
+T0 1 455.3 160
+T1 1 295.8 160
+T2 1 510.4 160
+T3 1 145 160
+T4 1 162.4 160
+T5 1 156.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 65
+Miss Task : 35
+Meet Ratio : 0.65
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_1 ===========
+Total Task : 70
+Meet Task : 70
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8435.02
+Lifetime : 0.0981621
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+070
+-------------
+GW 1.9875
+Task 74 100 0.74
+Task 139 200 0.695
+Task 69 200 0.345
+Task 21 200 0.105
+Task 26 400 0.065
+Task 15 400 0.0375
+GW 1.98
+Task 90 100 0.9
+Task 72 100 0.72
+Task 22 100 0.22
+Task 14 200 0.07
+Task 9 200 0.045
+Task 5 200 0.025
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 214.6 160
+T1 1 403.1 160
+T2 1 200.1 160
+T3 1 60.9 160
+T4 1 75.4 160
+T5 1 43.5 160
+GW1
+T0 1 261 160
+T1 1 208.8 160
+T2 1 63.8 160
+T3 1 40.6 160
+T4 1 26.1 160
+T5 1 14.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 48
+Miss Task : 72
+Meet Ratio : 0.4
+Energy Consumption : 8588.77
+Lifetime : 0.0964049
+=========== GW_1 ===========
+Total Task : 185
+Meet Task : 81
+Miss Task : 104
+Meet Ratio : 0.437838
+Energy Consumption : 8618.77
+Lifetime : 0.0960693
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+071
+-------------
+GW 1.99
+Task 88 100 0.88
+Task 160 200 0.8
+Task 41 200 0.205
+Task 18 400 0.045
+Task 29 800 0.03625
+Task 19 800 0.02375
+GW 1.98
+Task 77 100 0.77
+Task 52 100 0.52
+Task 31 100 0.31
+Task 20 100 0.2
+Task 20 200 0.1
+Task 32 400 0.08
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 464 160
+T2 1 118.9 160
+T3 1 52.2 160
+T4 1 84.1 160
+T5 1 55.1 160
+GW1
+T0 1 223.3 160
+T1 1 150.8 160
+T2 1 89.9 160
+T3 1 58 160
+T4 1 58 160
+T5 1 92.8 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 70
+Miss Task : 30
+Meet Ratio : 0.7
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_1 ===========
+Total Task : 190
+Meet Task : 4
+Miss Task : 187
+Meet Ratio : 0.0210526
+Energy Consumption : 8243.77
+Lifetime : 0.100439
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+072
+-------------
+GW 1.98375
+Task 88 100 0.88
+Task 106 200 0.53
+Task 53 200 0.265
+Task 80 400 0.2
+Task 44 800 0.055
+Task 43 800 0.05375
+GW 1.9875
+Task 78 100 0.78
+Task 66 100 0.66
+Task 70 200 0.35
+Task 50 400 0.125
+Task 40 800 0.05
+Task 18 800 0.0225
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 307.4 160
+T2 1 153.7 160
+T3 1 232 160
+T4 1 127.6 160
+T5 1 124.7 160
+GW1
+T0 1 226.2 160
+T1 1 191.4 160
+T2 1 203 160
+T3 1 145 160
+T4 1 116 160
+T5 1 52.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 60
+Miss Task : 40
+Meet Ratio : 0.6
+Energy Consumption : 8716.27
+Lifetime : 0.0949947
+=========== GW_1 ===========
+Total Task : 120
+Meet Task : 55
+Miss Task : 65
+Meet Ratio : 0.458333
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+073
+-------------
+GW 1.98625
+Task 79 100 0.79
+Task 49 100 0.49
+Task 52 200 0.26
+Task 90 400 0.225
+Task 121 800 0.15125
+Task 56 800 0.07
+GW 1.9775
+Task 81 100 0.81
+Task 51 100 0.51
+Task 53 200 0.265
+Task 94 400 0.235
+Task 55 400 0.1375
+Task 8 400 0.02
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 229.1 160
+T1 1 142.1 160
+T2 1 150.8 160
+T3 1 261 160
+T4 1 350.9 160
+T5 1 162.4 160
+GW1
+T0 1 234.9 160
+T1 1 147.9 160
+T2 1 153.7 160
+T3 1 272.6 160
+T4 1 159.5 160
+T5 1 23.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 60
+Miss Task : 60
+Meet Ratio : 0.5
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 60
+Miss Task : 70
+Meet Ratio : 0.461538
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+074
+-------------
+GW 1.98625
+Task 73 100 0.73
+Task 283 400 0.7075
+Task 119 400 0.2975
+Task 58 400 0.145
+Task 50 800 0.0625
+Task 35 800 0.04375
+GW 1.975
+Task 61 100 0.61
+Task 44 100 0.44
+Task 67 200 0.335
+Task 55 200 0.275
+Task 74 400 0.185
+Task 104 800 0.13
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 211.7 160
+T1 1 820.7 160
+T2 1 345.1 160
+T3 1 168.2 160
+T4 1 145 160
+T5 1 101.5 160
+GW1
+T0 1 176.9 160
+T1 1 127.6 160
+T2 1 194.3 160
+T3 1 159.5 160
+T4 1 214.6 160
+T5 1 301.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 80
+Meet Task : 80
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 135
+Meet Task : 40
+Miss Task : 95
+Meet Ratio : 0.296296
+Energy Consumption : 8453.77
+Lifetime : 0.0979444
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+075
+-------------
+GW 1.9825
+Task 92 100 0.92
+Task 66 100 0.66
+Task 63 200 0.315
+Task 23 400 0.0575
+Task 15 800 0.01875
+Task 9 800 0.01125
+GW 1.9925
+Task 186 200 0.93
+Task 121 200 0.605
+Task 135 400 0.3375
+Task 18 400 0.045
+Task 17 400 0.0425
+Task 26 800 0.0325
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 266.8 160
+T1 1 191.4 160
+T2 1 182.7 160
+T3 1 66.7 160
+T4 1 43.5 160
+T5 1 26.1 160
+GW1
+T0 1 539.4 160
+T1 1 350.9 160
+T2 1 391.5 160
+T3 1 52.2 160
+T4 1 49.3 160
+T5 1 75.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 50
+Miss Task : 70
+Meet Ratio : 0.416667
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_1 ===========
+Total Task : 75
+Meet Task : 77
+Miss Task : 0
+Meet Ratio : 1.02667
+Energy Consumption : 8251.84
+Lifetime : 0.100341
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+076
+-------------
+GW 1.99
+Task 86 100 0.86
+Task 265 400 0.6625
+Task 148 400 0.37
+Task 23 400 0.0575
+Task 19 800 0.02375
+Task 13 800 0.01625
+GW 1.9725
+Task 57 100 0.57
+Task 45 100 0.45
+Task 28 100 0.28
+Task 56 200 0.28
+Task 97 400 0.2425
+Task 60 400 0.15
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 249.4 160
+T1 1 768.5 160
+T2 1 429.2 160
+T3 1 66.7 160
+T4 1 55.1 160
+T5 1 37.7 160
+GW1
+T0 1 165.3 160
+T1 1 130.5 160
+T2 1 81.2 160
+T3 1 162.4 160
+T4 1 281.3 160
+T5 1 174 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 80
+Meet Task : 83
+Miss Task : 0
+Meet Ratio : 1.0375
+Energy Consumption : 8438.96
+Lifetime : 0.0981163
+=========== GW_1 ===========
+Total Task : 160
+Meet Task : 28
+Miss Task : 132
+Meet Ratio : 0.175
+Energy Consumption : 8401.27
+Lifetime : 0.0985565
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+077
+-------------
+GW 1.98
+Task 82 100 0.82
+Task 51 100 0.51
+Task 95 200 0.475
+Task 31 200 0.155
+Task 4 400 0.01
+Task 8 800 0.01
+GW 1.9925
+Task 158 200 0.79
+Task 73 200 0.365
+Task 102 400 0.255
+Task 92 400 0.23
+Task 151 800 0.18875
+Task 131 800 0.16375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 237.8 160
+T1 1 147.9 160
+T2 1 275.5 160
+T3 1 89.9 160
+T4 1 11.6 160
+T5 1 23.2 160
+GW1
+T0 1 458.2 160
+T1 1 211.7 160
+T2 1 295.8 160
+T3 1 266.8 160
+T4 1 437.9 160
+T5 1 379.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 46
+Miss Task : 89
+Meet Ratio : 0.340741
+Energy Consumption : 8498.77
+Lifetime : 0.0974258
+=========== GW_1 ===========
+Total Task : 70
+Meet Task : 70
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8435.02
+Lifetime : 0.0981621
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+078
+-------------
+GW 1.99375
+Task 51 100 0.51
+Task 47 100 0.47
+Task 135 400 0.3375
+Task 102 400 0.255
+Task 101 400 0.2525
+Task 135 800 0.16875
+GW 1.9825
+Task 90 100 0.9
+Task 49 100 0.49
+Task 23 100 0.23
+Task 31 200 0.155
+Task 56 400 0.14
+Task 27 400 0.0675
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 147.9 160
+T1 1 136.3 160
+T2 1 391.5 160
+T3 1 295.8 160
+T4 1 292.9 160
+T5 1 391.5 160
+GW1
+T0 1 261 160
+T1 1 142.1 160
+T2 1 66.7 160
+T3 1 89.9 160
+T4 1 162.4 160
+T5 1 78.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 115
+Meet Task : 70
+Miss Task : 45
+Meet Ratio : 0.608696
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 160
+Meet Task : 23
+Miss Task : 137
+Meet Ratio : 0.14375
+Energy Consumption : 8326.27
+Lifetime : 0.0994442
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+079
+-------------
+GW 1.985
+Task 88 100 0.88
+Task 67 100 0.67
+Task 55 200 0.275
+Task 19 200 0.095
+Task 17 400 0.0425
+Task 18 800 0.0225
+GW 1.98875
+Task 167 200 0.835
+Task 100 200 0.5
+Task 56 200 0.28
+Task 72 400 0.18
+Task 60 400 0.15
+Task 35 800 0.04375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 194.3 160
+T2 1 159.5 160
+T3 1 55.1 160
+T4 1 49.3 160
+T5 1 52.2 160
+GW1
+T0 1 484.3 160
+T1 1 290 160
+T2 1 162.4 160
+T3 1 208.8 160
+T4 1 174 160
+T5 1 101.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 135
+Meet Task : 55
+Miss Task : 80
+Meet Ratio : 0.407407
+Energy Consumption : 8543.77
+Lifetime : 0.0969127
+=========== GW_1 ===========
+Total Task : 85
+Meet Task : 75
+Miss Task : 10
+Meet Ratio : 0.882353
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+080
+-------------
+GW 1.985
+Task 179 200 0.895
+Task 138 200 0.69
+Task 46 200 0.23
+Task 16 200 0.08
+Task 9 200 0.045
+Task 18 400 0.045
+GW 1.99
+Task 65 100 0.65
+Task 117 200 0.585
+Task 84 200 0.42
+Task 100 400 0.25
+Task 27 400 0.0675
+Task 7 400 0.0175
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 519.1 160
+T1 1 400.2 160
+T2 1 133.4 160
+T3 1 46.4 160
+T4 1 26.1 160
+T5 1 52.2 160
+GW1
+T0 1 188.5 160
+T1 1 339.3 160
+T2 1 243.6 160
+T3 1 290 160
+T4 1 78.3 160
+T5 1 20.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 112
+Meet Task : 115
+Miss Task : 0
+Meet Ratio : 1.02679
+Energy Consumption : 8783.59
+Lifetime : 0.0942667
+=========== GW_1 ===========
+Total Task : 110
+Meet Task : 60
+Miss Task : 50
+Meet Ratio : 0.545455
+Energy Consumption : 8686.27
+Lifetime : 0.0953228
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+081
+-------------
+GW 1.99
+Task 153 200 0.765
+Task 149 200 0.745
+Task 136 400 0.34
+Task 50 800 0.0625
+Task 41 800 0.05125
+Task 21 800 0.02625
+GW 1.98
+Task 60 100 0.6
+Task 43 100 0.43
+Task 70 200 0.35
+Task 110 400 0.275
+Task 86 400 0.215
+Task 44 400 0.11
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 443.7 160
+T1 1 432.1 160
+T2 1 394.4 160
+T3 1 145 160
+T4 1 118.9 160
+T5 1 60.9 160
+GW1
+T0 1 174 160
+T1 1 124.7 160
+T2 1 203 160
+T3 1 319 160
+T4 1 249.4 160
+T5 1 127.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 65
+Meet Task : 66
+Miss Task : 0
+Meet Ratio : 1.01538
+Energy Consumption : 8203.8
+Lifetime : 0.100929
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 49
+Miss Task : 81
+Meet Ratio : 0.376923
+Energy Consumption : 8596.27
+Lifetime : 0.0963208
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+082
+-------------
+GW 1.985
+Task 68 100 0.68
+Task 64 100 0.64
+Task 87 400 0.2175
+Task 72 400 0.18
+Task 125 800 0.15625
+Task 89 800 0.11125
+GW 1.99375
+Task 152 200 0.76
+Task 135 200 0.675
+Task 117 400 0.2925
+Task 123 800 0.15375
+Task 57 800 0.07125
+Task 33 800 0.04125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 197.2 160
+T1 1 185.6 160
+T2 1 252.3 160
+T3 1 208.8 160
+T4 1 362.5 160
+T5 1 258.1 160
+GW1
+T0 1 440.8 160
+T1 1 391.5 160
+T2 1 339.3 160
+T3 1 356.7 160
+T4 1 165.3 160
+T5 1 95.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 110
+Meet Task : 70
+Miss Task : 40
+Meet Ratio : 0.636364
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 65
+Meet Task : 65
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8275.65
+Lifetime : 0.100053
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+083
+-------------
+GW 1.385
+Task 74 100 0.74
+Task 28 100 0.28
+Task 16 100 0.16
+Task 24 200 0.12
+Task 23 400 0.0575
+Task 22 800 0.0275
+GW 1.98625
+Task 94 100 0.94
+Task 48 100 0.48
+Task 49 200 0.245
+Task 59 400 0.1475
+Task 112 800 0.14
+Task 27 800 0.03375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 214.6 160
+T1 1 81.2 160
+T2 1 46.4 160
+T3 1 69.6 160
+T4 1 66.7 160
+T5 1 63.8 160
+GW1
+T0 1 272.6 160
+T1 1 139.2 160
+T2 1 142.1 160
+T3 1 171.1 160
+T4 1 324.8 160
+T5 1 78.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 155
+Meet Task : 35
+Miss Task : 120
+Meet Ratio : 0.225806
+Energy Consumption : 8356.27
+Lifetime : 0.0990872
+=========== GW_1 ===========
+Total Task : 120
+Meet Task : 56
+Miss Task : 64
+Meet Ratio : 0.466667
+Energy Consumption : 8648.77
+Lifetime : 0.0957361
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+084
+-------------
+GW 1.9875
+Task 67 100 0.67
+Task 128 200 0.64
+Task 120 200 0.6
+Task 14 400 0.035
+Task 20 800 0.025
+Task 14 800 0.0175
+GW 1.985
+Task 93 100 0.93
+Task 164 200 0.82
+Task 44 400 0.11
+Task 32 400 0.08
+Task 14 400 0.035
+Task 8 800 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 194.3 160
+T1 1 371.2 160
+T2 1 348 160
+T3 1 40.6 160
+T4 1 58 160
+T5 1 40.6 160
+GW1
+T0 1 269.7 160
+T1 1 475.6 160
+T2 1 127.6 160
+T3 1 92.8 160
+T4 1 40.6 160
+T5 1 23.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 85
+Miss Task : 15
+Meet Ratio : 0.85
+Energy Consumption : 8761.27
+Lifetime : 0.0945068
+=========== GW_1 ===========
+Total Task : 95
+Meet Task : 85
+Miss Task : 10
+Meet Ratio : 0.894737
+Energy Consumption : 8791.27
+Lifetime : 0.0941843
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+085
+-------------
+GW 1.995
+Task 66 100 0.66
+Task 224 400 0.56
+Task 238 800 0.2975
+Task 162 800 0.2025
+Task 119 800 0.14875
+Task 101 800 0.12625
+GW 1.9875
+Task 185 200 0.925
+Task 93 200 0.465
+Task 78 200 0.39
+Task 26 200 0.13
+Task 25 400 0.0625
+Task 6 400 0.015
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 191.4 160
+T1 1 649.6 160
+T2 1 690.2 160
+T3 1 469.8 160
+T4 1 345.1 160
+T5 1 292.9 160
+GW1
+T0 1 536.5 160
+T1 1 269.7 160
+T2 1 226.2 160
+T3 1 75.4 160
+T4 1 72.5 160
+T5 1 17.4 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 70
+Meet Task : 70
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8435.02
+Lifetime : 0.0981621
+=========== GW_1 ===========
+Total Task : 100
+Meet Task : 70
+Miss Task : 30
+Meet Ratio : 0.7
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+086
+-------------
+GW 1.985
+Task 96 100 0.96
+Task 38 100 0.38
+Task 51 200 0.255
+Task 92 400 0.23
+Task 87 800 0.10875
+Task 41 800 0.05125
+GW 1.99125
+Task 80 100 0.8
+Task 157 200 0.785
+Task 74 200 0.37
+Task 5 400 0.0125
+Task 5 400 0.0125
+Task 9 800 0.01125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 278.4 160
+T1 1 110.2 160
+T2 1 147.9 160
+T3 1 266.8 160
+T4 1 252.3 160
+T5 1 118.9 160
+GW1
+T0 1 232 160
+T1 1 455.3 160
+T2 1 214.6 160
+T3 1 14.5 160
+T4 1 14.5 160
+T5 1 26.1 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 120
+Meet Task : 50
+Miss Task : 70
+Meet Ratio : 0.416667
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 105
+Meet Task : 95
+Miss Task : 10
+Meet Ratio : 0.904762
+Energy Consumption : 8866.27
+Lifetime : 0.0933876
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+087
+-------------
+GW 1.975
+Task 91 100 0.91
+Task 85 100 0.85
+Task 16 100 0.16
+Task 6 200 0.03
+Task 3 200 0.015
+Task 2 200 0.01
+GW 1.975
+Task 66 100 0.66
+Task 47 100 0.47
+Task 80 200 0.4
+Task 48 200 0.24
+Task 62 400 0.155
+Task 20 400 0.05
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 263.9 160
+T1 1 246.5 160
+T2 1 46.4 160
+T3 1 17.4 160
+T4 1 8.7 160
+T5 1 5.8 160
+GW1
+T0 1 191.4 160
+T1 1 136.3 160
+T2 1 232 160
+T3 1 139.2 160
+T4 1 179.8 160
+T5 1 58 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 183
+Meet Task : 105
+Miss Task : 78
+Meet Ratio : 0.57377
+Energy Consumption : 8933.77
+Lifetime : 0.092682
+=========== GW_1 ===========
+Total Task : 140
+Meet Task : 41
+Miss Task : 99
+Meet Ratio : 0.292857
+Energy Consumption : 8536.27
+Lifetime : 0.0969978
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+088
+-------------
+GW 1.99
+Task 178 200 0.89
+Task 137 200 0.685
+Task 94 400 0.235
+Task 36 400 0.09
+Task 31 400 0.0775
+Task 10 800 0.0125
+GW 1.975
+Task 80 100 0.8
+Task 56 100 0.56
+Task 112 200 0.56
+Task 13 400 0.0325
+Task 5 400 0.0125
+Task 4 400 0.01
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 516.2 160
+T1 1 397.3 160
+T2 1 272.6 160
+T3 1 104.4 160
+T4 1 89.9 160
+T5 1 29 160
+GW1
+T0 1 232 160
+T1 1 162.4 160
+T2 1 324.8 160
+T3 1 37.7 160
+T4 1 14.5 160
+T5 1 11.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 75
+Meet Task : 76
+Miss Task : 0
+Meet Ratio : 1.01333
+Energy Consumption : 8500.27
+Lifetime : 0.0974086
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 54
+Miss Task : 76
+Meet Ratio : 0.415385
+Energy Consumption : 8558.77
+Lifetime : 0.0967428
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+089
+-------------
+GW 1.99
+Task 88 100 0.88
+Task 118 200 0.59
+Task 56 200 0.28
+Task 80 400 0.2
+Task 17 800 0.02125
+Task 15 800 0.01875
+GW 1.9825
+Task 92 100 0.92
+Task 150 200 0.75
+Task 23 200 0.115
+Task 20 200 0.1
+Task 28 400 0.07
+Task 22 800 0.0275
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 255.2 160
+T1 1 342.2 160
+T2 1 162.4 160
+T3 1 232 160
+T4 1 49.3 160
+T5 1 43.5 160
+GW1
+T0 1 266.8 160
+T1 1 435 160
+T2 1 66.7 160
+T3 1 58 160
+T4 1 81.2 160
+T5 1 63.8 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 100
+Meet Task : 74
+Miss Task : 26
+Meet Ratio : 0.74
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 117
+Meet Task : 83
+Miss Task : 35
+Meet Ratio : 0.709402
+Energy Consumption : 8686.27
+Lifetime : 0.0953228
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+090
+-------------
+GW 1.98375
+Task 83 100 0.83
+Task 44 100 0.44
+Task 79 200 0.395
+Task 34 200 0.17
+Task 20 200 0.1
+Task 39 800 0.04875
+GW 1.98875
+Task 174 200 0.87
+Task 161 200 0.805
+Task 64 400 0.16
+Task 53 800 0.06625
+Task 43 800 0.05375
+Task 27 800 0.03375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 240.7 160
+T1 1 127.6 160
+T2 1 229.1 160
+T3 1 98.6 160
+T4 1 58 160
+T5 1 113.1 160
+GW1
+T0 1 504.6 160
+T1 1 466.9 160
+T2 1 185.6 160
+T3 1 153.7 160
+T4 1 124.7 160
+T5 1 78.3 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 145
+Meet Task : 40
+Miss Task : 105
+Meet Ratio : 0.275862
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_1 ===========
+Total Task : 65
+Meet Task : 65
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8275.65
+Lifetime : 0.100053
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+091
+-------------
+GW 1.99
+Task 50 100 0.5
+Task 47 100 0.47
+Task 152 400 0.38
+Task 128 400 0.32
+Task 161 800 0.20125
+Task 95 800 0.11875
+GW 1.985
+Task 73 100 0.73
+Task 36 100 0.36
+Task 33 100 0.33
+Task 42 200 0.21
+Task 72 400 0.18
+Task 140 800 0.175
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 145 160
+T1 1 136.3 160
+T2 1 440.8 160
+T3 1 371.2 160
+T4 1 466.9 160
+T5 1 275.5 160
+GW1
+T0 1 211.7 160
+T1 1 104.4 160
+T2 1 95.7 160
+T3 1 121.8 160
+T4 1 208.8 160
+T5 1 406 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 110
+Meet Task : 62
+Miss Task : 48
+Meet Ratio : 0.563636
+Energy Consumption : 8686.27
+Lifetime : 0.0953228
+=========== GW_1 ===========
+Total Task : 155
+Meet Task : 20
+Miss Task : 135
+Meet Ratio : 0.129032
+Energy Consumption : 8566.27
+Lifetime : 0.0966581
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+092
+-------------
+GW 1.98125
+Task 71 100 0.71
+Task 117 200 0.585
+Task 158 400 0.395
+Task 107 400 0.2675
+Task 5 400 0.0125
+Task 9 800 0.01125
+GW 1.97625
+Task 77 100 0.77
+Task 50 100 0.5
+Task 41 100 0.41
+Task 29 200 0.145
+Task 20 200 0.1
+Task 41 800 0.05125
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 205.9 160
+T1 1 339.3 160
+T2 1 458.2 160
+T3 1 310.3 160
+T4 1 14.5 160
+T5 1 26.1 160
+GW1
+T0 1 223.3 160
+T1 1 145 160
+T2 1 118.9 160
+T3 1 84.1 160
+T4 1 58 160
+T5 1 118.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 95
+Meet Task : 85
+Miss Task : 10
+Meet Ratio : 0.894737
+Energy Consumption : 8791.27
+Lifetime : 0.0941843
+=========== GW_1 ===========
+Total Task : 165
+Meet Task : 20
+Miss Task : 145
+Meet Ratio : 0.121212
+Energy Consumption : 8603.77
+Lifetime : 0.0962368
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+093
+-------------
+GW 1.99
+Task 87 100 0.87
+Task 82 100 0.82
+Task 47 200 0.235
+Task 9 200 0.045
+Task 4 400 0.01
+Task 8 800 0.01
+GW 1.98875
+Task 89 100 0.89
+Task 113 200 0.565
+Task 156 400 0.39
+Task 29 400 0.0725
+Task 43 800 0.05375
+Task 14 800 0.0175
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 252.3 160
+T1 1 237.8 160
+T2 1 136.3 160
+T3 1 26.1 160
+T4 1 11.6 160
+T5 1 23.2 160
+GW1
+T0 1 258.1 160
+T1 1 327.7 160
+T2 1 452.4 160
+T3 1 84.1 160
+T4 1 124.7 160
+T5 1 40.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 136
+Meet Task : 64
+Miss Task : 72
+Meet Ratio : 0.470588
+Energy Consumption : 8708.77
+Lifetime : 0.0950765
+=========== GW_1 ===========
+Total Task : 90
+Meet Task : 75
+Miss Task : 15
+Meet Ratio : 0.833333
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+094
+-------------
+GW 1.985
+Task 57 100 0.57
+Task 42 100 0.42
+Task 34 100 0.34
+Task 62 200 0.31
+Task 41 200 0.205
+Task 112 800 0.14
+GW 1.99625
+Task 74 100 0.74
+Task 190 400 0.475
+Task 107 400 0.2675
+Task 204 800 0.255
+Task 132 800 0.165
+Task 75 800 0.09375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 165.3 160
+T1 1 121.8 160
+T2 1 98.6 160
+T3 1 179.8 160
+T4 1 118.9 160
+T5 1 324.8 160
+GW1
+T0 1 214.6 160
+T1 1 551 160
+T2 1 310.3 160
+T3 1 591.6 160
+T4 1 382.8 160
+T5 1 217.5 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 165
+Meet Task : 20
+Miss Task : 145
+Meet Ratio : 0.121212
+Energy Consumption : 8461.27
+Lifetime : 0.0978576
+=========== GW_1 ===========
+Total Task : 75
+Meet Task : 75
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8594.4
+Lifetime : 0.0963418
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+095
+-------------
+GW 1.99375
+Task 94 100 0.94
+Task 89 200 0.445
+Task 152 400 0.38
+Task 90 800 0.1125
+Task 56 800 0.07
+Task 37 800 0.04625
+GW 1.9825
+Task 77 100 0.77
+Task 52 100 0.52
+Task 82 200 0.41
+Task 42 400 0.105
+Task 37 400 0.0925
+Task 68 800 0.085
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 272.6 160
+T1 1 258.1 160
+T2 1 440.8 160
+T3 1 261 160
+T4 1 162.4 160
+T5 1 107.3 160
+GW1
+T0 1 223.3 160
+T1 1 150.8 160
+T2 1 237.8 160
+T3 1 121.8 160
+T4 1 107.3 160
+T5 1 197.2 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 85
+Meet Task : 75
+Miss Task : 10
+Meet Ratio : 0.882353
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_1 ===========
+Total Task : 125
+Meet Task : 50
+Miss Task : 75
+Meet Ratio : 0.4
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+096
+-------------
+GW 1.98375
+Task 51 100 0.51
+Task 48 100 0.48
+Task 63 200 0.315
+Task 106 400 0.265
+Task 90 400 0.225
+Task 151 800 0.18875
+GW 1.99
+Task 90 100 0.9
+Task 95 200 0.475
+Task 178 400 0.445
+Task 74 800 0.0925
+Task 49 800 0.06125
+Task 13 800 0.01625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 147.9 160
+T1 1 139.2 160
+T2 1 182.7 160
+T3 1 307.4 160
+T4 1 261 160
+T5 1 437.9 160
+GW1
+T0 1 261 160
+T1 1 275.5 160
+T2 1 516.2 160
+T3 1 214.6 160
+T4 1 142.1 160
+T5 1 37.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 125
+Meet Task : 60
+Miss Task : 65
+Meet Ratio : 0.48
+Energy Consumption : 8678.77
+Lifetime : 0.0954052
+=========== GW_1 ===========
+Total Task : 85
+Meet Task : 80
+Miss Task : 5
+Meet Ratio : 0.941176
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+097
+-------------
+GW 1.985
+Task 161 200 0.805
+Task 100 200 0.5
+Task 77 200 0.385
+Task 113 800 0.14125
+Task 80 800 0.1
+Task 43 800 0.05375
+GW 1.8425
+Task 91 100 0.91
+Task 50 100 0.5
+Task 20 100 0.2
+Task 21 200 0.105
+Task 51 800 0.06375
+Task 51 800 0.06375
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 466.9 160
+T1 1 290 160
+T2 1 223.3 160
+T3 1 327.7 160
+T4 1 232 160
+T5 1 124.7 160
+GW1
+T0 1 263.9 160
+T1 1 145 160
+T2 1 58 160
+T3 1 60.9 160
+T4 1 147.9 160
+T5 1 147.9 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 75
+Meet Task : 75
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 8594.4
+Lifetime : 0.0963418
+=========== GW_1 ===========
+Total Task : 154
+Meet Task : 58
+Miss Task : 97
+Meet Ratio : 0.376623
+Energy Consumption : 8521.27
+Lifetime : 0.0971686
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+098
+-------------
+GW 1.975
+Task 77 100 0.77
+Task 57 100 0.57
+Task 51 100 0.51
+Task 15 200 0.075
+Task 6 200 0.03
+Task 4 200 0.02
+GW 1.9875
+Task 71 100 0.71
+Task 61 100 0.61
+Task 51 200 0.255
+Task 82 400 0.205
+Task 49 400 0.1225
+Task 34 400 0.085
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 223.3 160
+T1 1 165.3 160
+T2 1 147.9 160
+T3 1 43.5 160
+T4 1 17.4 160
+T5 1 11.6 160
+GW1
+T0 1 205.9 160
+T1 1 176.9 160
+T2 1 147.9 160
+T3 1 237.8 160
+T4 1 142.1 160
+T5 1 98.6 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 180
+Meet Task : 20
+Miss Task : 160
+Meet Ratio : 0.111111
+Energy Consumption : 8303.77
+Lifetime : 0.0997137
+=========== GW_1 ===========
+Total Task : 130
+Meet Task : 50
+Miss Task : 80
+Meet Ratio : 0.384615
+Energy Consumption : 8528.77
+Lifetime : 0.0970831
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+099
+-------------
+GW 1.97125
+Task 68 100 0.68
+Task 65 100 0.65
+Task 53 100 0.53
+Task 11 200 0.055
+Task 9 200 0.045
+Task 9 800 0.01125
+GW 1.99125
+Task 87 100 0.87
+Task 88 200 0.44
+Task 109 400 0.2725
+Task 70 400 0.175
+Task 134 800 0.1675
+Task 53 800 0.06625
+GW 0
+---------- O F L D ------------
+GW0
+T0 1 197.2 160
+T1 1 188.5 160
+T2 1 153.7 160
+T3 1 31.9 160
+T4 1 26.1 160
+T5 1 26.1 160
+GW1
+T0 1 252.3 160
+T1 1 255.2 160
+T2 1 316.1 160
+T3 1 203 160
+T4 1 388.6 160
+T5 1 153.7 160
+GW2
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 3 4 5 
+GW1
+Local
+
+Remote
+0 1 2 3 4 5 
+GW2
+Local
+
+Remote
+
+
+=========== GW_0 ===========
+Total Task : 165
+Meet Task : 13
+Miss Task : 152
+Meet Ratio : 0.0787879
+Energy Consumption : 8251.27
+Lifetime : 0.100348
+=========== GW_1 ===========
+Total Task : 90
+Meet Task : 70
+Miss Task : 20
+Meet Ratio : 0.777778
+Energy Consumption : 8753.77
+Lifetime : 0.0945878
+=========== GW_2 ===========
+Total Task : 0
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : -1.#IND
+Energy Consumption : 6203.1
+Lifetime : 0.133482
+-------------
+100
+-------------

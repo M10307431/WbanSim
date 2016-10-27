@@ -80,7 +80,7 @@ void WBAN_Gen(){
 		vector<int> P;
 		for(int t=0; t<TaskNum; ++t){
 			float uti = (t==TaskNum-1) ? remain_U : rand()/RAND_MAX;						// the last task uti = remain uti
-			while(uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U)		// uti > 0.01
+			while(uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>1.0-(TaskNum-t-1)*lowest_U)		// uti > 0.01
 				uti = (float)rand()/RAND_MAX;
 			
 			P.push_back(period[rand()% sizeof(*period)]);
@@ -97,7 +97,7 @@ void WBAN_Gen(){
 			GW->task_q.at(t).cnt = 0;										// task counter
 			GW->task_q.at(t).parent = GW->id;								// GW id
 			GW->task_q.at(t).period = P.at(t);								// task period
-			GW->task_q.at(t).deadline = P.at(t);							// task deadline
+			GW->task_q.at(t).deadline = P.at(t);									// task deadline
 			GW->task_q.at(t).exec = U.at(t) * P.at(t);						// task execution
 			GW->task_q.at(t).remaining = U.at(t) * P.at(t);					// task remaining time
 			GW->task_q.at(t).uti = (float)GW->task_q.at(t).exec/P.at(t);	// task utilization

@@ -1,4 +1,42 @@
-﻿  WBAN_Gen.cpp
+﻿  Dispatch.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(189): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(13): warning C4005: 'DEBUG' : 巨集重複定義
+          l:\m10307431\wban\wban_sim\wban_sim\debug.h(3) : 請參閱 'DEBUG' 之前的定義
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(16): warning C4005: 'debug' : 巨集重複定義
+          l:\m10307431\wban\wban_sim\wban_sim\debug.h(9) : 請參閱 'debug' 之前的定義
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(42): warning C4809: switch 陳述式有重複的 'default' 標籤; 已提供所有可能的 'case' 標籤
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(59): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+  正在產生程式碼...
+  正在編譯...
+  main.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(189): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(46): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(64): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(65): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(66): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(77): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(92): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(93): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(97): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(98): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(102): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(103): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(107): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(108): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(115): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(116): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+  WBAN_Gen.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(189): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(15): warning C4005: 'DEBUG' : 巨集重複定義
           l:\m10307431\wban\wban_sim\wban_sim\debug.h(3) : 請參閱 'DEBUG' 之前的定義
 l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(18): warning C4005: 'debug' : 巨集重複定義
@@ -12,40 +50,8 @@ l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(133): warning C4996: 'strtok': 
 l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(137): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
   Sched.cpp
-l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(142): warning C4244: '-=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(183): warning C4244: '=' : 將 'double' 轉換為 'int'，由於型別不同，可能導致資料遺失
-  OFLDecision.cpp
-  main.cpp
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(45): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(63): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(64): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(65): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(76): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(91): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(92): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(96): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(97): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(101): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(102): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(106): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(107): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(113): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(114): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
-  Dispatch.cpp
-l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(13): warning C4005: 'DEBUG' : 巨集重複定義
-          l:\m10307431\wban\wban_sim\wban_sim\debug.h(3) : 請參閱 'DEBUG' 之前的定義
-l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(16): warning C4005: 'debug' : 巨集重複定義
-          l:\m10307431\wban\wban_sim\wban_sim\debug.h(9) : 請參閱 'debug' 之前的定義
-l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(42): warning C4809: switch 陳述式有重複的 'default' 標籤; 已提供所有可能的 'case' 標籤
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(189): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(36): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(156): warning C4244: '-=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
   正在產生程式碼...
   WBAN_Sim.vcxproj -> L:\M10307431\WBAN\WBAN_Sim\Debug\WBAN_Sim.exe
