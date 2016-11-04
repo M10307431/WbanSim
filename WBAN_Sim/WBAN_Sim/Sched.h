@@ -11,6 +11,8 @@ extern const int offloadTransfer;
 extern const int fogTransfer;
 extern const float speedRatio;	// remoteSpeed / localSpeed
 
+extern int policyOFLD;
+
 void scheduler(int policy);
 
 //--------Power-------------------------------------------------------
@@ -23,7 +25,7 @@ extern const float t_trans; // wifi trans time (ms)
 /*=====================
 	    Policy
 =====================*/
-
+void FIFO();
 void EDF();
 
 void sched_new(Node* GW);

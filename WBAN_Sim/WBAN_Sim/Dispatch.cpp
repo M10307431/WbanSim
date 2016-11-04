@@ -11,6 +11,10 @@
 using namespace std;
 
 #define DEBUG 1
+#define NOFLD 0
+#define myOFLD 1
+#define AOFLDC 2
+#define AOFLDF 3
 
 #ifdef DEBUG
 #define debug(x) printf x
@@ -56,7 +60,13 @@ void dispatch(Node* GW){
 			//it->cnt++;
 			it->parent = GW->id;
 			it->virtualD = it->deadline;
-			it->deadline = (it->target != -1)? (it->period-fogTransfer-(it->exec-2*fogTransfer)) : (it->period-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);
+			if(policyOFLD==myOFLD) {
+				it->deadline = (it->target != -1)? (it->period-fogTransfer-(it->exec-2*fogTransfer)) : (it->period-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);
+			}
+			if(policyOFLD==AOFLDC){
+					it->deadline--;
+			}
+
 			GW->remote_q.ready_q.push_back(*it);
 			GW->result.totalTask++; 
 		}

@@ -9,6 +9,7 @@ extern int NodeNum;
 extern int TaskNum;
 
 extern const float speedRatio;
+extern int fogspeed;
 //--------Power--------------
 extern const float p_idle;
 extern const float p_comp;

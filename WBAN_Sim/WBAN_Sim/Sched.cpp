@@ -12,6 +12,10 @@
 
 using namespace std;
 
+#define NOFLD 0
+#define myOFLD 1
+#define AOFLDC 2
+#define AOFLDF 3
 
 /*======== subfunction ============*/
 bool minDeadline(Task i, Task j) {return (i.deadline < j.deadline || (i.deadline == j.deadline && i.remaining < j.remaining));}
@@ -32,8 +36,13 @@ void sched_new(Node* GW){
 				if(it->deadline <= HyperPeriod){
 					GW->result.totalTask++;
 				}
+				if(policyOFLD==myOFLD) {
+					it->deadline = (it->target != -1)? (it->virtualD-fogTransfer-(it->exec-2*fogTransfer)) : (it->virtualD-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);	//virtual deadline
+				}
 
-				it->deadline = (it->target != -1)? (it->virtualD-fogTransfer-(it->exec-2*fogTransfer)) : (it->virtualD-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);	//virtual deadline
+				if(policyOFLD==AOFLDC){
+					it->deadline--;
+				}
 
 				GW->remote_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
 				GW->remote_q.ready_q.push_back(*it);					// push to ready_q
@@ -148,32 +157,53 @@ void sched_new(Node* GW){
 		}	
 	}
 }
-
+int traffic = 0;
 void cludServer(Node* GW){
 	if(!GW->Cloud.empty()){
 		for(deque<Task>::iterator it=GW->Cloud.begin(); it!=GW->Cloud.end();){
 			debug(("cloud\r\n"));
-			it->remaining-= speedRatio;
-			if(it->remaining <= offloadTransfer){
-				//if(GW->Cloud.size() >1){
-				//	int x =1;
+
+			if(it->deadline <= timeTick && it->remaining > offloadTransfer){
+				
+				GW->remote_q.wait_q.push_back(*it);
+				GW->result.miss++;
+				//deque<Task>::iterator prevIt = it-1;	// save next it
+				//if(it == GW->Cloud.begin()) {
+				//	prevIt = it+1;
 				//}
-				it->remaining = offloadTransfer;
-				GW->TBS.push_back(*it);
-				deque<Task>::iterator prevIt = it-1;	// save next it
-				if(it == GW->Cloud.begin()) {
-					prevIt = it+1;
-				}
 				GW->Cloud.erase(it,it+1);
 				if(!GW->Cloud.empty()) {		
-					it = prevIt+1;						// check next task
+					it = GW->Cloud.begin();						// check next task
 				}
 				else {									// if empty -> break
 					break;
 				}
 			}
-			else {
-				++it;
+			else{
+				if(speedRatio-traffic>=1){
+					it->remaining-= (speedRatio-traffic);
+				}
+				else{
+					it->remaining-= 1;
+				}
+				if(it->remaining <= 0){
+					it->remaining = offloadTransfer;
+					GW->TBS.push_back(*it);
+					deque<Task>::iterator prevIt = it-1;	// save next it
+					if(it == GW->Cloud.begin()) {
+						prevIt = it+1;
+					}
+					GW->Cloud.erase(it,it+1);
+					if(!GW->Cloud.empty()) {		
+						it = prevIt+1;						// check next task
+					}
+					else {									// if empty -> break
+						break;
+					}
+				}
+				else {
+					++it;
+				}
 			}
 		}
 	}
@@ -266,6 +296,7 @@ void EDF(){
 		GW = NodeHead;
 		battSum = 0;
 		utiSum = 0.0;
+		traffic = 0;
 		debug(("head\r\n"));
 
 		while (GW->nextNode != NULL){
@@ -293,6 +324,7 @@ void EDF(){
 			GW->update_U();				// update current total utilization
 			battSum += GW->batt;
 			utiSum += GW->current_U;
+			traffic += GW->Cloud.size();
 		}
 		
 		GW = NodeHead;
@@ -359,14 +391,15 @@ void EDF(){
 						//GW->currTask->virtualD = GW->currTask->deadline-fogTransfer;
 						//GW->currTask->deadline = GW->currTask->virtualD;
 						//GW->currTask->virtualD = temp_D;
+						GW->currTask->remaining = GW->currTask->exec;
 						Migration(GW, findMigraDest(GW->currTask));
 					}
 					// Migration back
-					else if((GW->currTask->remaining <= fogTransfer)&&(GW->currTask->parent != GW->id)){
+					else if((GW->currTask->remaining <= 0)&&(GW->currTask->parent != GW->id)){
 						debug(("back_fog !\r\n")); char *state=""; Time("back_fog");
 						GW->result.energy += p_trans*fogTransfer;	// calculate GW offloading energy
 						//GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
-						GW->currTask->remaining = (GW->currTask->remaining < fogTransfer)? fogTransfer : GW->currTask->remaining;
+						GW->currTask->remaining = fogTransfer;
 						Migration(GW, backMigraSrc(GW->currTask));
 						GW->currTask = idleTask;
 					}
@@ -387,11 +420,12 @@ void EDF(){
 					if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->deadline < GW->currTask->virtualD){
 						debug(("offload_cloud !\r\n")); Time("offload_cloud");
 						GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
+						GW->currTask->remaining = GW->currTask->exec; 
 						GW->Cloud.push_back(*GW->currTask);
 						GW->currTask = idleTask;
 					}
 					// offloading task finish
-					else if(GW->currTask->remaining <= 0){
+					else if(GW->currTask->remaining <= 0 && GW->currTask->deadline >= GW->currTask->virtualD){
 						debug(("finish_cluod !\r\n")); Time("finish_cloud");
 						GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
 						GW->result.meet++;
@@ -432,6 +466,20 @@ void EDF(){
 	delete parent;
 }
 
+void FIFO(){
+	timeTick = 0;
+	
+	while(timeTick<=HyperPeriod+1){
+		
+		GW = NodeHead;
+
+		while(GW->nextNode != NULL){
+			GW = GW->nextNode;
+		}
+	}
+
+}
+
 void scheduler(int policy){
 	switch (policy)
 	{
@@ -439,6 +487,7 @@ void scheduler(int policy){
 		break;
 
 	case 1:
+		FIFO();
 		break;
 
 	case 2:
@@ -475,6 +524,6 @@ void printResult(Node* GW){
 	fs << "Miss Task : " << GW->result.miss << endl;
 	fs << "Meet Ratio : " << GW->result.meet_ratio << endl;
 	fs << "Energy Consumption : " << GW->result.energy << endl;
-	fs << "Lifetime : " << GW->result.lifetime << endl;
+	//fs << "Lifetime : " << GW->result.lifetime << endl;
 	
 }

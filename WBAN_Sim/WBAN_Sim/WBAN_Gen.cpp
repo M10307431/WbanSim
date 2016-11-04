@@ -80,7 +80,7 @@ void WBAN_Gen(){
 		vector<int> P;
 		for(int t=0; t<TaskNum; ++t){
 			float uti = (t==TaskNum-1) ? remain_U : rand()/RAND_MAX;						// the last task uti = remain uti
-			while(uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>1.0-(TaskNum-t-1)*lowest_U)		// uti > 0.01
+			while(uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>total_U-(TaskNum-t-1)*lowest_U || uti>1.0)		// uti > 0.01
 				uti = (float)rand()/RAND_MAX;
 			
 			P.push_back(period[rand()% sizeof(*period)]);
