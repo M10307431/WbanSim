@@ -15,6 +15,7 @@ using namespace std;
 #define myOFLD 1
 #define AOFLDC 2
 #define AOFLDF 3
+#define SeGW 4
 
 #ifdef DEBUG
 #define debug(x) printf x

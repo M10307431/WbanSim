@@ -29,6 +29,7 @@ void FIFO();
 void EDF();
 
 void sched_new(Node* GW);
+void sched_fifo(Node* GW);
 void cludServer(Node* GW);
 void migration(Node* src, Node* dest);
 void EvaluationFog(Task *task);

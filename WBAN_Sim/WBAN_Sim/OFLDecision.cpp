@@ -13,6 +13,7 @@ using namespace std;
 #define NOFLD 0
 #define AOFLDC 2
 #define AOFLDF	3
+#define SeGW 4
 
 float Eng = 0;	// (mJ)
 
@@ -34,6 +35,9 @@ void OFLD(Node* GW){
 
 	if(GW->task_q.empty()){
 		printf("GW_%d has't any tasks.\n", GW->id);
+	}
+	else if(policyOFLD == SeGW){
+		SeGW_OFLD(GW);
 	}
 	else{
 		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
@@ -71,6 +75,33 @@ void OFLD(Node* GW){
 		}
 	}
 
+}
+
+void SeGW_OFLD(Node* GW){
+	if(GW->task_q.empty()){
+		printf("GW_%d has't any tasks.\n", GW->id);
+	}
+	else{
+		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
+			
+			// calculate energy
+			it->localEng = calEnergy(0, it->exec, Eng);
+			it->remoteEng = calEnergy(1, it->exec, Eng);
+
+			// set offloading flag
+			if(it->remoteEng > it->localEng){
+				it->offload = false;
+			}
+			else if(it->exec <= 100) {
+				it->offload = false;
+			}
+			else{
+				it->offload = true;
+			}
+
+
+		}
+	}
 }
 
 void printOFLD(){

@@ -12,10 +12,11 @@
 
 using namespace std;
 
-#define NOFLD 0
 #define myOFLD 1
+#define NOFLD 0
 #define AOFLDC 2
-#define AOFLDF 3
+#define AOFLDF	3
+#define SeGW 4
 
 /*======== subfunction ============*/
 bool minDeadline(Task i, Task j) {return (i.deadline < j.deadline || (i.deadline == j.deadline && i.remaining < j.remaining));}
@@ -49,14 +50,14 @@ void sched_new(Node* GW){
 				GW->currTask = &GW->remote_q.ready_q.front();
 				GW->remote_q.ready_q.pop_front();
 
-				deque<Task>::iterator nextIt = it+1;	// save next it
-				GW->remote_q.wait_q.erase(it,it+1);		// remove from wait_q
-				if(!GW->remote_q.wait_q.empty()) {		
-					it = nextIt;						// check next task
-				}
-				else {									// if empty -> break
-					break;
-				}
+				//deque<Task>::iterator nextIt = it+1;	// save next it
+				it = GW->remote_q.wait_q.erase(it,it+1);		// remove from wait_q
+				//if(!GW->remote_q.wait_q.empty()) {		
+				//	it = nextIt;						// check next task
+				//}
+				//else {									// if empty -> break
+				//	break;
+				//}
 			}
 			else {
 				++it;									// check next task
@@ -81,14 +82,14 @@ void sched_new(Node* GW){
 				GW->currTask = &GW->local_q.ready_q.front();
 				GW->local_q.ready_q.pop_front();
 
-				deque<Task>::iterator nextIt = it+1;	// save next it
-				GW->local_q.wait_q.erase(it,it+1);		// remove from wait_q
-				if(!GW->local_q.wait_q.empty()) {		
-					it = nextIt;						// check next task
-				}
-				else {									// if empty -> break
-					break;
-				}
+				//deque<Task>::iterator nextIt = it+1;	// save next it
+				it = GW->local_q.wait_q.erase(it,it+1);		// remove from wait_q
+				//if(!GW->local_q.wait_q.empty()) {		
+				//	it = nextIt;						// check next task
+				//}
+				//else {									// if empty -> break
+				//	break;
+				//}
 			}
 			else {
 				++it;									// check next task
@@ -102,7 +103,7 @@ void sched_new(Node* GW){
 	
 	// find minDeadline task to execute
 	if((!GW->remote_q.ready_q.empty()) && (GW->remote_q.ready_q.begin()->deadline < GW->currTask->deadline)) {   
-		if(GW->currTask != idleTask){
+		if(GW->currTask->id != idleTask->id){
 			if(GW->currTask->offload){
 				GW->remote_q.ready_q.push_back(*GW->currTask);
 			}
@@ -157,7 +158,119 @@ void sched_new(Node* GW){
 		}	
 	}
 }
+
+void sched_fifo(Node* GW){
+	// check miss task in ready_q
+	if(!GW->remote_q.ready_q.empty()) {   
+		for(deque<Task>::iterator it=GW->remote_q.ready_q.begin(); it!=GW->remote_q.ready_q.end();){
+			if(it->deadline <= timeTick && it->remaining > 0){				// task arrival
+				GW->currTask = &GW->remote_q.ready_q.at(it-GW->remote_q.ready_q.begin()); // 為了Time func的顯示，暫時用currTask來承接it所指的任務，顯示完畢還回idle
+				debug(("miss_rq !\r\n")); Time("miss_rq");
+				GW->currTask = idleTask;
+				GW->result.miss++;
+				GW->remote_q.wait_q.push_back(*it);
+
+				it = GW->remote_q.ready_q.erase(it);	// remove from wait_q
+				/*if(!GW->remote_q.ready_q.empty()) {		
+					break;
+				}*/
+			}
+			else {
+				++it;									// check next task
+			}
+		}
+	}
+	if(!GW->local_q.ready_q.empty()) {   
+		for(deque<Task>::iterator it=GW->local_q.ready_q.begin(); it!=GW->local_q.ready_q.end();){
+			if(it->deadline <= timeTick && it->remaining > 0){				// task arrival
+				GW->currTask = &GW->local_q.ready_q.at(it-GW->local_q.ready_q.begin()); // 為了Time func的顯示，暫時用currTask來承接it所指的任務，顯示完畢還回idle
+				debug(("miss_rq !\r\n")); Time("miss_rq");
+				GW->currTask = idleTask;
+				GW->result.miss++;
+				GW->local_q.wait_q.push_back(*it);
+
+				it = GW->local_q.ready_q.erase(it);	// remove from wait_q
+				/*if(!GW->local_q.ready_q.empty()) {		
+					break;
+				}*/
+			}
+			else {
+				++it;									// check next task
+			}
+		}
+	}
+	// task awake or sleep?
+	debug(("arrival\r\n"));
+	if(!GW->remote_q.wait_q.empty()){
+
+		sort(GW->remote_q.wait_q.begin(), GW->remote_q.wait_q.end(), minDeadline);	// sort by deadline min -> max
+
+		for(deque<Task>::iterator it=GW->remote_q.wait_q.begin(); it!=GW->remote_q.wait_q.end();){
+			if(it->deadline <= timeTick){				// task arrival
+				it->deadline += it->period;
+				it->remaining = it->exec;
+				it->cnt += 1;
+
+				if(it->deadline <= HyperPeriod){
+					GW->result.totalTask++;
+				}
+
+				GW->remote_q.ready_q.push_back(*it);					// push to ready_q
+
+				it = GW->remote_q.wait_q.erase(it);		// remove from wait_q
+				/*if(!GW->remote_q.wait_q.empty()) {		
+					break;
+				}*/
+			}
+			else {
+				++it;									// check next task
+			}
+		}
+	}
+	if(!GW->local_q.wait_q.empty()){
+		sort(GW->local_q.wait_q.begin(), GW->local_q.wait_q.end(), minDeadline);	// sort by deadline min -> max
+
+		for(deque<Task>::iterator it=GW->local_q.wait_q.begin(); it!=GW->local_q.wait_q.end();){
+			if(it->deadline <= timeTick){				// task arrival
+				it->deadline += it->period;				
+				it->remaining = it->exec;
+				it->cnt += 1;
+
+				if(it->deadline <= HyperPeriod){
+					GW->result.totalTask++;
+				}
+
+				GW->local_q.ready_q.push_back(*it);					// push to ready_q
+
+				it = GW->local_q.wait_q.erase(it);		// remove from wait_q
+				//if(GW->local_q.wait_q.empty()) {		
+				//	break;
+				//}
+			}
+			else {
+				++it;									// check next task
+			}
+		}
+	}
+	// sched_new  prio: remote > local
+	
+	if(!GW->local_q.ready_q.empty()){
+		GW->currTask = &GW->local_q.ready_q.front(); Time("context switch");
+		GW->local_q.ready_q.pop_front();
+	}
+	else if(!GW->remote_q.ready_q.empty()){
+		GW->currTask = &GW->remote_q.ready_q.front(); Time("context switch");
+		GW->remote_q.ready_q.pop_front();
+	}
+	else{
+		GW->currTask = idleTask;
+	}
+
+}
+
+
 int traffic = 0;
+
 void cludServer(Node* GW){
 	if(!GW->Cloud.empty()){
 		for(deque<Task>::iterator it=GW->Cloud.begin(); it!=GW->Cloud.end();){
@@ -167,17 +280,8 @@ void cludServer(Node* GW){
 				
 				GW->remote_q.wait_q.push_back(*it);
 				GW->result.miss++;
-				//deque<Task>::iterator prevIt = it-1;	// save next it
-				//if(it == GW->Cloud.begin()) {
-				//	prevIt = it+1;
-				//}
-				GW->Cloud.erase(it,it+1);
-				if(!GW->Cloud.empty()) {		
-					it = GW->Cloud.begin();						// check next task
-				}
-				else {									// if empty -> break
-					break;
-				}
+
+				it = GW->Cloud.erase(it,it+1);
 			}
 			else{
 				if(speedRatio-traffic>=1){
@@ -189,17 +293,7 @@ void cludServer(Node* GW){
 				if(it->remaining <= 0){
 					it->remaining = offloadTransfer;
 					GW->TBS.push_back(*it);
-					deque<Task>::iterator prevIt = it-1;	// save next it
-					if(it == GW->Cloud.begin()) {
-						prevIt = it+1;
-					}
-					GW->Cloud.erase(it,it+1);
-					if(!GW->Cloud.empty()) {		
-						it = prevIt+1;						// check next task
-					}
-					else {									// if empty -> break
-						break;
-					}
+					it = GW->Cloud.erase(it,it+1);
 				}
 				else {
 					++it;
@@ -442,7 +536,7 @@ void EDF(){
 				GW->currTask->remaining -= GW->speed;
 				debug(("--_l !\r\n"));
 				
-				GW->result.energy += (GW->currTask == idleTask)? p_idle : (p_comp+p_idle);  // calculate GW computing energy
+				GW->result.energy += (GW->currTask->id == idleTask->id)? p_idle : (p_comp+p_idle);  // calculate GW computing energy
 				
 				if(GW->currTask->remaining <= 0){
 					debug(("finish_l !\r\n")); Time("finish_l");
@@ -472,10 +566,96 @@ void FIFO(){
 	while(timeTick<=HyperPeriod+1){
 		
 		GW = NodeHead;
+		traffic = 0;
+		debug(("head\r\n"));
 
+		while (GW->nextNode != NULL){
+			GW = GW->nextNode;
+			debug(("TBS0\r\n"));
+			// TBS -> remote_q
+			while(!GW->TBS.empty()){
+				
+				GW->remote_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
+				GW->remote_q.ready_q.push_back(GW->TBS.front());
+				GW->currTask = &GW->remote_q.ready_q.front();
+				GW->remote_q.ready_q.pop_front();
+				GW->TBS.pop_front();
+			}
+			debug(("TBS1\r\n"));
+			traffic += GW->Cloud.size();
+		}
+
+		GW = NodeHead;
 		while(GW->nextNode != NULL){
 			GW = GW->nextNode;
+
+			if((GW->currTask->deadline <= timeTick)&&(GW->currTask->remaining > 0)) {	
+				if(GW->currTask->offload){
+					debug(("miss_r !\r\n")); Time("miss_r");
+					GW->result.miss++;
+					GW->remote_q.wait_q.push_back(*GW->currTask);
+				}
+				else {
+					debug(("miss_l !\r\n")); Time("miss_l");
+					GW->result.miss++;
+					GW->local_q.wait_q.push_back(*GW->currTask);				
+				}
+				GW->currTask = idleTask;
+				sched_fifo(GW);				// schedule new task
+				debug(("Sched_new !\r\n"));
+			}
+			else if(GW->currTask->id == idleTask->id){
+				sched_fifo(GW);				// schedule new task
+				debug(("Sched_new !\r\n"));
+			}
+
+			cludServer(GW);				// cloud computing
+			debug(("TimeTick : %d\t GW_%d\t T_%d\r\n", timeTick, GW->id, GW->currTask->id));
+
+			// Offloading task
+			if(GW->currTask->offload){
+				
+				GW->currTask->remaining -= GW->speed;
+				debug(("--_r !\r\n"));
+				GW->result.energy += (p_idle+(float)p_comp/4.0);	// calculate GW offloading energy (proccessing(light loading) + transmission)
+
+				//============ Cloud offfloading ===========
+				// offload to cloud
+				if(GW->currTask->remaining <= GW->currTask->exec-offloadTransfer && GW->currTask->remaining > offloadTransfer){
+					debug(("offload_cloud !\r\n")); Time("offload_cloud");
+					GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
+					GW->currTask->remaining = GW->currTask->exec; 
+					GW->Cloud.push_back(*GW->currTask);
+					GW->currTask = idleTask;
+				}
+				// offloading task finish
+				else if(GW->currTask->remaining <= 0){
+					debug(("finish_cluod !\r\n")); Time("finish_cloud");
+					GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
+					GW->result.meet++;
+					GW->remote_q.wait_q.push_back(*GW->currTask);
+					GW->currTask = idleTask;
+				}	
+			}
+			//local task
+			else{
+				GW->currTask->remaining -= GW->speed;
+				debug(("--_l !\r\n"));
+				
+				GW->result.energy += (GW->currTask->id == idleTask->id)? p_idle : (p_comp+p_idle);  // calculate GW computing energy
+				
+				if(GW->currTask->remaining <= 0){
+					debug(("finish_l !\r\n")); Time("finish_l");
+					GW->result.meet++;
+					GW->local_q.wait_q.push_back(*GW->currTask);
+					GW->currTask = idleTask;
+				}	
+			}
+
 		}
+		debug(("Next !\r\n"));	
+		timeTick++;
+		idleTask->remaining =9999;
 	}
 
 }

@@ -23,6 +23,7 @@ extern const int fogTransfer;
 float calEnergy(bool remote, int exec, float Eng);	// remote 0:local, 1:remote
 
 void OFLD(Node* GW);
+void SeGW_OFLD(Node* GW);
 
 void printOFLD();
 

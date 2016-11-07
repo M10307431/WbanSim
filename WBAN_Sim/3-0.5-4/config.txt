@@ -1,0 +1,6 @@
+Set = 100
+NodeNum = 3
+TaskNum = 6
+total_U = 0.5
+policyOFLD = SeGW
+schedPolicy = FIFO

@@ -20,6 +20,7 @@ using namespace std;
 #define myOFLD 1
 #define AOFLDC 2
 #define AOFLDF 3
+#define SeGW 4
 int policyOFLD = NOFLD;	// 0:nver, 1:my, 2:always
 
 /*=================================
@@ -49,8 +50,7 @@ int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
 int timeTick = 0;
 //-------- Sched Policy --------------------------
-#define	Nofld	0
-#define	Ofld	1
+#define	FIFO	1
 #define EDF		2
 
 int schedPolicy = EDF;	// EDF
@@ -115,11 +115,13 @@ int main(){
 			else if(strcmp(value, "AOFLDC") == 0){policyOFLD = AOFLDC;}
 			else if(strcmp(value, "AOFLDF") == 0){policyOFLD = AOFLDF;}
 			else if(strcmp(value, "NOFLD") == 0){policyOFLD = NOFLD;}
+			else if(strcmp(value, "SeGW") == 0){policyOFLD = SeGW;}
 
 			config.getline(strBuf, sizeof(strBuf));
 			value = strtok(strBuf, " = ");
 			value = strtok(NULL, " = ");
 			if(strcmp(value, "EDF") == 0){schedPolicy = EDF;}
+			if(strcmp(value, "FIFO") == 0){schedPolicy = FIFO;}
 		
 			config.close();
 		}
@@ -209,67 +211,6 @@ int main(){
 			}
 		}
 
-		//////////////////////////////////////////
-		//fs << "--------- Never OFLD ----------\n";
-		//policyOFLD = NOFLD;
-		//GW = NodeHead;
-		//while(GW->nextNode != NULL) {
-		//	GW = GW->nextNode;
-		//	GW->Cloud.clear();
-		//	GW->TBS.clear();
-		//	GW->local_q.ready_q.clear();
-		//	GW->local_q.wait_q.clear();
-		//	GW->remote_q.ready_q.clear();
-		//	GW->remote_q.wait_q.clear();
-		//	GW->result.clear();
-		//	GW->currTask = idleTask;
-		//	OFLD(GW);
-		//	dispatch(GW);
-		//}
-
-		//printOFLD();
-		//printDispatch();
-
-		//scheduler(schedPolicy);
-
-		//// calculate meet_ratio & lifetime
-		//GW = NodeHead;
-		//while(GW->nextNode != NULL) {
-		//	GW = GW->nextNode;
-		//	GW->result.calculate();
-		//	printResult(GW);
-		//}
-
-		//////////////////////////////////////////
-		//fs << "--------- Always OFLD ----------\n";
-		//policyOFLD = AOFLD;
-		//GW = NodeHead;
-		//while(GW->nextNode != NULL) {
-		//	GW = GW->nextNode;
-		//	GW->Cloud.clear();
-		//	GW->TBS.clear();
-		//	GW->local_q.ready_q.clear();
-		//	GW->local_q.wait_q.clear();
-		//	GW->remote_q.ready_q.clear();
-		//	GW->remote_q.wait_q.clear();
-		//	GW->result.clear();
-		//	GW->currTask = idleTask;
-		//	OFLD(GW);
-		//	dispatch(GW);
-		//}
-
-		//printOFLD();
-		//printDispatch();
-
-		//scheduler(schedPolicy);
-
-		//// calculate meet_ratio & lifetime
-		//GW = NodeHead;
-		//while(GW->nextNode != NULL) {
-		//	GW = GW->nextNode;
-		//	GW->result.calculate();
-		//	printResult(GW);
-		//}
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 
 	}
