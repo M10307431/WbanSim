@@ -1,4 +1,0 @@
-Set = 100
-NodeNum = 3
-TaskNum = 6
-schedPolicy = EDF

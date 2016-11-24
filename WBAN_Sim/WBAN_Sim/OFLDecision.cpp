@@ -65,7 +65,7 @@ void OFLD(Node* GW){
 				if((it->localEng > it->remoteEng)){
 					it->offload = true;
 					it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
-					it->target = ((it->target == -1)&&(2*fogTransfer+(exec/fogspeed) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
+					it->target = ((it->target == -1)&&(2*fogTransfer+(exec/fogspeed) > 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
 					//it->virtualD = (it->target != -1)? (it->deadline-offloadTransfer): (it->deadline-fogTransfer);
 				}
 				else{
@@ -92,7 +92,7 @@ void SeGW_OFLD(Node* GW){
 			if(it->remoteEng > it->localEng){
 				it->offload = false;
 			}
-			else if(it->exec <= 100) {
+			else if(it->exec <= 200) {
 				it->offload = false;
 			}
 			else{

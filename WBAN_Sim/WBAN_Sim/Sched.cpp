@@ -500,6 +500,7 @@ void EDF(){
 					else if(GW->currTask->remaining <= 0){
 						debug(("finish_fog !\r\n")); Time("finish_fog");
 						GW->result.meet++;
+						GW->result.resp += timeTick+1 - (GW->currTask->deadline - GW->currTask->period);
 						GW->remote_q.wait_q.push_back(*GW->currTask);
 						GW->currTask = idleTask;
 					}
@@ -523,6 +524,7 @@ void EDF(){
 						debug(("finish_cluod !\r\n")); Time("finish_cloud");
 						GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
 						GW->result.meet++;
+						GW->result.resp += timeTick+1 - (GW->currTask->deadline - GW->currTask->period);
 						GW->remote_q.wait_q.push_back(*GW->currTask);
 						GW->currTask = idleTask;
 					}
@@ -541,6 +543,7 @@ void EDF(){
 				if(GW->currTask->remaining <= 0){
 					debug(("finish_l !\r\n")); Time("finish_l");
 					GW->result.meet++;
+					GW->result.resp += timeTick+1 - (GW->currTask->deadline - GW->currTask->period);
 					GW->local_q.wait_q.push_back(*GW->currTask);
 					GW->currTask = idleTask;
 					
@@ -633,6 +636,7 @@ void FIFO(){
 					debug(("finish_cluod !\r\n")); Time("finish_cloud");
 					GW->result.energy += p_trans*offloadTransfer;	// calculate GW offloading energy
 					GW->result.meet++;
+					GW->result.resp += timeTick+1 - (GW->currTask->deadline - GW->currTask->period);
 					GW->remote_q.wait_q.push_back(*GW->currTask);
 					GW->currTask = idleTask;
 				}	
@@ -647,6 +651,7 @@ void FIFO(){
 				if(GW->currTask->remaining <= 0){
 					debug(("finish_l !\r\n")); Time("finish_l");
 					GW->result.meet++;
+					GW->result.resp += timeTick+1 - (GW->currTask->deadline - GW->currTask->period);
 					GW->local_q.wait_q.push_back(*GW->currTask);
 					GW->currTask = idleTask;
 				}	

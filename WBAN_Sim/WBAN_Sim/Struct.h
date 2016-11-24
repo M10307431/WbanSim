@@ -67,6 +67,7 @@ struct Result{
 	int miss;
 	double meet_ratio;
 	double lifetime;	// [CR2032] 230mA / energy (hr)
+	int resp;
 
 
 	void clear(){
@@ -76,6 +77,7 @@ struct Result{
 		miss = 0;
 		meet_ratio = 0;
 		lifetime = 0;
+		resp = 0;
 	};
 
 	void calculate(){

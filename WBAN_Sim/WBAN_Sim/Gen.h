@@ -18,6 +18,7 @@ extern float lowest_U;	// lowest Utilization
 extern int period[];
 extern int HyperPeriod;
 
+extern int fogserver;
 /*=================================
 		Function
 ==================================*/

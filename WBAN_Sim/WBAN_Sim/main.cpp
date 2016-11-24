@@ -42,7 +42,7 @@ char* inputPath = "input.txt";
 fstream fs, config, input;
 int Set = 100;
 int NodeNum = 3;	// # of GW Node
-int TaskNum = 4;	// # of Tasks in each GW
+int TaskNum = 6;	// # of Tasks in each GW
 float total_U = 1.5;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
 
@@ -54,12 +54,13 @@ int timeTick = 0;
 #define EDF		2
 
 int schedPolicy = EDF;	// EDF
-int fogspeed = 2;
+int fogspeed = 1;
+int fogserver =0;		// fog server num off/on
 /*=================================
           Parameter
 =================================*/
 
-const float speedRatio = 10;	// remoteSpeed / localSpeed
+const float speedRatio = 5;	// remoteSpeed / localSpeed
 //--------Power-------------------------------------------------------
 const float p_idle = 1.55;	// idle (W)
 const float p_comp	= 2.9-1.55;	// full load
@@ -182,12 +183,12 @@ int main(){
 			input << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 		}
 		
-
 		//policyOFLD = myOFLD;
 		GW = NodeHead;
 		while(GW->nextNode != NULL) {
 			GW = GW->nextNode;
-			OFLD(GW);
+			if(GW->nextNode != NULL)
+				OFLD(GW);
 			dispatch(GW);
 			if(GW->nextNode == NULL){	//fog
 				GW->speed = fogspeed;
@@ -205,9 +206,10 @@ int main(){
 			GW = GW->nextNode;
 			GW->result.calculate();
 			printResult(GW);
-			if(GW->nextNode != NULL){
+			if(GW->id < NodeNum-1){
 				Result_avg->energy += GW->result.energy;
 				Result_avg->meet_ratio += GW->result.meet_ratio;
+				Result_avg->resp += GW->result.resp;
 			}
 		}
 
@@ -217,11 +219,12 @@ int main(){
 	fs << "============== Average Result ==============\n";
 	fs << "Meet Ratio : " << Result_avg->meet_ratio/(Set*2) << endl;
 	fs << "Energy Consumption : " << Result_avg->energy/(Set*2) << endl;
+	fs << "Response time of Meet : " << Result_avg->resp << endl;
 
 	Clear();
 	fs.close();
 	input.close();
 	filename.clear();
-	system("PAUSE");
+	//system("PAUSE");
 	return 0;
 }

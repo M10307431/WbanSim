@@ -43,8 +43,12 @@ void Create(){
 
 		/*---------------- Gen task -----------------*/
 		
-		// last GW as a fog server without any tasks
-		if(GW->id < NodeNum-1){
+		// last GW as a fog server without any tasks (NodeNum-1)
+		if(GW->id >= NodeNum-fogserver-1){
+			taskgen = new Task;
+			GW->task_q.push_back(*taskgen);
+		}
+		else{
 			for(int t=0; t<TaskNum; ++t){
 				taskgen = new Task;
 				GW->task_q.push_back(*taskgen);
@@ -72,16 +76,33 @@ void WBAN_Gen(){
 		GW = GW->nextNode;
 
 		// last GW as a fog server without any tasks
-		if(GW->nextNode == NULL)
+		if(GW->id >= NodeNum-fogserver)
 			break;
 
 		float remain_U = total_U;
+		// last GW as a fog server with light load
+		if(GW->id == NodeNum-fogserver-1){
+			remain_U = 0.3;
+			// set task parameters to node
+			GW->task_q.at(0).id = 0;										// task id
+			GW->task_q.at(0).cnt = 0;										// task counter
+			GW->task_q.at(0).parent = GW->id;								// GW id
+			GW->task_q.at(0).period = 1000;								// task period
+			GW->task_q.at(0).deadline = 1000;									// task deadline
+			GW->task_q.at(0).exec = 0.3 *1000* GW->speed;						// task execution
+			GW->task_q.at(0).remaining = 0.3 * 1000 *GW->speed;					// task remaining time
+			GW->task_q.at(0).uti = 0.3;	// task utilization
+			GW->total_U += GW->task_q.at(0).uti;							// node total utilization
+			break;
+		}
+		
 		vector<float> U;
 		vector<int> P;
 		for(int t=0; t<TaskNum; ++t){
-			float uti = (t==TaskNum-1) ? remain_U : rand()/RAND_MAX;						// the last task uti = remain uti
-			while(uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>total_U-(TaskNum-t-1)*lowest_U || uti>1.0)		// uti > 0.01
-				uti = (float)rand()/RAND_MAX;
+			float uti = (t==TaskNum-1) ? remain_U : (float)rand()/RAND_MAX;						// the last task uti = remain uti
+			while((uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>total_U-(TaskNum-t-1)*lowest_U || uti>1.0)&&(t!=TaskNum-1)){		// uti > 0.01
+				uti = ((remain_U-(TaskNum-t-1)*lowest_U)-lowest_U)*(float)rand()/RAND_MAX + lowest_U;
+			}
 			
 			P.push_back(period[rand()% sizeof(*period)]);
 			U.push_back(uti);
