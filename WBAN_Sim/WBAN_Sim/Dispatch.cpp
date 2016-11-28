@@ -58,11 +58,13 @@ void dispatch(Node* GW){
 	for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
 		if(it->offload == true){
 			it->_setPrio(setPrio(it));
-			//it->cnt++;
 			it->parent = GW->id;
 			it->virtualD = it->deadline;
+			it->uplink = (it->target == -1)? offloadTransfer : fogTransfer;
+			it->dwlink = (it->target == -1)? offloadTransfer : fogTransfer;
+			it->remaining = it->uplink;
 			if(policyOFLD==myOFLD) {
-				it->deadline = (it->target != -1)? (it->period-fogTransfer-(it->exec-2*fogTransfer)) : (it->period-offloadTransfer-(it->exec-2*offloadTransfer)/speedRatio);
+				it->deadline = (it->target != -1)? (it->period-fogTransfer-it->exec) : (it->period-offloadTransfer-it->exec/speedRatio);
 			}
 			if(policyOFLD==AOFLDC){
 					it->deadline--;
@@ -73,7 +75,6 @@ void dispatch(Node* GW){
 		}
 		else{
 			it->_setPrio(setPrio(it));
-			//it->cnt++;
 			it->parent = GW->id;
 			GW->local_q.ready_q.push_back(*it);
 			GW->result.totalTask++;

@@ -26,7 +26,7 @@ float calEnergy(bool remote, int exec, float Eng) {
 	}
 	else{
 		
-		Eng =  (p_idle + p_trans + (float)p_comp)*offloadTransfer + (p_idle + p_trans + (float)p_comp)*offloadTransfer;	//+ (p_idle + p_comp)*(exec/speedRatio)
+		Eng =  (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer + (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer;	//+ (p_idle + p_comp)*(exec/speedRatio)
 		return Eng;
 	}
 }
@@ -59,7 +59,7 @@ void OFLD(Node* GW){
 				it->offload = true;
 				it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
 				it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
-				//it->virtualD = (it->target != -1)? (it->deadline-offloadTransfer): (it->deadline-fogTransfer);
+
 			}
 			else if(policyOFLD==myOFLD){
 				if((it->localEng > it->remoteEng)){
@@ -92,7 +92,7 @@ void SeGW_OFLD(Node* GW){
 			if(it->remoteEng > it->localEng){
 				it->offload = false;
 			}
-			else if(it->exec <= 200) {
+			else if(it->exec <= 100) {
 				it->offload = false;
 			}
 			else{

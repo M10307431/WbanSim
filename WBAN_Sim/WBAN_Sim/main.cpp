@@ -42,8 +42,8 @@ char* inputPath = "input.txt";
 fstream fs, config, input;
 int Set = 100;
 int NodeNum = 3;	// # of GW Node
-int TaskNum = 6;	// # of Tasks in each GW
-float total_U = 1.5;	// total Utilization
+int TaskNum = 5;	// # of Tasks in each GW
+float total_U = 0.3;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
 
 int period[] = {100, 200, 400, 800, 1000};
@@ -198,7 +198,8 @@ int main(){
 		printOFLD();
 		printDispatch();
 
-		scheduler(schedPolicy);
+		if(inputLoad)
+			scheduler(schedPolicy);
 
 		// calculate meet_ratio & lifetime
 		GW = NodeHead;
