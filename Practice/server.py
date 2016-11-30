@@ -2,35 +2,72 @@ import SocketServer
 import time
 from threading import Thread
 
-#global cmd
-#cmd = '0'
+global Task
 
 class service(SocketServer.BaseRequestHandler):    
     def handle(self):
-        global cmd
+        global Task
+        Task = []
+        idle = 1
         print "Client connected with ", self.client_address
         while True:
-            self.request.settimeout(0.1)
+            self.request.settimeout(0.0)
             try:
-                recv = self.request.recv(1024).strip() #receive the data            
-                if recv == "exit":
-                    break
-                elif recv:
-                    #cmd = recv
-                    print "{}:{}".format(self.client_address,cmd)
+                recv = self.request.recv(1024) #receive the data
+                taskCC = pickle.loads(recv)
+                taskCC['Remain'] = taskCC['Exe']
+                Task.append(taskCC)
+                print "{}:{}_{}".format(self.client_address,taskCC['GW'],taskCC['id'])
             except:
                 pass
-            self.request.send(recv)
-            time.sleep(0.2)
+
+            #===== sched new =====
+            taskcur = None
+            sched_new = None
+            if len(Task):
+                for d in Task:
+                    if sched_new==None:
+                        if d['Remain']>0:
+                            sched_new = d
+                            print "TASK",d['id'],"(",d['Cnt'],")\tRUN"
+                    else:
+                        if sched_new['Deadline']>d['Deadline'] and d['Remain']>0:
+                            sched_new = d
+                            print "TASK",d['id'],"(",d['Cnt'],")\tPREEMPT"
+
+            taskcur = sched_new
+            
+            #===== exec =====
+            time.sleep(0.01)
+            if taskcur!=None:
+                idle = 1
+                for d in Task:
+                    if d['id']==taskcur['id'] and d['GW']==taskcur['GW']:
+                        d['Remain']-=0.1
+                        if d['Remain']<=0:
+                            Task.remove(d)
+                            data_string = pickle.dumps(taskcur)
+                            try:
+                                self.request.send(data_string)
+                                print "TASK",taskcur['id'],"(",taskcur['Cnt'],")\tFINISH"
+                            except:
+                                print "Send Error"
+                            taskcur = None
+            else:
+                if idle == 1:
+                    idle = 0
+                    print "\tIDLE"
+
         self.request.close()
 
 class ThreadedTCPServer(SocketServer.ThreadingMixIn, SocketServer.TCPServer):
     pass
 
 if __name__ == "__main__":
-    t = ThreadedTCPServer(('',12345), service)
+    t = ThreadedTCPServer(('',12340), service)
     try:
         t.serve_forever()
     except:
         t.shutdown()
         print "Server shut down"
+

@@ -70,6 +70,8 @@ struct Queue{
 
 struct Result{
 	double energy;		// (W * sec)
+	int serverEng;
+	int fogEng;
 	int totalTask;
 	int meet;
 	int miss;
@@ -80,6 +82,8 @@ struct Result{
 
 	void clear(){
 		energy = 0;
+		serverEng = 0;
+		fogEng = 0;
 		totalTask = 0;
 		meet = 0;
 		miss = 0;
@@ -207,6 +211,8 @@ struct Node{
 		else{
 			migratWeight = -999;
 		}
+
+		migratWeight = migration_factor*batt/100 + (1.0-migration_factor)*(1.0-current_U);
 	}
 
 	void ADM(int exec, int deadline2, int uplink){

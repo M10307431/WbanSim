@@ -1,6 +1,55 @@
-﻿  OFLDecision.cpp
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(205): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(251): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(255): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\ofldecision.cpp(29): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+﻿  main.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(209): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(215): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(261): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(47): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(66): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(67): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(68): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(80): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(95): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(96): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(100): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(101): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(105): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(106): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(110): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(111): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(112): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(115): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(116): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(124): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(125): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(219): warning C4244: '+=' : 將 'double' 轉換為 'int'，由於型別不同，可能導致資料遺失
+  Sched.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(209): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(215): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(261): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(34): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(35): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(45): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(201): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(202): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(295): warning C4244: '-=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(337): warning C4305: '正在初始化' : 從 'int' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(378): warning C4244: '正在初始化' : 將 'int' 轉換為 'float'，由於型別不同，可能導致資料遺失
+  正在產生程式碼...
+  正在略過... (未偵測到相關變更)
+  WBAN_Gen.cpp
+  OFLDecision.cpp
+  Dispatch.cpp
   WBAN_Sim.vcxproj -> L:\M10307431\WBAN\WBAN_Sim\Debug\WBAN_Sim.exe

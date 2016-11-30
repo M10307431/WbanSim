@@ -1180,8 +1180,8 @@ Remote
 TimeTick = 0	GW_0	0_1_0		context switch	400	25
 TimeTick = 0	GW_1	1_0_0		context switch	400	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_0_0		context switch	200	79
 TimeTick = 25	GW_1	1_1_0		context switch	400	29
 TimeTick = 54	GW_1	1_1_0		finish_l	400	0
@@ -1191,30 +1191,38 @@ TimeTick = 76	GW_1	1_3_0		context switch	400	20
 TimeTick = 96	GW_1	1_3_0		finish_l	400	0
 TimeTick = 96	GW_1	1_4_0		context switch	800	40
 TimeTick = 104	GW_0	0_0_0		finish_l	200	0
-TimeTick = 104	GW_0	0_2_0		context switch	400	25
-TimeTick = 129	GW_0	0_2_0		finish_l	400	0
-TimeTick = 129	GW_0	0_3_0		context switch	800	45
+TimeTick = 104	GW_0	0_1_0		context switch	400	25
+TimeTick = 129	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 129	GW_0	0_2_0		context switch	400	25
 TimeTick = 136	GW_1	1_4_0		finish_l	800	0
-TimeTick = 136	GW_1	1_5_0		context switch	800	40
-TimeTick = 174	GW_0	0_3_0		finish_l	800	0
-TimeTick = 174	GW_0	0_4_0		context switch	800	41
-TimeTick = 176	GW_1	1_5_0		finish_l	800	0
-TimeTick = 215	GW_0	0_4_0		finish_l	800	0
-TimeTick = 215	GW_0	0_5_0		context switch	800	41
-TimeTick = 256	GW_0	0_5_0		finish_l	800	0
-TimeTick = 256	GW_0	0_0_1		context switch	400	79
+TimeTick = 136	GW_1	1_0_0		context switch	400	25
+TimeTick = 154	GW_0	0_2_0		finish_l	400	0
+TimeTick = 154	GW_0	0_3_0		context switch	800	45
+TimeTick = 161	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 161	GW_1	1_5_0		context switch	800	40
+TimeTick = 199	GW_0	0_3_0		finish_l	800	0
+TimeTick = 199	GW_0	0_4_0		context switch	800	41
+TimeTick = 201	GW_1	1_5_0		finish_l	800	0
+TimeTick = 240	GW_0	0_4_0		finish_l	800	0
+TimeTick = 240	GW_0	0_5_0		context switch	800	41
+TimeTick = 281	GW_0	0_5_0		finish_l	800	0
+TimeTick = 281	GW_0	0_0_1		context switch	400	79
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
-TimeTick = 335	GW_0	0_0_1		finish_l	400	0
-TimeTick = 400	GW_0	0_2_1		context switch	800	25
-TimeTick = 400	GW_1	1_1_1		context switch	800	29
-TimeTick = 425	GW_0	0_2_1		finish_l	800	0
-TimeTick = 425	GW_0	0_0_2		context switch	600	79
-TimeTick = 429	GW_1	1_1_1		finish_l	800	0
-TimeTick = 429	GW_1	1_2_1		context switch	800	22
-TimeTick = 451	GW_1	1_2_1		finish_l	800	0
-TimeTick = 451	GW_1	1_3_1		context switch	800	20
-TimeTick = 471	GW_1	1_3_1		finish_l	800	0
-TimeTick = 504	GW_0	0_0_2		finish_l	600	0
+TimeTick = 360	GW_0	0_0_1		finish_l	400	0
+TimeTick = 400	GW_0	0_1_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+TimeTick = 427	GW_0	0_1_1		offload_cloud	800	0
+TimeTick = 427	GW_0	0_2_1		context switch	800	25
+TimeTick = 428	GW_1	1_0_1		offload_cloud	800	0
+TimeTick = 428	GW_1	1_1_1		context switch	800	29
+TimeTick = 452	GW_0	0_2_1		finish_l	800	0
+TimeTick = 452	GW_0	0_0_2		context switch	600	79
+TimeTick = 457	GW_1	1_1_1		finish_l	800	0
+TimeTick = 457	GW_1	1_2_1		context switch	800	22
+TimeTick = 479	GW_1	1_2_1		finish_l	800	0
+TimeTick = 479	GW_1	1_3_1		context switch	800	20
+TimeTick = 499	GW_1	1_3_1		finish_l	800	0
+TimeTick = 531	GW_0	0_0_2		finish_l	600	0
 TimeTick = 600	GW_0	0_0_3		context switch	800	79
 TimeTick = 679	GW_0	0_0_3		finish_l	800	0
 TimeTick = 800	GW_0	0_3_1		context switch	1600	45
@@ -1363,17 +1371,17 @@ TimeTick = 4000	GW_0	0_3_5		context switch	4800	45
 TimeTick = 4000	GW_1	1_4_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 46
-Meet Task : 41
+Total Task : 47
+Meet Task : 42
 Miss Task : 4
-Meet Ratio : 0.891304
-Energy Consumption : 9373.65
+Meet Ratio : 0.893617
+Energy Consumption : 9389.25
 =========== GW_1 ===========
-Total Task : 41
-Meet Task : 40
+Total Task : 42
+Meet Task : 41
 Miss Task : 0
-Meet Ratio : 0.97561
-Energy Consumption : 7711.8
+Meet Ratio : 0.97619
+Energy Consumption : 7727.7
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -1436,43 +1444,47 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	53
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	200	40
 TimeTick = 53	GW_1	1_0_0		finish_l	100	0
 TimeTick = 53	GW_1	1_1_0		context switch	100	16
 TimeTick = 65	GW_0	0_1_0		finish_l	200	0
-TimeTick = 65	GW_0	0_2_0		context switch	400	31
+TimeTick = 65	GW_0	0_0_0		context switch	200	25
 TimeTick = 69	GW_1	1_1_0		finish_l	100	0
 TimeTick = 69	GW_1	1_2_0		context switch	200	28
-TimeTick = 96	GW_0	0_2_0		finish_l	400	0
-TimeTick = 96	GW_0	0_3_0		context switch	400	27
+TimeTick = 90	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 90	GW_0	0_2_0		context switch	400	31
 TimeTick = 97	GW_1	1_2_0		finish_l	200	0
 TimeTick = 97	GW_1	1_3_0		context switch	200	12
 TimeTick = 109	GW_1	1_3_0		finish_l	200	0
 TimeTick = 109	GW_1	1_4_0		context switch	400	20
-TimeTick = 123	GW_0	0_3_0		finish_l	400	0
-TimeTick = 123	GW_0	0_4_0		context switch	800	46
+TimeTick = 121	GW_0	0_2_0		finish_l	400	0
+TimeTick = 121	GW_0	0_3_0		context switch	400	27
 TimeTick = 129	GW_1	1_4_0		finish_l	400	0
 TimeTick = 129	GW_1	1_5_0		context switch	800	40
-TimeTick = 169	GW_0	0_4_0		finish_l	800	0
+TimeTick = 148	GW_0	0_3_0		finish_l	400	0
+TimeTick = 148	GW_0	0_4_0		context switch	800	46
 TimeTick = 169	GW_1	1_5_0		finish_l	800	0
-TimeTick = 169	GW_0	0_5_0		context switch	800	43
 TimeTick = 169	GW_1	1_0_1		context switch	200	53
+TimeTick = 194	GW_0	0_4_0		finish_l	800	0
+TimeTick = 194	GW_0	0_5_0		context switch	800	43
 TimeTick = 200	GW_1	1_0_1		miss_l	200	22
 TimeTick = 200	GW_1	1_1_1		miss_rq	200	16
 TimeTick = 200	GW_1	1_2_1		context switch	400	28
-TimeTick = 212	GW_0	0_5_0		finish_l	800	0
-TimeTick = 212	GW_0	0_1_1		context switch	400	40
 TimeTick = 228	GW_1	1_2_1		finish_l	400	0
 TimeTick = 228	GW_1	1_3_1		context switch	400	12
+TimeTick = 237	GW_0	0_5_0		finish_l	800	0
+TimeTick = 237	GW_0	0_0_1		context switch	400	26
 TimeTick = 240	GW_1	1_3_1		finish_l	400	0
 TimeTick = 240	GW_1	1_1_2		context switch	300	16
-TimeTick = 252	GW_0	0_1_1		finish_l	400	0
 TimeTick = 256	GW_1	1_1_2		finish_l	300	0
 TimeTick = 256	GW_1	1_0_2		context switch	300	53
+TimeTick = 263	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 263	GW_0	0_1_1		context switch	400	40
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_0_2		miss_l	300	9
 TimeTick = 300	GW_1	1_1_3		context switch	400	16
+TimeTick = 303	GW_0	0_1_1		finish_l	400	0
 TimeTick = 316	GW_1	1_1_3		finish_l	400	0
 TimeTick = 316	GW_1	1_0_3		context switch	400	53
 TimeTick = 369	GW_1	1_0_3		finish_l	400	0
@@ -1808,11 +1820,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	46
 TimeTick = 4000	GW_1	1_5_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 51
-Meet Task : 50
+Total Task : 52
+Meet Task : 51
 Miss Task : 0
-Meet Ratio : 0.980392
-Energy Consumption : 8677.05
+Meet Ratio : 0.980769
+Energy Consumption : 8692.35
 =========== GW_1 ===========
 Total Task : 135
 Meet Task : 110
@@ -3519,48 +3531,56 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	100	47
 TimeTick = 0	GW_1	1_0_0		context switch	400	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
 TimeTick = 25	GW_1	1_1_0		context switch	800	25
 TimeTick = 47	GW_0	0_0_0		finish_l	100	0
 TimeTick = 47	GW_0	0_1_0		context switch	100	16
-TimeTick = 50	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
 TimeTick = 50	GW_1	1_2_0		context switch	800	25
 TimeTick = 63	GW_0	0_1_0		finish_l	100	0
 TimeTick = 63	GW_0	0_2_0		context switch	100	11
 TimeTick = 74	GW_0	0_2_0		finish_l	100	0
 TimeTick = 74	GW_0	0_3_0		context switch	200	20
-TimeTick = 75	GW_1	-1_999_-1		offload_cloud	9999	9999
-TimeTick = 75	GW_1	1_3_0		context switch	800	77
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 75	GW_1	1_0_0		context switch	400	25
 TimeTick = 94	GW_0	0_3_0		finish_l	200	0
 TimeTick = 94	GW_0	0_4_0		context switch	400	37
+TimeTick = 100	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 100	GW_1	1_2_0		context switch	800	25
+TimeTick = 125	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 125	GW_1	1_1_0		context switch	800	25
 TimeTick = 131	GW_0	0_4_0		finish_l	400	0
 TimeTick = 131	GW_0	0_5_0		context switch	400	22
-TimeTick = 152	GW_1	1_3_0		finish_l	800	0
+TimeTick = 150	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 150	GW_1	1_3_0		context switch	800	77
 TimeTick = 153	GW_0	0_5_0		finish_l	400	0
-TimeTick = 152	GW_1	1_4_0		context switch	800	58
 TimeTick = 153	GW_0	0_0_1		context switch	200	47
 TimeTick = 200	GW_0	0_0_1		finish_l	200	0
 TimeTick = 200	GW_0	0_1_1		miss_rq	200	16
 TimeTick = 200	GW_0	0_2_1		miss_rq	200	11
 TimeTick = 200	GW_0	0_3_1		context switch	400	20
-TimeTick = 210	GW_1	1_4_0		finish_l	800	0
-TimeTick = 210	GW_1	1_5_0		context switch	800	54
 TimeTick = 220	GW_0	0_3_1		finish_l	400	0
 TimeTick = 220	GW_0	0_0_2		context switch	300	47
-TimeTick = 264	GW_1	1_5_0		finish_l	800	0
+TimeTick = 227	GW_1	1_3_0		finish_l	800	0
+TimeTick = 227	GW_1	1_4_0		context switch	800	58
 TimeTick = 267	GW_0	0_0_2		finish_l	300	0
 TimeTick = 267	GW_0	0_2_2		context switch	300	11
 TimeTick = 278	GW_0	0_2_2		finish_l	300	0
 TimeTick = 278	GW_0	0_1_2		context switch	300	16
+TimeTick = 285	GW_1	1_4_0		finish_l	800	0
+TimeTick = 285	GW_1	1_5_0		context switch	800	54
 TimeTick = 294	GW_0	0_1_2		finish_l	300	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_0	0_0_3		context switch	400	47
+TimeTick = 339	GW_1	1_5_0		finish_l	800	0
 TimeTick = 347	GW_0	0_0_3		finish_l	400	0
 TimeTick = 347	GW_0	0_2_3		context switch	400	11
 TimeTick = 358	GW_0	0_2_3		finish_l	400	0
 TimeTick = 358	GW_0	0_1_3		context switch	400	16
 TimeTick = 374	GW_0	0_1_3		finish_l	400	0
 TimeTick = 400	GW_0	0_4_1		context switch	800	37
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+TimeTick = 427	GW_1	1_0_1		offload_cloud	800	0
 TimeTick = 437	GW_0	0_4_1		finish_l	800	0
 TimeTick = 437	GW_0	0_5_1		context switch	800	22
 TimeTick = 459	GW_0	0_5_1		finish_l	800	0
@@ -3591,13 +3611,15 @@ TimeTick = 727	GW_0	0_1_7		finish_l	800	0
 TimeTick = 727	GW_0	0_0_7		context switch	800	47
 TimeTick = 774	GW_0	0_0_7		finish_l	800	0
 TimeTick = 800	GW_0	0_4_2		context switch	1200	37
-TimeTick = 800	GW_1	1_3_1		context switch	1600	77
+TimeTick = 800	GW_1	1_2_1		context switch	1600	26
+TimeTick = 826	GW_1	1_2_1		offload_cloud	1600	0
+TimeTick = 826	GW_1	1_1_1		context switch	1600	27
 TimeTick = 837	GW_0	0_4_2		finish_l	1200	0
 TimeTick = 837	GW_0	0_5_2		context switch	1200	22
+TimeTick = 853	GW_1	1_1_1		offload_cloud	1600	0
+TimeTick = 853	GW_1	1_3_1		context switch	1600	77
 TimeTick = 859	GW_0	0_5_2		finish_l	1200	0
 TimeTick = 859	GW_0	0_3_4		context switch	1000	20
-TimeTick = 877	GW_1	1_3_1		finish_l	1600	0
-TimeTick = 877	GW_1	1_4_1		context switch	1600	58
 TimeTick = 879	GW_0	0_3_4		finish_l	1000	0
 TimeTick = 879	GW_0	0_2_8		context switch	900	11
 TimeTick = 890	GW_0	0_2_8		finish_l	900	0
@@ -3609,16 +3631,18 @@ TimeTick = 911	GW_0	0_2_9		finish_l	1000	0
 TimeTick = 911	GW_0	0_1_9		context switch	1000	16
 TimeTick = 927	GW_0	0_1_9		finish_l	1000	0
 TimeTick = 927	GW_0	0_0_9		context switch	1000	47
-TimeTick = 935	GW_1	1_4_1		finish_l	1600	0
-TimeTick = 935	GW_1	1_5_1		context switch	1600	54
+TimeTick = 930	GW_1	1_3_1		finish_l	1600	0
+TimeTick = 930	GW_1	1_4_1		context switch	1600	58
 TimeTick = 974	GW_0	0_0_9		finish_l	1000	0
-TimeTick = 989	GW_1	1_5_1		finish_l	1600	0
+TimeTick = 988	GW_1	1_4_1		finish_l	1600	0
+TimeTick = 988	GW_1	1_5_1		context switch	1600	54
 TimeTick = 1000	GW_0	0_3_5		context switch	1200	20
 TimeTick = 1000	GW_2	2_0_1		context switch	2000	300
 TimeTick = 1020	GW_0	0_3_5		finish_l	1200	0
 TimeTick = 1020	GW_0	0_2_10		context switch	1100	11
 TimeTick = 1031	GW_0	0_2_10		finish_l	1100	0
 TimeTick = 1031	GW_0	0_1_10		context switch	1100	16
+TimeTick = 1042	GW_1	1_5_1		finish_l	1600	0
 TimeTick = 1047	GW_0	0_1_10		finish_l	1100	0
 TimeTick = 1047	GW_0	0_0_10		context switch	1100	47
 TimeTick = 1094	GW_0	0_0_10		finish_l	1100	0
@@ -3878,11 +3902,11 @@ Miss Task : 21
 Meet Ratio : 0.86875
 Energy Consumption : 10857.9
 =========== GW_1 ===========
-Total Task : 18
-Meet Task : 15
+Total Task : 21
+Meet Task : 18
 Miss Task : 0
-Meet Ratio : 0.833333
-Energy Consumption : 7504.05
+Meet Ratio : 0.857143
+Energy Consumption : 7550.55
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -3945,7 +3969,7 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	400	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	64
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_1_0		context switch	400	45
 TimeTick = 64	GW_1	1_0_0		finish_l	100	0
 TimeTick = 64	GW_1	1_1_0		context switch	100	13
@@ -3958,40 +3982,44 @@ TimeTick = 88	GW_1	1_3_0		context switch	400	21
 TimeTick = 109	GW_1	1_3_0		finish_l	400	0
 TimeTick = 109	GW_1	1_4_0		context switch	400	20
 TimeTick = 124	GW_0	0_2_0		finish_l	800	0
-TimeTick = 124	GW_0	0_3_0		context switch	800	51
+TimeTick = 124	GW_0	0_0_0		context switch	400	25
 TimeTick = 129	GW_1	1_4_0		finish_l	400	0
 TimeTick = 129	GW_1	1_5_0		context switch	800	41
+TimeTick = 149	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 149	GW_0	0_3_0		context switch	800	51
 TimeTick = 170	GW_1	1_5_0		finish_l	800	0
 TimeTick = 170	GW_1	1_0_1		context switch	200	64
-TimeTick = 175	GW_0	0_3_0		finish_l	800	0
-TimeTick = 175	GW_0	0_4_0		context switch	800	42
+TimeTick = 200	GW_0	0_3_0		finish_l	800	0
+TimeTick = 200	GW_0	0_4_0		context switch	800	42
 TimeTick = 200	GW_1	1_0_1		miss_l	200	34
 TimeTick = 200	GW_1	1_1_1		miss_rq	200	13
 TimeTick = 200	GW_1	1_2_1		context switch	400	11
 TimeTick = 211	GW_1	1_2_1		finish_l	400	0
 TimeTick = 211	GW_1	1_1_2		context switch	300	13
-TimeTick = 217	GW_0	0_4_0		finish_l	800	0
-TimeTick = 217	GW_0	0_5_0		context switch	800	40
 TimeTick = 224	GW_1	1_1_2		finish_l	300	0
 TimeTick = 224	GW_1	1_0_2		context switch	300	64
-TimeTick = 257	GW_0	0_5_0		finish_l	800	0
+TimeTick = 242	GW_0	0_4_0		finish_l	800	0
+TimeTick = 242	GW_0	0_5_0		context switch	800	40
+TimeTick = 282	GW_0	0_5_0		finish_l	800	0
 TimeTick = 288	GW_1	1_0_2		finish_l	300	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_1_3		context switch	400	13
 TimeTick = 313	GW_1	1_1_3		finish_l	400	0
 TimeTick = 313	GW_1	1_0_3		context switch	400	64
 TimeTick = 377	GW_1	1_0_3		finish_l	400	0
-TimeTick = 400	GW_0	0_1_1		context switch	800	45
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
 TimeTick = 400	GW_1	1_3_1		context switch	800	21
 TimeTick = 421	GW_1	1_3_1		finish_l	800	0
 TimeTick = 421	GW_1	1_4_1		context switch	800	20
+TimeTick = 428	GW_0	0_0_1		offload_cloud	800	0
+TimeTick = 428	GW_0	0_1_1		context switch	800	45
 TimeTick = 441	GW_1	1_4_1		finish_l	800	0
 TimeTick = 441	GW_1	1_2_2		context switch	600	11
-TimeTick = 445	GW_0	0_1_1		finish_l	800	0
 TimeTick = 452	GW_1	1_2_2		finish_l	600	0
 TimeTick = 452	GW_1	1_1_4		context switch	500	13
 TimeTick = 465	GW_1	1_1_4		finish_l	500	0
 TimeTick = 465	GW_1	1_0_4		context switch	500	64
+TimeTick = 473	GW_0	0_1_1		finish_l	800	0
 TimeTick = 500	GW_1	1_0_4		miss_l	500	29
 TimeTick = 500	GW_1	1_1_5		context switch	600	13
 TimeTick = 513	GW_1	1_1_5		finish_l	600	0
@@ -4261,11 +4289,11 @@ TimeTick = 4000	GW_0	0_2_5		context switch	4800	54
 TimeTick = 4000	GW_1	1_5_5		context switch	4800	41
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 31
-Meet Task : 30
+Total Task : 32
+Meet Task : 31
 Miss Task : 0
-Meet Ratio : 0.967742
-Energy Consumption : 8083.05
+Meet Ratio : 0.96875
+Energy Consumption : 8098.95
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 110
@@ -9641,26 +9669,28 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	100	72
 TimeTick = 0	GW_1	1_1_0		context switch	400	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_1	1_1_0		offload_cloud	400	0
 TimeTick = 25	GW_1	1_2_0		context switch	800	25
-TimeTick = 50	GW_1	-1_999_-1		offload_cloud	9999	9999
-TimeTick = 50	GW_1	1_0_0		context switch	100	29
+TimeTick = 50	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		context switch	400	25
 TimeTick = 72	GW_0	0_0_0		finish_l	100	0
 TimeTick = 72	GW_0	0_1_0		context switch	100	6
+TimeTick = 75	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 75	GW_1	1_0_0		context switch	100	29
 TimeTick = 78	GW_0	0_1_0		finish_l	100	0
 TimeTick = 78	GW_0	0_2_0		context switch	200	11
-TimeTick = 79	GW_1	1_0_0		finish_l	100	0
-TimeTick = 79	GW_1	1_3_0		context switch	800	99
 TimeTick = 89	GW_0	0_2_0		finish_l	200	0
 TimeTick = 89	GW_0	0_3_0		context switch	200	10
 TimeTick = 99	GW_0	0_3_0		finish_l	200	0
 TimeTick = 99	GW_0	0_4_0		context switch	200	10
+TimeTick = 100	GW_1	1_0_0		miss_l	100	4
+TimeTick = 100	GW_1	1_2_0		context switch	800	25
 TimeTick = 109	GW_0	0_4_0		finish_l	200	0
 TimeTick = 109	GW_0	0_5_0		context switch	400	20
+TimeTick = 125	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 125	GW_1	1_3_0		context switch	800	99
 TimeTick = 129	GW_0	0_5_0		finish_l	400	0
 TimeTick = 129	GW_0	0_0_1		context switch	200	72
-TimeTick = 178	GW_1	1_3_0		finish_l	800	0
-TimeTick = 178	GW_1	1_4_0		context switch	800	48
 TimeTick = 200	GW_0	0_0_1		miss_l	200	1
 TimeTick = 200	GW_0	0_1_1		miss_rq	200	6
 TimeTick = 200	GW_0	0_2_1		context switch	400	11
@@ -9668,34 +9698,37 @@ TimeTick = 211	GW_0	0_2_1		finish_l	400	0
 TimeTick = 211	GW_0	0_3_1		context switch	400	10
 TimeTick = 221	GW_0	0_3_1		finish_l	400	0
 TimeTick = 221	GW_0	0_4_1		context switch	400	10
-TimeTick = 226	GW_1	1_4_0		finish_l	800	0
-TimeTick = 226	GW_1	1_0_1		miss_rq	200	29
-TimeTick = 226	GW_1	1_5_0		context switch	800	47
+TimeTick = 224	GW_1	1_3_0		finish_l	800	0
+TimeTick = 224	GW_1	1_0_1		miss_rq	200	29
+TimeTick = 224	GW_1	1_4_0		context switch	800	48
 TimeTick = 231	GW_0	0_4_1		finish_l	400	0
 TimeTick = 231	GW_0	0_0_2		context switch	300	72
-TimeTick = 273	GW_1	1_5_0		finish_l	800	0
-TimeTick = 273	GW_1	1_0_2		context switch	300	29
+TimeTick = 272	GW_1	1_4_0		finish_l	800	0
+TimeTick = 272	GW_1	1_5_0		context switch	800	47
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_0	0_0_2		miss_l	300	3
 TimeTick = 300	GW_0	0_1_2		miss_rq	300	6
 TimeTick = 300	GW_0	0_0_3		context switch	400	72
-TimeTick = 300	GW_1	1_0_2		miss_l	300	2
-TimeTick = 300	GW_1	1_0_3		context switch	400	29
-TimeTick = 329	GW_1	1_0_3		finish_l	400	0
+TimeTick = 319	GW_1	1_5_0		finish_l	800	0
+TimeTick = 319	GW_1	1_0_2		miss_rq	300	29
+TimeTick = 319	GW_1	1_0_3		context switch	400	29
+TimeTick = 348	GW_1	1_0_3		finish_l	400	0
 TimeTick = 372	GW_0	0_0_3		finish_l	400	0
 TimeTick = 372	GW_0	0_1_3		context switch	400	6
 TimeTick = 378	GW_0	0_1_3		finish_l	400	0
 TimeTick = 400	GW_0	0_5_1		context switch	800	20
-TimeTick = 400	GW_1	1_0_4		context switch	500	29
+TimeTick = 400	GW_1	1_1_1		context switch	800	26
 TimeTick = 420	GW_0	0_5_1		finish_l	800	0
 TimeTick = 420	GW_0	0_2_2		context switch	600	11
-TimeTick = 429	GW_1	1_0_4		finish_l	500	0
+TimeTick = 426	GW_1	1_1_1		offload_cloud	800	0
+TimeTick = 426	GW_1	1_0_4		context switch	500	29
 TimeTick = 431	GW_0	0_2_2		finish_l	600	0
 TimeTick = 431	GW_0	0_3_2		context switch	600	10
 TimeTick = 441	GW_0	0_3_2		finish_l	600	0
 TimeTick = 441	GW_0	0_4_2		context switch	600	10
 TimeTick = 451	GW_0	0_4_2		finish_l	600	0
 TimeTick = 451	GW_0	0_0_4		context switch	500	72
+TimeTick = 455	GW_1	1_0_4		finish_l	500	0
 TimeTick = 500	GW_0	0_0_4		miss_l	500	23
 TimeTick = 500	GW_0	0_1_4		miss_rq	500	6
 TimeTick = 500	GW_0	0_1_5		context switch	600	6
@@ -9723,9 +9756,11 @@ TimeTick = 706	GW_0	0_0_7		context switch	800	72
 TimeTick = 729	GW_1	1_0_7		finish_l	800	0
 TimeTick = 778	GW_0	0_0_7		finish_l	800	0
 TimeTick = 800	GW_0	0_5_2		context switch	1200	20
-TimeTick = 800	GW_1	1_3_1		context switch	1600	99
+TimeTick = 800	GW_1	1_2_1		context switch	1600	27
 TimeTick = 820	GW_0	0_5_2		finish_l	1200	0
 TimeTick = 820	GW_0	0_2_4		context switch	1000	11
+TimeTick = 827	GW_1	1_2_1		offload_cloud	1600	0
+TimeTick = 827	GW_1	1_3_1		context switch	1600	99
 TimeTick = 831	GW_0	0_2_4		finish_l	1000	0
 TimeTick = 831	GW_0	0_3_4		context switch	1000	10
 TimeTick = 841	GW_0	0_3_4		finish_l	1000	0
@@ -9734,31 +9769,30 @@ TimeTick = 851	GW_0	0_4_4		finish_l	1000	0
 TimeTick = 851	GW_0	0_1_8		context switch	900	6
 TimeTick = 857	GW_0	0_1_8		finish_l	900	0
 TimeTick = 857	GW_0	0_0_8		context switch	900	72
-TimeTick = 899	GW_1	1_3_1		finish_l	1600	0
-TimeTick = 899	GW_1	1_4_1		context switch	1600	48
 TimeTick = 900	GW_0	0_0_8		miss_l	900	29
 TimeTick = 900	GW_0	0_1_9		context switch	1000	6
 TimeTick = 906	GW_0	0_1_9		finish_l	1000	0
 TimeTick = 906	GW_0	0_0_9		context switch	1000	72
-TimeTick = 947	GW_1	1_4_1		finish_l	1600	0
-TimeTick = 947	GW_1	1_0_8		miss_rq	900	29
-TimeTick = 947	GW_1	1_5_1		context switch	1600	47
+TimeTick = 926	GW_1	1_3_1		finish_l	1600	0
+TimeTick = 926	GW_1	1_0_8		miss_rq	900	29
+TimeTick = 926	GW_1	1_4_1		context switch	1600	48
+TimeTick = 974	GW_1	1_4_1		finish_l	1600	0
+TimeTick = 974	GW_1	1_5_1		context switch	1600	47
 TimeTick = 978	GW_0	0_0_9		finish_l	1000	0
-TimeTick = 994	GW_1	1_5_1		finish_l	1600	0
-TimeTick = 994	GW_1	1_0_9		context switch	1000	29
 TimeTick = 1000	GW_0	0_2_5		context switch	1200	11
-TimeTick = 1000	GW_1	1_0_9		miss_l	1000	23
-TimeTick = 1000	GW_1	1_0_10		context switch	1100	29
 TimeTick = 1000	GW_2	2_0_1		context switch	2000	300
 TimeTick = 1011	GW_0	0_2_5		finish_l	1200	0
 TimeTick = 1011	GW_0	0_3_5		context switch	1200	10
 TimeTick = 1021	GW_0	0_3_5		finish_l	1200	0
+TimeTick = 1021	GW_1	1_5_1		finish_l	1600	0
 TimeTick = 1021	GW_0	0_4_5		context switch	1200	10
-TimeTick = 1029	GW_1	1_0_10		finish_l	1100	0
+TimeTick = 1021	GW_1	1_0_9		miss_rq	1000	29
+TimeTick = 1021	GW_1	1_0_10		context switch	1100	29
 TimeTick = 1031	GW_0	0_4_5		finish_l	1200	0
 TimeTick = 1031	GW_0	0_1_10		context switch	1100	6
 TimeTick = 1037	GW_0	0_1_10		finish_l	1100	0
 TimeTick = 1037	GW_0	0_0_10		context switch	1100	72
+TimeTick = 1050	GW_1	1_0_10		finish_l	1100	0
 TimeTick = 1100	GW_0	0_0_10		miss_l	1100	9
 TimeTick = 1100	GW_0	0_1_11		context switch	1200	6
 TimeTick = 1100	GW_1	1_0_11		context switch	1200	29
@@ -10062,11 +10096,11 @@ Miss Task : 23
 Meet Ratio : 0.846667
 Energy Consumption : 11041.5
 =========== GW_1 ===========
-Total Task : 57
-Meet Task : 45
-Miss Task : 10
-Meet Ratio : 0.789474
-Energy Consumption : 8773.65
+Total Task : 59
+Meet Task : 46
+Miss Task : 11
+Meet Ratio : 0.779661
+Energy Consumption : 8754.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -11143,34 +11177,42 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	200	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	200	31
 TimeTick = 25	GW_1	1_1_0		context switch	400	41
 TimeTick = 56	GW_0	0_1_0		finish_l	200	0
-TimeTick = 56	GW_0	0_2_0		context switch	200	22
+TimeTick = 56	GW_0	0_0_0		context switch	200	25
 TimeTick = 66	GW_1	1_1_0		finish_l	400	0
 TimeTick = 66	GW_1	1_2_0		context switch	400	24
-TimeTick = 78	GW_0	0_2_0		finish_l	200	0
-TimeTick = 78	GW_0	0_3_0		context switch	200	21
+TimeTick = 81	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 81	GW_0	0_2_0		context switch	200	22
 TimeTick = 90	GW_1	1_2_0		finish_l	400	0
-TimeTick = 90	GW_1	1_3_0		context switch	800	43
-TimeTick = 99	GW_0	0_3_0		finish_l	200	0
-TimeTick = 99	GW_0	0_4_0		context switch	400	21
-TimeTick = 120	GW_0	0_4_0		finish_l	400	0
-TimeTick = 120	GW_0	0_5_0		context switch	400	20
-TimeTick = 133	GW_1	1_3_0		finish_l	800	0
-TimeTick = 133	GW_1	1_4_0		context switch	800	41
-TimeTick = 140	GW_0	0_5_0		finish_l	400	0
-TimeTick = 174	GW_1	1_4_0		finish_l	800	0
-TimeTick = 174	GW_1	1_5_0		context switch	800	40
-TimeTick = 200	GW_0	0_1_1		context switch	400	31
-TimeTick = 214	GW_1	1_5_0		finish_l	800	0
-TimeTick = 231	GW_0	0_1_1		finish_l	400	0
-TimeTick = 231	GW_0	0_2_1		context switch	400	22
-TimeTick = 253	GW_0	0_2_1		finish_l	400	0
-TimeTick = 253	GW_0	0_3_1		context switch	400	21
-TimeTick = 274	GW_0	0_3_1		finish_l	400	0
+TimeTick = 90	GW_1	1_0_0		context switch	200	25
+TimeTick = 103	GW_0	0_2_0		finish_l	200	0
+TimeTick = 103	GW_0	0_3_0		context switch	200	21
+TimeTick = 115	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 115	GW_1	1_3_0		context switch	800	43
+TimeTick = 124	GW_0	0_3_0		finish_l	200	0
+TimeTick = 124	GW_0	0_4_0		context switch	400	21
+TimeTick = 145	GW_0	0_4_0		finish_l	400	0
+TimeTick = 145	GW_0	0_5_0		context switch	400	20
+TimeTick = 158	GW_1	1_3_0		finish_l	800	0
+TimeTick = 158	GW_1	1_4_0		context switch	800	41
+TimeTick = 165	GW_0	0_5_0		finish_l	400	0
+TimeTick = 199	GW_1	1_4_0		finish_l	800	0
+TimeTick = 199	GW_1	1_5_0		context switch	800	40
+TimeTick = 200	GW_0	0_0_1		context switch	400	26
+TimeTick = 226	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 226	GW_0	0_1_1		context switch	400	31
+TimeTick = 239	GW_1	1_5_0		finish_l	800	0
+TimeTick = 239	GW_1	1_0_1		context switch	400	27
+TimeTick = 257	GW_0	0_1_1		finish_l	400	0
+TimeTick = 257	GW_0	0_2_1		context switch	400	22
+TimeTick = 266	GW_1	1_0_1		offload_cloud	400	0
+TimeTick = 279	GW_0	0_2_1		finish_l	400	0
+TimeTick = 279	GW_0	0_3_1		context switch	400	21
+TimeTick = 300	GW_0	0_3_1		finish_l	400	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 400	GW_0	0_4_1		context switch	800	21
 TimeTick = 400	GW_1	1_1_1		context switch	800	41
@@ -11386,17 +11428,17 @@ TimeTick = 4000	GW_0	0_4_10		context switch	4400	21
 TimeTick = 4000	GW_1	1_3_5		context switch	4800	43
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 81
-Meet Task : 80
+Total Task : 82
+Meet Task : 81
 Miss Task : 0
-Meet Ratio : 0.987654
-Energy Consumption : 8764.8
+Meet Ratio : 0.987805
+Energy Consumption : 8780.1
 =========== GW_1 ===========
-Total Task : 36
-Meet Task : 35
+Total Task : 37
+Meet Task : 36
 Miss Task : 0
-Meet Ratio : 0.972222
-Energy Consumption : 7927.8
+Meet Ratio : 0.972973
+Energy Consumption : 7943.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -12058,31 +12100,33 @@ Remote
 TimeTick = 0	GW_0	0_1_0		context switch	400	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	54
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_1_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_0_0		context switch	100	34
 TimeTick = 54	GW_1	1_0_0		finish_l	100	0
 TimeTick = 54	GW_1	1_1_0		context switch	200	23
 TimeTick = 59	GW_0	0_0_0		finish_l	100	0
-TimeTick = 59	GW_0	0_2_0		context switch	400	46
+TimeTick = 59	GW_0	0_1_0		context switch	400	25
 TimeTick = 77	GW_1	1_1_0		finish_l	200	0
 TimeTick = 77	GW_1	1_2_0		context switch	400	45
-TimeTick = 105	GW_0	0_2_0		finish_l	400	0
-TimeTick = 105	GW_0	0_3_0		context switch	400	40
+TimeTick = 84	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 84	GW_0	0_2_0		context switch	400	46
 TimeTick = 122	GW_1	1_2_0		finish_l	400	0
 TimeTick = 122	GW_1	1_3_0		context switch	800	81
-TimeTick = 145	GW_0	0_3_0		finish_l	400	0
-TimeTick = 145	GW_0	0_4_0		context switch	800	40
-TimeTick = 185	GW_0	0_4_0		finish_l	800	0
-TimeTick = 185	GW_0	0_5_0		context switch	800	40
+TimeTick = 130	GW_0	0_2_0		finish_l	400	0
+TimeTick = 130	GW_0	0_3_0		context switch	400	40
+TimeTick = 170	GW_0	0_3_0		finish_l	400	0
+TimeTick = 170	GW_0	0_4_0		context switch	800	40
 TimeTick = 203	GW_1	1_3_0		finish_l	800	0
 TimeTick = 203	GW_1	1_0_1		miss_rq	200	54
 TimeTick = 203	GW_1	1_4_0		context switch	800	55
-TimeTick = 225	GW_0	0_5_0		finish_l	800	0
-TimeTick = 225	GW_0	0_0_1		miss_rq	200	34
-TimeTick = 225	GW_0	0_0_2		context switch	300	34
+TimeTick = 210	GW_0	0_4_0		finish_l	800	0
+TimeTick = 210	GW_0	0_0_1		miss_rq	200	34
+TimeTick = 210	GW_0	0_5_0		context switch	800	40
+TimeTick = 250	GW_0	0_5_0		finish_l	800	0
+TimeTick = 250	GW_0	0_0_2		context switch	300	34
 TimeTick = 258	GW_1	1_4_0		finish_l	800	0
-TimeTick = 259	GW_0	0_0_2		finish_l	300	0
 TimeTick = 258	GW_1	1_5_0		context switch	800	42
+TimeTick = 284	GW_0	0_0_2		finish_l	300	0
 TimeTick = 300	GW_1	1_5_0		finish_l	800	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_0	0_0_3		context switch	400	34
@@ -12092,21 +12136,22 @@ TimeTick = 323	GW_1	1_1_1		finish_l	400	0
 TimeTick = 323	GW_1	1_0_3		context switch	400	54
 TimeTick = 334	GW_0	0_0_3		finish_l	400	0
 TimeTick = 377	GW_1	1_0_3		finish_l	400	0
-TimeTick = 400	GW_0	0_2_1		context switch	800	46
+TimeTick = 400	GW_0	0_1_1		context switch	800	27
 TimeTick = 400	GW_1	1_2_1		context switch	800	45
+TimeTick = 427	GW_0	0_1_1		offload_cloud	800	0
+TimeTick = 427	GW_0	0_2_1		context switch	800	46
 TimeTick = 445	GW_1	1_2_1		finish_l	800	0
-TimeTick = 446	GW_0	0_2_1		finish_l	800	0
 TimeTick = 445	GW_1	1_1_2		context switch	600	23
-TimeTick = 446	GW_0	0_3_1		context switch	800	40
 TimeTick = 468	GW_1	1_1_2		finish_l	600	0
 TimeTick = 468	GW_1	1_0_4		context switch	500	54
-TimeTick = 486	GW_0	0_3_1		finish_l	800	0
-TimeTick = 486	GW_0	0_0_4		context switch	500	34
-TimeTick = 500	GW_0	0_0_4		miss_l	500	20
-TimeTick = 500	GW_0	0_0_5		context switch	600	34
+TimeTick = 473	GW_0	0_2_1		finish_l	800	0
+TimeTick = 473	GW_0	0_3_1		context switch	800	40
 TimeTick = 500	GW_1	1_0_4		miss_l	500	22
 TimeTick = 500	GW_1	1_0_5		context switch	600	54
-TimeTick = 534	GW_0	0_0_5		finish_l	600	0
+TimeTick = 513	GW_0	0_3_1		finish_l	800	0
+TimeTick = 513	GW_0	0_0_4		miss_rq	500	34
+TimeTick = 513	GW_0	0_0_5		context switch	600	34
+TimeTick = 547	GW_0	0_0_5		finish_l	600	0
 TimeTick = 554	GW_1	1_0_5		finish_l	600	0
 TimeTick = 600	GW_0	0_0_6		context switch	700	34
 TimeTick = 600	GW_1	1_1_3		context switch	800	23
@@ -12360,11 +12405,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	40
 TimeTick = 4000	GW_1	1_3_5		context switch	4800	81
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 71
-Meet Task : 60
+Total Task : 72
+Meet Task : 61
 Miss Task : 10
-Meet Ratio : 0.84507
-Energy Consumption : 9385.8
+Meet Ratio : 0.847222
+Energy Consumption : 9382.5
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 66
@@ -14652,7 +14697,7 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	100	37
 TimeTick = 0	GW_1	1_1_0		context switch	400	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_1	1_1_0		offload_cloud	400	0
 TimeTick = 25	GW_1	1_0_0		context switch	200	78
 TimeTick = 37	GW_0	0_0_0		finish_l	100	0
 TimeTick = 37	GW_0	0_1_0		context switch	100	17
@@ -14661,27 +14706,29 @@ TimeTick = 54	GW_0	0_2_0		context switch	200	34
 TimeTick = 88	GW_0	0_2_0		finish_l	200	0
 TimeTick = 88	GW_0	0_3_0		context switch	200	19
 TimeTick = 103	GW_1	1_0_0		finish_l	200	0
-TimeTick = 103	GW_1	1_2_0		context switch	400	30
+TimeTick = 103	GW_1	1_1_0		context switch	400	25
 TimeTick = 107	GW_0	0_3_0		finish_l	200	0
 TimeTick = 107	GW_0	0_4_0		context switch	400	39
-TimeTick = 133	GW_1	1_2_0		finish_l	400	0
-TimeTick = 133	GW_1	1_3_0		context switch	400	24
+TimeTick = 128	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 128	GW_1	1_2_0		context switch	400	30
 TimeTick = 146	GW_0	0_4_0		finish_l	400	0
 TimeTick = 146	GW_0	0_5_0		context switch	800	59
-TimeTick = 157	GW_1	1_3_0		finish_l	400	0
-TimeTick = 157	GW_1	1_4_0		context switch	800	47
-TimeTick = 204	GW_1	1_4_0		finish_l	800	0
+TimeTick = 158	GW_1	1_2_0		finish_l	400	0
+TimeTick = 158	GW_1	1_3_0		context switch	400	24
+TimeTick = 182	GW_1	1_3_0		finish_l	400	0
+TimeTick = 182	GW_1	1_4_0		context switch	800	47
 TimeTick = 205	GW_0	0_5_0		finish_l	800	0
-TimeTick = 204	GW_1	1_5_0		context switch	800	43
 TimeTick = 205	GW_0	0_0_1		miss_rq	200	37
 TimeTick = 205	GW_0	0_1_1		miss_rq	200	17
 TimeTick = 205	GW_0	0_2_1		context switch	400	34
+TimeTick = 229	GW_1	1_4_0		finish_l	800	0
+TimeTick = 229	GW_1	1_5_0		context switch	800	43
 TimeTick = 239	GW_0	0_2_1		finish_l	400	0
 TimeTick = 239	GW_0	0_3_1		context switch	400	19
-TimeTick = 247	GW_1	1_5_0		finish_l	800	0
-TimeTick = 247	GW_1	1_0_1		context switch	400	78
 TimeTick = 258	GW_0	0_3_1		finish_l	400	0
 TimeTick = 258	GW_0	0_1_2		context switch	300	17
+TimeTick = 272	GW_1	1_5_0		finish_l	800	0
+TimeTick = 272	GW_1	1_0_1		context switch	400	78
 TimeTick = 275	GW_0	0_1_2		finish_l	300	0
 TimeTick = 275	GW_0	0_0_2		context switch	300	37
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
@@ -14689,18 +14736,20 @@ TimeTick = 300	GW_0	0_0_2		miss_l	300	12
 TimeTick = 300	GW_0	0_1_3		context switch	400	17
 TimeTick = 317	GW_0	0_1_3		finish_l	400	0
 TimeTick = 317	GW_0	0_0_3		context switch	400	37
-TimeTick = 325	GW_1	1_0_1		finish_l	400	0
+TimeTick = 350	GW_1	1_0_1		finish_l	400	0
 TimeTick = 354	GW_0	0_0_3		finish_l	400	0
 TimeTick = 400	GW_0	0_4_1		context switch	800	39
-TimeTick = 400	GW_1	1_2_1		context switch	800	30
-TimeTick = 430	GW_1	1_2_1		finish_l	800	0
-TimeTick = 430	GW_1	1_3_1		context switch	800	24
+TimeTick = 400	GW_1	1_1_1		context switch	800	27
+TimeTick = 427	GW_1	1_1_1		offload_cloud	800	0
+TimeTick = 427	GW_1	1_2_1		context switch	800	30
 TimeTick = 439	GW_0	0_4_1		finish_l	800	0
 TimeTick = 439	GW_0	0_2_2		context switch	600	34
-TimeTick = 454	GW_1	1_3_1		finish_l	800	0
-TimeTick = 454	GW_1	1_0_2		context switch	600	78
+TimeTick = 457	GW_1	1_2_1		finish_l	800	0
+TimeTick = 457	GW_1	1_3_1		context switch	800	24
 TimeTick = 473	GW_0	0_2_2		finish_l	600	0
 TimeTick = 473	GW_0	0_3_2		context switch	600	19
+TimeTick = 481	GW_1	1_3_1		finish_l	800	0
+TimeTick = 481	GW_1	1_0_2		context switch	600	78
 TimeTick = 492	GW_0	0_3_2		finish_l	600	0
 TimeTick = 492	GW_0	0_1_4		context switch	500	17
 TimeTick = 500	GW_0	0_1_4		miss_l	500	9
@@ -14708,8 +14757,8 @@ TimeTick = 500	GW_0	0_0_4		miss_rq	500	37
 TimeTick = 500	GW_0	0_1_5		context switch	600	17
 TimeTick = 517	GW_0	0_1_5		finish_l	600	0
 TimeTick = 517	GW_0	0_0_5		context switch	600	37
-TimeTick = 532	GW_1	1_0_2		finish_l	600	0
 TimeTick = 554	GW_0	0_0_5		finish_l	600	0
+TimeTick = 559	GW_1	1_0_2		finish_l	600	0
 TimeTick = 600	GW_0	0_2_3		context switch	800	34
 TimeTick = 600	GW_1	1_0_3		context switch	800	78
 TimeTick = 634	GW_0	0_2_3		finish_l	800	0
@@ -15024,11 +15073,11 @@ Miss Task : 34
 Meet Ratio : 0.748148
 Energy Consumption : 10674.3
 =========== GW_1 ===========
-Total Task : 51
-Meet Task : 46
+Total Task : 52
+Meet Task : 47
 Miss Task : 4
-Meet Ratio : 0.901961
-Energy Consumption : 9537
+Meet Ratio : 0.903846
+Energy Consumption : 9552.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -18160,44 +18209,48 @@ Remote
 TimeTick = 0	GW_0	0_1_0		context switch	400	25
 TimeTick = 0	GW_1	1_0_0		context switch	200	87
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_1_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_0_0		context switch	100	39
 TimeTick = 64	GW_0	0_0_0		finish_l	100	0
-TimeTick = 64	GW_0	0_2_0		context switch	400	42
+TimeTick = 64	GW_0	0_1_0		context switch	400	25
 TimeTick = 87	GW_1	1_0_0		finish_l	200	0
 TimeTick = 87	GW_1	1_1_0		context switch	200	57
-TimeTick = 106	GW_0	0_2_0		finish_l	400	0
-TimeTick = 106	GW_0	0_3_0		context switch	800	65
+TimeTick = 89	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 89	GW_0	0_2_0		context switch	400	42
+TimeTick = 131	GW_0	0_2_0		finish_l	400	0
+TimeTick = 131	GW_0	0_3_0		context switch	800	65
 TimeTick = 144	GW_1	1_1_0		finish_l	200	0
 TimeTick = 144	GW_1	1_2_0		context switch	400	45
-TimeTick = 171	GW_0	0_3_0		finish_l	800	0
-TimeTick = 171	GW_0	0_4_0		context switch	800	41
 TimeTick = 189	GW_1	1_2_0		finish_l	400	0
 TimeTick = 189	GW_1	1_3_0		context switch	800	45
-TimeTick = 212	GW_0	0_4_0		finish_l	800	0
-TimeTick = 212	GW_0	0_0_1		miss_rq	200	39
-TimeTick = 212	GW_0	0_5_0		context switch	800	40
+TimeTick = 196	GW_0	0_3_0		finish_l	800	0
+TimeTick = 196	GW_0	0_4_0		context switch	800	41
 TimeTick = 234	GW_1	1_3_0		finish_l	800	0
 TimeTick = 234	GW_1	1_4_0		context switch	800	42
-TimeTick = 252	GW_0	0_5_0		finish_l	800	0
-TimeTick = 252	GW_0	0_0_2		context switch	300	39
+TimeTick = 237	GW_0	0_4_0		finish_l	800	0
+TimeTick = 237	GW_0	0_0_1		miss_rq	200	39
+TimeTick = 237	GW_0	0_5_0		context switch	800	40
 TimeTick = 276	GW_1	1_4_0		finish_l	800	0
+TimeTick = 277	GW_0	0_5_0		finish_l	800	0
 TimeTick = 276	GW_1	1_5_0		context switch	800	41
-TimeTick = 291	GW_0	0_0_2		finish_l	300	0
+TimeTick = 277	GW_0	0_0_2		context switch	300	39
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 300	GW_0	0_0_2		miss_l	300	16
 TimeTick = 300	GW_0	0_0_3		context switch	400	39
 TimeTick = 317	GW_1	1_5_0		finish_l	800	0
 TimeTick = 317	GW_1	1_0_1		context switch	400	87
 TimeTick = 339	GW_0	0_0_3		finish_l	400	0
-TimeTick = 400	GW_0	0_2_1		context switch	800	42
+TimeTick = 400	GW_0	0_1_1		context switch	800	26
 TimeTick = 400	GW_1	1_0_1		miss_l	400	4
 TimeTick = 400	GW_1	1_1_1		miss_rq	400	57
 TimeTick = 400	GW_1	1_2_1		context switch	800	45
-TimeTick = 442	GW_0	0_2_1		finish_l	800	0
-TimeTick = 442	GW_0	0_0_4		context switch	500	39
+TimeTick = 426	GW_0	0_1_1		offload_cloud	800	0
+TimeTick = 426	GW_0	0_2_1		context switch	800	42
 TimeTick = 445	GW_1	1_2_1		finish_l	800	0
 TimeTick = 445	GW_1	1_0_2		context switch	600	87
-TimeTick = 481	GW_0	0_0_4		finish_l	500	0
+TimeTick = 468	GW_0	0_2_1		finish_l	800	0
+TimeTick = 468	GW_0	0_0_4		context switch	500	39
+TimeTick = 500	GW_0	0_0_4		miss_l	500	7
 TimeTick = 500	GW_0	0_0_5		context switch	600	39
 TimeTick = 532	GW_1	1_0_2		finish_l	600	0
 TimeTick = 532	GW_1	1_1_2		context switch	600	57
@@ -18421,11 +18474,11 @@ TimeTick = 4000	GW_0	0_3_5		context switch	4800	65
 TimeTick = 4000	GW_1	1_3_5		context switch	4800	45
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 66
-Meet Task : 56
-Miss Task : 9
-Meet Ratio : 0.848485
-Energy Consumption : 9462.75
+Total Task : 67
+Meet Task : 55
+Miss Task : 11
+Meet Ratio : 0.820895
+Energy Consumption : 9447
 =========== GW_1 ===========
 Total Task : 65
 Meet Task : 55
@@ -28343,30 +28396,34 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	73
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	400	31
 TimeTick = 56	GW_0	0_1_0		finish_l	400	0
-TimeTick = 56	GW_0	0_2_0		context switch	400	31
+TimeTick = 56	GW_0	0_0_0		context switch	200	25
 TimeTick = 73	GW_1	1_0_0		finish_l	100	0
 TimeTick = 73	GW_1	1_1_0		context switch	400	22
-TimeTick = 87	GW_0	0_2_0		finish_l	400	0
-TimeTick = 87	GW_0	0_3_0		context switch	800	48
+TimeTick = 81	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 81	GW_0	0_2_0		context switch	400	31
 TimeTick = 95	GW_1	1_1_0		finish_l	400	0
 TimeTick = 95	GW_1	1_2_0		context switch	400	21
+TimeTick = 112	GW_0	0_2_0		finish_l	400	0
+TimeTick = 112	GW_0	0_3_0		context switch	800	48
 TimeTick = 116	GW_1	1_2_0		finish_l	400	0
 TimeTick = 116	GW_1	1_3_0		context switch	800	40
-TimeTick = 135	GW_0	0_3_0		finish_l	800	0
-TimeTick = 135	GW_0	0_4_0		context switch	800	40
 TimeTick = 156	GW_1	1_3_0		finish_l	800	0
 TimeTick = 156	GW_1	1_4_0		context switch	800	40
-TimeTick = 175	GW_0	0_4_0		finish_l	800	0
-TimeTick = 175	GW_0	0_5_0		context switch	800	40
+TimeTick = 160	GW_0	0_3_0		finish_l	800	0
+TimeTick = 160	GW_0	0_4_0		context switch	800	40
 TimeTick = 196	GW_1	1_4_0		finish_l	800	0
 TimeTick = 196	GW_1	1_5_0		context switch	800	40
-TimeTick = 215	GW_0	0_5_0		finish_l	800	0
+TimeTick = 200	GW_0	0_4_0		finish_l	800	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 227	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 227	GW_0	0_5_0		context switch	800	40
 TimeTick = 236	GW_1	1_5_0		finish_l	800	0
 TimeTick = 236	GW_1	1_0_1		miss_rq	200	73
 TimeTick = 236	GW_1	1_0_2		context switch	300	73
+TimeTick = 267	GW_0	0_5_0		finish_l	800	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_0_2		miss_l	300	9
 TimeTick = 300	GW_1	1_0_3		context switch	400	73
@@ -28569,11 +28626,11 @@ TimeTick = 4000	GW_0	0_3_5		context switch	4800	48
 TimeTick = 4000	GW_1	1_3_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 36
-Meet Task : 35
+Total Task : 37
+Meet Task : 36
 Miss Task : 0
-Meet Ratio : 0.972222
-Energy Consumption : 7914.3
+Meet Ratio : 0.972973
+Energy Consumption : 7929.9
 =========== GW_1 ===========
 Total Task : 75
 Meet Task : 60
@@ -29671,31 +29728,35 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	92
 TimeTick = 0	GW_1	1_0_0		context switch	200	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
 TimeTick = 25	GW_1	1_1_0		context switch	200	27
 TimeTick = 52	GW_1	1_1_0		finish_l	200	0
-TimeTick = 52	GW_1	1_2_0		context switch	400	46
+TimeTick = 52	GW_1	1_0_0		context switch	200	25
+TimeTick = 77	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 77	GW_1	1_2_0		context switch	400	46
 TimeTick = 92	GW_0	0_0_0		finish_l	200	0
 TimeTick = 92	GW_0	0_1_0		context switch	200	66
-TimeTick = 98	GW_1	1_2_0		finish_l	400	0
-TimeTick = 98	GW_1	1_3_0		context switch	800	44
-TimeTick = 142	GW_1	1_3_0		finish_l	800	0
-TimeTick = 142	GW_1	1_4_0		context switch	800	40
+TimeTick = 123	GW_1	1_2_0		finish_l	400	0
+TimeTick = 123	GW_1	1_3_0		context switch	800	44
 TimeTick = 158	GW_0	0_1_0		finish_l	200	0
 TimeTick = 158	GW_0	0_2_0		context switch	200	10
+TimeTick = 167	GW_1	1_3_0		finish_l	800	0
 TimeTick = 168	GW_0	0_2_0		finish_l	200	0
+TimeTick = 167	GW_1	1_4_0		context switch	800	40
 TimeTick = 168	GW_0	0_3_0		context switch	400	20
-TimeTick = 182	GW_1	1_4_0		finish_l	800	0
-TimeTick = 182	GW_1	1_5_0		context switch	800	40
 TimeTick = 188	GW_0	0_3_0		finish_l	400	0
 TimeTick = 188	GW_0	0_4_0		context switch	800	40
-TimeTick = 222	GW_1	1_5_0		finish_l	800	0
-TimeTick = 222	GW_1	1_1_1		context switch	400	27
+TimeTick = 207	GW_1	1_4_0		finish_l	800	0
+TimeTick = 207	GW_1	1_0_1		context switch	400	26
 TimeTick = 228	GW_0	0_4_0		finish_l	800	0
 TimeTick = 228	GW_0	0_5_0		context switch	800	40
-TimeTick = 249	GW_1	1_1_1		finish_l	400	0
+TimeTick = 233	GW_1	1_0_1		offload_cloud	400	0
+TimeTick = 233	GW_1	1_5_0		context switch	800	40
 TimeTick = 268	GW_0	0_5_0		finish_l	800	0
 TimeTick = 268	GW_0	0_0_1		context switch	400	92
+TimeTick = 273	GW_1	1_5_0		finish_l	800	0
+TimeTick = 273	GW_1	1_1_1		context switch	400	27
+TimeTick = 300	GW_1	1_1_1		finish_l	400	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 360	GW_0	0_0_1		finish_l	400	0
 TimeTick = 360	GW_0	0_1_1		context switch	400	66
@@ -29933,11 +29994,11 @@ Miss Task : 10
 Meet Ratio : 0.875
 Energy Consumption : 11136
 =========== GW_1 ===========
-Total Task : 46
-Meet Task : 45
+Total Task : 47
+Meet Task : 46
 Miss Task : 0
-Meet Ratio : 0.978261
-Energy Consumption : 8400.3
+Meet Ratio : 0.978723
+Energy Consumption : 8415.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -31198,7 +31259,7 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	66
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	200	12
 TimeTick = 37	GW_0	0_1_0		finish_l	200	0
 TimeTick = 37	GW_0	0_2_0		context switch	200	11
@@ -31212,29 +31273,33 @@ TimeTick = 82	GW_1	1_2_0		finish_l	100	0
 TimeTick = 82	GW_1	1_3_0		context switch	200	10
 TimeTick = 92	GW_0	0_3_0		finish_l	800	0
 TimeTick = 92	GW_1	1_3_0		finish_l	200	0
-TimeTick = 92	GW_0	0_4_0		context switch	800	40
+TimeTick = 92	GW_0	0_0_0		context switch	200	25
 TimeTick = 92	GW_1	1_4_0		context switch	200	10
 TimeTick = 102	GW_1	1_4_0		finish_l	200	0
 TimeTick = 102	GW_1	1_5_0		context switch	400	20
+TimeTick = 117	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 117	GW_0	0_4_0		context switch	800	40
 TimeTick = 122	GW_1	1_5_0		finish_l	400	0
 TimeTick = 122	GW_1	1_0_1		context switch	200	66
-TimeTick = 132	GW_0	0_4_0		finish_l	800	0
-TimeTick = 132	GW_0	0_5_0		context switch	800	40
-TimeTick = 172	GW_0	0_5_0		finish_l	800	0
+TimeTick = 157	GW_0	0_4_0		finish_l	800	0
+TimeTick = 157	GW_0	0_5_0		context switch	800	40
 TimeTick = 188	GW_1	1_0_1		finish_l	200	0
 TimeTick = 188	GW_1	1_1_1		context switch	200	8
 TimeTick = 196	GW_1	1_1_1		finish_l	200	0
+TimeTick = 197	GW_0	0_5_0		finish_l	800	0
 TimeTick = 196	GW_1	1_2_1		context switch	200	8
-TimeTick = 200	GW_0	0_1_1		context switch	400	12
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
 TimeTick = 200	GW_1	1_2_1		miss_l	200	4
 TimeTick = 200	GW_1	1_3_1		context switch	400	10
 TimeTick = 210	GW_1	1_3_1		finish_l	400	0
 TimeTick = 210	GW_1	1_4_1		context switch	400	10
-TimeTick = 212	GW_0	0_1_1		finish_l	400	0
-TimeTick = 212	GW_0	0_2_1		context switch	400	11
 TimeTick = 220	GW_1	1_4_1		finish_l	400	0
 TimeTick = 220	GW_1	1_0_2		context switch	300	66
-TimeTick = 223	GW_0	0_2_1		finish_l	400	0
+TimeTick = 227	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 227	GW_0	0_1_1		context switch	400	12
+TimeTick = 239	GW_0	0_1_1		finish_l	400	0
+TimeTick = 239	GW_0	0_2_1		context switch	400	11
+TimeTick = 250	GW_0	0_2_1		finish_l	400	0
 TimeTick = 286	GW_1	1_0_2		finish_l	300	0
 TimeTick = 286	GW_1	1_1_2		context switch	300	8
 TimeTick = 294	GW_1	1_1_2		finish_l	300	0
@@ -31641,11 +31706,11 @@ TimeTick = 4000	GW_0	0_3_5		context switch	4800	44
 TimeTick = 4000	GW_1	1_5_10		context switch	4400	20
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 56
-Meet Task : 55
+Total Task : 57
+Meet Task : 56
 Miss Task : 0
-Meet Ratio : 0.982143
-Energy Consumption : 7671.3
+Meet Ratio : 0.982456
+Energy Consumption : 7686.9
 =========== GW_1 ===========
 Total Task : 170
 Meet Task : 132
@@ -32228,43 +32293,47 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	32
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	200	43
 TimeTick = 32	GW_1	1_0_0		finish_l	100	0
 TimeTick = 32	GW_1	1_1_0		context switch	100	26
 TimeTick = 58	GW_1	1_1_0		finish_l	100	0
 TimeTick = 58	GW_1	1_2_0		context switch	100	22
 TimeTick = 68	GW_0	0_1_0		finish_l	200	0
-TimeTick = 68	GW_0	0_2_0		context switch	400	26
+TimeTick = 68	GW_0	0_0_0		context switch	200	25
 TimeTick = 80	GW_1	1_2_0		finish_l	100	0
 TimeTick = 80	GW_1	1_3_0		context switch	200	15
-TimeTick = 94	GW_0	0_2_0		finish_l	400	0
-TimeTick = 94	GW_0	0_3_0		context switch	400	25
+TimeTick = 93	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 93	GW_0	0_2_0		context switch	400	26
 TimeTick = 95	GW_1	1_3_0		finish_l	200	0
 TimeTick = 95	GW_1	1_4_0		context switch	400	22
 TimeTick = 117	GW_1	1_4_0		finish_l	400	0
 TimeTick = 117	GW_1	1_5_0		context switch	800	40
-TimeTick = 119	GW_0	0_3_0		finish_l	400	0
-TimeTick = 119	GW_0	0_4_0		context switch	800	45
+TimeTick = 119	GW_0	0_2_0		finish_l	400	0
+TimeTick = 119	GW_0	0_3_0		context switch	400	25
+TimeTick = 144	GW_0	0_3_0		finish_l	400	0
+TimeTick = 144	GW_0	0_4_0		context switch	800	45
 TimeTick = 157	GW_1	1_5_0		finish_l	800	0
 TimeTick = 157	GW_1	1_0_1		context switch	200	32
-TimeTick = 164	GW_0	0_4_0		finish_l	800	0
-TimeTick = 164	GW_0	0_5_0		context switch	800	41
+TimeTick = 189	GW_0	0_4_0		finish_l	800	0
 TimeTick = 189	GW_1	1_0_1		finish_l	200	0
+TimeTick = 189	GW_0	0_5_0		context switch	800	41
 TimeTick = 189	GW_1	1_1_1		context switch	200	26
 TimeTick = 200	GW_1	1_1_1		miss_l	200	15
 TimeTick = 200	GW_1	1_2_1		miss_rq	200	22
 TimeTick = 200	GW_1	1_3_1		context switch	400	15
-TimeTick = 205	GW_0	0_5_0		finish_l	800	0
-TimeTick = 205	GW_0	0_1_1		context switch	400	43
 TimeTick = 215	GW_1	1_3_1		finish_l	400	0
 TimeTick = 215	GW_1	1_0_2		context switch	300	32
+TimeTick = 230	GW_0	0_5_0		finish_l	800	0
+TimeTick = 230	GW_0	0_0_1		context switch	400	26
 TimeTick = 247	GW_1	1_0_2		finish_l	300	0
-TimeTick = 248	GW_0	0_1_1		finish_l	400	0
 TimeTick = 247	GW_1	1_1_2		context switch	300	26
+TimeTick = 256	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 256	GW_0	0_1_1		context switch	400	43
 TimeTick = 273	GW_1	1_1_2		finish_l	300	0
 TimeTick = 273	GW_1	1_2_2		context switch	300	22
 TimeTick = 295	GW_1	1_2_2		finish_l	300	0
+TimeTick = 299	GW_0	0_1_1		finish_l	400	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_0_3		context switch	400	32
 TimeTick = 332	GW_1	1_0_3		finish_l	400	0
@@ -32640,11 +32709,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	45
 TimeTick = 4000	GW_1	1_5_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 51
-Meet Task : 50
+Total Task : 52
+Meet Task : 51
 Miss Task : 0
-Meet Ratio : 0.980392
-Energy Consumption : 8643.3
+Meet Ratio : 0.980769
+Energy Consumption : 8658.6
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 136
@@ -34331,31 +34400,35 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	45
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	400	89
 TimeTick = 45	GW_1	1_0_0		finish_l	100	0
 TimeTick = 45	GW_1	1_1_0		context switch	200	48
 TimeTick = 93	GW_1	1_1_0		finish_l	200	0
 TimeTick = 93	GW_1	1_2_0		context switch	400	49
 TimeTick = 114	GW_0	0_1_0		finish_l	400	0
-TimeTick = 114	GW_0	0_2_0		context switch	400	27
-TimeTick = 141	GW_0	0_2_0		finish_l	400	0
-TimeTick = 141	GW_0	0_3_0		context switch	400	25
+TimeTick = 114	GW_0	0_0_0		context switch	200	25
+TimeTick = 139	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 139	GW_0	0_2_0		context switch	400	27
 TimeTick = 142	GW_1	1_2_0		finish_l	400	0
 TimeTick = 142	GW_1	1_3_0		context switch	800	49
-TimeTick = 166	GW_0	0_3_0		finish_l	400	0
-TimeTick = 166	GW_0	0_4_0		context switch	800	48
+TimeTick = 166	GW_0	0_2_0		finish_l	400	0
+TimeTick = 166	GW_0	0_3_0		context switch	400	25
+TimeTick = 191	GW_0	0_3_0		finish_l	400	0
 TimeTick = 191	GW_1	1_3_0		finish_l	800	0
+TimeTick = 191	GW_0	0_4_0		context switch	800	48
 TimeTick = 191	GW_1	1_4_0		context switch	800	46
-TimeTick = 214	GW_0	0_4_0		finish_l	800	0
-TimeTick = 214	GW_0	0_5_0		context switch	800	42
 TimeTick = 237	GW_1	1_4_0		finish_l	800	0
 TimeTick = 237	GW_1	1_0_1		miss_rq	200	45
 TimeTick = 237	GW_1	1_5_0		context switch	800	42
-TimeTick = 256	GW_0	0_5_0		finish_l	800	0
+TimeTick = 239	GW_0	0_4_0		finish_l	800	0
+TimeTick = 239	GW_0	0_0_1		context switch	400	26
+TimeTick = 265	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 265	GW_0	0_5_0		context switch	800	42
 TimeTick = 279	GW_1	1_5_0		finish_l	800	0
 TimeTick = 279	GW_1	1_1_1		context switch	400	48
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 307	GW_0	0_5_0		finish_l	800	0
 TimeTick = 327	GW_1	1_1_1		finish_l	400	0
 TimeTick = 327	GW_1	1_0_2		miss_rq	300	45
 TimeTick = 327	GW_1	1_0_3		context switch	400	45
@@ -34582,11 +34655,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	48
 TimeTick = 4000	GW_1	1_3_5		context switch	4800	49
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 41
-Meet Task : 40
+Total Task : 42
+Meet Task : 41
 Miss Task : 0
-Meet Ratio : 0.97561
-Energy Consumption : 8724.3
+Meet Ratio : 0.97619
+Energy Consumption : 8739.6
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 66
@@ -35660,31 +35733,34 @@ Remote
 TimeTick = 0	GW_0	0_3_0		context switch	800	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	46
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_3_0		offload_cloud	800	0
 TimeTick = 25	GW_0	0_0_0		context switch	100	27
 TimeTick = 46	GW_1	1_0_0		finish_l	100	0
 TimeTick = 46	GW_1	1_1_0		context switch	100	22
 TimeTick = 52	GW_0	0_0_0		finish_l	100	0
-TimeTick = 52	GW_0	0_1_0		context switch	200	49
+TimeTick = 52	GW_0	0_3_0		context switch	800	25
 TimeTick = 68	GW_1	1_1_0		finish_l	100	0
 TimeTick = 68	GW_1	1_2_0		context switch	100	9
+TimeTick = 77	GW_0	0_3_0		finish_cloud	800	0
 TimeTick = 77	GW_1	1_2_0		finish_l	100	0
+TimeTick = 77	GW_0	0_1_0		context switch	200	49
 TimeTick = 77	GW_1	1_3_0		context switch	200	17
 TimeTick = 94	GW_1	1_3_0		finish_l	200	0
 TimeTick = 94	GW_1	1_4_0		context switch	200	11
-TimeTick = 101	GW_0	0_1_0		finish_l	200	0
-TimeTick = 101	GW_0	0_2_0		context switch	400	74
 TimeTick = 105	GW_1	1_4_0		finish_l	200	0
 TimeTick = 105	GW_1	1_5_0		context switch	200	11
 TimeTick = 116	GW_1	1_5_0		finish_l	200	0
 TimeTick = 116	GW_1	1_0_1		context switch	200	46
+TimeTick = 126	GW_0	0_1_0		finish_l	200	0
+TimeTick = 126	GW_0	0_2_0		context switch	400	74
 TimeTick = 162	GW_1	1_0_1		finish_l	200	0
 TimeTick = 162	GW_1	1_1_1		context switch	200	22
-TimeTick = 175	GW_0	0_2_0		finish_l	400	0
-TimeTick = 175	GW_0	0_4_0		context switch	800	77
 TimeTick = 184	GW_1	1_1_1		finish_l	200	0
 TimeTick = 184	GW_1	1_2_1		context switch	200	9
 TimeTick = 193	GW_1	1_2_1		finish_l	200	0
+TimeTick = 200	GW_0	0_2_0		finish_l	400	0
+TimeTick = 200	GW_0	0_0_1		miss_rq	200	27
+TimeTick = 200	GW_0	0_4_0		context switch	800	77
 TimeTick = 200	GW_1	1_3_1		context switch	400	17
 TimeTick = 217	GW_1	1_3_1		finish_l	400	0
 TimeTick = 217	GW_1	1_4_1		context switch	400	11
@@ -35692,26 +35768,25 @@ TimeTick = 228	GW_1	1_4_1		finish_l	400	0
 TimeTick = 228	GW_1	1_5_1		context switch	400	11
 TimeTick = 239	GW_1	1_5_1		finish_l	400	0
 TimeTick = 239	GW_1	1_0_2		context switch	300	46
-TimeTick = 252	GW_0	0_4_0		finish_l	800	0
-TimeTick = 252	GW_0	0_0_1		miss_rq	200	27
-TimeTick = 252	GW_0	0_5_0		context switch	800	44
+TimeTick = 277	GW_0	0_4_0		finish_l	800	0
+TimeTick = 277	GW_0	0_5_0		context switch	800	44
 TimeTick = 285	GW_1	1_0_2		finish_l	300	0
 TimeTick = 285	GW_1	1_1_2		context switch	300	22
-TimeTick = 296	GW_0	0_5_0		finish_l	800	0
-TimeTick = 296	GW_0	0_1_1		context switch	400	49
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_1_2		miss_l	300	7
 TimeTick = 300	GW_1	1_2_2		miss_rq	300	9
 TimeTick = 300	GW_1	1_0_3		context switch	400	46
-TimeTick = 345	GW_0	0_1_1		finish_l	400	0
-TimeTick = 345	GW_0	0_0_2		miss_rq	300	27
-TimeTick = 345	GW_0	0_0_3		context switch	400	27
+TimeTick = 321	GW_0	0_5_0		finish_l	800	0
+TimeTick = 321	GW_0	0_0_2		miss_rq	300	27
+TimeTick = 321	GW_0	0_1_1		context switch	400	49
 TimeTick = 346	GW_1	1_0_3		finish_l	400	0
 TimeTick = 346	GW_1	1_1_3		context switch	400	22
 TimeTick = 368	GW_1	1_1_3		finish_l	400	0
 TimeTick = 368	GW_1	1_2_3		context switch	400	9
-TimeTick = 372	GW_0	0_0_3		finish_l	400	0
+TimeTick = 370	GW_0	0_1_1		finish_l	400	0
+TimeTick = 370	GW_0	0_0_3		context switch	400	27
 TimeTick = 377	GW_1	1_2_3		finish_l	400	0
+TimeTick = 397	GW_0	0_0_3		finish_l	400	0
 TimeTick = 400	GW_0	0_2_1		context switch	800	74
 TimeTick = 400	GW_1	1_3_2		context switch	600	17
 TimeTick = 417	GW_1	1_3_2		finish_l	600	0
@@ -35759,47 +35834,48 @@ TimeTick = 746	GW_1	1_1_7		context switch	800	22
 TimeTick = 768	GW_1	1_1_7		finish_l	800	0
 TimeTick = 768	GW_1	1_2_7		context switch	800	9
 TimeTick = 777	GW_1	1_2_7		finish_l	800	0
-TimeTick = 800	GW_0	0_4_1		context switch	1600	77
+TimeTick = 800	GW_0	0_3_1		context switch	1600	26
 TimeTick = 800	GW_1	1_3_4		context switch	1000	17
 TimeTick = 817	GW_1	1_3_4		finish_l	1000	0
 TimeTick = 817	GW_1	1_4_4		context switch	1000	11
+TimeTick = 826	GW_0	0_3_1		offload_cloud	1600	0
+TimeTick = 826	GW_0	0_4_1		context switch	1600	77
 TimeTick = 828	GW_1	1_4_4		finish_l	1000	0
 TimeTick = 828	GW_1	1_5_4		context switch	1000	11
 TimeTick = 839	GW_1	1_5_4		finish_l	1000	0
 TimeTick = 839	GW_1	1_0_8		context switch	900	46
-TimeTick = 877	GW_0	0_4_1		finish_l	1600	0
-TimeTick = 877	GW_0	0_5_1		context switch	1600	44
 TimeTick = 885	GW_1	1_0_8		finish_l	900	0
 TimeTick = 885	GW_1	1_1_8		context switch	900	22
 TimeTick = 900	GW_1	1_1_8		miss_l	900	7
 TimeTick = 900	GW_1	1_2_8		miss_rq	900	9
 TimeTick = 900	GW_1	1_0_9		context switch	1000	46
-TimeTick = 921	GW_0	0_5_1		finish_l	1600	0
-TimeTick = 921	GW_0	0_0_8		miss_rq	900	27
-TimeTick = 921	GW_0	0_2_2		context switch	1200	74
+TimeTick = 903	GW_0	0_4_1		finish_l	1600	0
+TimeTick = 903	GW_0	0_0_8		miss_rq	900	27
+TimeTick = 903	GW_0	0_5_1		context switch	1600	44
 TimeTick = 946	GW_1	1_0_9		finish_l	1000	0
+TimeTick = 947	GW_0	0_5_1		finish_l	1600	0
 TimeTick = 946	GW_1	1_1_9		context switch	1000	22
+TimeTick = 947	GW_0	0_2_2		context switch	1200	74
 TimeTick = 968	GW_1	1_1_9		finish_l	1000	0
 TimeTick = 968	GW_1	1_2_9		context switch	1000	9
 TimeTick = 977	GW_1	1_2_9		finish_l	1000	0
-TimeTick = 995	GW_0	0_2_2		finish_l	1200	0
-TimeTick = 995	GW_0	0_1_4		context switch	1000	49
-TimeTick = 1000	GW_0	0_1_4		miss_l	1000	44
-TimeTick = 1000	GW_0	0_0_9		miss_rq	1000	27
-TimeTick = 1000	GW_0	0_0_10		context switch	1100	27
 TimeTick = 1000	GW_1	1_3_5		context switch	1200	17
 TimeTick = 1000	GW_2	2_0_1		context switch	2000	300
 TimeTick = 1017	GW_1	1_3_5		finish_l	1200	0
 TimeTick = 1017	GW_1	1_4_5		context switch	1200	11
-TimeTick = 1027	GW_0	0_0_10		finish_l	1100	0
-TimeTick = 1027	GW_0	0_1_5		context switch	1200	49
+TimeTick = 1021	GW_0	0_2_2		finish_l	1200	0
+TimeTick = 1021	GW_0	0_1_4		miss_rq	1000	49
+TimeTick = 1021	GW_0	0_0_9		miss_rq	1000	27
+TimeTick = 1021	GW_0	0_0_10		context switch	1100	27
 TimeTick = 1028	GW_1	1_4_5		finish_l	1200	0
 TimeTick = 1028	GW_1	1_5_5		context switch	1200	11
 TimeTick = 1039	GW_1	1_5_5		finish_l	1200	0
 TimeTick = 1039	GW_1	1_0_10		context switch	1100	46
-TimeTick = 1076	GW_0	0_1_5		finish_l	1200	0
+TimeTick = 1048	GW_0	0_0_10		finish_l	1100	0
+TimeTick = 1048	GW_0	0_1_5		context switch	1200	49
 TimeTick = 1085	GW_1	1_0_10		finish_l	1100	0
 TimeTick = 1085	GW_1	1_1_10		context switch	1100	22
+TimeTick = 1097	GW_0	0_1_5		finish_l	1200	0
 TimeTick = 1100	GW_0	0_0_11		context switch	1200	27
 TimeTick = 1100	GW_1	1_1_10		miss_l	1100	7
 TimeTick = 1100	GW_1	1_2_10		miss_rq	1100	9
@@ -36157,11 +36233,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	77
 TimeTick = 4000	GW_1	1_3_20		context switch	4200	17
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 81
-Meet Task : 61
+Total Task : 82
+Meet Task : 62
 Miss Task : 19
-Meet Ratio : 0.753086
-Energy Consumption : 10025.7
+Meet Ratio : 0.756098
+Energy Consumption : 10034.3
 =========== GW_1 ===========
 Total Task : 180
 Meet Task : 142
@@ -41209,7 +41285,7 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	71
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	400	25
 TimeTick = 50	GW_0	0_1_0		finish_l	400	0
 TimeTick = 50	GW_0	0_2_0		context switch	800	44
@@ -41218,23 +41294,27 @@ TimeTick = 71	GW_1	1_1_0		context switch	200	16
 TimeTick = 87	GW_1	1_1_0		finish_l	200	0
 TimeTick = 87	GW_1	1_2_0		context switch	400	21
 TimeTick = 94	GW_0	0_2_0		finish_l	800	0
-TimeTick = 94	GW_0	0_3_0		context switch	800	43
+TimeTick = 94	GW_0	0_0_0		context switch	200	25
 TimeTick = 108	GW_1	1_2_0		finish_l	400	0
 TimeTick = 108	GW_1	1_3_0		context switch	400	20
+TimeTick = 119	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 119	GW_0	0_3_0		context switch	800	43
 TimeTick = 128	GW_1	1_3_0		finish_l	400	0
 TimeTick = 128	GW_1	1_4_0		context switch	800	40
-TimeTick = 137	GW_0	0_3_0		finish_l	800	0
-TimeTick = 137	GW_0	0_4_0		context switch	800	40
+TimeTick = 162	GW_0	0_3_0		finish_l	800	0
+TimeTick = 162	GW_0	0_4_0		context switch	800	40
 TimeTick = 168	GW_1	1_4_0		finish_l	800	0
 TimeTick = 168	GW_1	1_5_0		context switch	800	40
-TimeTick = 177	GW_0	0_4_0		finish_l	800	0
-TimeTick = 177	GW_0	0_5_0		context switch	800	40
+TimeTick = 202	GW_0	0_4_0		finish_l	800	0
+TimeTick = 202	GW_0	0_0_1		context switch	400	27
 TimeTick = 208	GW_1	1_5_0		finish_l	800	0
 TimeTick = 208	GW_1	1_0_1		miss_rq	200	71
 TimeTick = 208	GW_1	1_1_1		context switch	400	16
-TimeTick = 217	GW_0	0_5_0		finish_l	800	0
 TimeTick = 224	GW_1	1_1_1		finish_l	400	0
 TimeTick = 224	GW_1	1_0_2		context switch	300	71
+TimeTick = 229	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 229	GW_0	0_5_0		context switch	800	40
+TimeTick = 269	GW_0	0_5_0		finish_l	800	0
 TimeTick = 295	GW_1	1_0_2		finish_l	300	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_0_3		context switch	400	71
@@ -41455,11 +41535,11 @@ TimeTick = 4000	GW_0	0_2_5		context switch	4800	44
 TimeTick = 4000	GW_1	1_4_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 31
-Meet Task : 30
+Total Task : 32
+Meet Task : 31
 Miss Task : 0
-Meet Ratio : 0.967742
-Energy Consumption : 7678.05
+Meet Ratio : 0.96875
+Energy Consumption : 7693.65
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 76
@@ -42066,30 +42146,32 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	70
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
 TimeTick = 25	GW_0	0_1_0		context switch	200	24
 TimeTick = 49	GW_0	0_1_0		finish_l	200	0
-TimeTick = 49	GW_0	0_2_0		context switch	200	20
-TimeTick = 69	GW_0	0_2_0		finish_l	200	0
-TimeTick = 69	GW_0	0_3_0		context switch	200	20
+TimeTick = 49	GW_0	0_0_0		context switch	200	25
 TimeTick = 70	GW_1	1_0_0		finish_l	100	0
 TimeTick = 70	GW_1	1_1_0		context switch	100	6
+TimeTick = 74	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 74	GW_0	0_2_0		context switch	200	20
 TimeTick = 76	GW_1	1_1_0		finish_l	100	0
 TimeTick = 76	GW_1	1_2_0		context switch	100	6
 TimeTick = 82	GW_1	1_2_0		finish_l	100	0
 TimeTick = 82	GW_1	1_3_0		context switch	400	23
-TimeTick = 89	GW_0	0_3_0		finish_l	200	0
-TimeTick = 89	GW_0	0_4_0		context switch	400	28
+TimeTick = 94	GW_0	0_2_0		finish_l	200	0
+TimeTick = 94	GW_0	0_3_0		context switch	200	20
 TimeTick = 105	GW_1	1_3_0		finish_l	400	0
 TimeTick = 105	GW_1	1_4_0		context switch	800	42
-TimeTick = 117	GW_0	0_4_0		finish_l	400	0
-TimeTick = 117	GW_0	0_5_0		context switch	400	20
-TimeTick = 137	GW_0	0_5_0		finish_l	400	0
+TimeTick = 114	GW_0	0_3_0		finish_l	200	0
+TimeTick = 114	GW_0	0_4_0		context switch	400	28
+TimeTick = 142	GW_0	0_4_0		finish_l	400	0
+TimeTick = 142	GW_0	0_5_0		context switch	400	20
 TimeTick = 147	GW_1	1_4_0		finish_l	800	0
 TimeTick = 147	GW_1	1_5_0		context switch	800	41
+TimeTick = 162	GW_0	0_5_0		finish_l	400	0
 TimeTick = 188	GW_1	1_5_0		finish_l	800	0
 TimeTick = 188	GW_1	1_0_1		context switch	200	70
-TimeTick = 200	GW_0	0_1_1		context switch	400	24
+TimeTick = 200	GW_0	0_0_1		context switch	400	26
 TimeTick = 200	GW_1	1_0_1		miss_l	200	58
 TimeTick = 200	GW_1	1_1_1		miss_rq	200	6
 TimeTick = 200	GW_1	1_2_1		miss_rq	200	6
@@ -42098,12 +42180,14 @@ TimeTick = 206	GW_1	1_1_2		finish_l	300	0
 TimeTick = 206	GW_1	1_2_2		context switch	300	6
 TimeTick = 212	GW_1	1_2_2		finish_l	300	0
 TimeTick = 212	GW_1	1_0_2		context switch	300	70
-TimeTick = 224	GW_0	0_1_1		finish_l	400	0
-TimeTick = 224	GW_0	0_2_1		context switch	400	20
-TimeTick = 244	GW_0	0_2_1		finish_l	400	0
-TimeTick = 244	GW_0	0_3_1		context switch	400	20
-TimeTick = 264	GW_0	0_3_1		finish_l	400	0
+TimeTick = 226	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 226	GW_0	0_1_1		context switch	400	24
+TimeTick = 250	GW_0	0_1_1		finish_l	400	0
+TimeTick = 250	GW_0	0_2_1		context switch	400	20
+TimeTick = 270	GW_0	0_2_1		finish_l	400	0
+TimeTick = 270	GW_0	0_3_1		context switch	400	20
 TimeTick = 282	GW_1	1_0_2		finish_l	300	0
+TimeTick = 290	GW_0	0_3_1		finish_l	400	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_1_3		context switch	400	6
 TimeTick = 306	GW_1	1_1_3		finish_l	400	0
@@ -42503,11 +42587,11 @@ TimeTick = 4000	GW_0	0_4_10		context switch	4400	28
 TimeTick = 4000	GW_1	1_4_5		context switch	4800	42
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 81
-Meet Task : 80
+Total Task : 82
+Meet Task : 81
 Miss Task : 0
-Meet Ratio : 0.987654
-Energy Consumption : 8589.3
+Meet Ratio : 0.987805
+Energy Consumption : 8604.6
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 120
@@ -42576,64 +42660,68 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	100	50
 TimeTick = 0	GW_1	1_0_0		context switch	400	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
 TimeTick = 25	GW_1	1_1_0		context switch	400	58
 TimeTick = 50	GW_0	0_0_0		finish_l	100	0
 TimeTick = 50	GW_0	0_1_0		context switch	100	25
 TimeTick = 75	GW_0	0_1_0		finish_l	100	0
 TimeTick = 75	GW_0	0_2_0		context switch	200	13
 TimeTick = 83	GW_1	1_1_0		finish_l	400	0
-TimeTick = 83	GW_1	1_2_0		context switch	400	49
+TimeTick = 83	GW_1	1_0_0		context switch	400	25
 TimeTick = 88	GW_0	0_2_0		finish_l	200	0
 TimeTick = 88	GW_0	0_3_0		context switch	200	13
 TimeTick = 101	GW_0	0_3_0		finish_l	200	0
 TimeTick = 101	GW_0	0_4_0		context switch	400	22
+TimeTick = 108	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 108	GW_1	1_2_0		context switch	400	49
 TimeTick = 123	GW_0	0_4_0		finish_l	400	0
 TimeTick = 123	GW_0	0_5_0		context switch	800	42
-TimeTick = 132	GW_1	1_2_0		finish_l	400	0
-TimeTick = 132	GW_1	1_3_0		context switch	400	47
+TimeTick = 157	GW_1	1_2_0		finish_l	400	0
+TimeTick = 157	GW_1	1_3_0		context switch	400	47
 TimeTick = 165	GW_0	0_5_0		finish_l	800	0
 TimeTick = 165	GW_0	0_0_1		context switch	200	50
-TimeTick = 179	GW_1	1_3_0		finish_l	400	0
-TimeTick = 179	GW_1	1_4_0		context switch	800	76
 TimeTick = 200	GW_0	0_0_1		miss_l	200	15
 TimeTick = 200	GW_0	0_1_1		miss_rq	200	25
 TimeTick = 200	GW_0	0_2_1		context switch	400	13
+TimeTick = 204	GW_1	1_3_0		finish_l	400	0
+TimeTick = 204	GW_1	1_4_0		context switch	800	76
 TimeTick = 213	GW_0	0_2_1		finish_l	400	0
 TimeTick = 213	GW_0	0_3_1		context switch	400	13
 TimeTick = 226	GW_0	0_3_1		finish_l	400	0
 TimeTick = 226	GW_0	0_0_2		context switch	300	50
-TimeTick = 255	GW_1	1_4_0		finish_l	800	0
-TimeTick = 255	GW_1	1_5_0		context switch	800	44
 TimeTick = 276	GW_0	0_0_2		finish_l	300	0
 TimeTick = 276	GW_0	0_1_2		context switch	300	25
-TimeTick = 299	GW_1	1_5_0		finish_l	800	0
+TimeTick = 280	GW_1	1_4_0		finish_l	800	0
+TimeTick = 280	GW_1	1_5_0		context switch	800	44
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_0	0_1_2		miss_l	300	1
 TimeTick = 300	GW_0	0_0_3		context switch	400	50
+TimeTick = 324	GW_1	1_5_0		finish_l	800	0
 TimeTick = 350	GW_0	0_0_3		finish_l	400	0
 TimeTick = 350	GW_0	0_1_3		context switch	400	25
 TimeTick = 375	GW_0	0_1_3		finish_l	400	0
 TimeTick = 400	GW_0	0_4_1		context switch	800	22
-TimeTick = 400	GW_1	1_1_1		context switch	800	58
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
 TimeTick = 422	GW_0	0_4_1		finish_l	800	0
 TimeTick = 422	GW_0	0_2_2		context switch	600	13
+TimeTick = 427	GW_1	1_0_1		offload_cloud	800	0
+TimeTick = 427	GW_1	1_1_1		context switch	800	58
 TimeTick = 435	GW_0	0_2_2		finish_l	600	0
 TimeTick = 435	GW_0	0_3_2		context switch	600	13
 TimeTick = 448	GW_0	0_3_2		finish_l	600	0
 TimeTick = 448	GW_0	0_0_4		context switch	500	50
-TimeTick = 458	GW_1	1_1_1		finish_l	800	0
-TimeTick = 458	GW_1	1_2_1		context switch	800	49
+TimeTick = 485	GW_1	1_1_1		finish_l	800	0
+TimeTick = 485	GW_1	1_2_1		context switch	800	49
 TimeTick = 498	GW_0	0_0_4		finish_l	500	0
 TimeTick = 498	GW_0	0_1_4		context switch	500	25
 TimeTick = 500	GW_0	0_1_4		miss_l	500	23
 TimeTick = 500	GW_0	0_0_5		context switch	600	50
-TimeTick = 507	GW_1	1_2_1		finish_l	800	0
-TimeTick = 507	GW_1	1_3_1		context switch	800	47
+TimeTick = 534	GW_1	1_2_1		finish_l	800	0
+TimeTick = 534	GW_1	1_3_1		context switch	800	47
 TimeTick = 550	GW_0	0_0_5		finish_l	600	0
 TimeTick = 550	GW_0	0_1_5		context switch	600	25
-TimeTick = 554	GW_1	1_3_1		finish_l	800	0
 TimeTick = 575	GW_0	0_1_5		finish_l	600	0
+TimeTick = 581	GW_1	1_3_1		finish_l	800	0
 TimeTick = 600	GW_0	0_2_3		context switch	800	13
 TimeTick = 613	GW_0	0_2_3		finish_l	800	0
 TimeTick = 613	GW_0	0_3_3		context switch	800	13
@@ -42938,11 +43026,11 @@ Miss Task : 25
 Meet Ratio : 0.814815
 Energy Consumption : 10964.6
 =========== GW_1 ===========
-Total Task : 41
-Meet Task : 40
+Total Task : 42
+Meet Task : 41
 Miss Task : 0
-Meet Ratio : 0.97561
-Energy Consumption : 9102.3
+Meet Ratio : 0.97619
+Energy Consumption : 9117.9
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -43957,51 +44045,59 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	200	25
 TimeTick = 0	GW_1	1_1_0		context switch	400	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_1_0		context switch	200	14
 TimeTick = 25	GW_1	1_0_0		context switch	100	40
 TimeTick = 39	GW_0	0_1_0		finish_l	200	0
 TimeTick = 39	GW_0	0_2_0		context switch	400	20
 TimeTick = 59	GW_0	0_2_0		finish_l	400	0
-TimeTick = 59	GW_0	0_3_0		context switch	400	20
+TimeTick = 59	GW_0	0_0_0		context switch	200	25
 TimeTick = 65	GW_1	1_0_0		finish_l	100	0
 TimeTick = 65	GW_1	1_2_0		context switch	400	24
-TimeTick = 79	GW_0	0_3_0		finish_l	400	0
-TimeTick = 79	GW_0	0_4_0		context switch	800	40
+TimeTick = 84	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 84	GW_0	0_3_0		context switch	400	20
 TimeTick = 89	GW_1	1_2_0		finish_l	400	0
-TimeTick = 89	GW_1	1_3_0		context switch	400	22
-TimeTick = 111	GW_1	1_3_0		finish_l	400	0
-TimeTick = 111	GW_1	1_4_0		context switch	400	20
-TimeTick = 119	GW_0	0_4_0		finish_l	800	0
-TimeTick = 119	GW_0	0_5_0		context switch	800	40
-TimeTick = 131	GW_1	1_4_0		finish_l	400	0
-TimeTick = 131	GW_1	1_5_0		context switch	800	40
-TimeTick = 159	GW_0	0_5_0		finish_l	800	0
-TimeTick = 171	GW_1	1_5_0		finish_l	800	0
-TimeTick = 171	GW_1	1_0_1		context switch	200	40
-TimeTick = 200	GW_0	0_1_1		context switch	400	14
-TimeTick = 200	GW_1	1_0_1		miss_l	200	11
+TimeTick = 89	GW_1	1_1_0		context switch	400	25
+TimeTick = 104	GW_0	0_3_0		finish_l	400	0
+TimeTick = 104	GW_0	0_4_0		context switch	800	40
+TimeTick = 114	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 114	GW_1	1_3_0		context switch	400	22
+TimeTick = 136	GW_1	1_3_0		finish_l	400	0
+TimeTick = 136	GW_1	1_4_0		context switch	400	20
+TimeTick = 144	GW_0	0_4_0		finish_l	800	0
+TimeTick = 144	GW_0	0_5_0		context switch	800	40
+TimeTick = 156	GW_1	1_4_0		finish_l	400	0
+TimeTick = 156	GW_1	1_5_0		context switch	800	40
+TimeTick = 184	GW_0	0_5_0		finish_l	800	0
+TimeTick = 196	GW_1	1_5_0		finish_l	800	0
+TimeTick = 196	GW_1	1_0_1		context switch	200	40
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		miss_l	200	36
 TimeTick = 200	GW_1	1_0_2		context switch	300	40
-TimeTick = 214	GW_0	0_1_1		finish_l	400	0
+TimeTick = 227	GW_0	0_0_1		offload_cloud	400	0
+TimeTick = 227	GW_0	0_1_1		context switch	400	14
 TimeTick = 240	GW_1	1_0_2		finish_l	300	0
+TimeTick = 241	GW_0	0_1_1		finish_l	400	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_0_3		context switch	400	40
 TimeTick = 340	GW_1	1_0_3		finish_l	400	0
 TimeTick = 400	GW_0	0_2_1		context switch	800	20
-TimeTick = 400	GW_1	1_2_1		context switch	800	24
+TimeTick = 400	GW_1	1_1_1		context switch	800	27
 TimeTick = 420	GW_0	0_2_1		finish_l	800	0
 TimeTick = 420	GW_0	0_3_1		context switch	800	20
-TimeTick = 424	GW_1	1_2_1		finish_l	800	0
-TimeTick = 424	GW_1	1_3_1		context switch	800	22
+TimeTick = 427	GW_1	1_1_1		offload_cloud	800	0
+TimeTick = 427	GW_1	1_2_1		context switch	800	24
 TimeTick = 440	GW_0	0_3_1		finish_l	800	0
 TimeTick = 440	GW_0	0_1_2		context switch	600	14
-TimeTick = 446	GW_1	1_3_1		finish_l	800	0
-TimeTick = 446	GW_1	1_4_1		context switch	800	20
+TimeTick = 451	GW_1	1_2_1		finish_l	800	0
+TimeTick = 451	GW_1	1_3_1		context switch	800	22
 TimeTick = 454	GW_0	0_1_2		finish_l	600	0
-TimeTick = 466	GW_1	1_4_1		finish_l	800	0
-TimeTick = 466	GW_1	1_0_4		context switch	500	40
-TimeTick = 500	GW_1	1_0_4		miss_l	500	6
+TimeTick = 473	GW_1	1_3_1		finish_l	800	0
+TimeTick = 473	GW_1	1_4_1		context switch	800	20
+TimeTick = 493	GW_1	1_4_1		finish_l	800	0
+TimeTick = 493	GW_1	1_0_4		context switch	500	40
+TimeTick = 500	GW_1	1_0_4		miss_l	500	33
 TimeTick = 500	GW_1	1_0_5		context switch	600	40
 TimeTick = 540	GW_1	1_0_5		finish_l	600	0
 TimeTick = 600	GW_0	0_1_3		context switch	800	14
@@ -44216,17 +44312,17 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	40
 TimeTick = 4000	GW_1	1_5_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 51
-Meet Task : 50
+Total Task : 52
+Meet Task : 51
 Miss Task : 0
-Meet Ratio : 0.980392
-Energy Consumption : 7671.3
+Meet Ratio : 0.980769
+Energy Consumption : 7686.9
 =========== GW_1 ===========
-Total Task : 76
-Meet Task : 65
+Total Task : 77
+Meet Task : 66
 Miss Task : 10
-Meet Ratio : 0.855263
-Energy Consumption : 9262.95
+Meet Ratio : 0.857143
+Energy Consumption : 9208.35
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -46066,53 +46162,57 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	400	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	51
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_1_0		context switch	400	57
 TimeTick = 51	GW_1	1_0_0		finish_l	100	0
 TimeTick = 51	GW_1	1_1_0		context switch	100	16
 TimeTick = 67	GW_1	1_1_0		finish_l	100	0
 TimeTick = 67	GW_1	1_2_0		context switch	400	40
 TimeTick = 82	GW_0	0_1_0		finish_l	400	0
-TimeTick = 82	GW_0	0_2_0		context switch	400	29
+TimeTick = 82	GW_0	0_0_0		context switch	400	25
+TimeTick = 107	GW_0	0_0_0		finish_cloud	400	0
 TimeTick = 107	GW_1	1_2_0		finish_l	400	0
+TimeTick = 107	GW_0	0_2_0		context switch	400	29
 TimeTick = 107	GW_1	1_3_0		context switch	400	32
-TimeTick = 111	GW_0	0_2_0		finish_l	400	0
-TimeTick = 111	GW_0	0_3_0		context switch	800	48
+TimeTick = 136	GW_0	0_2_0		finish_l	400	0
+TimeTick = 136	GW_0	0_3_0		context switch	800	48
 TimeTick = 139	GW_1	1_3_0		finish_l	400	0
 TimeTick = 139	GW_1	1_4_0		context switch	400	26
-TimeTick = 159	GW_0	0_3_0		finish_l	800	0
-TimeTick = 159	GW_0	0_4_0		context switch	800	43
 TimeTick = 165	GW_1	1_4_0		finish_l	400	0
 TimeTick = 165	GW_1	1_5_0		context switch	800	51
-TimeTick = 202	GW_0	0_4_0		finish_l	800	0
-TimeTick = 202	GW_0	0_5_0		context switch	800	42
+TimeTick = 184	GW_0	0_3_0		finish_l	800	0
+TimeTick = 184	GW_0	0_4_0		context switch	800	43
 TimeTick = 216	GW_1	1_5_0		finish_l	800	0
 TimeTick = 216	GW_1	1_0_1		miss_rq	200	51
 TimeTick = 216	GW_1	1_1_1		miss_rq	200	16
 TimeTick = 216	GW_1	1_1_2		context switch	300	16
+TimeTick = 227	GW_0	0_4_0		finish_l	800	0
+TimeTick = 227	GW_0	0_5_0		context switch	800	42
 TimeTick = 232	GW_1	1_1_2		finish_l	300	0
 TimeTick = 232	GW_1	1_0_2		context switch	300	51
-TimeTick = 244	GW_0	0_5_0		finish_l	800	0
+TimeTick = 269	GW_0	0_5_0		finish_l	800	0
 TimeTick = 283	GW_1	1_0_2		finish_l	300	0
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_1_3		context switch	400	16
 TimeTick = 316	GW_1	1_1_3		finish_l	400	0
 TimeTick = 316	GW_1	1_0_3		context switch	400	51
 TimeTick = 367	GW_1	1_0_3		finish_l	400	0
-TimeTick = 400	GW_0	0_1_1		context switch	800	57
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
 TimeTick = 400	GW_1	1_2_1		context switch	800	40
+TimeTick = 427	GW_0	0_0_1		offload_cloud	800	0
+TimeTick = 427	GW_0	0_1_1		context switch	800	57
 TimeTick = 440	GW_1	1_2_1		finish_l	800	0
 TimeTick = 440	GW_1	1_3_1		context switch	800	32
-TimeTick = 457	GW_0	0_1_1		finish_l	800	0
-TimeTick = 457	GW_0	0_2_1		context switch	800	29
 TimeTick = 472	GW_1	1_3_1		finish_l	800	0
 TimeTick = 472	GW_1	1_4_1		context switch	800	26
-TimeTick = 486	GW_0	0_2_1		finish_l	800	0
+TimeTick = 484	GW_0	0_1_1		finish_l	800	0
+TimeTick = 484	GW_0	0_2_1		context switch	800	29
 TimeTick = 498	GW_1	1_4_1		finish_l	800	0
 TimeTick = 498	GW_1	1_1_4		context switch	500	16
 TimeTick = 500	GW_1	1_1_4		miss_l	500	14
 TimeTick = 500	GW_1	1_0_4		miss_rq	500	51
 TimeTick = 500	GW_1	1_1_5		context switch	600	16
+TimeTick = 513	GW_0	0_2_1		finish_l	800	0
 TimeTick = 516	GW_1	1_1_5		finish_l	600	0
 TimeTick = 516	GW_1	1_0_5		context switch	600	51
 TimeTick = 567	GW_1	1_0_5		finish_l	600	0
@@ -46362,11 +46462,11 @@ TimeTick = 4000	GW_0	0_3_5		context switch	4800	48
 TimeTick = 4000	GW_1	1_5_5		context switch	4800	51
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 36
-Meet Task : 35
+Total Task : 37
+Meet Task : 36
 Miss Task : 0
-Meet Ratio : 0.972222
-Energy Consumption : 8272.05
+Meet Ratio : 0.972973
+Energy Consumption : 8287.65
 =========== GW_1 ===========
 Total Task : 115
 Meet Task : 91
@@ -47068,39 +47168,43 @@ Remote
 TimeTick = 0	GW_0	0_0_0		context switch	100	50
 TimeTick = 0	GW_1	1_0_0		context switch	200	25
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_1	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
 TimeTick = 25	GW_1	1_1_0		context switch	200	23
 TimeTick = 48	GW_1	1_1_0		finish_l	200	0
 TimeTick = 48	GW_1	1_2_0		context switch	200	11
 TimeTick = 50	GW_0	0_0_0		finish_l	100	0
 TimeTick = 50	GW_0	0_1_0		context switch	200	39
 TimeTick = 59	GW_1	1_2_0		finish_l	200	0
-TimeTick = 59	GW_1	1_3_0		context switch	400	21
-TimeTick = 80	GW_1	1_3_0		finish_l	400	0
-TimeTick = 80	GW_1	1_4_0		context switch	400	20
+TimeTick = 59	GW_1	1_0_0		context switch	200	25
+TimeTick = 84	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 84	GW_1	1_3_0		context switch	400	21
 TimeTick = 89	GW_0	0_1_0		finish_l	200	0
 TimeTick = 89	GW_0	0_2_0		context switch	200	17
-TimeTick = 100	GW_1	1_4_0		finish_l	400	0
-TimeTick = 100	GW_1	1_5_0		context switch	800	40
+TimeTick = 105	GW_1	1_3_0		finish_l	400	0
 TimeTick = 106	GW_0	0_2_0		finish_l	200	0
+TimeTick = 105	GW_1	1_4_0		context switch	400	20
 TimeTick = 106	GW_0	0_3_0		context switch	200	15
 TimeTick = 121	GW_0	0_3_0		finish_l	200	0
 TimeTick = 121	GW_0	0_4_0		context switch	400	29
-TimeTick = 140	GW_1	1_5_0		finish_l	800	0
+TimeTick = 125	GW_1	1_4_0		finish_l	400	0
+TimeTick = 125	GW_1	1_5_0		context switch	800	40
 TimeTick = 150	GW_0	0_4_0		finish_l	400	0
 TimeTick = 150	GW_0	0_5_0		context switch	800	48
+TimeTick = 165	GW_1	1_5_0		finish_l	800	0
 TimeTick = 198	GW_0	0_5_0		finish_l	800	0
 TimeTick = 198	GW_0	0_0_1		context switch	200	50
 TimeTick = 200	GW_0	0_0_1		miss_l	200	48
 TimeTick = 200	GW_0	0_1_1		context switch	400	39
-TimeTick = 200	GW_1	1_1_1		context switch	400	23
-TimeTick = 223	GW_1	1_1_1		finish_l	400	0
-TimeTick = 223	GW_1	1_2_1		context switch	400	11
-TimeTick = 234	GW_1	1_2_1		finish_l	400	0
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+TimeTick = 227	GW_1	1_0_1		offload_cloud	400	0
+TimeTick = 227	GW_1	1_1_1		context switch	400	23
 TimeTick = 239	GW_0	0_1_1		finish_l	400	0
 TimeTick = 239	GW_0	0_2_1		context switch	400	17
+TimeTick = 250	GW_1	1_1_1		finish_l	400	0
+TimeTick = 250	GW_1	1_2_1		context switch	400	11
 TimeTick = 256	GW_0	0_2_1		finish_l	400	0
 TimeTick = 256	GW_0	0_3_1		context switch	400	15
+TimeTick = 261	GW_1	1_2_1		finish_l	400	0
 TimeTick = 271	GW_0	0_3_1		finish_l	400	0
 TimeTick = 271	GW_0	0_0_2		context switch	300	50
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
@@ -47436,11 +47540,11 @@ Miss Task : 20
 Meet Ratio : 0.826087
 Energy Consumption : 10582.5
 =========== GW_1 ===========
-Total Task : 66
-Meet Task : 65
+Total Task : 67
+Meet Task : 66
 Miss Task : 0
-Meet Ratio : 0.984848
-Energy Consumption : 7954.8
+Meet Ratio : 0.985075
+Energy Consumption : 7970.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
@@ -49580,42 +49684,44 @@ Remote
 TimeTick = 0	GW_0	0_3_0		context switch	800	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	63
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_3_0		offload_cloud	800	0
 TimeTick = 25	GW_0	0_0_0		context switch	100	33
 TimeTick = 58	GW_0	0_0_0		finish_l	100	0
-TimeTick = 58	GW_0	0_1_0		context switch	200	36
+TimeTick = 58	GW_0	0_3_0		context switch	800	25
 TimeTick = 63	GW_1	1_0_0		finish_l	100	0
 TimeTick = 63	GW_1	1_1_0		context switch	200	31
-TimeTick = 94	GW_0	0_1_0		finish_l	200	0
+TimeTick = 83	GW_0	0_3_0		finish_cloud	800	0
+TimeTick = 83	GW_0	0_1_0		context switch	200	36
 TimeTick = 94	GW_1	1_1_0		finish_l	200	0
-TimeTick = 94	GW_0	0_2_0		context switch	400	65
 TimeTick = 94	GW_1	1_2_0		context switch	400	21
 TimeTick = 115	GW_1	1_2_0		finish_l	400	0
 TimeTick = 115	GW_1	1_3_0		context switch	400	20
+TimeTick = 119	GW_0	0_1_0		finish_l	200	0
+TimeTick = 119	GW_0	0_2_0		context switch	400	65
 TimeTick = 135	GW_1	1_3_0		finish_l	400	0
 TimeTick = 135	GW_1	1_4_0		context switch	800	40
-TimeTick = 159	GW_0	0_2_0		finish_l	400	0
-TimeTick = 159	GW_0	0_4_0		context switch	800	87
 TimeTick = 175	GW_1	1_4_0		finish_l	800	0
 TimeTick = 175	GW_1	1_5_0		context switch	800	40
+TimeTick = 184	GW_0	0_2_0		finish_l	400	0
+TimeTick = 184	GW_0	0_4_0		context switch	800	87
 TimeTick = 215	GW_1	1_5_0		finish_l	800	0
 TimeTick = 215	GW_1	1_0_1		miss_rq	200	63
 TimeTick = 215	GW_1	1_1_1		context switch	400	31
-TimeTick = 246	GW_0	0_4_0		finish_l	800	0
 TimeTick = 246	GW_1	1_1_1		finish_l	400	0
-TimeTick = 246	GW_0	0_0_1		miss_rq	200	33
-TimeTick = 246	GW_0	0_5_0		context switch	800	56
 TimeTick = 246	GW_1	1_0_2		context switch	300	63
+TimeTick = 271	GW_0	0_4_0		finish_l	800	0
+TimeTick = 271	GW_0	0_0_1		miss_rq	200	33
+TimeTick = 271	GW_0	0_5_0		context switch	800	56
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
 TimeTick = 300	GW_1	1_0_2		miss_l	300	9
 TimeTick = 300	GW_1	1_0_3		context switch	400	63
-TimeTick = 302	GW_0	0_5_0		finish_l	800	0
-TimeTick = 302	GW_0	0_0_2		miss_rq	300	33
-TimeTick = 302	GW_0	0_1_1		context switch	400	36
-TimeTick = 338	GW_0	0_1_1		finish_l	400	0
-TimeTick = 338	GW_0	0_0_3		context switch	400	33
+TimeTick = 327	GW_0	0_5_0		finish_l	800	0
+TimeTick = 327	GW_0	0_0_2		miss_rq	300	33
+TimeTick = 327	GW_0	0_1_1		context switch	400	36
+TimeTick = 363	GW_0	0_1_1		finish_l	400	0
 TimeTick = 363	GW_1	1_0_3		finish_l	400	0
-TimeTick = 371	GW_0	0_0_3		finish_l	400	0
+TimeTick = 363	GW_0	0_0_3		context switch	400	33
+TimeTick = 396	GW_0	0_0_3		finish_l	400	0
 TimeTick = 400	GW_0	0_2_1		context switch	800	65
 TimeTick = 400	GW_1	1_2_1		context switch	800	21
 TimeTick = 421	GW_1	1_2_1		finish_l	800	0
@@ -49645,40 +49751,42 @@ TimeTick = 700	GW_0	0_0_7		context switch	800	33
 TimeTick = 700	GW_1	1_0_7		context switch	800	63
 TimeTick = 733	GW_0	0_0_7		finish_l	800	0
 TimeTick = 763	GW_1	1_0_7		finish_l	800	0
-TimeTick = 800	GW_0	0_4_1		context switch	1600	87
+TimeTick = 800	GW_0	0_3_1		context switch	1600	26
 TimeTick = 800	GW_1	1_4_1		context switch	1600	40
+TimeTick = 826	GW_0	0_3_1		offload_cloud	1600	0
+TimeTick = 826	GW_0	0_4_1		context switch	1600	87
 TimeTick = 840	GW_1	1_4_1		finish_l	1600	0
 TimeTick = 840	GW_1	1_5_1		context switch	1600	40
 TimeTick = 880	GW_1	1_5_1		finish_l	1600	0
 TimeTick = 880	GW_1	1_2_2		context switch	1200	21
-TimeTick = 887	GW_0	0_4_1		finish_l	1600	0
-TimeTick = 887	GW_0	0_5_1		context switch	1600	56
 TimeTick = 901	GW_1	1_2_2		finish_l	1200	0
 TimeTick = 901	GW_1	1_0_8		miss_rq	900	63
 TimeTick = 901	GW_1	1_3_2		context switch	1200	20
+TimeTick = 913	GW_0	0_4_1		finish_l	1600	0
+TimeTick = 913	GW_0	0_0_8		miss_rq	900	33
+TimeTick = 913	GW_0	0_5_1		context switch	1600	56
 TimeTick = 921	GW_1	1_3_2		finish_l	1200	0
 TimeTick = 921	GW_1	1_1_4		context switch	1000	31
-TimeTick = 943	GW_0	0_5_1		finish_l	1600	0
-TimeTick = 943	GW_0	0_0_8		miss_rq	900	33
-TimeTick = 943	GW_0	0_2_2		context switch	1200	65
 TimeTick = 952	GW_1	1_1_4		finish_l	1000	0
 TimeTick = 952	GW_1	1_0_9		context switch	1000	63
+TimeTick = 969	GW_0	0_5_1		finish_l	1600	0
+TimeTick = 969	GW_0	0_2_2		context switch	1200	65
 TimeTick = 1000	GW_1	1_0_9		miss_l	1000	15
 TimeTick = 1000	GW_1	1_1_5		context switch	1200	31
 TimeTick = 1000	GW_2	2_0_1		context switch	2000	300
-TimeTick = 1008	GW_0	0_2_2		finish_l	1200	0
-TimeTick = 1008	GW_0	0_1_4		miss_rq	1000	36
-TimeTick = 1008	GW_0	0_0_9		miss_rq	1000	33
-TimeTick = 1008	GW_0	0_0_10		context switch	1100	33
 TimeTick = 1031	GW_1	1_1_5		finish_l	1200	0
 TimeTick = 1031	GW_1	1_0_10		context switch	1100	63
-TimeTick = 1041	GW_0	0_0_10		finish_l	1100	0
-TimeTick = 1041	GW_0	0_1_5		context switch	1200	36
-TimeTick = 1077	GW_0	0_1_5		finish_l	1200	0
+TimeTick = 1034	GW_0	0_2_2		finish_l	1200	0
+TimeTick = 1034	GW_0	0_1_4		miss_rq	1000	36
+TimeTick = 1034	GW_0	0_0_9		miss_rq	1000	33
+TimeTick = 1034	GW_0	0_0_10		context switch	1100	33
+TimeTick = 1067	GW_0	0_0_10		finish_l	1100	0
+TimeTick = 1067	GW_0	0_1_5		context switch	1200	36
 TimeTick = 1094	GW_1	1_0_10		finish_l	1100	0
-TimeTick = 1100	GW_0	0_0_11		context switch	1200	33
 TimeTick = 1100	GW_1	1_0_11		context switch	1200	63
-TimeTick = 1133	GW_0	0_0_11		finish_l	1200	0
+TimeTick = 1103	GW_0	0_1_5		finish_l	1200	0
+TimeTick = 1103	GW_0	0_0_11		context switch	1200	33
+TimeTick = 1136	GW_0	0_0_11		finish_l	1200	0
 TimeTick = 1163	GW_1	1_0_11		finish_l	1200	0
 TimeTick = 1200	GW_0	0_2_3		context switch	1600	65
 TimeTick = 1200	GW_1	1_2_3		context switch	1600	21
@@ -49907,11 +50015,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	87
 TimeTick = 4000	GW_1	1_4_5		context switch	4800	40
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 81
-Meet Task : 61
+Total Task : 82
+Meet Task : 62
 Miss Task : 19
-Meet Ratio : 0.753086
-Energy Consumption : 9947.4
+Meet Ratio : 0.756098
+Energy Consumption : 9962.7
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 75
@@ -50468,43 +50576,45 @@ Remote
 TimeTick = 0	GW_0	0_1_0		context switch	400	25
 TimeTick = 0	GW_1	1_0_0		context switch	100	28
 TimeTick = 0	GW_2	2_0_0		context switch	1000	300
-TimeTick = 25	GW_0	-1_999_-1		offload_cloud	9999	9999
+TimeTick = 25	GW_0	0_1_0		offload_cloud	400	0
 TimeTick = 25	GW_0	0_0_0		context switch	100	32
 TimeTick = 28	GW_1	1_0_0		finish_l	100	0
 TimeTick = 28	GW_1	1_1_0		context switch	100	27
 TimeTick = 55	GW_1	1_1_0		finish_l	100	0
 TimeTick = 55	GW_1	1_2_0		context switch	200	38
 TimeTick = 57	GW_0	0_0_0		finish_l	100	0
-TimeTick = 57	GW_0	0_2_0		context switch	400	57
+TimeTick = 57	GW_0	0_1_0		context switch	400	25
+TimeTick = 82	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 82	GW_0	0_2_0		context switch	400	57
 TimeTick = 93	GW_1	1_2_0		finish_l	200	0
 TimeTick = 93	GW_1	1_3_0		context switch	200	21
-TimeTick = 114	GW_0	0_2_0		finish_l	400	0
 TimeTick = 114	GW_1	1_3_0		finish_l	200	0
-TimeTick = 114	GW_0	0_3_0		context switch	400	41
 TimeTick = 114	GW_1	1_4_0		context switch	400	29
+TimeTick = 139	GW_0	0_2_0		finish_l	400	0
+TimeTick = 139	GW_0	0_3_0		context switch	400	41
 TimeTick = 143	GW_1	1_4_0		finish_l	400	0
 TimeTick = 143	GW_1	1_5_0		context switch	400	25
-TimeTick = 155	GW_0	0_3_0		finish_l	400	0
-TimeTick = 155	GW_0	0_4_0		context switch	800	66
 TimeTick = 168	GW_1	1_5_0		finish_l	400	0
 TimeTick = 168	GW_1	1_0_1		context switch	200	28
+TimeTick = 180	GW_0	0_3_0		finish_l	400	0
+TimeTick = 180	GW_0	0_4_0		context switch	800	66
 TimeTick = 196	GW_1	1_0_1		finish_l	200	0
 TimeTick = 196	GW_1	1_1_1		context switch	200	27
 TimeTick = 200	GW_1	1_1_1		miss_l	200	23
 TimeTick = 200	GW_1	1_2_1		context switch	400	38
-TimeTick = 221	GW_0	0_4_0		finish_l	800	0
-TimeTick = 221	GW_0	0_0_1		miss_rq	200	32
-TimeTick = 221	GW_0	0_5_0		context switch	800	51
 TimeTick = 238	GW_1	1_2_1		finish_l	400	0
 TimeTick = 238	GW_1	1_3_1		context switch	400	21
+TimeTick = 246	GW_0	0_4_0		finish_l	800	0
+TimeTick = 246	GW_0	0_0_1		miss_rq	200	32
+TimeTick = 246	GW_0	0_5_0		context switch	800	51
 TimeTick = 259	GW_1	1_3_1		finish_l	400	0
 TimeTick = 259	GW_1	1_0_2		context switch	300	28
-TimeTick = 272	GW_0	0_5_0		finish_l	800	0
-TimeTick = 272	GW_0	0_0_2		context switch	300	32
 TimeTick = 287	GW_1	1_0_2		finish_l	300	0
 TimeTick = 287	GW_1	1_1_2		context switch	300	27
+TimeTick = 297	GW_0	0_5_0		finish_l	800	0
+TimeTick = 297	GW_0	0_0_2		context switch	300	32
 TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
-TimeTick = 300	GW_0	0_0_2		miss_l	300	4
+TimeTick = 300	GW_0	0_0_2		miss_l	300	29
 TimeTick = 300	GW_0	0_0_3		context switch	400	32
 TimeTick = 300	GW_1	1_1_2		miss_l	300	14
 TimeTick = 300	GW_1	1_0_3		context switch	400	28
@@ -50512,27 +50622,28 @@ TimeTick = 328	GW_1	1_0_3		finish_l	400	0
 TimeTick = 328	GW_1	1_1_3		context switch	400	27
 TimeTick = 332	GW_0	0_0_3		finish_l	400	0
 TimeTick = 355	GW_1	1_1_3		finish_l	400	0
-TimeTick = 400	GW_0	0_2_1		context switch	800	57
+TimeTick = 400	GW_0	0_1_1		context switch	800	26
 TimeTick = 400	GW_1	1_4_1		context switch	800	29
+TimeTick = 426	GW_0	0_1_1		offload_cloud	800	0
+TimeTick = 426	GW_0	0_2_1		context switch	800	57
 TimeTick = 429	GW_1	1_4_1		finish_l	800	0
 TimeTick = 429	GW_1	1_5_1		context switch	800	25
 TimeTick = 454	GW_1	1_5_1		finish_l	800	0
 TimeTick = 454	GW_1	1_2_2		context switch	600	38
-TimeTick = 457	GW_0	0_2_1		finish_l	800	0
-TimeTick = 457	GW_0	0_3_1		context switch	800	41
+TimeTick = 483	GW_0	0_2_1		finish_l	800	0
+TimeTick = 483	GW_0	0_3_1		context switch	800	41
 TimeTick = 492	GW_1	1_2_2		finish_l	600	0
 TimeTick = 492	GW_1	1_3_2		context switch	600	21
-TimeTick = 498	GW_0	0_3_1		finish_l	800	0
-TimeTick = 498	GW_0	0_0_4		context switch	500	32
-TimeTick = 500	GW_0	0_0_4		miss_l	500	30
-TimeTick = 500	GW_0	0_0_5		context switch	600	32
 TimeTick = 513	GW_1	1_3_2		finish_l	600	0
 TimeTick = 513	GW_1	1_0_4		miss_rq	500	28
 TimeTick = 513	GW_1	1_1_4		miss_rq	500	27
 TimeTick = 513	GW_1	1_1_5		context switch	600	27
-TimeTick = 532	GW_0	0_0_5		finish_l	600	0
+TimeTick = 524	GW_0	0_3_1		finish_l	800	0
+TimeTick = 524	GW_0	0_0_4		miss_rq	500	32
+TimeTick = 524	GW_0	0_0_5		context switch	600	32
 TimeTick = 540	GW_1	1_1_5		finish_l	600	0
 TimeTick = 540	GW_1	1_0_5		context switch	600	28
+TimeTick = 556	GW_0	0_0_5		finish_l	600	0
 TimeTick = 568	GW_1	1_0_5		finish_l	600	0
 TimeTick = 600	GW_0	0_0_6		context switch	700	32
 TimeTick = 600	GW_1	1_2_3		context switch	800	38
@@ -50872,11 +50983,11 @@ TimeTick = 4000	GW_0	0_4_5		context switch	4800	66
 TimeTick = 4000	GW_1	1_4_10		context switch	4400	29
 TimeTick = 4000	GW_2	2_0_4		context switch	5000	300
 =========== GW_0 ===========
-Total Task : 71
-Meet Task : 55
+Total Task : 72
+Meet Task : 56
 Miss Task : 15
-Meet Ratio : 0.774648
-Energy Consumption : 9457.35
+Meet Ratio : 0.777778
+Energy Consumption : 9436.2
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 111
@@ -50893,6 +51004,8 @@ Energy Consumption : 7825.8
 100
 -------------
 ============== Average Result ==============
-Meet Ratio : 0.836885
-Energy Consumption : 10489.4
-Response time of Meet : 3062723
+Meet Ratio : 0.836946
+Energy Consumption : 10490.6
+Response time of Meet : 1243570
+Cloud server energy : 314640
+Fog devices energy : 782500

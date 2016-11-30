@@ -7,18 +7,22 @@ extern fstream fs;
 extern int HyperPeriod;
 extern int timeTick;
 
+extern const int _traffic;
 extern const int offloadTransfer;
 extern const int fogTransfer;
 extern const float speedRatio;	// remoteSpeed / localSpeed
+extern const int WBANpayload; // WBAN payload for normalized (byte)
 
 extern int policyOFLD;
 
 void scheduler(int policy);
 
 //--------Power-------------------------------------------------------
-extern const float p_idle;	// idle (W)
-extern const float p_comp;	// full load
-extern const float p_trans;	// wifi trans	
+extern const float p_idle;		// idle (W)
+extern const float p_comp;		// full load
+extern const float p_trans;		// wifi trans	
+extern const int cloudp_idle;	// server idle
+extern const int cloudp_actv;	//server active
 //--------Time--------------------------------------------------------
 extern const float t_trans; // wifi trans time (ms)
 

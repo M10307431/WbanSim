@@ -42,8 +42,8 @@ char* inputPath = "input.txt";
 fstream fs, config, input;
 int Set = 100;
 int NodeNum = 3;	// # of GW Node
-int TaskNum = 5;	// # of Tasks in each GW
-float total_U = 0.3;	// total Utilization
+int TaskNum = 3;	// # of Tasks in each GW
+float total_U = 2.0;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
 
 int period[] = {100, 200, 400, 800, 1000};
@@ -61,15 +61,17 @@ int fogserver =0;		// fog server num off/on
 =================================*/
 
 const float speedRatio = 5;	// remoteSpeed / localSpeed
+const int WBANpayload = 128; // WBAN payload for normalized (byte)
 //--------Power-------------------------------------------------------
-const float p_idle = 1.55;	// idle (W)
+const float p_idle = 1.55;		// idle (W)
 const float p_comp	= 2.9-1.55;	// full load
-const float p_trans = 0.3;	// wifi trans	
+const float p_trans = 0.3;		// wifi trans
+const int cloudp_idle = 223;	// server idle power (W)
+const int cloudp_actv = 368;	// server active power
 //--------Time--------------------------------------------------------
-const float t_trans = 25; // wifi trans time (ms)
-
-const int offloadTransfer = 25;
-const int fogTransfer = 5;
+const int _traffic = 0; 
+const int offloadTransfer = 25;	// global trans time (ms)
+const int fogTransfer = 5;		// local trans
 /*=================================
 		Main function
 ==================================*/
@@ -207,10 +209,14 @@ int main(){
 			GW = GW->nextNode;
 			GW->result.calculate();
 			printResult(GW);
-			if(GW->id < NodeNum-1){
+			if(GW->nextNode != NULL){
 				Result_avg->energy += GW->result.energy;
 				Result_avg->meet_ratio += GW->result.meet_ratio;
 				Result_avg->resp += GW->result.resp;
+			}
+			else{
+				Result_avg->serverEng += GW->result.serverEng;
+				Result_avg->fogEng += GW->result.energy;
 			}
 		}
 
@@ -221,6 +227,8 @@ int main(){
 	fs << "Meet Ratio : " << Result_avg->meet_ratio/(Set*2) << endl;
 	fs << "Energy Consumption : " << Result_avg->energy/(Set*2) << endl;
 	fs << "Response time of Meet : " << Result_avg->resp << endl;
+	fs << "Cloud server energy : " << Result_avg->serverEng << endl;
+	fs << "Fog devices energy : " << Result_avg->fogEng << endl;
 
 	Clear();
 	fs.close();

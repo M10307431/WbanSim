@@ -57146,4 +57146,6 @@ Energy Consumption : 7825.8
 ============== Average Result ==============
 Meet Ratio : 1
 Energy Consumption : 11530.8
-Response time of Meet : 2188870
+Response time of Meet : 2611130
+Cloud server energy : 0
+Fog devices energy : 782500

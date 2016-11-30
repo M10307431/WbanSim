@@ -36,6 +36,15 @@ def main():
     subprocess.Popen(["WBAN_Sim.exe"])
     os.chdir("..\\3-1.5-4") # change current path
     subprocess.Popen(["WBAN_Sim.exe"])
+
+    os.chdir("..\\3-2.0-0") # change current path
+    subprocess.Popen(["WBAN_Sim.exe"])
+    os.chdir("..\\3-2.0-1") # change current path
+    subprocess.Popen(["WBAN_Sim.exe"])
+    os.chdir("..\\3-2.0-2") # change current path
+    subprocess.Popen(["WBAN_Sim.exe"])
+    os.chdir("..\\3-2.0-4") # change current path
+    subprocess.Popen(["WBAN_Sim.exe"])
  
 if __name__ == "__main__":
     main()
