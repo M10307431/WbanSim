@@ -34,6 +34,7 @@ void sched_new(Node* GW){
 				it->uplink = (it->target == -1)? offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic : fogTransfer;
 				it->dwlink = (it->target == -1)? offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic : fogTransfer;
 				it->target = (it->target != -1)? 999 : -1;
+				it->vm = -1;
 				it->remaining = it->uplink;
 				it->cnt += 1;
 
@@ -45,9 +46,10 @@ void sched_new(Node* GW){
 					it->deadline = (it->target != -1)? (it->virtualD-it->dwlink-it->exec) : (it->virtualD-it->dwlink-it->exec/speedRatio);	//virtual deadline
 				}
 
-				/*if(policyOFLD==AOFLDC){
-					it->deadline--;
-				}*/
+				if(policyOFLD==AOFLDC){
+					//it->deadline--;
+					it->vm = NodeNum-1;
+				}
 
 				GW->remote_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
 				GW->remote_q.ready_q.push_back(*it);					// push to ready_q
@@ -198,6 +200,7 @@ void sched_fifo(Node* GW){
 		for(deque<Task>::iterator it=GW->remote_q.wait_q.begin(); it!=GW->remote_q.wait_q.end();){
 			if(it->deadline <= timeTick){				// task arrival
 				it->deadline += it->period;
+				it->virtualD = it->deadline;
 				it->uplink = offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic;
 				it->dwlink = offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic;
 				it->remaining = it->uplink;
@@ -270,6 +273,7 @@ void cludServer(){
 			// miss check
 			for(deque<Task>::iterator it=GW->Cloud.begin(); it!=GW->Cloud.end();){
 				if(it->deadline <= timeTick && it->remaining > 0){
+					Time("cloud_miss");
 					Node *src = new Node;
 					src = NodeHead;
 					while(src->nextNode != NULL){
@@ -304,6 +308,7 @@ void cludServer(){
 				while(src->nextNode != NULL){
 					src = src->nextNode;
 					if(src->id == GW->Cloud.front().parent){
+						Time("cloud_back");
 						src->TBS.push_back(GW->Cloud.front());
 						break;
 					}
@@ -530,13 +535,15 @@ void EDF(){
 			*******************************************/
 			if(GW->currTask->offload){
 				
-				if(GW->currTask->target == -1 && GW->currTask->vm == -1){
-					EvaluationVM(GW->currTask);
-				}
+				if(policyOFLD == myOFLD){
+					if(GW->currTask->target == -1 && GW->currTask->vm == -1){
+						EvaluationVM(GW->currTask);
+					}
 
-				// Evaluate Fog migration target at first running
-				if(GW->currTask->target == 999 || GW->currTask->vm == 999){
-					EvaluationFog(GW->currTask);
+					// Evaluate Fog migration target at first running
+					if(GW->currTask->target == 999 || GW->currTask->vm == 999){
+						EvaluationFog(GW->currTask);
+					}
 				}
 				
 
@@ -615,13 +622,39 @@ void EDF(){
 							  Cloud offfloading
 				==========================================*/
 				else{
-					if(GW->currTask->vm == -1){
-						GW->currTask->deadline = GW->currTask->virtualD;
-						Time("VM miss");
-						GW->result.miss++;
-						GW->remote_q.wait_q.push_back(*GW->currTask);
-						GW->currTask = idleTask;
+					if(GW->currTask->vm == 999){
+						GW->ADM(GW->currTask->exec, GW->currTask->virtualD, 0);
+						if(GW->admin-GW->currTask->remaining <= GW->currTask->virtualD-timeTick && 1.0-GW->current_U > GW->currTask->uti){
+							GW->currTask->vm = -999;
+							GW->currTask->deadline = GW->currTask->virtualD;
+							GW->currTask->remaining = GW->currTask->exec;
+							GW->currTask->remaining -= GW->speed;
+							debug(("--_l_cloud !\r\n"));
+							GW->result.energy += (p_comp + p_idle);  // calculate GW computing energy
+						}
+						else{
+							GW->currTask->deadline = GW->currTask->virtualD;
+							Time("VM miss");
+							GW->result.miss++;
+							GW->remote_q.wait_q.push_back(*GW->currTask);
+							GW->currTask = idleTask;
+						}
 					}
+					else if(GW->currTask->vm == -999){
+						GW->currTask->remaining -= GW->speed;
+						debug(("--_l_cloud !\r\n"));
+				
+						GW->result.energy += (p_comp + p_idle);  // calculate GW computing energy
+				
+						if(GW->currTask->remaining <= 0){
+							debug(("finish_l_cloud !\r\n")); Time("finish_l_cloud");
+							GW->result.meet++;
+							GW->result.resp += timeTick+1 - (GW->currTask->deadline-GW->currTask->period);
+							GW->remote_q.wait_q.push_back(*GW->currTask);
+							GW->currTask = idleTask;
+						}
+					}
+
 					
 					// offload to cloud
 					else if(GW->currTask->uplink > 0){
@@ -633,7 +666,9 @@ void EDF(){
 						if(GW->currTask->uplink <= 0){
 							debug(("offload_cloud !\r\n")); Time("offload_cloud");
 							GW->currTask->remaining = GW->currTask->exec;
-							GW->currTask->deadline = GW->currTask->virtualD - GW->currTask->dwlink;	// phase 2 D
+							if(policyOFLD == myOFLD){
+								GW->currTask->deadline = GW->currTask->virtualD - GW->currTask->dwlink;	// phase 2 D
+							}
 							to_Cloud(GW->currTask);
 							GW->currTask = idleTask;
 						}
@@ -750,7 +785,8 @@ void FIFO(){
 			if(GW->currTask->offload){
 				
 				if(GW->currTask->target == -1 && GW->currTask->vm == -1){
-					EvaluationVM(GW->currTask);
+					//EvaluationVM(GW->currTask);
+					GW->currTask->vm = NodeNum-1;
 				}
 
 				debug(("--_r !\r\n"));
@@ -837,7 +873,7 @@ void scheduler(int policy){
 void printSched(char* state) {
 	if(GW->id >= 0){
 		int t;
-		if(state == "context switch" || state == "miss_lq" || state == "miss_rq" || state =="miss_r" || state =="miss_l"){
+		if(state == "context switch" || state == "miss_lq" || state == "miss_rq" || state =="miss_r" || state =="miss_l" || state == "cloud_miss" || state == "cloud_back"){
 			t= timeTick;
 		}
 		else{
@@ -845,6 +881,8 @@ void printSched(char* state) {
 		}
 		if(GW->currTask->target != -1)
 			fs << "TimeTick = " << t << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "->" << GW->currTask->parent << "_" << GW->currTask->target << "\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining <<  endl;
+		else if(state == "cloud_miss" || state == "cloud_back")
+			fs << "TimeTick = " << t << "\tGW_" << GW->id << "\t" << GW->Cloud.front().parent << "_" << GW->Cloud.front().id << "_" << GW->Cloud.front().cnt << "\t\t" << state << "\t" << GW->Cloud.front().deadline << "\t" << GW->Cloud.front().remaining << endl;
 		else
 			fs << "TimeTick = " << t << "\tGW_" << GW->id << "\t" << GW->currTask->parent << "_" << GW->currTask->id << "_" << GW->currTask->cnt << "\t\t" << state << "\t" << GW->currTask->deadline << "\t" << GW->currTask->remaining << endl;
 	}

@@ -22,7 +22,8 @@ using namespace std;
 #define AOFLDF 3
 #define SeGW 4
 int policyOFLD = NOFLD;	// 0:nver, 1:my, 2:always
-
+int sameP=0;
+vector<int> missSet;
 /*=================================
 		  System componet
 ==================================*/
@@ -43,7 +44,7 @@ fstream fs, config, input;
 int Set = 100;
 int NodeNum = 3;	// # of GW Node
 int TaskNum = 3;	// # of Tasks in each GW
-float total_U = 2.0;	// total Utilization
+float total_U = 0.5;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
 
 int period[] = {100, 200, 400, 800, 1000};
@@ -142,7 +143,7 @@ int main(){
 	}
 	else{
 	//--------------------------------------------------------------------------- Gen Task Set
-		string filename = "input_GW-"+to_string(NodeNum)+"_Task-"+to_string(TaskNum)+"_U"+to_string(total_U)+".txt";	// filename of Gen
+		string filename = "S_input_GW-"+to_string(NodeNum)+"_Task-"+to_string(TaskNum)+"_U"+to_string(total_U)+".txt";	// filename of Gen
 		char *GENbuffer=(char*)filename.c_str();
 		input.clear();
 		input.open(GENbuffer, std::fstream::out); //  in:read / out:write / app:append
@@ -189,6 +190,7 @@ int main(){
 		GW = NodeHead;
 		while(GW->nextNode != NULL) {
 			GW = GW->nextNode;
+			GW->result.clear();
 			if(GW->nextNode != NULL)
 				OFLD(GW);
 			dispatch(GW);
@@ -200,8 +202,10 @@ int main(){
 		printOFLD();
 		printDispatch();
 
-		if(inputLoad)
+		if(inputLoad){
+			//HyperPeriod = NodeHead->nextNode->task_q.front().period;	// !!!!!!!!!!!!!!!!!just for resp test
 			scheduler(schedPolicy);
+		}
 
 		// calculate meet_ratio & lifetime
 		GW = NodeHead;
@@ -212,13 +216,20 @@ int main(){
 			if(GW->nextNode != NULL){
 				Result_avg->energy += GW->result.energy;
 				Result_avg->meet_ratio += GW->result.meet_ratio;
-				Result_avg->resp += GW->result.resp;
+				//Result_avg->resp += GW->result.resp; // just for meet task
 			}
 			else{
 				Result_avg->serverEng += GW->result.serverEng;
 				Result_avg->fogEng += GW->result.energy;
 			}
 		}
+
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		if(NodeHead->nextNode->result.meet_ratio<1 || NodeHead->nextNode->nextNode->result.meet_ratio<1){
+			missSet.push_back(set+1);
+		}
+		Result_avg->resp += NodeHead->nextNode->result.resp + NodeHead->nextNode->nextNode->result.resp;
+		sameP += 2*HyperPeriod;
 
 		fs << "-------------\n" << setw(3) << setfill('0') << set+1 << "\n-------------\n";
 
@@ -227,8 +238,14 @@ int main(){
 	fs << "Meet Ratio : " << Result_avg->meet_ratio/(Set*2) << endl;
 	fs << "Energy Consumption : " << Result_avg->energy/(Set*2) << endl;
 	fs << "Response time of Meet : " << Result_avg->resp << endl;
-	fs << "Cloud server energy : " << Result_avg->serverEng << endl;
-	fs << "Fog devices energy : " << Result_avg->fogEng << endl;
+	fs << "Cloud server energy : " << Result_avg->serverEng/Set << endl;
+	fs << "Fog devices energy : " << Result_avg->fogEng/Set << endl;
+
+	fs << "HyerP : " << sameP << "\nMiss set : ";
+	for(int i=0;i<missSet.size();++i){
+		fs << missSet[i] << " ";
+	}
+	fs << "size: " << Set-missSet.size();
 
 	Clear();
 	fs.close();

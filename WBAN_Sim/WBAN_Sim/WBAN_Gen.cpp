@@ -71,6 +71,7 @@ void Create(){
 		Generate Node & Task
 ==================================*/
 void WBAN_Gen(){
+	int x = rand()% sizeof(*period); // !!!!!!!!!!!!!!!!!!!!!! period all the same, just for resp test
 	GW = NodeHead;
 	while (GW->nextNode != NULL){
 		GW = GW->nextNode;
@@ -103,7 +104,7 @@ void WBAN_Gen(){
 			while((uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>total_U-(TaskNum-t-1)*lowest_U || uti>1.0)&&(t!=TaskNum-1)){		// uti > 0.01
 				uti = ((remain_U-(TaskNum-t-1)*lowest_U)-lowest_U)*(float)rand()/RAND_MAX + lowest_U;
 			}
-			
+			//P.push_back(period[x]); // !!!!!!!!!!!!!!!!!!!!!! period all the same, just for resp test
 			P.push_back(period[rand()% sizeof(*period)]);
 			U.push_back(uti);
 			remain_U -= uti;

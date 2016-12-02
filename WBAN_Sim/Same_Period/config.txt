@@ -1,0 +1,6 @@
+Set = 48
+NodeNum = 3
+TaskNum = 8
+total_U = 1.0
+policyOFLD = NOFLD
+schedPolicy = EDF

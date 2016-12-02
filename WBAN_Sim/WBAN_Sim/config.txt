@@ -2,5 +2,5 @@ Set = 100
 NodeNum = 3
 TaskNum = 3
 total_U = 1.0
-policyOFLD = myOFLD
+policyOFLD = NOFLD
 schedPolicy = EDF

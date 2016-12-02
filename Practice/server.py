@@ -1,6 +1,8 @@
 import SocketServer
 import time
 from threading import Thread
+import pickle
+import sys
 
 global Task
 
@@ -36,14 +38,13 @@ class service(SocketServer.BaseRequestHandler):
                             print "TASK",d['id'],"(",d['Cnt'],")\tPREEMPT"
 
             taskcur = sched_new
-            
             #===== exec =====
             time.sleep(0.01)
             if taskcur!=None:
                 idle = 1
                 for d in Task:
                     if d['id']==taskcur['id'] and d['GW']==taskcur['GW']:
-                        d['Remain']-=0.1
+                        d['Remain']-=0.02
                         if d['Remain']<=0:
                             Task.remove(d)
                             data_string = pickle.dumps(taskcur)
@@ -64,10 +65,11 @@ class ThreadedTCPServer(SocketServer.ThreadingMixIn, SocketServer.TCPServer):
     pass
 
 if __name__ == "__main__":
-    t = ThreadedTCPServer(('',12340), service)
+    t = ThreadedTCPServer(('localhost',8888), service)
     try:
         t.serve_forever()
     except:
         t.shutdown()
+        t.server_close()
         print "Server shut down"
 

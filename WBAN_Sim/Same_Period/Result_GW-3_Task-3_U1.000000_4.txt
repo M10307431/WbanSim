@@ -1,0 +1,5593 @@
+GW 0.9975
+Task 274 400 0.685
+Task 90 400 0.225
+Task 35 400 0.0875
+GW 0.995
+Task 178 400 0.445
+Task 143 400 0.3575
+Task 77 400 0.1925
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 794.6 126.25
+T1 0 261 126.25
+T2 0 101.5 126.25
+GW1
+T0 1 516.2 126.25
+T1 1 414.7 126.25
+T2 0 223.3 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	90
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_2_0		context switch	400	77
+TimeTick = 60	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 89	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 115	GW_0	0_1_0		finish_l	400	0
+TimeTick = 115	GW_0	0_2_0		context switch	400	35
+TimeTick = 127	GW_1	1_2_0		finish_l	400	0
+TimeTick = 127	GW_1	1_0_0		context switch	400	25
+TimeTick = 144	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 150	GW_0	0_2_0		finish_l	400	0
+TimeTick = 150	GW_0	0_0_0		context switch	400	25
+TimeTick = 152	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 152	GW_1	1_1_0		context switch	400	25
+TimeTick = 175	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 177	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 807.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 757.65
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+001
+-------------
+GW 0.9975
+Task 344 400 0.86
+Task 33 400 0.0825
+Task 22 400 0.055
+GW 0.9975
+Task 303 400 0.7575
+Task 58 400 0.145
+Task 38 400 0.095
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 997.6 126.25
+T1 0 95.7 126.25
+T2 0 63.8 126.25
+GW1
+T0 1 878.7 126.25
+T1 0 168.2 126.25
+T2 0 110.2 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	33
+TimeTick = 25	GW_1	1_1_0		context switch	400	58
+TimeTick = 58	GW_0	0_1_0		finish_l	400	0
+TimeTick = 58	GW_0	0_2_0		context switch	400	22
+TimeTick = 80	GW_0	0_2_0		finish_l	400	0
+TimeTick = 83	GW_1	1_1_0		finish_l	400	0
+TimeTick = 83	GW_1	1_2_0		context switch	400	38
+TimeTick = 85	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 121	GW_1	1_2_0		finish_l	400	0
+TimeTick = 121	GW_1	1_0_0		context switch	400	25
+TimeTick = 146	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 154	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 154	GW_0	0_0_0		context switch	400	25
+TimeTick = 179	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 712.95
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 768.3
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+002
+-------------
+GW 0.9975
+Task 617 800 0.77125
+Task 108 800 0.135
+Task 73 800 0.09125
+GW 0.99875
+Task 679 800 0.84875
+Task 66 800 0.0825
+Task 54 800 0.0675
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1789.3 126.25
+T1 1 313.2 126.25
+T2 0 211.7 126.25
+GW1
+T0 1 1969.1 126.25
+T1 0 191.4 126.25
+T2 0 156.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	66
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	73
+TimeTick = 71	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 91	GW_1	1_1_0		finish_l	800	0
+TimeTick = 91	GW_1	1_2_0		context switch	800	54
+TimeTick = 123	GW_0	0_2_0		finish_l	800	0
+TimeTick = 123	GW_0	0_1_0		context switch	800	25
+TimeTick = 145	GW_1	1_2_0		finish_l	800	0
+TimeTick = 148	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 170	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 170	GW_0	0_0_0		context switch	800	25
+TimeTick = 195	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 306	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 306	GW_1	1_0_0		context switch	800	25
+TimeTick = 331	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	26
+TimeTick = 800	GW_1	1_0_1		context switch	1600	31
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1372.25
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1420.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+003
+-------------
+GW 0.995
+Task 95 200 0.475
+Task 94 200 0.47
+Task 10 200 0.05
+GW 0.99
+Task 135 200 0.675
+Task 42 200 0.21
+Task 21 200 0.105
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 275.5 126.25
+T1 0 272.6 126.25
+T2 0 29 126.25
+GW1
+T0 1 391.5 126.25
+T1 0 121.8 126.25
+T2 0 60.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	95
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	42
+TimeTick = 51	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 67	GW_1	1_1_0		finish_l	200	0
+TimeTick = 67	GW_1	1_0_0		context switch	200	25
+TimeTick = 92	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 92	GW_1	1_2_0		context switch	200	21
+TimeTick = 95	GW_0	0_0_0		finish_l	200	0
+TimeTick = 95	GW_0	0_1_0		context switch	200	94
+TimeTick = 113	GW_1	1_2_0		finish_l	200	0
+TimeTick = 189	GW_0	0_1_0		finish_l	200	0
+TimeTick = 189	GW_0	0_2_0		context switch	200	10
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	95
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 413.75
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+004
+-------------
+GW 0.995
+Task 231 400 0.5775
+Task 143 400 0.3575
+Task 24 400 0.06
+GW 0.9975
+Task 245 400 0.6125
+Task 88 400 0.22
+Task 66 400 0.165
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 669.9 126.25
+T1 1 414.7 126.25
+T2 0 69.6 126.25
+GW1
+T0 1 710.5 126.25
+T1 0 255.2 126.25
+T2 0 191.4 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	88
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	24
+TimeTick = 71	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 74	GW_0	0_2_0		finish_l	400	0
+TimeTick = 74	GW_0	0_0_0		context switch	400	25
+TimeTick = 99	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 100	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 100	GW_0	0_1_0		context switch	400	25
+TimeTick = 113	GW_1	1_1_0		finish_l	400	0
+TimeTick = 113	GW_1	1_2_0		context switch	400	66
+TimeTick = 125	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 149	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 179	GW_1	1_2_0		finish_l	400	0
+TimeTick = 179	GW_1	1_0_0		context switch	400	25
+TimeTick = 204	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 686.1
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 846.6
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+005
+-------------
+GW 0.9975
+Task 401 800 0.50125
+Task 351 800 0.43875
+Task 46 800 0.0575
+GW 0.99875
+Task 390 800 0.4875
+Task 223 800 0.27875
+Task 186 800 0.2325
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1162.9 126.25
+T1 1 1017.9 126.25
+T2 0 133.4 126.25
+GW1
+T0 1 1131 126.25
+T1 1 646.7 126.25
+T2 1 539.4 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	46
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 94	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 94	GW_1	1_1_0		context switch	800	25
+TimeTick = 96	GW_0	0_2_0		finish_l	800	0
+TimeTick = 119	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 132	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 132	GW_1	1_2_0		context switch	800	25
+TimeTick = 157	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 185	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 185	GW_1	1_0_0		context switch	800	25
+TimeTick = 210	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 256	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 256	GW_0	0_1_0		context switch	800	25
+TimeTick = 281	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 337	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 337	GW_0	0_0_0		context switch	800	25
+TimeTick = 362	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	28
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1335.8
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+006
+-------------
+GW 0.995
+Task 130 200 0.65
+Task 59 200 0.295
+Task 10 200 0.05
+GW 0.995
+Task 100 200 0.5
+Task 65 200 0.325
+Task 34 200 0.17
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 377 126.25
+T1 0 171.1 126.25
+T2 0 29 126.25
+GW1
+T0 0 290 126.25
+T1 0 188.5 126.25
+T2 0 98.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	100
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	59
+TimeTick = 50	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 84	GW_0	0_1_0		finish_l	200	0
+TimeTick = 84	GW_0	0_0_0		context switch	200	25
+TimeTick = 100	GW_1	1_0_0		finish_l	200	0
+TimeTick = 100	GW_1	1_1_0		context switch	200	65
+TimeTick = 109	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 109	GW_0	0_2_0		context switch	200	10
+TimeTick = 119	GW_0	0_2_0		finish_l	200	0
+TimeTick = 165	GW_1	1_1_0		finish_l	200	0
+TimeTick = 165	GW_1	1_2_0		context switch	200	34
+TimeTick = 199	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	100
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 421.85
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+007
+-------------
+GW 0.9975
+Task 206 400 0.515
+Task 98 400 0.245
+Task 95 400 0.2375
+GW 0.9975
+Task 304 400 0.76
+Task 71 400 0.1775
+Task 24 400 0.06
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 597.4 126.25
+T1 0 284.2 126.25
+T2 0 275.5 126.25
+GW1
+T0 1 881.6 126.25
+T1 0 205.9 126.25
+T2 0 69.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	98
+TimeTick = 25	GW_1	1_1_0		context switch	400	71
+TimeTick = 66	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 96	GW_1	1_1_0		finish_l	400	0
+TimeTick = 96	GW_1	1_2_0		context switch	400	24
+TimeTick = 120	GW_1	1_2_0		finish_l	400	0
+TimeTick = 123	GW_0	0_1_0		finish_l	400	0
+TimeTick = 123	GW_0	0_0_0		context switch	400	25
+TimeTick = 127	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 127	GW_1	1_0_0		context switch	400	25
+TimeTick = 148	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 148	GW_0	0_2_0		context switch	400	95
+TimeTick = 152	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 243	GW_0	0_2_0		finish_l	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 899.25
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 766.95
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+008
+-------------
+GW 0.9975
+Task 398 800 0.4975
+Task 312 800 0.39
+Task 88 800 0.11
+GW 0.9975
+Task 377 800 0.47125
+Task 322 800 0.4025
+Task 99 800 0.12375
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1154.2 126.25
+T1 1 904.8 126.25
+T2 0 255.2 126.25
+GW1
+T0 1 1093.3 126.25
+T1 1 933.8 126.25
+T2 0 287.1 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	88
+TimeTick = 50	GW_1	1_2_0		context switch	800	99
+TimeTick = 100	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 138	GW_0	0_2_0		finish_l	800	0
+TimeTick = 149	GW_1	1_2_0		finish_l	800	0
+TimeTick = 149	GW_1	1_0_0		context switch	800	25
+TimeTick = 163	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 163	GW_0	0_1_0		context switch	800	25
+TimeTick = 174	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 188	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 228	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 228	GW_1	1_1_0		context switch	800	25
+TimeTick = 253	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 308	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 308	GW_0	0_0_0		context switch	800	25
+TimeTick = 333	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	28
+TimeTick = 800	GW_1	1_0_1		context switch	1600	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1392.5
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1407.35
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+009
+-------------
+GW 0.99875
+Task 430 800 0.5375
+Task 225 800 0.28125
+Task 144 800 0.18
+GW 0.9975
+Task 521 800 0.65125
+Task 227 800 0.28375
+Task 50 800 0.0625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1247 126.25
+T1 1 652.5 126.25
+T2 1 417.6 126.25
+GW1
+T0 1 1510.9 126.25
+T1 1 658.3 126.25
+T2 0 145 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 50	GW_1	1_2_0		context switch	800	50
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 94	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 94	GW_0	0_1_0		context switch	800	25
+TimeTick = 100	GW_1	1_2_0		finish_l	800	0
+TimeTick = 119	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 123	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 123	GW_0	0_2_0		context switch	800	25
+TimeTick = 148	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 169	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 169	GW_1	1_1_0		context switch	800	25
+TimeTick = 194	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 230	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 230	GW_0	0_0_0		context switch	800	25
+TimeTick = 255	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 335	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 335	GW_1	1_0_0		context switch	800	25
+TimeTick = 360	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1341.2
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+010
+-------------
+GW 0.99875
+Task 647 800 0.80875
+Task 100 800 0.125
+Task 52 800 0.065
+GW 0.9975
+Task 363 800 0.45375
+Task 311 800 0.38875
+Task 124 800 0.155
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1876.3 126.25
+T1 0 290 126.25
+T2 0 150.8 126.25
+GW1
+T0 1 1052.7 126.25
+T1 1 901.9 126.25
+T2 1 359.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	100
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 97	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 97	GW_1	1_0_0		context switch	800	25
+TimeTick = 122	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 122	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 122	GW_1	1_2_0		context switch	800	25
+TimeTick = 125	GW_0	0_1_0		finish_l	800	0
+TimeTick = 125	GW_0	0_2_0		context switch	800	52
+TimeTick = 147	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 177	GW_0	0_2_0		finish_l	800	0
+TimeTick = 185	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 185	GW_1	1_1_0		context switch	800	25
+TimeTick = 210	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 315	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 315	GW_0	0_0_0		context switch	800	25
+TimeTick = 340	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_0_1		context switch	1600	31
+TimeTick = 800	GW_1	1_0_1		context switch	1600	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1463.9
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+011
+-------------
+GW 0.9975
+Task 183 400 0.4575
+Task 145 400 0.3625
+Task 71 400 0.1775
+GW 0.9975
+Task 314 400 0.785
+Task 60 400 0.15
+Task 25 400 0.0625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 530.7 126.25
+T1 1 420.5 126.25
+T2 0 205.9 126.25
+GW1
+T0 1 910.6 126.25
+T1 0 174 126.25
+T2 0 72.5 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	60
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	71
+TimeTick = 61	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 85	GW_1	1_1_0		finish_l	400	0
+TimeTick = 85	GW_1	1_2_0		context switch	400	25
+TimeTick = 90	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 110	GW_1	1_2_0		finish_l	400	0
+TimeTick = 121	GW_0	0_2_0		finish_l	400	0
+TimeTick = 121	GW_0	0_0_0		context switch	400	25
+TimeTick = 146	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 146	GW_0	0_1_0		context switch	400	25
+TimeTick = 153	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 153	GW_1	1_0_0		context switch	400	25
+TimeTick = 171	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 178	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 749.55
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 753.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+012
+-------------
+GW 0.9975
+Task 442 800 0.5525
+Task 279 800 0.34875
+Task 77 800 0.09625
+GW 0.9975
+Task 483 800 0.60375
+Task 199 800 0.24875
+Task 116 800 0.145
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1281.8 126.25
+T1 1 809.1 126.25
+T2 0 223.3 126.25
+GW1
+T0 1 1400.7 126.25
+T1 1 577.1 126.25
+T2 1 336.4 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	77
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 89	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 89	GW_1	1_1_0		context switch	800	25
+TimeTick = 113	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 114	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 114	GW_1	1_2_0		context switch	800	25
+TimeTick = 127	GW_0	0_2_0		finish_l	800	0
+TimeTick = 139	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 169	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 169	GW_0	0_1_0		context switch	800	25
+TimeTick = 194	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 233	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 233	GW_0	0_0_0		context switch	800	25
+TimeTick = 258	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 330	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 330	GW_1	1_0_0		context switch	800	25
+TimeTick = 355	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	28
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1377.65
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+013
+-------------
+GW 0.99
+Task 103 200 0.515
+Task 50 200 0.25
+Task 45 200 0.225
+GW 0.995
+Task 167 200 0.835
+Task 17 200 0.085
+Task 15 200 0.075
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 298.7 126.25
+T1 0 145 126.25
+T2 0 130.5 126.25
+GW1
+T0 1 484.3 126.25
+T1 0 49.3 126.25
+T2 0 43.5 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	50
+TimeTick = 25	GW_1	1_1_0		context switch	200	17
+TimeTick = 42	GW_1	1_1_0		finish_l	200	0
+TimeTick = 42	GW_1	1_2_0		context switch	200	15
+TimeTick = 45	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 57	GW_1	1_2_0		finish_l	200	0
+TimeTick = 75	GW_0	0_1_0		finish_l	200	0
+TimeTick = 75	GW_0	0_0_0		context switch	200	25
+TimeTick = 79	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 79	GW_1	1_0_0		context switch	200	25
+TimeTick = 100	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 100	GW_0	0_2_0		context switch	200	45
+TimeTick = 104	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 145	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	26
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 456.95
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 371.9
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+014
+-------------
+GW 0.995
+Task 100 200 0.5
+Task 78 200 0.39
+Task 21 200 0.105
+GW 0.99
+Task 101 200 0.505
+Task 56 200 0.28
+Task 41 200 0.205
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 290 126.25
+T1 0 226.2 126.25
+T2 0 60.9 126.25
+GW1
+T0 1 292.9 126.25
+T1 0 162.4 126.25
+T2 0 118.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	100
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	56
+TimeTick = 45	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 81	GW_1	1_1_0		finish_l	200	0
+TimeTick = 81	GW_1	1_0_0		context switch	200	25
+TimeTick = 100	GW_0	0_0_0		finish_l	200	0
+TimeTick = 100	GW_0	0_1_0		context switch	200	78
+TimeTick = 106	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 106	GW_1	1_2_0		context switch	200	41
+TimeTick = 147	GW_1	1_2_0		finish_l	200	0
+TimeTick = 178	GW_0	0_1_0		finish_l	200	0
+TimeTick = 178	GW_0	0_2_0		context switch	200	21
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	100
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 459.65
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+015
+-------------
+GW 0.995
+Task 189 400 0.4725
+Task 150 400 0.375
+Task 59 400 0.1475
+GW 0.9975
+Task 235 400 0.5875
+Task 137 400 0.3425
+Task 27 400 0.0675
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 548.1 126.25
+T1 1 435 126.25
+T2 0 171.1 126.25
+GW1
+T0 1 681.5 126.25
+T1 1 397.3 126.25
+T2 0 78.3 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	59
+TimeTick = 50	GW_1	1_2_0		context switch	400	27
+TimeTick = 62	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 77	GW_1	1_2_0		finish_l	400	0
+TimeTick = 90	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 90	GW_1	1_1_0		context switch	400	25
+TimeTick = 109	GW_0	0_2_0		finish_l	400	0
+TimeTick = 109	GW_0	0_0_0		context switch	400	25
+TimeTick = 115	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 120	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 134	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 134	GW_0	0_1_0		context switch	400	25
+TimeTick = 159	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 167	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 167	GW_1	1_0_0		context switch	400	25
+TimeTick = 192	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_1_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 733.35
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 690.15
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+016
+-------------
+GW 0.995
+Task 310 400 0.775
+Task 64 400 0.16
+Task 24 400 0.06
+GW 0.995
+Task 344 400 0.86
+Task 33 400 0.0825
+Task 21 400 0.0525
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 899 126.25
+T1 0 185.6 126.25
+T2 0 69.6 126.25
+GW1
+T0 1 997.6 126.25
+T1 0 95.7 126.25
+T2 0 60.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	64
+TimeTick = 25	GW_1	1_1_0		context switch	400	33
+TimeTick = 58	GW_1	1_1_0		finish_l	400	0
+TimeTick = 58	GW_1	1_2_0		context switch	400	21
+TimeTick = 79	GW_1	1_2_0		finish_l	400	0
+TimeTick = 86	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 89	GW_0	0_1_0		finish_l	400	0
+TimeTick = 89	GW_0	0_0_0		context switch	400	25
+TimeTick = 114	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 114	GW_0	0_2_0		context switch	400	24
+TimeTick = 138	GW_0	0_2_0		finish_l	400	0
+TimeTick = 155	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 155	GW_1	1_0_0		context switch	400	25
+TimeTick = 180	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 757.5
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 711.6
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+017
+-------------
+GW 0.9975
+Task 619 800 0.77375
+Task 105 800 0.13125
+Task 74 800 0.0925
+GW 0.9975
+Task 598 800 0.7475
+Task 158 800 0.1975
+Task 42 800 0.0525
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1795.1 126.25
+T1 1 304.5 126.25
+T2 0 214.6 126.25
+GW1
+T0 1 1734.2 126.25
+T1 1 458.2 126.25
+T2 0 121.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	74
+TimeTick = 50	GW_1	1_2_0		context switch	800	42
+TimeTick = 70	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 92	GW_1	1_2_0		finish_l	800	0
+TimeTick = 102	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 102	GW_1	1_1_0		context switch	800	25
+TimeTick = 124	GW_0	0_2_0		finish_l	800	0
+TimeTick = 124	GW_0	0_1_0		context switch	800	25
+TimeTick = 127	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 149	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 197	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 197	GW_1	1_0_0		context switch	800	25
+TimeTick = 222	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 321	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 321	GW_0	0_0_0		context switch	800	25
+TimeTick = 346	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	26
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1373.6
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1330.4
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+018
+-------------
+GW 0.995
+Task 90 200 0.45
+Task 68 200 0.34
+Task 41 200 0.205
+GW 0.99
+Task 103 200 0.515
+Task 70 200 0.35
+Task 25 200 0.125
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 261 126.25
+T1 0 197.2 126.25
+T2 0 118.9 126.25
+GW1
+T0 1 298.7 126.25
+T1 0 203 126.25
+T2 0 72.5 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	90
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	70
+TimeTick = 45	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 90	GW_0	0_0_0		finish_l	200	0
+TimeTick = 90	GW_0	0_1_0		context switch	200	68
+TimeTick = 95	GW_1	1_1_0		finish_l	200	0
+TimeTick = 95	GW_1	1_0_0		context switch	200	25
+TimeTick = 120	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 120	GW_1	1_2_0		context switch	200	25
+TimeTick = 145	GW_1	1_2_0		finish_l	200	0
+TimeTick = 158	GW_0	0_1_0		finish_l	200	0
+TimeTick = 158	GW_0	0_2_0		context switch	200	41
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	90
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 456.95
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+019
+-------------
+GW 0.995
+Task 222 400 0.555
+Task 152 400 0.38
+Task 24 400 0.06
+GW 0.9975
+Task 206 400 0.515
+Task 125 400 0.3125
+Task 68 400 0.17
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 643.8 126.25
+T1 1 440.8 126.25
+T2 0 69.6 126.25
+GW1
+T0 1 597.4 126.25
+T1 1 362.5 126.25
+T2 0 197.2 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	24
+TimeTick = 50	GW_1	1_2_0		context switch	400	68
+TimeTick = 66	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 74	GW_0	0_2_0		finish_l	400	0
+TimeTick = 91	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 118	GW_1	1_2_0		finish_l	400	0
+TimeTick = 118	GW_1	1_0_0		context switch	400	25
+TimeTick = 122	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 122	GW_0	0_1_0		context switch	400	25
+TimeTick = 143	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 143	GW_1	1_1_0		context switch	400	25
+TimeTick = 147	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 167	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 167	GW_0	0_0_0		context switch	400	25
+TimeTick = 168	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 192	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_1_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 686.1
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 745.5
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+020
+-------------
+GW 0.99
+Task 142 200 0.71
+Task 43 200 0.215
+Task 13 200 0.065
+GW 0.99
+Task 85 200 0.425
+Task 59 200 0.295
+Task 54 200 0.27
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 411.8 126.25
+T1 0 124.7 126.25
+T2 0 37.7 126.25
+GW1
+T0 0 246.5 126.25
+T1 0 171.1 126.25
+T2 0 156.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	85
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	43
+TimeTick = 53	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 68	GW_0	0_1_0		finish_l	200	0
+TimeTick = 68	GW_0	0_0_0		context switch	200	25
+TimeTick = 85	GW_1	1_0_0		finish_l	200	0
+TimeTick = 85	GW_1	1_1_0		context switch	200	59
+TimeTick = 93	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 93	GW_0	0_2_0		context switch	200	13
+TimeTick = 106	GW_0	0_2_0		finish_l	200	0
+TimeTick = 144	GW_1	1_1_0		finish_l	200	0
+TimeTick = 144	GW_1	1_2_0		context switch	200	54
+TimeTick = 198	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	85
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 404.3
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 583.1
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+021
+-------------
+GW 0.99875
+Task 498 800 0.6225
+Task 210 800 0.2625
+Task 91 800 0.11375
+GW 0.9975
+Task 401 800 0.50125
+Task 272 800 0.34
+Task 125 800 0.15625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1444.2 126.25
+T1 1 609 126.25
+T2 0 263.9 126.25
+GW1
+T0 1 1162.9 126.25
+T1 1 788.8 126.25
+T2 1 362.5 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	91
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 91	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 116	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 116	GW_1	1_2_0		context switch	800	25
+TimeTick = 141	GW_0	0_2_0		finish_l	800	0
+TimeTick = 141	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 141	GW_0	0_1_0		context switch	800	25
+TimeTick = 166	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 171	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 171	GW_1	1_1_0		context switch	800	25
+TimeTick = 196	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 227	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 227	GW_1	1_0_0		context switch	800	25
+TimeTick = 252	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 327	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 327	GW_0	0_0_0		context switch	800	25
+TimeTick = 352	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_2_1		context switch	1600	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1396.55
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+022
+-------------
+GW 0.9975
+Task 638 800 0.7975
+Task 80 800 0.1
+Task 80 800 0.1
+GW 0.9975
+Task 360 800 0.45
+Task 304 800 0.38
+Task 134 800 0.1675
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1850.2 126.25
+T1 0 232 126.25
+T2 0 232 126.25
+GW1
+T0 1 1044 126.25
+T1 1 881.6 126.25
+T2 1 388.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	80
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 96	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 96	GW_1	1_0_0		context switch	800	25
+TimeTick = 105	GW_0	0_1_0		finish_l	800	0
+TimeTick = 105	GW_0	0_2_0		context switch	800	80
+TimeTick = 121	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 123	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 123	GW_1	1_2_0		context switch	800	25
+TimeTick = 148	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 184	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 185	GW_0	0_2_0		finish_l	800	0
+TimeTick = 184	GW_1	1_1_0		context switch	800	25
+TimeTick = 209	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 312	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 312	GW_0	0_0_0		context switch	800	25
+TimeTick = 337	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_0_1		context switch	1600	30
+TimeTick = 800	GW_1	1_0_1		context switch	1600	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1474.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+023
+-------------
+GW 0.99875
+Task 459 800 0.57375
+Task 288 800 0.36
+Task 52 800 0.065
+GW 0.99875
+Task 336 800 0.42
+Task 244 800 0.305
+Task 219 800 0.27375
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1331.1 126.25
+T1 1 835.2 126.25
+T2 0 150.8 126.25
+GW1
+T0 1 974.4 126.25
+T1 1 707.6 126.25
+T2 1 635.1 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	52
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 92	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 92	GW_1	1_0_0		context switch	800	25
+TimeTick = 102	GW_0	0_2_0		finish_l	800	0
+TimeTick = 117	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 136	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 136	GW_1	1_2_0		context switch	800	25
+TimeTick = 161	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 185	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 185	GW_1	1_1_0		context switch	800	25
+TimeTick = 210	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 243	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 243	GW_0	0_1_0		context switch	800	25
+TimeTick = 268	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 335	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 335	GW_0	0_0_0		context switch	800	25
+TimeTick = 360	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	28
+TimeTick = 800	GW_1	1_0_1		context switch	1600	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1343.9
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+024
+-------------
+GW 0.9975
+Task 560 800 0.7
+Task 166 800 0.2075
+Task 72 800 0.09
+GW 0.99875
+Task 605 800 0.75625
+Task 126 800 0.1575
+Task 68 800 0.085
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1624 126.25
+T1 1 481.4 126.25
+T2 0 208.8 126.25
+GW1
+T0 1 1754.5 126.25
+T1 1 365.4 126.25
+T2 0 197.2 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	72
+TimeTick = 50	GW_1	1_2_0		context switch	800	68
+TimeTick = 75	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 109	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 118	GW_1	1_2_0		finish_l	800	0
+TimeTick = 118	GW_1	1_1_0		context switch	800	25
+TimeTick = 122	GW_0	0_2_0		finish_l	800	0
+TimeTick = 122	GW_0	0_1_0		context switch	800	25
+TimeTick = 143	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 147	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 196	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 196	GW_0	0_0_0		context switch	800	25
+TimeTick = 221	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 317	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 317	GW_1	1_0_0		context switch	800	25
+TimeTick = 342	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_1_1		context switch	1600	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1370.9
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1365.5
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+025
+-------------
+GW 0.9975
+Task 336 400 0.84
+Task 33 400 0.0825
+Task 30 400 0.075
+GW 0.9975
+Task 284 400 0.71
+Task 82 400 0.205
+Task 33 400 0.0825
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 974.4 126.25
+T1 0 95.7 126.25
+T2 0 87 126.25
+GW1
+T0 1 823.6 126.25
+T1 0 237.8 126.25
+T2 0 95.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	33
+TimeTick = 25	GW_1	1_1_0		context switch	400	82
+TimeTick = 58	GW_0	0_1_0		finish_l	400	0
+TimeTick = 58	GW_0	0_2_0		context switch	400	30
+TimeTick = 81	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 88	GW_0	0_2_0		finish_l	400	0
+TimeTick = 107	GW_1	1_1_0		finish_l	400	0
+TimeTick = 107	GW_1	1_0_0		context switch	400	25
+TimeTick = 132	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 132	GW_1	1_2_0		context switch	400	33
+TimeTick = 149	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 149	GW_0	0_0_0		context switch	400	25
+TimeTick = 165	GW_1	1_2_0		finish_l	400	0
+TimeTick = 174	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 723.75
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 793.95
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+026
+-------------
+GW 0.995
+Task 145 400 0.3625
+Task 136 400 0.34
+Task 117 400 0.2925
+GW 0.995
+Task 341 400 0.8525
+Task 35 400 0.0875
+Task 22 400 0.055
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 420.5 126.25
+T1 1 394.4 126.25
+T2 1 339.3 126.25
+GW1
+T0 1 988.9 126.25
+T1 0 101.5 126.25
+T2 0 63.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	35
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	25
+TimeTick = 53	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 60	GW_1	1_1_0		finish_l	400	0
+TimeTick = 60	GW_1	1_2_0		context switch	400	22
+TimeTick = 75	GW_0	0_2_0		offload_cloud	400	0
+TimeTick = 75	GW_0	0_0_0		context switch	400	25
+TimeTick = 81	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 82	GW_1	1_2_0		finish_l	400	0
+TimeTick = 100	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 100	GW_0	0_1_0		context switch	400	25
+TimeTick = 105	GW_2	0_2_0		cloud_back	400	25
+TimeTick = 125	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 125	GW_0	0_2_0		context switch	400	25
+TimeTick = 150	GW_0	0_2_0		finish_cloud	400	0
+TimeTick = 174	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 174	GW_1	1_0_0		context switch	400	25
+TimeTick = 199	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 668.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 715.65
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+027
+-------------
+GW 0.99
+Task 95 200 0.475
+Task 78 200 0.39
+Task 25 200 0.125
+GW 0.995
+Task 115 200 0.575
+Task 72 200 0.36
+Task 12 200 0.06
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 275.5 126.25
+T1 0 226.2 126.25
+T2 0 72.5 126.25
+GW1
+T0 1 333.5 126.25
+T1 0 208.8 126.25
+T2 0 34.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	95
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	72
+TimeTick = 47	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 95	GW_0	0_0_0		finish_l	200	0
+TimeTick = 95	GW_0	0_1_0		context switch	200	78
+TimeTick = 97	GW_1	1_1_0		finish_l	200	0
+TimeTick = 97	GW_1	1_0_0		context switch	200	25
+TimeTick = 122	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 122	GW_1	1_2_0		context switch	200	12
+TimeTick = 134	GW_1	1_2_0		finish_l	200	0
+TimeTick = 173	GW_0	0_1_0		finish_l	200	0
+TimeTick = 173	GW_0	0_2_0		context switch	200	25
+TimeTick = 198	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	95
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 583.1
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 442.1
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+028
+-------------
+GW 0.995
+Task 261 400 0.6525
+Task 108 400 0.27
+Task 29 400 0.0725
+GW 0.995
+Task 179 400 0.4475
+Task 156 400 0.39
+Task 63 400 0.1575
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 756.9 126.25
+T1 1 313.2 126.25
+T2 0 84.1 126.25
+GW1
+T0 1 519.1 126.25
+T1 1 452.4 126.25
+T2 0 182.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	29
+TimeTick = 50	GW_1	1_2_0		context switch	400	63
+TimeTick = 60	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 79	GW_0	0_2_0		finish_l	400	0
+TimeTick = 82	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 82	GW_0	0_1_0		context switch	400	25
+TimeTick = 107	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 113	GW_1	1_2_0		finish_l	400	0
+TimeTick = 113	GW_1	1_0_0		context switch	400	25
+TimeTick = 114	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 138	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 138	GW_1	1_1_0		context switch	400	25
+TimeTick = 163	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 167	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 167	GW_0	0_0_0		context switch	400	25
+TimeTick = 192	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_1_1		context switch	800	26
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 692.85
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 738.75
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+029
+-------------
+GW 0.9975
+Task 404 800 0.505
+Task 309 800 0.38625
+Task 85 800 0.10625
+GW 0.9975
+Task 551 800 0.68875
+Task 140 800 0.175
+Task 107 800 0.13375
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1171.6 126.25
+T1 1 896.1 126.25
+T2 0 246.5 126.25
+GW1
+T0 1 1597.9 126.25
+T1 1 406 126.25
+T2 1 310.3 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	85
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 77	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 77	GW_1	1_1_0		context switch	800	25
+TimeTick = 99	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 102	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 102	GW_1	1_2_0		context switch	800	25
+TimeTick = 127	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 135	GW_0	0_2_0		finish_l	800	0
+TimeTick = 155	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 155	GW_0	0_0_0		context switch	800	25
+TimeTick = 180	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 217	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 217	GW_0	0_1_0		context switch	800	25
+TimeTick = 242	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 328	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 328	GW_1	1_0_0		context switch	800	25
+TimeTick = 353	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_0_1		context switch	1600	29
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1388.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+030
+-------------
+GW 0.99
+Task 109 200 0.545
+Task 59 200 0.295
+Task 30 200 0.15
+GW 0.99
+Task 104 200 0.52
+Task 83 200 0.415
+Task 11 200 0.055
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 316.1 126.25
+T1 0 171.1 126.25
+T2 0 87 126.25
+GW1
+T0 1 301.6 126.25
+T1 0 240.7 126.25
+T2 0 31.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	59
+TimeTick = 25	GW_1	1_1_0		context switch	200	83
+TimeTick = 45	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 67	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 84	GW_0	0_1_0		finish_l	200	0
+TimeTick = 84	GW_0	0_0_0		context switch	200	25
+TimeTick = 108	GW_1	1_1_0		finish_l	200	0
+TimeTick = 109	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 108	GW_1	1_0_0		context switch	200	25
+TimeTick = 109	GW_0	0_2_0		context switch	200	30
+TimeTick = 133	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 133	GW_1	1_2_0		context switch	200	11
+TimeTick = 139	GW_0	0_2_0		finish_l	200	0
+TimeTick = 144	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	26
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 448.85
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 455.6
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+031
+-------------
+GW 0.995
+Task 119 200 0.595
+Task 59 200 0.295
+Task 21 200 0.105
+GW 0.995
+Task 94 200 0.47
+Task 90 200 0.45
+Task 15 200 0.075
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 345.1 126.25
+T1 0 171.1 126.25
+T2 0 60.9 126.25
+GW1
+T0 0 272.6 126.25
+T1 0 261 126.25
+T2 0 43.5 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	94
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	59
+TimeTick = 48	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 84	GW_0	0_1_0		finish_l	200	0
+TimeTick = 84	GW_0	0_0_0		context switch	200	25
+TimeTick = 94	GW_1	1_0_0		finish_l	200	0
+TimeTick = 94	GW_1	1_1_0		context switch	200	90
+TimeTick = 109	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 109	GW_0	0_2_0		context switch	200	21
+TimeTick = 130	GW_0	0_2_0		finish_l	200	0
+TimeTick = 184	GW_1	1_1_0		finish_l	200	0
+TimeTick = 184	GW_1	1_2_0		context switch	200	15
+TimeTick = 199	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	26
+TimeTick = 200	GW_1	1_0_1		context switch	400	94
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 436.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+032
+-------------
+GW 0.9975
+Task 500 800 0.625
+Task 152 800 0.19
+Task 146 800 0.1825
+GW 0.9975
+Task 546 800 0.6825
+Task 175 800 0.21875
+Task 77 800 0.09625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1450 126.25
+T1 1 440.8 126.25
+T2 1 423.4 126.25
+GW1
+T0 1 1583.4 126.25
+T1 1 507.5 126.25
+T2 0 223.3 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 50	GW_1	1_2_0		context switch	800	77
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 80	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 80	GW_0	0_1_0		context switch	800	25
+TimeTick = 105	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 110	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 110	GW_0	0_2_0		context switch	800	25
+TimeTick = 127	GW_1	1_2_0		finish_l	800	0
+TimeTick = 135	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 145	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 145	GW_1	1_1_0		context switch	800	25
+TimeTick = 170	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 220	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 220	GW_0	0_0_0		context switch	800	25
+TimeTick = 245	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 330	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 330	GW_1	1_0_0		context switch	800	25
+TimeTick = 355	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1377.65
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+033
+-------------
+GW 0.9975
+Task 549 800 0.68625
+Task 173 800 0.21625
+Task 76 800 0.095
+GW 0.99875
+Task 468 800 0.585
+Task 193 800 0.24125
+Task 138 800 0.1725
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1592.1 126.25
+T1 1 501.7 126.25
+T2 0 220.4 126.25
+GW1
+T0 1 1357.2 126.25
+T1 1 559.7 126.25
+T2 1 400.2 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	76
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 84	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 112	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 112	GW_1	1_2_0		context switch	800	25
+TimeTick = 126	GW_0	0_2_0		finish_l	800	0
+TimeTick = 126	GW_0	0_1_0		context switch	800	25
+TimeTick = 137	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 151	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 151	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 151	GW_1	1_1_0		context switch	800	25
+TimeTick = 176	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 220	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 220	GW_1	1_0_0		context switch	800	25
+TimeTick = 245	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 330	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 330	GW_0	0_0_0		context switch	800	25
+TimeTick = 355	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_2_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1376.3
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+034
+-------------
+GW 0.99
+Task 143 200 0.715
+Task 44 200 0.22
+Task 11 200 0.055
+GW 0.995
+Task 113 200 0.565
+Task 46 200 0.23
+Task 40 200 0.2
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 414.7 126.25
+T1 0 127.6 126.25
+T2 0 31.9 126.25
+GW1
+T0 1 327.7 126.25
+T1 0 133.4 126.25
+T2 0 116 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	44
+TimeTick = 25	GW_1	1_1_0		context switch	200	46
+TimeTick = 47	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 69	GW_0	0_1_0		finish_l	200	0
+TimeTick = 69	GW_0	0_2_0		context switch	200	11
+TimeTick = 71	GW_1	1_1_0		finish_l	200	0
+TimeTick = 71	GW_1	1_0_0		context switch	200	25
+TimeTick = 76	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 80	GW_0	0_2_0		finish_l	200	0
+TimeTick = 80	GW_0	0_0_0		context switch	200	25
+TimeTick = 96	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 96	GW_1	1_2_0		context switch	200	40
+TimeTick = 105	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 136	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 402.95
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 444.8
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+035
+-------------
+GW 0.9975
+Task 271 400 0.6775
+Task 90 400 0.225
+Task 38 400 0.095
+GW 0.995
+Task 235 400 0.5875
+Task 101 400 0.2525
+Task 62 400 0.155
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 785.9 126.25
+T1 0 261 126.25
+T2 0 110.2 126.25
+GW1
+T0 1 681.5 126.25
+T1 1 292.9 126.25
+T2 0 179.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	90
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_2_0		context switch	400	62
+TimeTick = 70	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 92	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 112	GW_1	1_2_0		finish_l	400	0
+TimeTick = 112	GW_1	1_1_0		context switch	400	25
+TimeTick = 115	GW_0	0_1_0		finish_l	400	0
+TimeTick = 115	GW_0	0_2_0		context switch	400	38
+TimeTick = 137	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 137	GW_1	1_0_0		context switch	400	25
+TimeTick = 147	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 153	GW_0	0_2_0		finish_l	400	0
+TimeTick = 153	GW_0	0_0_0		context switch	400	25
+TimeTick = 162	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 178	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_1_1		context switch	800	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 811.5
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 737.4
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+036
+-------------
+GW 0.9975
+Task 238 400 0.595
+Task 123 400 0.3075
+Task 38 400 0.095
+GW 0.995
+Task 209 400 0.5225
+Task 138 400 0.345
+Task 51 400 0.1275
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 690.2 126.25
+T1 1 356.7 126.25
+T2 0 110.2 126.25
+GW1
+T0 1 606.1 126.25
+T1 1 400.2 126.25
+T2 0 147.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	38
+TimeTick = 50	GW_1	1_2_0		context switch	400	51
+TimeTick = 66	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 88	GW_0	0_2_0		finish_l	400	0
+TimeTick = 91	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 91	GW_0	0_1_0		context switch	400	25
+TimeTick = 101	GW_1	1_2_0		finish_l	400	0
+TimeTick = 101	GW_1	1_0_0		context switch	400	25
+TimeTick = 116	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 119	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 126	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 126	GW_1	1_1_0		context switch	400	25
+TimeTick = 151	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 167	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 167	GW_0	0_0_0		context switch	400	25
+TimeTick = 192	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_1_1		context switch	800	26
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 705
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 722.55
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+037
+-------------
+GW 0.995
+Task 79 200 0.395
+Task 63 200 0.315
+Task 57 200 0.285
+GW 0.995
+Task 133 200 0.665
+Task 48 200 0.24
+Task 18 200 0.09
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 229.1 126.25
+T1 0 182.7 126.25
+T2 0 165.3 126.25
+GW1
+T0 1 385.7 126.25
+T1 0 139.2 126.25
+T2 0 52.2 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	79
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	48
+TimeTick = 51	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 73	GW_1	1_1_0		finish_l	200	0
+TimeTick = 73	GW_1	1_0_0		context switch	200	25
+TimeTick = 79	GW_0	0_0_0		finish_l	200	0
+TimeTick = 79	GW_0	0_1_0		context switch	200	63
+TimeTick = 98	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 98	GW_1	1_2_0		context switch	200	18
+TimeTick = 116	GW_1	1_2_0		finish_l	200	0
+TimeTick = 142	GW_0	0_1_0		finish_l	200	0
+TimeTick = 142	GW_0	0_2_0		context switch	200	57
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	79
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 417.8
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+038
+-------------
+GW 0.995
+Task 91 200 0.455
+Task 65 200 0.325
+Task 43 200 0.215
+GW 0.99
+Task 106 200 0.53
+Task 82 200 0.41
+Task 10 200 0.05
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 263.9 126.25
+T1 0 188.5 126.25
+T2 0 124.7 126.25
+GW1
+T0 1 307.4 126.25
+T1 0 237.8 126.25
+T2 0 29 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	91
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	82
+TimeTick = 46	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 91	GW_0	0_0_0		finish_l	200	0
+TimeTick = 91	GW_0	0_1_0		context switch	200	65
+TimeTick = 107	GW_1	1_1_0		finish_l	200	0
+TimeTick = 107	GW_1	1_0_0		context switch	200	25
+TimeTick = 132	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 132	GW_1	1_2_0		context switch	200	10
+TimeTick = 142	GW_1	1_2_0		finish_l	200	0
+TimeTick = 156	GW_0	0_1_0		finish_l	200	0
+TimeTick = 156	GW_0	0_2_0		context switch	200	43
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	91
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 452.9
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+039
+-------------
+GW 0.995
+Task 138 200 0.69
+Task 35 200 0.175
+Task 26 200 0.13
+GW 0.99
+Task 162 200 0.81
+Task 25 200 0.125
+Task 11 200 0.055
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 400.2 126.25
+T1 0 101.5 126.25
+T2 0 75.4 126.25
+GW1
+T0 1 469.8 126.25
+T1 0 72.5 126.25
+T2 0 31.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	35
+TimeTick = 25	GW_1	1_1_0		context switch	200	25
+TimeTick = 50	GW_1	1_1_0		finish_l	200	0
+TimeTick = 50	GW_1	1_2_0		context switch	200	11
+TimeTick = 52	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 60	GW_0	0_1_0		finish_l	200	0
+TimeTick = 60	GW_0	0_0_0		context switch	200	25
+TimeTick = 61	GW_1	1_2_0		finish_l	200	0
+TimeTick = 85	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 85	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 85	GW_0	0_2_0		context switch	200	26
+TimeTick = 85	GW_1	1_0_0		context switch	200	25
+TimeTick = 110	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 111	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 411.05
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 377.3
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+040
+-------------
+GW 0.9975
+Task 327 400 0.8175
+Task 38 400 0.095
+Task 34 400 0.085
+GW 0.9975
+Task 336 400 0.84
+Task 39 400 0.0975
+Task 24 400 0.06
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 948.3 126.25
+T1 0 110.2 126.25
+T2 0 98.6 126.25
+GW1
+T0 1 974.4 126.25
+T1 0 113.1 126.25
+T2 0 69.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	38
+TimeTick = 25	GW_1	1_1_0		context switch	400	39
+TimeTick = 63	GW_0	0_1_0		finish_l	400	0
+TimeTick = 63	GW_0	0_2_0		context switch	400	34
+TimeTick = 64	GW_1	1_1_0		finish_l	400	0
+TimeTick = 64	GW_1	1_2_0		context switch	400	24
+TimeTick = 88	GW_1	1_2_0		finish_l	400	0
+TimeTick = 90	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 97	GW_0	0_2_0		finish_l	400	0
+TimeTick = 97	GW_0	0_0_0		context switch	400	25
+TimeTick = 122	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 158	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 158	GW_1	1_0_0		context switch	400	25
+TimeTick = 183	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 735.9
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 723.75
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+041
+-------------
+GW 0.995
+Task 189 400 0.4725
+Task 116 400 0.29
+Task 93 400 0.2325
+GW 0.9975
+Task 348 400 0.87
+Task 26 400 0.065
+Task 25 400 0.0625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 548.1 126.25
+T1 1 336.4 126.25
+T2 0 269.7 126.25
+GW1
+T0 1 1009.2 126.25
+T1 0 75.4 126.25
+T2 0 72.5 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	26
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	93
+TimeTick = 51	GW_1	1_1_0		finish_l	400	0
+TimeTick = 51	GW_1	1_2_0		context switch	400	25
+TimeTick = 62	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 76	GW_1	1_2_0		finish_l	400	0
+TimeTick = 86	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 143	GW_0	0_2_0		finish_l	400	0
+TimeTick = 143	GW_0	0_0_0		context switch	400	25
+TimeTick = 156	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 156	GW_1	1_0_0		context switch	400	25
+TimeTick = 168	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 168	GW_0	0_1_0		context switch	400	25
+TimeTick = 181	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 193	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 779.25
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 707.55
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+042
+-------------
+GW 0.99
+Task 143 200 0.715
+Task 29 200 0.145
+Task 26 200 0.13
+GW 0.995
+Task 84 200 0.42
+Task 83 200 0.415
+Task 32 200 0.16
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 414.7 126.25
+T1 0 84.1 126.25
+T2 0 75.4 126.25
+GW1
+T0 0 243.6 126.25
+T1 0 240.7 126.25
+T2 0 92.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	84
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	29
+TimeTick = 53	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 54	GW_0	0_1_0		finish_l	200	0
+TimeTick = 54	GW_0	0_0_0		context switch	200	25
+TimeTick = 79	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 79	GW_0	0_2_0		context switch	200	26
+TimeTick = 84	GW_1	1_0_0		finish_l	200	0
+TimeTick = 84	GW_1	1_1_0		context switch	200	83
+TimeTick = 105	GW_0	0_2_0		finish_l	200	0
+TimeTick = 167	GW_1	1_1_0		finish_l	200	0
+TimeTick = 167	GW_1	1_2_0		context switch	200	32
+TimeTick = 199	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	84
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 402.95
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+043
+-------------
+GW 0.9975
+Task 507 800 0.63375
+Task 146 800 0.1825
+Task 145 800 0.18125
+GW 0.99875
+Task 712 800 0.89
+Task 47 800 0.05875
+Task 40 800 0.05
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1470.3 126.25
+T1 1 423.4 126.25
+T2 1 420.5 126.25
+GW1
+T0 1 2064.8 126.25
+T1 0 136.3 126.25
+T2 0 116 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	47
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 72	GW_1	1_1_0		finish_l	800	0
+TimeTick = 72	GW_1	1_2_0		context switch	800	40
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 79	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 79	GW_0	0_1_0		context switch	800	25
+TimeTick = 104	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 108	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 108	GW_0	0_2_0		context switch	800	25
+TimeTick = 112	GW_1	1_2_0		finish_l	800	0
+TimeTick = 133	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 185	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 185	GW_0	0_0_0		context switch	800	25
+TimeTick = 210	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 328	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 328	GW_1	1_0_0		context switch	800	25
+TimeTick = 353	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_0_1		context switch	1600	31
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1376.15
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+044
+-------------
+GW 0.99
+Task 166 200 0.83
+Task 16 200 0.08
+Task 16 200 0.08
+GW 0.995
+Task 96 200 0.48
+Task 67 200 0.335
+Task 36 200 0.18
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 481.4 126.25
+T1 0 46.4 126.25
+T2 0 46.4 126.25
+GW1
+T0 0 278.4 126.25
+T1 0 194.3 126.25
+T2 0 104.4 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	96
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	16
+TimeTick = 41	GW_0	0_1_0		finish_l	200	0
+TimeTick = 41	GW_0	0_2_0		context switch	200	16
+TimeTick = 57	GW_0	0_2_0		finish_l	200	0
+TimeTick = 58	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 58	GW_0	0_0_0		context switch	200	25
+TimeTick = 83	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 96	GW_1	1_0_0		finish_l	200	0
+TimeTick = 96	GW_1	1_1_0		context switch	200	67
+TimeTick = 163	GW_1	1_1_0		finish_l	200	0
+TimeTick = 163	GW_1	1_2_0		context switch	200	36
+TimeTick = 199	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	96
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 371.9
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+045
+-------------
+GW 0.9975
+Task 318 800 0.3975
+Task 242 800 0.3025
+Task 238 800 0.2975
+GW 0.9975
+Task 654 800 0.8175
+Task 76 800 0.095
+Task 68 800 0.085
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 922.2 126.25
+T1 1 701.8 126.25
+T2 1 690.2 126.25
+GW1
+T0 1 1896.6 126.25
+T1 0 220.4 126.25
+T2 0 197.2 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	76
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 88	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 88	GW_0	0_0_0		context switch	800	25
+TimeTick = 101	GW_1	1_1_0		finish_l	800	0
+TimeTick = 101	GW_1	1_2_0		context switch	800	68
+TimeTick = 113	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 136	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 136	GW_0	0_2_0		context switch	800	25
+TimeTick = 161	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 169	GW_1	1_2_0		finish_l	800	0
+TimeTick = 185	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 185	GW_0	0_1_0		context switch	800	25
+TimeTick = 210	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 316	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 316	GW_1	1_0_0		context switch	800	25
+TimeTick = 341	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_0_1		context switch	1600	28
+TimeTick = 800	GW_1	1_0_1		context switch	1600	31
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1453.1
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+046
+-------------
+GW 0.995
+Task 151 200 0.755
+Task 35 200 0.175
+Task 13 200 0.065
+GW 0.99
+Task 112 200 0.56
+Task 52 200 0.26
+Task 34 200 0.17
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 437.9 126.25
+T1 0 101.5 126.25
+T2 0 37.7 126.25
+GW1
+T0 1 324.8 126.25
+T1 0 150.8 126.25
+T2 0 98.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	35
+TimeTick = 25	GW_1	1_1_0		context switch	200	52
+TimeTick = 47	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 60	GW_0	0_1_0		finish_l	200	0
+TimeTick = 60	GW_0	0_2_0		context switch	200	13
+TimeTick = 73	GW_0	0_2_0		finish_l	200	0
+TimeTick = 77	GW_1	1_1_0		finish_l	200	0
+TimeTick = 77	GW_1	1_0_0		context switch	200	25
+TimeTick = 78	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 78	GW_0	0_0_0		context switch	200	25
+TimeTick = 102	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 103	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 102	GW_1	1_2_0		context switch	200	34
+TimeTick = 136	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 393.5
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 444.8
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+047
+-------------
+GW 0.995
+Task 111 200 0.555
+Task 76 200 0.38
+Task 12 200 0.06
+GW 0.99
+Task 121 200 0.605
+Task 58 200 0.29
+Task 19 200 0.095
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 321.9 126.25
+T1 0 220.4 126.25
+T2 0 34.8 126.25
+GW1
+T0 1 350.9 126.25
+T1 0 168.2 126.25
+T2 0 55.1 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	76
+TimeTick = 25	GW_1	1_1_0		context switch	200	58
+TimeTick = 47	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 72	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 83	GW_1	1_1_0		finish_l	200	0
+TimeTick = 83	GW_1	1_0_0		context switch	200	25
+TimeTick = 101	GW_0	0_1_0		finish_l	200	0
+TimeTick = 101	GW_0	0_0_0		context switch	200	25
+TimeTick = 108	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 108	GW_1	1_2_0		context switch	200	19
+TimeTick = 126	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 126	GW_0	0_2_0		context switch	200	12
+TimeTick = 127	GW_1	1_2_0		finish_l	200	0
+TimeTick = 138	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	26
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 447.5
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 432.65
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+048
+-------------
+GW 0.99
+Task 152 200 0.76
+Task 28 200 0.14
+Task 18 200 0.09
+GW 0.99
+Task 89 200 0.445
+Task 55 200 0.275
+Task 54 200 0.27
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 440.8 126.25
+T1 0 81.2 126.25
+T2 0 52.2 126.25
+GW1
+T0 0 258.1 126.25
+T1 0 159.5 126.25
+T2 0 156.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	89
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	28
+TimeTick = 53	GW_0	0_1_0		finish_l	200	0
+TimeTick = 53	GW_0	0_2_0		context switch	200	18
+TimeTick = 55	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 71	GW_0	0_2_0		finish_l	200	0
+TimeTick = 71	GW_0	0_0_0		context switch	200	25
+TimeTick = 89	GW_1	1_0_0		finish_l	200	0
+TimeTick = 89	GW_1	1_1_0		context switch	200	55
+TimeTick = 96	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 144	GW_1	1_1_0		finish_l	200	0
+TimeTick = 144	GW_1	1_2_0		context switch	200	54
+TimeTick = 198	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	89
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 390.8
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 583.1
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+049
+-------------
+GW 0.9975
+Task 390 800 0.4875
+Task 300 800 0.375
+Task 108 800 0.135
+GW 0.9975
+Task 444 800 0.555
+Task 217 800 0.27125
+Task 137 800 0.17125
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1131 126.25
+T1 1 870 126.25
+T2 1 313.2 126.25
+GW1
+T0 1 1287.6 126.25
+T1 1 629.3 126.25
+T2 1 397.3 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 93	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 93	GW_1	1_1_0		context switch	800	25
+TimeTick = 115	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 115	GW_0	0_2_0		context switch	800	25
+TimeTick = 118	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 140	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 143	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 143	GW_1	1_2_0		context switch	800	25
+TimeTick = 168	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 196	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 196	GW_0	0_0_0		context switch	800	25
+TimeTick = 221	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 256	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 256	GW_0	0_1_0		context switch	800	25
+TimeTick = 281	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 345	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 345	GW_1	1_0_0		context switch	800	25
+TimeTick = 370	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_2_1		context switch	1600	26
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+050
+-------------
+GW 0.9975
+Task 195 400 0.4875
+Task 102 400 0.255
+Task 102 400 0.255
+GW 0.9975
+Task 195 400 0.4875
+Task 131 400 0.3275
+Task 73 400 0.1825
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 565.5 126.25
+T1 1 295.8 126.25
+T2 1 295.8 126.25
+GW1
+T0 1 565.5 126.25
+T1 1 379.9 126.25
+T2 0 211.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	25
+TimeTick = 50	GW_1	1_2_0		context switch	400	73
+TimeTick = 63	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 75	GW_0	0_2_0		offload_cloud	400	0
+TimeTick = 75	GW_0	0_0_0		context switch	400	25
+TimeTick = 84	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 100	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 100	GW_0	0_1_0		context switch	400	25
+TimeTick = 105	GW_2	0_2_0		cloud_back	400	25
+TimeTick = 123	GW_1	1_2_0		finish_l	400	0
+TimeTick = 125	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 125	GW_0	0_2_0		context switch	400	25
+TimeTick = 132	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 132	GW_1	1_1_0		context switch	400	25
+TimeTick = 150	GW_0	0_2_0		finish_cloud	400	0
+TimeTick = 157	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 171	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 171	GW_1	1_0_0		context switch	400	25
+TimeTick = 196	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_1_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 668.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 752.25
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+051
+-------------
+GW 0.9975
+Task 408 800 0.51
+Task 215 800 0.26875
+Task 175 800 0.21875
+GW 0.9975
+Task 423 800 0.52875
+Task 325 800 0.40625
+Task 50 800 0.0625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1183.2 126.25
+T1 1 623.5 126.25
+T2 1 507.5 126.25
+GW1
+T0 1 1226.7 126.25
+T1 1 942.5 126.25
+T2 0 145 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 50	GW_1	1_2_0		context switch	800	50
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 92	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 92	GW_0	0_1_0		context switch	800	25
+TimeTick = 100	GW_1	1_2_0		finish_l	800	0
+TimeTick = 117	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 127	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 127	GW_0	0_2_0		context switch	800	25
+TimeTick = 152	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 184	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 184	GW_0	0_0_0		context switch	800	25
+TimeTick = 209	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 249	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 249	GW_1	1_1_0		context switch	800	25
+TimeTick = 274	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 334	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 334	GW_1	1_0_0		context switch	800	25
+TimeTick = 359	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_1_1		context switch	1600	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1341.2
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+052
+-------------
+GW 0.9975
+Task 378 800 0.4725
+Task 309 800 0.38625
+Task 111 800 0.13875
+GW 0.99875
+Task 657 800 0.82125
+Task 72 800 0.09
+Task 70 800 0.0875
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1096.2 126.25
+T1 1 896.1 126.25
+T2 1 321.9 126.25
+GW1
+T0 1 1905.3 126.25
+T1 0 208.8 126.25
+T2 0 203 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	72
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 97	GW_1	1_1_0		finish_l	800	0
+TimeTick = 97	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 97	GW_0	0_2_0		context switch	800	25
+TimeTick = 97	GW_1	1_2_0		context switch	800	70
+TimeTick = 122	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 123	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 123	GW_0	0_0_0		context switch	800	25
+TimeTick = 148	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 167	GW_1	1_2_0		finish_l	800	0
+TimeTick = 185	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 185	GW_0	0_1_0		context switch	800	25
+TimeTick = 210	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 317	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 317	GW_1	1_0_0		context switch	800	25
+TimeTick = 342	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_2_1		context switch	1600	26
+TimeTick = 800	GW_1	1_0_1		context switch	1600	31
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1450.4
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+053
+-------------
+GW 0.995
+Task 161 200 0.805
+Task 28 200 0.14
+Task 10 200 0.05
+GW 0.99
+Task 108 200 0.54
+Task 67 200 0.335
+Task 23 200 0.115
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 466.9 126.25
+T1 0 81.2 126.25
+T2 0 29 126.25
+GW1
+T0 1 313.2 126.25
+T1 0 194.3 126.25
+T2 0 66.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	28
+TimeTick = 25	GW_1	1_1_0		context switch	200	67
+TimeTick = 46	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 53	GW_0	0_1_0		finish_l	200	0
+TimeTick = 53	GW_0	0_2_0		context switch	200	10
+TimeTick = 63	GW_0	0_2_0		finish_l	200	0
+TimeTick = 79	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 79	GW_0	0_0_0		context switch	200	25
+TimeTick = 92	GW_1	1_1_0		finish_l	200	0
+TimeTick = 92	GW_1	1_0_0		context switch	200	25
+TimeTick = 104	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 117	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 117	GW_1	1_2_0		context switch	200	23
+TimeTick = 140	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	26
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 380
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 450.2
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+054
+-------------
+GW 0.99
+Task 139 200 0.695
+Task 40 200 0.2
+Task 19 200 0.095
+GW 0.99
+Task 150 200 0.75
+Task 31 200 0.155
+Task 17 200 0.085
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 403.1 126.25
+T1 0 116 126.25
+T2 0 55.1 126.25
+GW1
+T0 1 435 126.25
+T1 0 89.9 126.25
+T2 0 49.3 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	40
+TimeTick = 25	GW_1	1_1_0		context switch	200	31
+TimeTick = 52	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 56	GW_1	1_1_0		finish_l	200	0
+TimeTick = 56	GW_1	1_2_0		context switch	200	17
+TimeTick = 65	GW_0	0_1_0		finish_l	200	0
+TimeTick = 65	GW_0	0_0_0		context switch	200	25
+TimeTick = 73	GW_1	1_2_0		finish_l	200	0
+TimeTick = 82	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 82	GW_1	1_0_0		context switch	200	25
+TimeTick = 90	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 90	GW_0	0_2_0		context switch	200	19
+TimeTick = 107	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 109	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 408.35
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 393.5
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+055
+-------------
+GW 0.995
+Task 290 400 0.725
+Task 79 400 0.1975
+Task 29 400 0.0725
+GW 0.995
+Task 183 400 0.4575
+Task 142 400 0.355
+Task 73 400 0.1825
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 841 126.25
+T1 0 229.1 126.25
+T2 0 84.1 126.25
+GW1
+T0 1 530.7 126.25
+T1 1 411.8 126.25
+T2 0 211.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	79
+TimeTick = 25	GW_1	1_1_0		context switch	400	25
+TimeTick = 50	GW_1	1_1_0		offload_cloud	400	0
+TimeTick = 50	GW_1	1_2_0		context switch	400	73
+TimeTick = 61	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 90	GW_2	1_1_0		cloud_back	400	25
+TimeTick = 104	GW_0	0_1_0		finish_l	400	0
+TimeTick = 104	GW_0	0_2_0		context switch	400	29
+TimeTick = 123	GW_1	1_2_0		finish_l	400	0
+TimeTick = 123	GW_1	1_0_0		context switch	400	25
+TimeTick = 133	GW_0	0_2_0		finish_l	400	0
+TimeTick = 148	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 148	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 148	GW_0	0_0_0		context switch	400	25
+TimeTick = 148	GW_1	1_1_0		context switch	400	25
+TimeTick = 173	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 173	GW_1	1_1_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	28
+TimeTick = 400	GW_1	1_0_1		context switch	800	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 784.5
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 752.25
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+056
+-------------
+GW 0.99875
+Task 521 800 0.65125
+Task 181 800 0.22625
+Task 97 800 0.12125
+GW 0.9975
+Task 400 800 0.5
+Task 305 800 0.38125
+Task 93 800 0.11625
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1510.9 126.25
+T1 1 524.9 126.25
+T2 0 281.3 126.25
+GW1
+T0 1 1160 126.25
+T1 1 884.5 126.25
+T2 0 269.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	97
+TimeTick = 50	GW_1	1_2_0		context switch	800	93
+TimeTick = 86	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 141	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 143	GW_1	1_2_0		finish_l	800	0
+TimeTick = 143	GW_1	1_0_0		context switch	800	25
+TimeTick = 147	GW_0	0_2_0		finish_l	800	0
+TimeTick = 147	GW_0	0_1_0		context switch	800	25
+TimeTick = 168	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 172	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 202	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 202	GW_1	1_1_0		context switch	800	25
+TimeTick = 227	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 307	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 307	GW_0	0_0_0		context switch	800	25
+TimeTick = 332	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_1_1		context switch	1600	27
+TimeTick = 800	GW_1	1_0_1		context switch	1600	29
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1404.65
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1399.25
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+057
+-------------
+GW 0.9975
+Task 415 800 0.51875
+Task 314 800 0.3925
+Task 69 800 0.08625
+GW 0.99875
+Task 471 800 0.58875
+Task 208 800 0.26
+Task 120 800 0.15
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 1203.5 126.25
+T1 1 910.6 126.25
+T2 0 200.1 126.25
+GW1
+T0 1 1365.9 126.25
+T1 1 603.2 126.25
+T2 1 348 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+
+Remote
+0 1 2 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	69
+TimeTick = 50	GW_1	1_2_0		context switch	800	25
+TimeTick = 75	GW_1	1_2_0		offload_cloud	800	0
+TimeTick = 91	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 91	GW_1	1_1_0		context switch	800	25
+TimeTick = 115	GW_2	1_2_0		cloud_back	800	25
+TimeTick = 116	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 116	GW_1	1_2_0		context switch	800	25
+TimeTick = 119	GW_0	0_2_0		finish_l	800	0
+TimeTick = 141	GW_1	1_2_0		finish_cloud	800	0
+TimeTick = 173	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 173	GW_0	0_0_0		context switch	800	25
+TimeTick = 198	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 236	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 236	GW_0	0_1_0		context switch	800	25
+TimeTick = 261	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 331	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 331	GW_1	1_0_0		context switch	800	25
+TimeTick = 356	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_0_1		context switch	1600	29
+TimeTick = 800	GW_1	1_1_1		context switch	1600	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1366.85
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+058
+-------------
+GW 0.995
+Task 98 200 0.49
+Task 73 200 0.365
+Task 28 200 0.14
+GW 0.99
+Task 85 200 0.425
+Task 67 200 0.335
+Task 46 200 0.23
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 284.2 126.25
+T1 0 211.7 126.25
+T2 0 81.2 126.25
+GW1
+T0 0 246.5 126.25
+T1 0 194.3 126.25
+T2 0 133.4 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	98
+TimeTick = 0	GW_1	1_0_0		context switch	200	85
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 85	GW_1	1_0_0		finish_l	200	0
+TimeTick = 85	GW_1	1_1_0		context switch	200	67
+TimeTick = 98	GW_0	0_0_0		finish_l	200	0
+TimeTick = 98	GW_0	0_1_0		context switch	200	73
+TimeTick = 152	GW_1	1_1_0		finish_l	200	0
+TimeTick = 152	GW_1	1_2_0		context switch	200	46
+TimeTick = 171	GW_0	0_1_0		finish_l	200	0
+TimeTick = 171	GW_0	0_2_0		context switch	200	28
+TimeTick = 198	GW_1	1_2_0		finish_l	200	0
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	98
+TimeTick = 200	GW_1	1_0_1		context switch	400	85
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 583.1
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+059
+-------------
+GW 0.99
+Task 138 200 0.69
+Task 50 200 0.25
+Task 10 200 0.05
+GW 0.995
+Task 92 200 0.46
+Task 56 200 0.28
+Task 51 200 0.255
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 400.2 126.25
+T1 0 145 126.25
+T2 0 29 126.25
+GW1
+T0 0 266.8 126.25
+T1 0 162.4 126.25
+T2 0 147.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+0 1 2 
+Remote
+
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	92
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	50
+TimeTick = 52	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 75	GW_0	0_1_0		finish_l	200	0
+TimeTick = 75	GW_0	0_0_0		context switch	200	25
+TimeTick = 92	GW_1	1_0_0		finish_l	200	0
+TimeTick = 92	GW_1	1_1_0		context switch	200	56
+TimeTick = 100	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 100	GW_0	0_2_0		context switch	200	10
+TimeTick = 110	GW_0	0_2_0		finish_l	200	0
+TimeTick = 148	GW_1	1_1_0		finish_l	200	0
+TimeTick = 148	GW_1	1_2_0		context switch	200	51
+TimeTick = 199	GW_1	1_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	92
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 409.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+060
+-------------
+GW 0.995
+Task 256 400 0.64
+Task 83 400 0.2075
+Task 59 400 0.1475
+GW 0.9975
+Task 301 400 0.7525
+Task 67 400 0.1675
+Task 31 400 0.0775
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 742.4 126.25
+T1 0 240.7 126.25
+T2 0 171.1 126.25
+GW1
+T0 1 872.9 126.25
+T1 0 194.3 126.25
+T2 0 89.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	83
+TimeTick = 25	GW_1	1_1_0		context switch	400	67
+TimeTick = 76	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 92	GW_1	1_1_0		finish_l	400	0
+TimeTick = 92	GW_1	1_2_0		context switch	400	31
+TimeTick = 108	GW_0	0_1_0		finish_l	400	0
+TimeTick = 108	GW_0	0_0_0		context switch	400	25
+TimeTick = 123	GW_1	1_2_0		finish_l	400	0
+TimeTick = 133	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 133	GW_0	0_2_0		context switch	400	59
+TimeTick = 137	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 137	GW_1	1_0_0		context switch	400	25
+TimeTick = 162	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 192	GW_0	0_2_0		finish_l	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 830.4
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 771
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+061
+-------------
+GW 0.9975
+Task 226 400 0.565
+Task 127 400 0.3175
+Task 46 400 0.115
+GW 0.995
+Task 274 400 0.685
+Task 72 400 0.18
+Task 52 400 0.13
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 655.4 126.25
+T1 1 368.3 126.25
+T2 0 133.4 126.25
+GW1
+T0 1 794.6 126.25
+T1 0 208.8 126.25
+T2 0 150.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	72
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	46
+TimeTick = 70	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 96	GW_0	0_2_0		finish_l	400	0
+TimeTick = 96	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 96	GW_0	0_0_0		context switch	400	25
+TimeTick = 97	GW_1	1_1_0		finish_l	400	0
+TimeTick = 97	GW_1	1_2_0		context switch	400	52
+TimeTick = 121	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 121	GW_0	0_1_0		context switch	400	25
+TimeTick = 146	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 149	GW_1	1_2_0		finish_l	400	0
+TimeTick = 151	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 151	GW_1	1_0_0		context switch	400	25
+TimeTick = 176	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 715.8
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 806.1
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+062
+-------------
+GW 0.995
+Task 172 200 0.86
+Task 16 200 0.08
+Task 11 200 0.055
+GW 0.99
+Task 172 200 0.86
+Task 13 200 0.065
+Task 13 200 0.065
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 498.8 126.25
+T1 0 46.4 126.25
+T2 0 31.9 126.25
+GW1
+T0 1 498.8 126.25
+T1 0 37.7 126.25
+T2 0 37.7 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	16
+TimeTick = 25	GW_1	1_1_0		context switch	200	13
+TimeTick = 38	GW_1	1_1_0		finish_l	200	0
+TimeTick = 38	GW_1	1_2_0		context switch	200	13
+TimeTick = 41	GW_0	0_1_0		finish_l	200	0
+TimeTick = 41	GW_0	0_2_0		context switch	200	11
+TimeTick = 51	GW_1	1_2_0		finish_l	200	0
+TimeTick = 52	GW_0	0_2_0		finish_l	200	0
+TimeTick = 59	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 59	GW_0	0_0_0		context switch	200	25
+TimeTick = 84	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 94	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 94	GW_1	1_0_0		context switch	200	25
+TimeTick = 119	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 365.15
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 363.8
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+063
+-------------
+GW 0.99875
+Task 295 800 0.36875
+Task 263 800 0.32875
+Task 241 800 0.30125
+GW 0.99875
+Task 428 800 0.535
+Task 277 800 0.34625
+Task 94 800 0.1175
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 855.5 126.25
+T1 1 762.7 126.25
+T2 1 698.9 126.25
+GW1
+T0 1 1241.2 126.25
+T1 1 803.3 126.25
+T2 0 272.6 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+
+Remote
+0 1 2 
+GW1
+Local
+2 
+Remote
+0 1 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	800	25
+TimeTick = 0	GW_1	1_0_0		context switch	800	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	800	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	800	0
+TimeTick = 25	GW_0	0_1_0		context switch	800	25
+TimeTick = 25	GW_1	1_1_0		context switch	800	25
+TimeTick = 50	GW_0	0_1_0		offload_cloud	800	0
+TimeTick = 50	GW_1	1_1_0		offload_cloud	800	0
+TimeTick = 50	GW_0	0_2_0		context switch	800	25
+TimeTick = 50	GW_1	1_2_0		context switch	800	94
+TimeTick = 75	GW_0	0_2_0		offload_cloud	800	0
+TimeTick = 83	GW_2	0_0_0		cloud_back	800	25
+TimeTick = 83	GW_0	0_0_0		context switch	800	25
+TimeTick = 108	GW_0	0_0_0		finish_cloud	800	0
+TimeTick = 132	GW_2	0_2_0		cloud_back	800	25
+TimeTick = 132	GW_0	0_2_0		context switch	800	25
+TimeTick = 144	GW_1	1_2_0		finish_l	800	0
+TimeTick = 157	GW_0	0_2_0		finish_cloud	800	0
+TimeTick = 185	GW_2	0_1_0		cloud_back	800	25
+TimeTick = 185	GW_0	0_1_0		context switch	800	25
+TimeTick = 210	GW_0	0_1_0		finish_cloud	800	0
+TimeTick = 241	GW_2	1_1_0		cloud_back	800	25
+TimeTick = 241	GW_1	1_1_0		context switch	800	25
+TimeTick = 266	GW_1	1_1_0		finish_cloud	800	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 327	GW_2	1_0_0		cloud_back	800	25
+TimeTick = 327	GW_1	1_0_0		context switch	800	25
+TimeTick = 352	GW_1	1_0_0		finish_cloud	800	0
+TimeTick = 800	GW_0	0_0_1		context switch	1600	28
+TimeTick = 800	GW_1	1_1_1		context switch	1600	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1288.7
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1400.6
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1648.1
+-------------
+064
+-------------
+GW 0.995
+Task 85 200 0.425
+Task 70 200 0.35
+Task 44 200 0.22
+GW 0.995
+Task 169 200 0.845
+Task 19 200 0.095
+Task 11 200 0.055
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 0 246.5 126.25
+T1 0 203 126.25
+T2 0 127.6 126.25
+GW1
+T0 1 490.1 126.25
+T1 0 55.1 126.25
+T2 0 31.9 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+0 1 2 
+Remote
+
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	85
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_1_0		context switch	200	19
+TimeTick = 44	GW_1	1_1_0		finish_l	200	0
+TimeTick = 44	GW_1	1_2_0		context switch	200	11
+TimeTick = 55	GW_1	1_2_0		finish_l	200	0
+TimeTick = 58	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 58	GW_1	1_0_0		context switch	200	25
+TimeTick = 83	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 85	GW_0	0_0_0		finish_l	200	0
+TimeTick = 85	GW_0	0_1_0		context switch	200	70
+TimeTick = 155	GW_0	0_1_0		finish_l	200	0
+TimeTick = 155	GW_0	0_2_0		context switch	200	44
+TimeTick = 199	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	85
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 584.45
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 369.2
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+065
+-------------
+GW 0.9975
+Task 155 400 0.3875
+Task 151 400 0.3775
+Task 93 400 0.2325
+GW 0.995
+Task 293 400 0.7325
+Task 63 400 0.1575
+Task 42 400 0.105
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 449.5 126.25
+T1 1 437.9 126.25
+T2 0 269.7 126.25
+GW1
+T0 1 849.7 126.25
+T1 0 182.7 126.25
+T2 0 121.8 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+2 
+Remote
+0 1 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	400	25
+TimeTick = 0	GW_1	1_0_0		context switch	400	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	400	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	400	0
+TimeTick = 25	GW_0	0_1_0		context switch	400	25
+TimeTick = 25	GW_1	1_1_0		context switch	400	63
+TimeTick = 50	GW_0	0_1_0		offload_cloud	400	0
+TimeTick = 50	GW_0	0_2_0		context switch	400	93
+TimeTick = 55	GW_2	0_0_0		cloud_back	400	25
+TimeTick = 86	GW_2	0_1_0		cloud_back	400	25
+TimeTick = 88	GW_1	1_1_0		finish_l	400	0
+TimeTick = 88	GW_1	1_2_0		context switch	400	42
+TimeTick = 130	GW_1	1_2_0		finish_l	400	0
+TimeTick = 143	GW_0	0_2_0		finish_l	400	0
+TimeTick = 143	GW_0	0_0_0		context switch	400	25
+TimeTick = 145	GW_2	1_0_0		cloud_back	400	25
+TimeTick = 145	GW_1	1_0_0		context switch	400	25
+TimeTick = 168	GW_0	0_0_0		finish_cloud	400	0
+TimeTick = 168	GW_0	0_1_0		context switch	400	25
+TimeTick = 170	GW_1	1_0_0		finish_cloud	400	0
+TimeTick = 193	GW_0	0_1_0		finish_cloud	400	0
+TimeTick = 300	GW_2	2_0_0		finish_l	1000	0
+TimeTick = 400	GW_0	0_0_1		context switch	800	27
+TimeTick = 400	GW_1	1_0_1		context switch	800	28
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 779.25
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 780.45
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 1
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 1028.1
+-------------
+066
+-------------
+GW 0.99
+Task 140 200 0.7
+Task 37 200 0.185
+Task 21 200 0.105
+GW 0.99
+Task 144 200 0.72
+Task 38 200 0.19
+Task 16 200 0.08
+GW 0.3
+Task 300 1000 0.3
+---------- O F L D ------------
+GW0
+T0 1 406 126.25
+T1 0 107.3 126.25
+T2 0 60.9 126.25
+GW1
+T0 1 417.6 126.25
+T1 0 110.2 126.25
+T2 0 46.4 126.25
+GW2
+T0 0 0 0
+---------- Dispach ------------
+GW0
+Local
+1 2 
+Remote
+0 
+GW1
+Local
+1 2 
+Remote
+0 
+GW2
+Local
+0 
+Remote
+
+
+TimeTick = 0	GW_0	0_0_0		context switch	200	25
+TimeTick = 0	GW_1	1_0_0		context switch	200	25
+TimeTick = 0	GW_2	2_0_0		context switch	1000	300
+TimeTick = 25	GW_0	0_0_0		offload_cloud	200	0
+TimeTick = 25	GW_1	1_0_0		offload_cloud	200	0
+TimeTick = 25	GW_0	0_1_0		context switch	200	37
+TimeTick = 25	GW_1	1_1_0		context switch	200	38
+TimeTick = 52	GW_2	0_0_0		cloud_back	200	25
+TimeTick = 62	GW_0	0_1_0		finish_l	200	0
+TimeTick = 62	GW_0	0_0_0		context switch	200	25
+TimeTick = 63	GW_1	1_1_0		finish_l	200	0
+TimeTick = 63	GW_1	1_2_0		context switch	200	16
+TimeTick = 79	GW_1	1_2_0		finish_l	200	0
+TimeTick = 81	GW_2	1_0_0		cloud_back	200	25
+TimeTick = 81	GW_1	1_0_0		context switch	200	25
+TimeTick = 87	GW_0	0_0_0		finish_cloud	200	0
+TimeTick = 87	GW_0	0_2_0		context switch	200	21
+TimeTick = 106	GW_1	1_0_0		finish_cloud	200	0
+TimeTick = 108	GW_0	0_2_0		finish_l	200	0
+TimeTick = 200	GW_0	0_0_1		context switch	400	27
+TimeTick = 200	GW_1	1_0_1		context switch	400	27
+=========== GW_0 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 407
+=========== GW_1 ===========
+Total Task : 3
+Meet Task : 3
+Miss Task : 0
+Meet Ratio : 1
+Energy Consumption : 401.6
+=========== GW_2 ===========
+Total Task : 1
+Meet Task : 0
+Miss Task : 0
+Meet Ratio : 0
+Energy Consumption : 585.8
+-------------
+067
+-------------
+============== Average Result ==============
+Meet Ratio : 1
+Energy Consumption : 841.206
+Response time of Meet : 57967
+Cloud server energy : 55710
+Fog devices energy : 1066
+HyerP : 61200
+Miss set : size: 67

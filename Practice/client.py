@@ -82,6 +82,8 @@ def LocalEDF():
                 return
     except:
         print "ERROR"
+        s.shutdown()
+        s.close()
         return
 
 def myOFLD():
@@ -111,7 +113,8 @@ def myOFLD():
         engR = 2*(p_idle+p_trans+p_comp/2.0)*offloadingTrans
         if(engL > engR):
             t['OFLD'] = -1
-        
+        print t['OFLD']
+
     print datetime.datetime.now().strftime("%H:%M:%S")," Start"
     taskcur = None
     try:
@@ -121,7 +124,7 @@ def myOFLD():
                 backCC = s.recv(1024)
                 taskCC = pickle.loads(backCC)
                 Task[taskCC['id']-1]['Remain'] = offloadingTrans
-                Task[taskCC['id']-1]['state'] = 2
+                Task[taskCC['id']-1]['state'] = 3
                 print "Timetick=",timetick,"\tTASK",taskCC['id'],"(",taskCC['Cnt'],")\tbackOFLD"
             except:
                 pass
@@ -132,17 +135,11 @@ def myOFLD():
                 if d['Deadline']<=timetick:
                     if d['Remain']>0:
                         Result['Miss']+=1
-                        print "Timetick=",timetick,"\tTASK",d['id'],"\tMISS"
+                        print "Timetick=",timetick,"\tTASK",d['id'],"(",d['Cnt'],")\tMISS"
                     d['Arrival'] = d['Arrival']+d['Period']
                     d['Deadline'] = d['Deadline']+d['Period']
                     d['Remain'] = offloadingTrans if(d['OFLD'] == -1) else d['Exe']
-                    if(d['OFLD'] == -1):
-                        if(d['state']==3):
-                            d['state'] = 1
-                        elif(d['state']==2):
-                            d['state'] = 3
-                        else:
-                            d['state'] = 0
+                    d['state'] = 1 if(d['OFLD'] == -1) else 0
                     d['Cnt']+=1
                     Result['Total']+=1
 
@@ -152,16 +149,23 @@ def myOFLD():
                     if timetick>=d['Arrival'] and d['Remain']>0:
                         sched_new = d
                 else:
-                    if sched_new['Deadline']>d['Deadline'] and timetick>=sched_new['Arrival'] and d['Remain']>0:
-                        sched_new = d
+                    if sched_new['Deadline']>=d['Deadline'] and timetick>=sched_new['Arrival'] and d['Remain']>0:
+                        if sched_new['Deadline']==d['Deadline'] and sched_new['OFLD']>d['OFLD']:
+                            sched_new = d
+                        elif sched_new['Deadline']>d['Deadline']:
+                            sched_new = d
 
             #===== preempt =====
             if sched_new!=None and taskcur==None:
                 taskcur = sched_new
                 print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tRUN"
-            elif sched_new!=None and sched_new['Deadline']<taskcur['Deadline']:
-                taskcur = sched_new
-                print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tPREEMPT"
+            elif sched_new!=None and sched_new['Deadline']<=taskcur['Deadline']:
+                if sched_new['Deadline']==taskcur['Deadline'] and sched_new['OFLD']>taskcur['OFLD']:
+                    taskcur = sched_new
+                    print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tPREEMPT"
+                elif sched_new['Deadline']<taskcur['Deadline']:
+                    taskcur = sched_new
+                    print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tPREEMPT"
 
             #===== exec =====
             time.sleep(0.01)
@@ -182,9 +186,10 @@ def myOFLD():
                         data_string = pickle.dumps(taskcur)
                         try:
                             s.send(data_string)
+                            time.sleep(1)
+                            print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tOFLD_C"
                         except:
                             print "Send Error!"
-                        print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tOFLD_C"
                         taskcur = None
                     elif Task[taskcur['id']-1]['state'] == 3:
                         print "Timetick=",timetick,"\tTASK",taskcur['id'],"(",taskcur['Cnt'],")\tFINISH_C"
@@ -201,9 +206,12 @@ def myOFLD():
                 print "Miss:\t",Result['Miss']
                 print "Total:\t",Result['Total']
                 print "Meet%:\t",float(Result['Meet'])/float(Result['Total'])
+                s.shutdown()
+                s.close()
                 return
     except:
         print "ERROR"
+        s.close()
         return
 
 def delay_1s():
@@ -227,10 +235,12 @@ def main():
             s.send(data)
         except:
             pass
+    s.shutdown()
+    s.close()
 
 if __name__=="__main__":
-    host='140.118.206.169'
-    port=12340
+    host='localhost'
+    port=8888
     #main()
     #LocalEDF()
     myOFLD()

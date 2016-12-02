@@ -54,6 +54,7 @@ void OFLD(Node* GW){
 			}
 			else if(policyOFLD==AOFLDC){
 				it->offload = true;
+				it->vm = NodeNum-1;
 			}
 			else if(policyOFLD==AOFLDF){
 				it->offload = true;

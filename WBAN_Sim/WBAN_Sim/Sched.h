@@ -4,6 +4,7 @@ extern Task* taskgen;	// task
 extern Task* idleTask;
 extern fstream fs;
 
+extern int NodeNum;
 extern int HyperPeriod;
 extern int timeTick;
 
