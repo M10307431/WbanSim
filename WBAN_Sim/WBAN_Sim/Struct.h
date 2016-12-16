@@ -6,7 +6,7 @@ extern int timeTick;
 extern const float speedRatio;
 extern const int offloadTransfer;
 extern const int fogTransfer;
-
+extern const int battery;	// 2600mAh
 /*=================================
 		Structure
 ==================================*/
@@ -104,7 +104,7 @@ struct Node{
 
 	/*=========== Migration Weight ========================*/
 	int speed;				// exection speed
-	int batt;			// bttery level (remaing energy)
+	float batt;			// bttery level (remaing energy)
 	int block;				// blocking time
 	float migration_factor;	// migration_factor
 	float current_U;		// current utilization
@@ -129,9 +129,9 @@ struct Node{
 	Node(){
 		id = 0;
 		speed = 1;
-		batt = 100;
+		batt = 1.0;
 		block = 0;
-		migration_factor = 0.0;		// 1.0 <<---energy------------load--->> 0.0
+		migration_factor = 0.2;		// 1.0 <<---energy------------load--->> 0.0
 		migratWeight = 0.0;
 		admin = 0;
 		CCadm =0;
@@ -176,6 +176,8 @@ struct Node{
 	}
 
 	void MW(int battSum, float utiSum, int pt){
+
+		batt = 1.0 - (battery-result.energy)/battery;
 		
 		if(currTask->id != 999 && currTask->deadline < pt){			// idle task
 			block = currTask->remaining;
@@ -205,17 +207,11 @@ struct Node{
 			}
 		}*/
 
-		if((pt-timeTick) != 0){
-			migratWeight = migration_factor*((float)batt/battSum)-(1.0-migration_factor)*(current_U/utiSum)-((float)block/(pt-timeTick));
-		}
-		else{
-			migratWeight = -999;
-		}
-
-		migratWeight = migration_factor*batt/100 + (1.0-migration_factor)*(1.0-current_U);
+		migratWeight = migration_factor*batt - (1.0-migration_factor)*(current_U);
 	}
 
 	void ADM(int exec, int deadline2, int uplink){
+
 		int exec_pr = (currTask->deadline <= deadline2)? currTask->remaining : 0;
 		
 		for(deque<Task>::iterator it=local_q.ready_q.begin(); it!=local_q.ready_q.end(); ++it){

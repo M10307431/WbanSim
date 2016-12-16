@@ -43,8 +43,8 @@ char* inputPath = "input.txt";
 fstream fs, config, input;
 int Set = 100;
 int NodeNum = 3;	// # of GW Node
-int TaskNum = 3;	// # of Tasks in each GW
-float total_U = 0.5;	// total Utilization
+int TaskNum = 20;	// # of Tasks in each GW
+float total_U = 2.0;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
 
 int period[] = {100, 200, 400, 800, 1000};
@@ -60,7 +60,7 @@ int fogserver =0;		// fog server num off/on
 /*=================================
           Parameter
 =================================*/
-
+const int battery = 5*700*3600/1000;	// 5v * 2600mA *3600s	//700mAh
 const float speedRatio = 5;	// remoteSpeed / localSpeed
 const int WBANpayload = 128; // WBAN payload for normalized (byte)
 //--------Power-------------------------------------------------------
@@ -143,7 +143,7 @@ int main(){
 	}
 	else{
 	//--------------------------------------------------------------------------- Gen Task Set
-		string filename = "S_input_GW-"+to_string(NodeNum)+"_Task-"+to_string(TaskNum)+"_U"+to_string(total_U)+".txt";	// filename of Gen
+		string filename = "input_GW-"+to_string(NodeNum)+"_Task-"+to_string(TaskNum)+"_U"+to_string(total_U)+".txt";	// filename of Gen
 		char *GENbuffer=(char*)filename.c_str();
 		input.clear();
 		input.open(GENbuffer, std::fstream::out); //  in:read / out:write / app:append

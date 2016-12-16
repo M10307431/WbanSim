@@ -384,7 +384,8 @@ void EvaluationFog(Task *task){
 	while (target->nextNode != NULL) {
 		target = target->nextNode;
 		//cout << target->admin << "," << target->current_U << "\t"; 
-		if((target->id != task->parent) && ((target->admin < temp_ADM) || (target->admin == temp_ADM && target->current_U < temp_U)) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
+		//if((target->id != task->parent) && ((target->admin < temp_ADM) || (target->admin == temp_ADM && target->current_U < temp_U)) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
+		if((target->id != task->parent) && (target->admin < task->period-task->dwlink-task->uplink) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
 			if(temp_MW == 0){
 				temp_MW = target->migratWeight;
 				task->target = target->id;

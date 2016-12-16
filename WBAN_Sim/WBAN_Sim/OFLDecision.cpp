@@ -58,8 +58,8 @@ void OFLD(Node* GW){
 			}
 			else if(policyOFLD==AOFLDF){
 				it->offload = true;
-				it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
-				it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
+				it->target = -1;	// offloading to cloud is slower than origin >> fog
+				//it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
 
 			}
 			else if(policyOFLD==myOFLD){

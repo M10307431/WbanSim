@@ -1,8 +1,23 @@
-﻿  main.cpp
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(209): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(215): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(261): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+﻿  Dispatch.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(134): warning C4305: '=' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(180): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(210): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(253): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(13): warning C4005: 'DEBUG' : 巨集重複定義
+          l:\m10307431\wban\wban_sim\wban_sim\debug.h(3) : 請參閱 'DEBUG' 之前的定義
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(21): warning C4005: 'debug' : 巨集重複定義
+          l:\m10307431\wban\wban_sim\wban_sim\debug.h(9) : 請參閱 'debug' 之前的定義
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(47): warning C4809: switch 陳述式有重複的 'default' 標籤; 已提供所有可能的 'case' 標籤
+l:\m10307431\wban\wban_sim\wban_sim\dispatch.cpp(67): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+  正在產生程式碼...
+  正在編譯...
+  main.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(134): warning C4305: '=' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(180): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(210): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(253): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(48): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(67): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(68): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
@@ -36,10 +51,11 @@ l:\m10307431\wban\wban_sim\wban_sim\main.cpp(126): warning C4996: 'strtok': This
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(223): warning C4244: '+=' : 將 'double' 轉換為 'int'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(245): warning C4018: '<' : signed/unsigned 不相符
   WBAN_Gen.cpp
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(209): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(215): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\struct.h(261): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(134): warning C4305: '=' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(180): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(210): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(253): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(15): warning C4005: 'DEBUG' : 巨集重複定義
           l:\m10307431\wban\wban_sim\wban_sim\debug.h(3) : 請參閱 'DEBUG' 之前的定義
 l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(18): warning C4005: 'debug' : 巨集重複定義
@@ -56,5 +72,22 @@ l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(155): warning C4996: 'strtok': 
           c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
 l:\m10307431\wban\wban_sim\wban_sim\wban_gen.cpp(159): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
+  Sched.cpp
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(134): warning C4305: '=' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(180): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(210): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(253): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\struct.h(257): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(34): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(35): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(46): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(204): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(205): warning C4244: '=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(299): warning C4244: '-=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(342): warning C4305: '正在初始化' : 從 'int' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(383): warning C4244: '正在初始化' : 將 'int' 轉換為 'float'，由於型別不同，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\sched.cpp(496): warning C4244: '+=' : 將 'float' 轉換為 'int'，由於型別不同，可能導致資料遺失
   正在產生程式碼...
+  正在略過... (未偵測到相關變更)
+  OFLDecision.cpp
   WBAN_Sim.vcxproj -> L:\M10307431\WBAN\WBAN_Sim\Debug\WBAN_Sim.exe

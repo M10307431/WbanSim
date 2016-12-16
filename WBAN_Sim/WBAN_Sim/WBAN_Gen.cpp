@@ -101,8 +101,8 @@ void WBAN_Gen(){
 		vector<int> P;
 		for(int t=0; t<TaskNum; ++t){
 			float uti = (t==TaskNum-1) ? remain_U : (float)rand()/RAND_MAX;						// the last task uti = remain uti
-			while((uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>total_U-(TaskNum-t-1)*lowest_U || uti>1.0)&&(t!=TaskNum-1)){		// uti > 0.01
-				uti = ((remain_U-(TaskNum-t-1)*lowest_U)-lowest_U)*(float)rand()/RAND_MAX + lowest_U;
+			while((uti<lowest_U || uti>remain_U || uti>remain_U-(TaskNum-t-1)*lowest_U || uti>total_U-(TaskNum-t-1)*lowest_U || uti>1.0)&&(t!=TaskNum-1)){		// uti > 0.05
+				uti = ((remain_U-(TaskNum-t-1)*lowest_U)-lowest_U+1)*(float)rand()/(RAND_MAX) + lowest_U;
 			}
 			//P.push_back(period[x]); // !!!!!!!!!!!!!!!!!!!!!! period all the same, just for resp test
 			P.push_back(period[rand()% sizeof(*period)]);
@@ -110,7 +110,7 @@ void WBAN_Gen(){
 			remain_U -= uti;
 		}
 		// shorter period has larger utilization
-		sort(P.begin(),P.end());
+		//sort(P.begin(),P.end());
 		sort(U.begin(),U.end(),cmp);
 
 		// set task parameters to node
