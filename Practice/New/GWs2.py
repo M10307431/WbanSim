@@ -69,6 +69,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
     def handle(self):
         global cc2
         global c21
+        global Task
         global CC
         global GW1
         global GW3
@@ -214,16 +215,18 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                                 resp3 = 0
                                 FMW1 = 0
                                 FMW3 = 0
-                                for g1 in GW1:
-                                    if g1['Deadline'] < d['VD'] + GW1[0]['time']:
-                                        resp1 += g1['Remain']
-                                for g3 in GW3:
-                                    if g3['Deadline'] < d['VD'] + GW3[0]['time']:
-                                        resp3 += g3['Remain']
-                                if (resp1+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW1[0]['uti']):
-                                    FMW1 = m*GW1[0]['batt']-(1-m)*GW1[0]['uti']
-                                if (resp3+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW3[0]['uti']):
-                                    FMW3 = m*GW3[0]['batt']-(1-m)*GW3[0]['uti']
+                                if len(GW1):
+                                    for g1 in GW1:
+                                        if g1['Deadline'] < d['VD'] + GW1[0]['time']:
+                                            resp1 += g1['Remain']
+                                    if (resp1+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW1[0]['uti']):
+                                        FMW1 = m*GW1[0]['batt']-(1-m)*GW1[0]['uti']
+                                if len(GW3):
+                                    for g3 in GW3:
+                                        if g3['Deadline'] < d['VD'] + GW3[0]['time']:
+                                            resp3 += g3['Remain']
+                                    if (resp3+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW3[0]['uti']):
+                                        FMW3 = m*GW3[0]['batt']-(1-m)*GW3[0]['uti']
                                 if FMW1 > FMW3 and FMW1 > 0:
                                     d['OFLD'] = 1
                                 elif FMW3 > FMW1 and FMW3 >0:
@@ -376,7 +379,9 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         pass
 
 if __name__=="__main__":
-    Task = []
+    Task =[{"Exe":0.088,"Period":0.2,"Deadline":0,'Arrival':-0.2,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"batt":1.0,"uti":0,"time":0},
+                {"Exe":0.036,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"batt":1.0,"uti":0,"time":0},
+                {"Exe":0.159,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"batt":1.0,"uti":0,"time":0}]
     CC = []
     GW1 = []
     GW3 = []

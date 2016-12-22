@@ -8,7 +8,7 @@ extern int NodeNum;
 extern int HyperPeriod;
 extern int timeTick;
 
-extern const int _traffic;
+extern const float _traffic;
 extern const int offloadTransfer;
 extern const int fogTransfer;
 extern const float speedRatio;	// remoteSpeed / localSpeed
@@ -26,7 +26,7 @@ extern const int cloudp_idle;	// server idle
 extern const int cloudp_actv;	//server active
 //--------Time--------------------------------------------------------
 extern const float t_trans; // wifi trans time (ms)
-
+extern const int proc;
 /*=====================
 	    Policy
 =====================*/

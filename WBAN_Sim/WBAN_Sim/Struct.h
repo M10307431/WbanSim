@@ -7,6 +7,7 @@ extern const float speedRatio;
 extern const int offloadTransfer;
 extern const int fogTransfer;
 extern const int battery;	// 2600mAh
+extern float m;
 /*=================================
 		Structure
 ==================================*/
@@ -94,7 +95,7 @@ struct Result{
 
 	void calculate(){
 		meet_ratio = (float)meet / totalTask;
-		lifetime = 0.23*60*60 / energy;
+		lifetime = 5*battery*60*60 / energy;
 	}
 };
 
@@ -131,7 +132,7 @@ struct Node{
 		speed = 1;
 		batt = 1.0;
 		block = 0;
-		migration_factor = 0.2;		// 1.0 <<---energy------------load--->> 0.0
+		migration_factor = m;		// 1.0 <<---energy------------load--->> 0.0
 		migratWeight = 0.0;
 		admin = 0;
 		CCadm =0;

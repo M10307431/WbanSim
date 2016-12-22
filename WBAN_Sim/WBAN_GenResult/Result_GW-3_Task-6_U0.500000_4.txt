@@ -16,19 +16,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 52.2 126.25
-T1 0 20.3 126.25
-T2 0 17.4 126.25
-T3 0 75.4 126.25
-T4 0 133.4 126.25
-T5 0 124.7 126.25
+T0 0 79.2 136
+T1 0 30.8 136
+T2 0 26.4 136
+T3 0 114.4 136
+T4 0 202.4 136
+T5 0 189.2 136
 GW1
-T0 0 72.5 126.25
-T1 0 60.9 126.25
-T2 0 95.7 126.25
-T3 0 156.6 126.25
-T4 0 136.3 126.25
-T5 0 121.8 126.25
+T0 0 110 136
+T1 0 92.4 136
+T2 0 145.2 136
+T3 0 237.6 136
+T4 0 206.8 136
+T5 0 184.8 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -458,19 +458,19 @@ Total Task : 140
 Meet Task : 128
 Miss Task : 12
 Meet Ratio : 0.914286
-Energy Consumption : 8664.15
+Energy Consumption : 11943.4
 =========== GW_1 ===========
 Total Task : 65
 Meet Task : 57
 Miss Task : 8
 Meet Ratio : 0.876923
-Energy Consumption : 8739.75
+Energy Consumption : 12089
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 001
 -------------
@@ -492,19 +492,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 63.8 126.25
-T1 0 37.7 126.25
-T2 0 60.9 126.25
-T3 0 118.9 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 96.8 136
+T1 0 57.2 136
+T2 0 92.4 136
+T3 0 180.4 136
+T4 0 180.4 136
+T5 0 176 136
 GW1
-T0 0 43.5 126.25
-T1 0 31.9 126.25
-T2 0 20.3 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 48.4 136
+T2 0 30.8 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -1016,19 +1016,19 @@ Total Task : 85
 Meet Task : 81
 Miss Task : 4
 Meet Ratio : 0.952941
-Energy Consumption : 8733
+Energy Consumption : 12076
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8781.6
+Energy Consumption : 12169.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 002
 -------------
@@ -1050,19 +1050,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 55.1 126.25
-T2 0 34.8 126.25
-T3 0 31.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 83.6 136
+T2 0 52.8 136
+T3 0 48.4 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 37.7 126.25
-T1 0 31.9 126.25
-T2 0 20.3 126.25
-T3 0 69.6 126.25
-T4 0 136.3 126.25
-T5 0 130.5 126.25
+T0 0 57.2 136
+T1 0 48.4 136
+T2 0 30.8 136
+T3 0 105.6 136
+T4 0 206.8 136
+T5 0 198 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -1592,19 +1592,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8706
+Energy Consumption : 12024
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 128
 Miss Task : 12
 Meet Ratio : 0.914286
-Energy Consumption : 8657.4
+Energy Consumption : 11930.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 003
 -------------
@@ -1626,19 +1626,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 46.4 126.25
-T1 0 52.2 126.25
-T2 0 37.7 126.25
-T3 0 34.8 126.25
-T4 0 63.8 126.25
-T5 0 121.8 126.25
+T0 0 70.4 136
+T1 0 79.2 136
+T2 0 57.2 136
+T3 0 52.8 136
+T4 0 96.8 136
+T5 0 184.8 136
 GW1
-T0 0 43.5 126.25
-T1 0 29 126.25
-T2 0 23.2 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 118.9 126.25
+T0 0 66 136
+T1 0 44 136
+T2 0 35.2 136
+T3 0 44 136
+T4 0 44 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -2230,19 +2230,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8724.9
+Energy Consumption : 12060.4
 =========== GW_1 ===========
 Total Task : 165
 Meet Task : 165
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8804.55
+Energy Consumption : 12213.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 004
 -------------
@@ -2264,19 +2264,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 23.2 126.25
-T2 0 49.3 126.25
-T3 0 95.7 126.25
-T4 0 124.7 126.25
-T5 0 118.9 126.25
+T0 0 57.2 136
+T1 0 35.2 136
+T2 0 74.8 136
+T3 0 145.2 136
+T4 0 189.2 136
+T5 0 180.4 136
 GW1
-T0 0 60.9 126.25
-T1 0 81.2 126.25
-T2 0 127.6 126.25
-T3 0 121.8 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 123.2 136
+T2 0 193.6 136
+T3 0 184.8 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -2679,19 +2679,19 @@ Total Task : 120
 Meet Task : 112
 Miss Task : 8
 Meet Ratio : 0.933333
-Energy Consumption : 8697.9
+Energy Consumption : 12008.4
 =========== GW_1 ===========
 Total Task : 70
 Meet Task : 61
 Miss Task : 9
 Meet Ratio : 0.871429
-Energy Consumption : 8615.55
+Energy Consumption : 11849.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 005
 -------------
@@ -2713,19 +2713,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 26.1 126.25
-T2 0 26.1 126.25
-T3 0 69.6 126.25
-T4 0 69.6 126.25
-T5 0 66.7 126.25
+T0 0 57.2 136
+T1 0 39.6 136
+T2 0 39.6 136
+T3 0 105.6 136
+T4 0 105.6 136
+T5 0 101.2 136
 GW1
-T0 0 34.8 126.25
-T1 0 29 126.25
-T2 0 55.1 126.25
-T3 0 124.7 126.25
-T4 0 124.7 126.25
-T5 0 124.7 126.25
+T0 0 52.8 136
+T1 0 44 136
+T2 0 83.6 136
+T3 0 189.2 136
+T4 0 189.2 136
+T5 0 189.2 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -3283,19 +3283,19 @@ Total Task : 150
 Meet Task : 141
 Miss Task : 9
 Meet Ratio : 0.94
-Energy Consumption : 8814
+Energy Consumption : 12232
 =========== GW_1 ===========
 Total Task : 115
 Meet Task : 107
 Miss Task : 8
 Meet Ratio : 0.930435
-Energy Consumption : 8658.75
+Energy Consumption : 11933
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 006
 -------------
@@ -3317,19 +3317,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 26.1 126.25
-T2 0 26.1 126.25
-T3 0 14.5 126.25
-T4 0 31.9 126.25
-T5 0 29 126.25
+T0 0 57.2 136
+T1 0 39.6 136
+T2 0 39.6 136
+T3 0 22 136
+T4 0 48.4 136
+T5 0 44 136
 GW1
-T0 0 52.2 126.25
-T1 0 26.1 126.25
-T2 0 66.7 126.25
-T3 0 66.7 126.25
-T4 0 60.9 126.25
-T5 0 121.8 126.25
+T0 0 79.2 136
+T1 0 39.6 136
+T2 0 101.2 136
+T3 0 101.2 136
+T4 0 92.4 136
+T5 0 184.8 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -3987,19 +3987,19 @@ Total Task : 200
 Meet Task : 200
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8716.8
+Energy Consumption : 12044.8
 =========== GW_1 ===========
 Total Task : 115
 Meet Task : 107
 Miss Task : 8
 Meet Ratio : 0.930435
-Energy Consumption : 8706
+Energy Consumption : 12024
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 007
 -------------
@@ -4021,19 +4021,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 60.9 126.25
-T1 0 17.4 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 31.9 126.25
-T5 0 31.9 126.25
+T0 0 92.4 136
+T1 0 26.4 136
+T2 0 22 136
+T3 0 22 136
+T4 0 48.4 136
+T5 0 48.4 136
 GW1
-T0 0 34.8 126.25
-T1 0 26.1 126.25
-T2 0 23.2 126.25
-T3 0 43.5 126.25
-T4 0 78.3 126.25
-T5 0 121.8 126.25
+T0 0 52.8 136
+T1 0 39.6 136
+T2 0 35.2 136
+T3 0 66 136
+T4 0 118.8 136
+T5 0 184.8 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -4775,19 +4775,19 @@ Total Task : 200
 Meet Task : 200
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 147
 Miss Task : 8
 Meet Ratio : 0.948387
-Energy Consumption : 8754.6
+Energy Consumption : 12117.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 008
 -------------
@@ -4809,19 +4809,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 101.5 126.25
-T2 0 78.3 126.25
-T3 0 75.4 126.25
-T4 0 72.5 126.25
-T5 0 130.5 126.25
+T0 0 66 136
+T1 0 154 136
+T2 0 118.8 136
+T3 0 114.4 136
+T4 0 110 136
+T5 0 198 136
 GW1
-T0 0 69.6 126.25
-T1 0 29 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 44 136
+T2 0 88 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -5194,19 +5194,19 @@ Total Task : 85
 Meet Task : 76
 Miss Task : 9
 Meet Ratio : 0.894118
-Energy Consumption : 8662.8
+Energy Consumption : 11940.8
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8722.2
+Energy Consumption : 12055.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 009
 -------------
@@ -5228,19 +5228,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 55.1 126.25
-T2 0 43.5 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 83.6 136
+T2 0 66 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 116 126.25
-T1 0 46.4 126.25
-T2 0 34.8 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 176 136
+T1 0 70.4 136
+T2 0 52.8 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -5652,19 +5652,19 @@ Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8760
+Energy Consumption : 12128
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 85
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8865.3
+Energy Consumption : 12330.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 010
 -------------
@@ -5686,19 +5686,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 113.1 126.25
-T1 0 46.4 126.25
-T2 0 31.9 126.25
-T3 0 63.8 126.25
-T4 0 60.9 126.25
-T5 0 116 126.25
+T0 0 171.6 136
+T1 0 70.4 136
+T2 0 48.4 136
+T3 0 96.8 136
+T4 0 92.4 136
+T5 0 176 136
 GW1
-T0 0 55.1 126.25
-T1 0 23.2 126.25
-T2 0 14.5 126.25
-T3 0 31.9 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 83.6 136
+T1 0 35.2 136
+T2 0 22 136
+T3 0 48.4 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -6244,19 +6244,19 @@ Total Task : 85
 Meet Task : 85
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_1 ===========
 Total Task : 170
 Meet Task : 170
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8770.8
+Energy Consumption : 12148.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 011
 -------------
@@ -6278,19 +6278,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 34.8 126.25
-T1 0 29 126.25
-T2 0 20.3 126.25
-T3 0 37.7 126.25
-T4 0 37.7 126.25
-T5 0 133.4 126.25
+T0 0 52.8 136
+T1 0 44 136
+T2 0 30.8 136
+T3 0 57.2 136
+T4 0 57.2 136
+T5 0 202.4 136
 GW1
-T0 0 63.8 126.25
-T1 0 20.3 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 96.8 136
+T1 0 30.8 136
+T2 0 44 136
+T3 0 44 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -6956,19 +6956,19 @@ Total Task : 165
 Meet Task : 161
 Miss Task : 4
 Meet Ratio : 0.975758
-Energy Consumption : 8778.9
+Energy Consumption : 12164.4
 =========== GW_1 ===========
 Total Task : 150
 Meet Task : 150
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 012
 -------------
@@ -6990,19 +6990,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 20.3 126.25
-T2 0 31.9 126.25
-T3 0 31.9 126.25
-T4 0 58 126.25
-T5 0 118.9 126.25
+T0 0 88 136
+T1 0 30.8 136
+T2 0 48.4 136
+T3 0 48.4 136
+T4 0 88 136
+T5 0 180.4 136
 GW1
-T0 0 43.5 126.25
-T1 0 37.7 126.25
-T2 0 31.9 126.25
-T3 0 60.9 126.25
-T4 0 118.9 126.25
-T5 0 118.9 126.25
+T0 0 66 136
+T1 0 57.2 136
+T2 0 48.4 136
+T3 0 92.4 136
+T4 0 180.4 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -7536,19 +7536,19 @@ Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8750.55
+Energy Consumption : 12109.8
 =========== GW_1 ===========
 Total Task : 120
 Meet Task : 112
 Miss Task : 8
 Meet Ratio : 0.933333
-Energy Consumption : 8700.6
+Energy Consumption : 12013.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 013
 -------------
@@ -7570,19 +7570,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 52.2 126.25
-T1 0 20.3 126.25
-T2 0 87 126.25
-T3 0 66.7 126.25
-T4 0 60.9 126.25
-T5 0 116 126.25
+T0 0 79.2 136
+T1 0 30.8 136
+T2 0 132 136
+T3 0 101.2 136
+T4 0 92.4 136
+T5 0 176 136
 GW1
-T0 0 26.1 126.25
-T1 0 26.1 126.25
-T2 0 26.1 126.25
-T3 0 46.4 126.25
-T4 0 84.1 126.25
-T5 0 136.3 126.25
+T0 0 39.6 136
+T1 0 39.6 136
+T2 0 39.6 136
+T3 0 70.4 136
+T4 0 127.6 136
+T5 0 206.8 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -8142,19 +8142,19 @@ Total Task : 115
 Meet Task : 107
 Miss Task : 8
 Meet Ratio : 0.930435
-Energy Consumption : 8689.8
+Energy Consumption : 11992.8
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 143
 Miss Task : 12
 Meet Ratio : 0.922581
-Energy Consumption : 8701.95
+Energy Consumption : 12016.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 014
 -------------
@@ -8176,19 +8176,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 34.8 126.25
-T1 0 26.1 126.25
-T2 0 49.3 126.25
-T3 0 49.3 126.25
-T4 0 31.9 126.25
-T5 0 127.6 126.25
+T0 0 52.8 136
+T1 0 39.6 136
+T2 0 74.8 136
+T3 0 74.8 136
+T4 0 48.4 136
+T5 0 193.6 136
 GW1
-T0 0 46.4 126.25
-T1 0 20.3 126.25
-T2 0 43.5 126.25
-T3 0 72.5 126.25
-T4 0 142.1 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 30.8 136
+T2 0 66 136
+T3 0 110 136
+T4 0 215.6 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -8742,19 +8742,19 @@ Total Task : 145
 Meet Task : 137
 Miss Task : 8
 Meet Ratio : 0.944828
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_1 ===========
 Total Task : 120
 Meet Task : 112
 Miss Task : 8
 Meet Ratio : 0.933333
-Energy Consumption : 8666.85
+Energy Consumption : 11948.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 015
 -------------
@@ -8776,19 +8776,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 20.3 126.25
-T2 0 34.8 126.25
-T3 0 31.9 126.25
-T4 0 63.8 126.25
-T5 0 121.8 126.25
+T0 0 83.6 136
+T1 0 30.8 136
+T2 0 52.8 136
+T3 0 48.4 136
+T4 0 96.8 136
+T5 0 184.8 136
 GW1
-T0 0 133.4 126.25
-T1 0 63.8 126.25
-T2 0 63.8 126.25
-T3 0 121.8 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 202.4 136
+T1 0 96.8 136
+T2 0 96.8 136
+T3 0 184.8 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -9200,19 +9200,19 @@ Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8741.1
+Energy Consumption : 12091.6
 =========== GW_1 ===========
 Total Task : 55
 Meet Task : 51
 Miss Task : 4
 Meet Ratio : 0.927273
-Energy Consumption : 8800.5
+Energy Consumption : 12206
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 016
 -------------
@@ -9234,19 +9234,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 60.9 126.25
-T1 0 23.2 126.25
-T2 0 14.5 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 35.2 136
+T2 0 22 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 52.2 126.25
-T1 0 55.1 126.25
-T2 0 34.8 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 79.2 136
+T1 0 83.6 136
+T2 0 52.8 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -9770,19 +9770,19 @@ Total Task : 145
 Meet Task : 133
 Miss Task : 12
 Meet Ratio : 0.917241
-Energy Consumption : 8776.2
+Energy Consumption : 12159.2
 =========== GW_1 ===========
 Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8727.6
+Energy Consumption : 12065.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 017
 -------------
@@ -9804,19 +9804,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 29 126.25
-T2 0 46.4 126.25
-T3 0 40.6 126.25
-T4 0 124.7 126.25
-T5 0 121.8 126.25
+T0 0 57.2 136
+T1 0 44 136
+T2 0 70.4 136
+T3 0 61.6 136
+T4 0 189.2 136
+T5 0 184.8 136
 GW1
-T0 0 46.4 126.25
-T1 0 31.9 126.25
-T2 0 31.9 126.25
-T3 0 63.8 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 48.4 136
+T2 0 48.4 136
+T3 0 96.8 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -10336,19 +10336,19 @@ Total Task : 130
 Meet Task : 122
 Miss Task : 8
 Meet Ratio : 0.938462
-Energy Consumption : 8707.35
+Energy Consumption : 12026.6
 =========== GW_1 ===========
 Total Task : 120
 Meet Task : 112
 Miss Task : 8
 Meet Ratio : 0.933333
-Energy Consumption : 8652
+Energy Consumption : 11920
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 018
 -------------
@@ -10370,19 +10370,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 58 126.25
-T2 0 104.4 126.25
-T3 0 145 126.25
-T4 0 124.7 126.25
-T5 0 118.9 126.25
+T0 0 57.2 136
+T1 0 88 136
+T2 0 158.4 136
+T3 0 220 136
+T4 0 189.2 136
+T5 0 180.4 136
 GW1
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 14.5 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 22 136
+T3 0 44 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -10923,19 +10923,19 @@ Total Task : 85
 Meet Task : 76
 Miss Task : 9
 Meet Ratio : 0.894118
-Energy Consumption : 8734.35
+Energy Consumption : 12078.6
 =========== GW_1 ===========
 Total Task : 170
 Meet Task : 170
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 019
 -------------
@@ -10957,19 +10957,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 40.6 126.25
-T2 0 72.5 126.25
-T3 0 145 126.25
-T4 0 127.6 126.25
-T5 0 121.8 126.25
+T0 0 83.6 136
+T1 0 61.6 136
+T2 0 110 136
+T3 0 220 136
+T4 0 193.6 136
+T5 0 184.8 136
 GW1
-T0 0 46.4 126.25
-T1 0 26.1 126.25
-T2 0 20.3 126.25
-T3 0 66.7 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 39.6 136
+T2 0 30.8 136
+T3 0 101.2 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -11457,19 +11457,19 @@ Total Task : 85
 Meet Task : 80
 Miss Task : 5
 Meet Ratio : 0.941176
-Energy Consumption : 8745.15
+Energy Consumption : 12099.4
 =========== GW_1 ===========
 Total Task : 145
 Meet Task : 137
 Miss Task : 8
 Meet Ratio : 0.944828
-Energy Consumption : 8703.3
+Energy Consumption : 12018.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 020
 -------------
@@ -11491,19 +11491,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 78.3 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 118.8 136
+T2 0 88 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 37.7 126.25
-T1 0 34.8 126.25
-T2 0 92.8 126.25
-T3 0 60.9 126.25
-T4 0 121.8 126.25
-T5 0 116 126.25
+T0 0 57.2 136
+T1 0 52.8 136
+T2 0 140.8 136
+T3 0 92.4 136
+T4 0 184.8 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -11937,19 +11937,19 @@ Total Task : 95
 Meet Task : 86
 Miss Task : 9
 Meet Ratio : 0.905263
-Energy Consumption : 8730.3
+Energy Consumption : 12070.8
 =========== GW_1 ===========
 Total Task : 110
 Meet Task : 102
 Miss Task : 8
 Meet Ratio : 0.927273
-Energy Consumption : 8689.8
+Energy Consumption : 11992.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 021
 -------------
@@ -11971,19 +11971,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 34.8 126.25
-T2 0 20.3 126.25
-T3 0 31.9 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 57.2 136
+T1 0 52.8 136
+T2 0 30.8 136
+T3 0 48.4 136
+T4 0 44 136
+T5 0 88 136
 GW1
-T0 0 66.7 126.25
-T1 0 34.8 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 101.2 136
+T1 0 52.8 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -12579,19 +12579,19 @@ Total Task : 170
 Meet Task : 170
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8770.8
+Energy Consumption : 12148.8
 =========== GW_1 ===========
 Total Task : 110
 Meet Task : 101
 Miss Task : 9
 Meet Ratio : 0.918182
-Energy Consumption : 8791.05
+Energy Consumption : 12187.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 022
 -------------
@@ -12613,19 +12613,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 52.2 126.25
-T2 0 87 126.25
-T3 0 121.8 126.25
-T4 0 121.8 126.25
-T5 0 118.9 126.25
+T0 0 74.8 136
+T1 0 79.2 136
+T2 0 132 136
+T3 0 184.8 136
+T4 0 184.8 136
+T5 0 180.4 136
 GW1
-T0 0 66.7 126.25
-T1 0 17.4 126.25
-T2 0 31.9 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 26.4 136
+T2 0 48.4 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -13093,19 +13093,19 @@ Total Task : 85
 Meet Task : 80
 Miss Task : 5
 Meet Ratio : 0.941176
-Energy Consumption : 8757.3
+Energy Consumption : 12122.8
 =========== GW_1 ===========
 Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8824.8
+Energy Consumption : 12252.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 023
 -------------
@@ -13127,19 +13127,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 72.5 126.25
-T1 0 69.6 126.25
-T2 0 40.6 126.25
-T3 0 34.8 126.25
-T4 0 69.6 126.25
-T5 0 63.8 126.25
+T0 0 110 136
+T1 0 105.6 136
+T2 0 61.6 136
+T3 0 52.8 136
+T4 0 105.6 136
+T5 0 96.8 136
 GW1
-T0 0 95.7 126.25
-T1 0 49.3 126.25
-T2 0 78.3 126.25
-T3 0 75.4 126.25
-T4 0 66.7 126.25
-T5 0 118.9 126.25
+T0 0 145.2 136
+T1 0 74.8 136
+T2 0 118.8 136
+T3 0 114.4 136
+T4 0 101.2 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -13525,19 +13525,19 @@ Total Task : 100
 Meet Task : 100
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_1 ===========
 Total Task : 75
 Meet Task : 75
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8858.55
+Energy Consumption : 12317.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 024
 -------------
@@ -13559,19 +13559,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 130.5 126.25
-T1 0 34.8 126.25
-T2 0 63.8 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 198 136
+T1 0 52.8 136
+T2 0 96.8 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 60.9 126.25
-T1 0 17.4 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 29 126.25
-T5 0 29 126.25
+T0 0 92.4 136
+T1 0 26.4 136
+T2 0 22 136
+T3 0 22 136
+T4 0 44 136
+T5 0 44 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -14157,19 +14157,19 @@ Total Task : 75
 Meet Task : 75
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8865.3
+Energy Consumption : 12330.8
 =========== GW_1 ===========
 Total Task : 200
 Meet Task : 200
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8743.8
+Energy Consumption : 12096.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 025
 -------------
@@ -14191,19 +14191,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 40.6 126.25
-T1 0 26.1 126.25
-T2 0 40.6 126.25
-T3 0 81.2 126.25
-T4 0 75.4 126.25
-T5 0 66.7 126.25
+T0 0 61.6 136
+T1 0 39.6 136
+T2 0 61.6 136
+T3 0 123.2 136
+T4 0 114.4 136
+T5 0 101.2 136
 GW1
-T0 0 49.3 126.25
-T1 0 43.5 126.25
-T2 0 87 126.25
-T3 0 136.3 126.25
-T4 0 136.3 126.25
-T5 0 127.6 126.25
+T0 0 74.8 136
+T1 0 66 136
+T2 0 132 136
+T3 0 206.8 136
+T4 0 206.8 136
+T5 0 193.6 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -14655,19 +14655,19 @@ Total Task : 130
 Meet Task : 112
 Miss Task : 18
 Meet Ratio : 0.861538
-Energy Consumption : 8695.2
+Energy Consumption : 12003.2
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 80
 Miss Task : 5
 Meet Ratio : 0.941176
-Energy Consumption : 8750.55
+Energy Consumption : 12109.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 026
 -------------
@@ -14689,19 +14689,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 26.1 126.25
-T2 0 20.3 126.25
-T3 0 14.5 126.25
-T4 0 31.9 126.25
-T5 0 58 126.25
+T0 0 74.8 136
+T1 0 39.6 136
+T2 0 30.8 136
+T3 0 22 136
+T4 0 48.4 136
+T5 0 88 136
 GW1
-T0 0 37.7 126.25
-T1 0 23.2 126.25
-T2 0 43.5 126.25
-T3 0 37.7 126.25
-T4 0 78.3 126.25
-T5 0 145 126.25
+T0 0 57.2 136
+T1 0 35.2 136
+T2 0 66 136
+T3 0 57.2 136
+T4 0 118.8 136
+T5 0 220 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -15379,19 +15379,19 @@ Total Task : 190
 Meet Task : 190
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8824.8
+Energy Consumption : 12252.8
 =========== GW_1 ===========
 Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8684.4
+Energy Consumption : 11982.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 027
 -------------
@@ -15413,19 +15413,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 81.2 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 123.2 136
+T2 0 88 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 31.9 126.25
-T3 0 63.8 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 48.4 136
+T3 0 96.8 136
+T4 0 88 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -15907,19 +15907,19 @@ Total Task : 95
 Meet Task : 86
 Miss Task : 9
 Meet Ratio : 0.905263
-Energy Consumption : 8750.55
+Energy Consumption : 12109.8
 =========== GW_1 ===========
 Total Task : 130
 Meet Task : 121
 Miss Task : 9
 Meet Ratio : 0.930769
-Energy Consumption : 8839.65
+Energy Consumption : 12281.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 028
 -------------
@@ -15941,19 +15941,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 127.6 126.25
-T1 0 37.7 126.25
-T2 0 31.9 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 193.6 136
+T1 0 57.2 136
+T2 0 48.4 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 60.9 126.25
-T1 0 92.8 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 140.8 136
+T2 0 88 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -16335,19 +16335,19 @@ Total Task : 95
 Meet Task : 95
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_1 ===========
 Total Task : 80
 Meet Task : 76
 Miss Task : 4
 Meet Ratio : 0.95
-Energy Consumption : 8738.4
+Energy Consumption : 12086.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 029
 -------------
@@ -16369,19 +16369,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 40.6 126.25
-T2 0 34.8 126.25
-T3 0 29 126.25
-T4 0 60.9 126.25
-T5 0 58 126.25
+T0 0 88 136
+T1 0 61.6 136
+T2 0 52.8 136
+T3 0 44 136
+T4 0 92.4 136
+T5 0 88 136
 GW1
-T0 0 46.4 126.25
-T1 0 55.1 126.25
-T2 0 84.1 126.25
-T3 0 145 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 83.6 136
+T2 0 127.6 136
+T3 0 220 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -16823,19 +16823,19 @@ Total Task : 120
 Meet Task : 120
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8811.3
+Energy Consumption : 12226.8
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 80
 Miss Task : 5
 Meet Ratio : 0.941176
-Energy Consumption : 8751.9
+Energy Consumption : 12112.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 030
 -------------
@@ -16857,19 +16857,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 156.6 126.25
-T1 0 121.8 126.25
-T2 0 203 126.25
-T3 0 136.3 126.25
-T4 0 133.4 126.25
-T5 0 118.9 126.25
+T0 0 237.6 136
+T1 0 184.8 136
+T2 0 308 136
+T3 0 206.8 136
+T4 0 202.4 136
+T5 0 180.4 136
 GW1
-T0 0 49.3 126.25
-T1 0 40.6 126.25
-T2 0 78.3 126.25
-T3 0 75.4 126.25
-T4 0 145 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 61.6 136
+T2 0 118.8 136
+T3 0 114.4 136
+T4 0 220 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -17161,19 +17161,19 @@ Total Task : 40
 Meet Task : 40
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8878.8
+Energy Consumption : 12356.8
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8733
+Energy Consumption : 12076
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 031
 -------------
@@ -17195,19 +17195,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 66.7 126.25
-T1 0 14.5 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 22 136
+T2 0 22 136
+T3 0 22 136
+T4 0 180.4 136
+T5 0 176 136
 GW1
-T0 0 87 126.25
-T1 0 72.5 126.25
-T2 0 37.7 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 132 136
+T1 0 110 136
+T2 0 57.2 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -17741,19 +17741,19 @@ Total Task : 170
 Meet Task : 154
 Miss Task : 16
 Meet Ratio : 0.905882
-Energy Consumption : 8701.95
+Energy Consumption : 12016.2
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 85
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 032
 -------------
@@ -17775,19 +17775,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 63.8 126.25
-T1 0 20.3 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 96.8 136
+T1 0 30.8 136
+T2 0 44 136
+T3 0 44 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 43.5 126.25
-T1 0 23.2 126.25
-T2 0 23.2 126.25
-T3 0 43.5 126.25
-T4 0 60.9 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 35.2 136
+T2 0 35.2 136
+T3 0 66 136
+T4 0 92.4 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -18385,19 +18385,19 @@ Total Task : 130
 Meet Task : 122
 Miss Task : 8
 Meet Ratio : 0.938462
-Energy Consumption : 8695.2
+Energy Consumption : 12003.2
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8800.5
+Energy Consumption : 12206
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 033
 -------------
@@ -18419,19 +18419,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 69.6 126.25
-T2 0 40.6 126.25
-T3 0 69.6 126.25
-T4 0 127.6 126.25
-T5 0 127.6 126.25
+T0 0 57.2 136
+T1 0 105.6 136
+T2 0 61.6 136
+T3 0 105.6 136
+T4 0 193.6 136
+T5 0 193.6 136
 GW1
-T0 0 69.6 126.25
-T1 0 29 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 44 136
+T2 0 44 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -18859,19 +18859,19 @@ Total Task : 100
 Meet Task : 96
 Miss Task : 4
 Meet Ratio : 0.96
-Energy Consumption : 8781.6
+Energy Consumption : 12169.6
 =========== GW_1 ===========
 Total Task : 100
 Meet Task : 96
 Miss Task : 4
 Meet Ratio : 0.96
-Energy Consumption : 8722.2
+Energy Consumption : 12055.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 034
 -------------
@@ -18893,19 +18893,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 40.6 126.25
-T1 0 58 126.25
-T2 0 43.5 126.25
-T3 0 75.4 126.25
-T4 0 66.7 126.25
-T5 0 116 126.25
+T0 0 61.6 136
+T1 0 88 136
+T2 0 66 136
+T3 0 114.4 136
+T4 0 101.2 136
+T5 0 176 136
 GW1
-T0 0 78.3 126.25
-T1 0 72.5 126.25
-T2 0 49.3 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 118.8 136
+T1 0 110 136
+T2 0 74.8 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -19307,19 +19307,19 @@ Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8762.7
+Energy Consumption : 12133.2
 =========== GW_1 ===========
 Total Task : 80
 Meet Task : 80
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8878.8
+Energy Consumption : 12356.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 035
 -------------
@@ -19341,19 +19341,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 23.2 126.25
-T2 0 17.4 126.25
-T3 0 14.5 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 83.6 136
+T1 0 35.2 136
+T2 0 26.4 136
+T3 0 22 136
+T4 0 180.4 136
+T5 0 176 136
 GW1
-T0 0 55.1 126.25
-T1 0 29 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 83.6 136
+T1 0 44 136
+T2 0 44 136
+T3 0 44 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -19969,19 +19969,19 @@ Total Task : 170
 Meet Task : 158
 Miss Task : 12
 Meet Ratio : 0.929412
-Energy Consumption : 8701.95
+Energy Consumption : 12016.2
 =========== GW_1 ===========
 Total Task : 130
 Meet Task : 122
 Miss Task : 8
 Meet Ratio : 0.938462
-Energy Consumption : 8695.2
+Energy Consumption : 12003.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 036
 -------------
@@ -20003,19 +20003,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 66.7 126.25
-T1 0 17.4 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 26.4 136
+T2 0 44 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 63.8 126.25
-T1 0 14.5 126.25
-T2 0 14.5 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 118.9 126.25
+T0 0 96.8 136
+T1 0 22 136
+T2 0 22 136
+T3 0 44 136
+T4 0 44 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -20647,19 +20647,19 @@ Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8803.2
+Energy Consumption : 12211.2
 =========== GW_1 ===========
 Total Task : 165
 Meet Task : 165
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8750.55
+Energy Consumption : 12109.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 037
 -------------
@@ -20681,19 +20681,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 40.6 126.25
-T2 0 34.8 126.25
-T3 0 63.8 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 61.6 136
+T2 0 52.8 136
+T3 0 96.8 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 49.3 126.25
-T1 0 29 126.25
-T2 0 69.6 126.25
-T3 0 60.9 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 44 136
+T2 0 105.6 136
+T3 0 92.4 136
+T4 0 180.4 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -21147,19 +21147,19 @@ Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8716.8
+Energy Consumption : 12044.8
 =========== GW_1 ===========
 Total Task : 110
 Meet Task : 102
 Miss Task : 8
 Meet Ratio : 0.927273
-Energy Consumption : 8672.25
+Energy Consumption : 11959
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 038
 -------------
@@ -21181,19 +21181,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 69.6 126.25
-T1 0 31.9 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 48.4 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 17.4 126.25
-T3 0 58 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 26.4 136
+T3 0 88 136
+T4 0 180.4 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -21703,19 +21703,19 @@ Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8749.2
+Energy Consumption : 12107.2
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 128
 Miss Task : 12
 Meet Ratio : 0.914286
-Energy Consumption : 8674.95
+Energy Consumption : 11964.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 039
 -------------
@@ -21737,19 +21737,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 46.4 126.25
-T2 0 31.9 126.25
-T3 0 31.9 126.25
-T4 0 60.9 126.25
-T5 0 58 126.25
+T0 0 83.6 136
+T1 0 70.4 136
+T2 0 48.4 136
+T3 0 48.4 136
+T4 0 92.4 136
+T5 0 88 136
 GW1
-T0 0 37.7 126.25
-T1 0 31.9 126.25
-T2 0 20.3 126.25
-T3 0 20.3 126.25
-T4 0 60.9 126.25
-T5 0 58 126.25
+T0 0 57.2 136
+T1 0 48.4 136
+T2 0 30.8 136
+T3 0 30.8 136
+T4 0 92.4 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -22385,19 +22385,19 @@ Total Task : 120
 Meet Task : 120
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8811.3
+Energy Consumption : 12226.8
 =========== GW_1 ===========
 Total Task : 180
 Meet Task : 180
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8811.3
+Energy Consumption : 12226.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 040
 -------------
@@ -22419,19 +22419,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 29 126.25
-T1 0 118.9 126.25
-T2 0 95.7 126.25
-T3 0 87 126.25
-T4 0 174 126.25
-T5 0 116 126.25
+T0 0 44 136
+T1 0 180.4 136
+T2 0 145.2 136
+T3 0 132 136
+T4 0 264 136
+T5 0 176 136
 GW1
-T0 0 40.6 126.25
-T1 0 31.9 126.25
-T2 0 78.3 126.25
-T3 0 69.6 126.25
-T4 0 69.6 126.25
-T5 0 118.9 126.25
+T0 0 61.6 136
+T1 0 48.4 136
+T2 0 118.8 136
+T3 0 105.6 136
+T4 0 105.6 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -22835,19 +22835,19 @@ Total Task : 80
 Meet Task : 66
 Miss Task : 14
 Meet Ratio : 0.825
-Energy Consumption : 8635.8
+Energy Consumption : 11888.8
 =========== GW_1 ===========
 Total Task : 115
 Meet Task : 107
 Miss Task : 8
 Meet Ratio : 0.930435
-Energy Consumption : 8710.05
+Energy Consumption : 12031.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 041
 -------------
@@ -22869,19 +22869,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 60.9 126.25
-T1 0 81.2 126.25
-T2 0 63.8 126.25
-T3 0 60.9 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 123.2 136
+T2 0 96.8 136
+T3 0 92.4 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 52.2 126.25
-T1 0 20.3 126.25
-T2 0 17.4 126.25
-T3 0 34.8 126.25
-T4 0 60.9 126.25
-T5 0 118.9 126.25
+T0 0 79.2 136
+T1 0 30.8 136
+T2 0 26.4 136
+T3 0 52.8 136
+T4 0 92.4 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -23383,19 +23383,19 @@ Total Task : 80
 Meet Task : 76
 Miss Task : 4
 Meet Ratio : 0.95
-Energy Consumption : 8724.9
+Energy Consumption : 12060.4
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8737.05
+Energy Consumption : 12083.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 042
 -------------
@@ -23417,19 +23417,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 31.9 126.25
-T2 0 20.3 126.25
-T3 0 17.4 126.25
-T4 0 31.9 126.25
-T5 0 29 126.25
+T0 0 57.2 136
+T1 0 48.4 136
+T2 0 30.8 136
+T3 0 26.4 136
+T4 0 48.4 136
+T5 0 44 136
 GW1
-T0 0 69.6 126.25
-T1 0 14.5 126.25
-T2 0 14.5 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 22 136
+T2 0 22 136
+T3 0 44 136
+T4 0 44 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -24195,19 +24195,19 @@ Total Task : 200
 Meet Task : 200
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8770.8
+Energy Consumption : 12148.8
 =========== GW_1 ===========
 Total Task : 165
 Meet Task : 165
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 043
 -------------
@@ -24229,19 +24229,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 55.1 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 83.6 136
+T1 0 83.6 136
+T2 0 88 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 40.6 126.25
-T1 0 34.8 126.25
-T2 0 37.7 126.25
-T3 0 31.9 126.25
-T4 0 60.9 126.25
-T5 0 58 126.25
+T0 0 61.6 136
+T1 0 52.8 136
+T2 0 57.2 136
+T3 0 48.4 136
+T4 0 92.4 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -24733,19 +24733,19 @@ Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8722.2
+Energy Consumption : 12055.2
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 140
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8811.3
+Energy Consumption : 12226.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 044
 -------------
@@ -24767,19 +24767,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 46.4 126.25
-T2 0 63.8 126.25
-T3 0 127.6 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 70.4 136
+T2 0 96.8 136
+T3 0 193.6 136
+T4 0 180.4 136
+T5 0 176 136
 GW1
-T0 0 84.1 126.25
-T1 0 101.5 126.25
-T2 0 101.5 126.25
-T3 0 69.6 126.25
-T4 0 66.7 126.25
-T5 0 127.6 126.25
+T0 0 127.6 136
+T1 0 154 136
+T2 0 154 136
+T3 0 105.6 136
+T4 0 101.2 136
+T5 0 193.6 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -25111,19 +25111,19 @@ Total Task : 85
 Meet Task : 80
 Miss Task : 5
 Meet Ratio : 0.941176
-Energy Consumption : 8746.5
+Energy Consumption : 12102
 =========== GW_1 ===========
 Total Task : 65
 Meet Task : 65
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8865.3
+Energy Consumption : 12330.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 045
 -------------
@@ -25145,19 +25145,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 60.9 126.25
-T2 0 37.7 126.25
-T3 0 66.7 126.25
-T4 0 130.5 126.25
-T5 0 118.9 126.25
+T0 0 66 136
+T1 0 92.4 136
+T2 0 57.2 136
+T3 0 101.2 136
+T4 0 198 136
+T5 0 180.4 136
 GW1
-T0 0 72.5 126.25
-T1 0 69.6 126.25
-T2 0 55.1 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 110 136
+T1 0 105.6 136
+T2 0 83.6 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -25549,19 +25549,19 @@ Total Task : 100
 Meet Task : 96
 Miss Task : 4
 Meet Ratio : 0.96
-Energy Consumption : 8743.8
+Energy Consumption : 12096.8
 =========== GW_1 ===========
 Total Task : 80
 Meet Task : 80
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 046
 -------------
@@ -25583,19 +25583,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 89.9 126.25
-T1 0 58 126.25
-T2 0 98.6 126.25
-T3 0 116 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 136.4 136
+T1 0 88 136
+T2 0 149.6 136
+T3 0 176 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 37.7 126.25
-T1 0 26.1 126.25
-T2 0 43.5 126.25
-T3 0 43.5 126.25
-T4 0 34.8 126.25
-T5 0 60.9 126.25
+T0 0 57.2 136
+T1 0 39.6 136
+T2 0 66 136
+T3 0 66 136
+T4 0 52.8 136
+T5 0 92.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -26061,19 +26061,19 @@ Total Task : 65
 Meet Task : 61
 Miss Task : 4
 Meet Ratio : 0.938462
-Energy Consumption : 8824.8
+Energy Consumption : 12252.8
 =========== GW_1 ===========
 Total Task : 150
 Meet Task : 150
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8811.3
+Energy Consumption : 12226.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 047
 -------------
@@ -26095,19 +26095,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 69.6 126.25
-T1 0 29 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 105.6 136
+T1 0 44 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 60.9 126.25
-T1 0 17.4 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 124.7 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 26.4 136
+T2 0 22 136
+T3 0 22 136
+T4 0 189.2 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -26691,19 +26691,19 @@ Total Task : 110
 Meet Task : 101
 Miss Task : 9
 Meet Ratio : 0.918182
-Energy Consumption : 8803.2
+Energy Consumption : 12211.2
 =========== GW_1 ===========
 Total Task : 170
 Meet Task : 154
 Miss Task : 16
 Meet Ratio : 0.905882
-Energy Consumption : 8656.05
+Energy Consumption : 11927.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 048
 -------------
@@ -26725,19 +26725,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 34.8 126.25
-T1 0 34.8 126.25
-T2 0 23.2 126.25
-T3 0 34.8 126.25
-T4 0 60.9 126.25
-T5 0 118.9 126.25
+T0 0 52.8 136
+T1 0 52.8 136
+T2 0 35.2 136
+T3 0 52.8 136
+T4 0 92.4 136
+T5 0 180.4 136
 GW1
-T0 0 46.4 126.25
-T1 0 20.3 126.25
-T2 0 40.6 126.25
-T3 0 150.8 126.25
-T4 0 136.3 126.25
-T5 0 130.5 126.25
+T0 0 70.4 136
+T1 0 30.8 136
+T2 0 61.6 136
+T3 0 228.8 136
+T4 0 206.8 136
+T5 0 198 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -27305,19 +27305,19 @@ Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8785.65
+Energy Consumption : 12177.4
 =========== GW_1 ===========
 Total Task : 115
 Meet Task : 106
 Miss Task : 9
 Meet Ratio : 0.921739
-Energy Consumption : 8668.2
+Energy Consumption : 11951.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 049
 -------------
@@ -27339,19 +27339,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 60.9 126.25
-T1 0 34.8 126.25
-T2 0 34.8 126.25
-T3 0 31.9 126.25
-T4 0 58 126.25
-T5 0 118.9 126.25
+T0 0 92.4 136
+T1 0 52.8 136
+T2 0 52.8 136
+T3 0 48.4 136
+T4 0 88 136
+T5 0 180.4 136
 GW1
-T0 0 40.6 126.25
-T1 0 34.8 126.25
-T2 0 34.8 126.25
-T3 0 34.8 126.25
-T4 0 136.3 126.25
-T5 0 127.6 126.25
+T0 0 61.6 136
+T1 0 52.8 136
+T2 0 52.8 136
+T3 0 52.8 136
+T4 0 206.8 136
+T5 0 193.6 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -27869,19 +27869,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8739.75
+Energy Consumption : 12089
 =========== GW_1 ===========
 Total Task : 130
 Meet Task : 122
 Miss Task : 8
 Meet Ratio : 0.938462
-Energy Consumption : 8731.65
+Energy Consumption : 12073.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 050
 -------------
@@ -27903,19 +27903,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 52.2 126.25
-T1 0 52.2 126.25
-T2 0 37.7 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 79.2 136
+T1 0 79.2 136
+T2 0 57.2 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 31.9 126.25
-T1 0 52.2 126.25
-T2 0 104.4 126.25
-T3 0 197.2 126.25
-T4 0 130.5 126.25
-T5 0 130.5 126.25
+T0 0 48.4 136
+T1 0 79.2 136
+T2 0 158.4 136
+T3 0 299.2 136
+T4 0 198 136
+T5 0 198 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -28318,19 +28318,19 @@ Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8741.1
+Energy Consumption : 12091.6
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 72
 Miss Task : 13
 Meet Ratio : 0.847059
-Energy Consumption : 8639.85
+Energy Consumption : 11896.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 051
 -------------
@@ -28352,19 +28352,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 17.4 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 26.4 136
+T3 0 44 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 55.1 126.25
-T1 0 40.6 126.25
-T2 0 34.8 126.25
-T3 0 69.6 126.25
-T4 0 66.7 126.25
-T5 0 116 126.25
+T0 0 83.6 136
+T1 0 61.6 136
+T2 0 52.8 136
+T3 0 105.6 136
+T4 0 101.2 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -28926,19 +28926,19 @@ Total Task : 160
 Meet Task : 160
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_1 ===========
 Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8735.7
+Energy Consumption : 12081.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 052
 -------------
@@ -28960,19 +28960,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 34.8 126.25
-T2 0 52.2 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 57.2 136
+T1 0 52.8 136
+T2 0 79.2 136
+T3 0 44 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 46.4 126.25
-T1 0 29 126.25
-T2 0 37.7 126.25
-T3 0 69.6 126.25
-T4 0 66.7 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 44 136
+T2 0 57.2 136
+T3 0 105.6 136
+T4 0 101.2 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -29530,19 +29530,19 @@ Total Task : 140
 Meet Task : 140
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8724.9
+Energy Consumption : 12060.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 053
 -------------
@@ -29564,19 +29564,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 20.3 126.25
-T2 0 43.5 126.25
-T3 0 37.7 126.25
-T4 0 121.8 126.25
-T5 0 121.8 126.25
+T0 0 74.8 136
+T1 0 30.8 136
+T2 0 66 136
+T3 0 57.2 136
+T4 0 184.8 136
+T5 0 184.8 136
 GW1
-T0 0 43.5 126.25
-T1 0 46.4 126.25
-T2 0 43.5 126.25
-T3 0 37.7 126.25
-T4 0 34.8 126.25
-T5 0 66.7 126.25
+T0 0 66 136
+T1 0 70.4 136
+T2 0 66 136
+T3 0 57.2 136
+T4 0 52.8 136
+T5 0 101.2 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -30124,19 +30124,19 @@ Total Task : 130
 Meet Task : 122
 Miss Task : 8
 Meet Ratio : 0.938462
-Energy Consumption : 8695.2
+Energy Consumption : 12003.2
 =========== GW_1 ===========
 Total Task : 130
 Meet Task : 130
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 054
 -------------
@@ -30158,19 +30158,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 17.4 126.25
-T2 0 37.7 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 118.9 126.25
+T0 0 88 136
+T1 0 26.4 136
+T2 0 57.2 136
+T3 0 88 136
+T4 0 88 136
+T5 0 180.4 136
 GW1
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 14.5 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 22 136
+T3 0 44 136
+T4 0 88 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -30772,19 +30772,19 @@ Total Task : 125
 Meet Task : 120
 Miss Task : 5
 Meet Ratio : 0.96
-Energy Consumption : 8669.55
+Energy Consumption : 11953.8
 =========== GW_1 ===========
 Total Task : 160
 Meet Task : 160
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 055
 -------------
@@ -30806,19 +30806,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 31.9 126.25
-T2 0 46.4 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 57.2 136
+T1 0 48.4 136
+T2 0 70.4 136
+T3 0 44 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 69.6 126.25
-T1 0 14.5 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 105.6 136
+T1 0 22 136
+T2 0 22 136
+T3 0 22 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -31514,19 +31514,19 @@ Total Task : 140
 Meet Task : 140
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8743.8
+Energy Consumption : 12096.8
 =========== GW_1 ===========
 Total Task : 190
 Meet Task : 190
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 056
 -------------
@@ -31548,19 +31548,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 52.2 126.25
-T1 0 55.1 126.25
-T2 0 34.8 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 118.9 126.25
+T0 0 79.2 136
+T1 0 83.6 136
+T2 0 52.8 136
+T3 0 44 136
+T4 0 88 136
+T5 0 180.4 136
 GW1
-T0 0 66.7 126.25
-T1 0 14.5 126.25
-T2 0 60.9 126.25
-T3 0 60.9 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 22 136
+T2 0 92.4 136
+T3 0 92.4 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -32034,19 +32034,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8734.35
+Energy Consumption : 12078.6
 =========== GW_1 ===========
 Total Task : 110
 Meet Task : 102
 Miss Task : 8
 Meet Ratio : 0.927273
-Energy Consumption : 8673.6
+Energy Consumption : 11961.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 057
 -------------
@@ -32068,19 +32068,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 46.4 126.25
-T1 0 31.9 126.25
-T2 0 34.8 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 48.4 136
+T2 0 52.8 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 40.6 126.25
-T1 0 63.8 126.25
-T2 0 46.4 126.25
-T3 0 63.8 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 61.6 136
+T1 0 96.8 136
+T2 0 70.4 136
+T3 0 96.8 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -32592,19 +32592,19 @@ Total Task : 135
 Meet Task : 131
 Miss Task : 4
 Meet Ratio : 0.97037
-Energy Consumption : 8749.2
+Energy Consumption : 12107.2
 =========== GW_1 ===========
 Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8749.2
+Energy Consumption : 12107.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 058
 -------------
@@ -32626,19 +32626,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 81.2 126.25
-T1 0 49.3 126.25
-T2 0 46.4 126.25
-T3 0 78.3 126.25
-T4 0 72.5 126.25
-T5 0 124.7 126.25
+T0 0 123.2 136
+T1 0 74.8 136
+T2 0 70.4 136
+T3 0 118.8 136
+T4 0 110 136
+T5 0 189.2 136
 GW1
-T0 0 69.6 126.25
-T1 0 14.5 126.25
-T2 0 14.5 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 22 136
+T2 0 22 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -33112,19 +33112,19 @@ Total Task : 85
 Meet Task : 85
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8845.05
+Energy Consumption : 12291.8
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 128
 Miss Task : 12
 Meet Ratio : 0.914286
-Energy Consumption : 8668.2
+Energy Consumption : 11951.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 059
 -------------
@@ -33146,19 +33146,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 26.1 126.25
-T2 0 17.4 126.25
-T3 0 17.4 126.25
-T4 0 31.9 126.25
-T5 0 127.6 126.25
+T0 0 66 136
+T1 0 39.6 136
+T2 0 26.4 136
+T3 0 26.4 136
+T4 0 48.4 136
+T5 0 193.6 136
 GW1
-T0 0 52.2 126.25
-T1 0 20.3 126.25
-T2 0 40.6 126.25
-T3 0 37.7 126.25
-T4 0 60.9 126.25
-T5 0 58 126.25
+T0 0 79.2 136
+T1 0 30.8 136
+T2 0 61.6 136
+T3 0 57.2 136
+T4 0 92.4 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -33844,19 +33844,19 @@ Total Task : 185
 Meet Task : 185
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8743.8
+Energy Consumption : 12096.8
 =========== GW_1 ===========
 Total Task : 140
 Meet Task : 140
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 060
 -------------
@@ -33878,19 +33878,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 107.3 126.25
-T1 0 43.5 126.25
-T2 0 75.4 126.25
-T3 0 150.8 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 162.8 136
+T1 0 66 136
+T2 0 114.4 136
+T3 0 228.8 136
+T4 0 180.4 136
+T5 0 176 136
 GW1
-T0 0 98.6 126.25
-T1 0 43.5 126.25
-T2 0 40.6 126.25
-T3 0 66.7 126.25
-T4 0 66.7 126.25
-T5 0 133.4 126.25
+T0 0 149.6 136
+T1 0 66 136
+T2 0 61.6 136
+T3 0 101.2 136
+T4 0 101.2 136
+T5 0 202.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -34226,19 +34226,19 @@ Total Task : 65
 Meet Task : 61
 Miss Task : 4
 Meet Ratio : 0.938462
-Energy Consumption : 8799.15
+Energy Consumption : 12203.4
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 85
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 061
 -------------
@@ -34260,19 +34260,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 63.8 126.25
-T1 0 17.4 126.25
-T2 0 63.8 126.25
-T3 0 60.9 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 96.8 136
+T1 0 26.4 136
+T2 0 96.8 136
+T3 0 92.4 136
+T4 0 180.4 136
+T5 0 176 136
 GW1
-T0 0 66.7 126.25
-T1 0 31.9 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 48.4 136
+T2 0 44 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -34716,19 +34716,19 @@ Total Task : 110
 Meet Task : 102
 Miss Task : 8
 Meet Ratio : 0.927273
-Energy Consumption : 8693.85
+Energy Consumption : 12000.6
 =========== GW_1 ===========
 Total Task : 100
 Meet Task : 96
 Miss Task : 4
 Meet Ratio : 0.96
-Energy Consumption : 8700.6
+Energy Consumption : 12013.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 062
 -------------
@@ -34750,19 +34750,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 60.9 126.25
-T1 0 20.3 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 30.8 136
+T2 0 44 136
+T3 0 44 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 60.9 126.25
-T1 0 23.2 126.25
-T2 0 31.9 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 35.2 136
+T2 0 48.4 136
+T3 0 44 136
+T4 0 44 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -35340,19 +35340,19 @@ Total Task : 130
 Meet Task : 122
 Miss Task : 8
 Meet Ratio : 0.938462
-Energy Consumption : 8646.6
+Energy Consumption : 11909.6
 =========== GW_1 ===========
 Total Task : 145
 Meet Task : 145
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8878.8
+Energy Consumption : 12356.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 063
 -------------
@@ -35374,19 +35374,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 121.8 126.25
-T1 0 168.2 126.25
-T2 0 130.5 126.25
-T3 0 124.7 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 184.8 136
+T1 0 255.2 136
+T2 0 198 136
+T3 0 189.2 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 31.9 126.25
-T1 0 60.9 126.25
-T2 0 89.9 126.25
-T3 0 87 126.25
-T4 0 165.3 126.25
-T5 0 116 126.25
+T0 0 48.4 136
+T1 0 92.4 136
+T2 0 136.4 136
+T3 0 132 136
+T4 0 250.8 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -35684,19 +35684,19 @@ Total Task : 45
 Meet Task : 41
 Miss Task : 4
 Meet Ratio : 0.911111
-Energy Consumption : 8638.5
+Energy Consumption : 11894
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 85
 Miss Task : 5
 Meet Ratio : 0.944444
-Energy Consumption : 8784.3
+Energy Consumption : 12174.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 064
 -------------
@@ -35718,19 +35718,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 37.7 126.25
-T2 0 34.8 126.25
-T3 0 127.6 126.25
-T4 0 124.7 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 57.2 136
+T2 0 52.8 136
+T3 0 193.6 136
+T4 0 189.2 136
+T5 0 176 136
 GW1
-T0 0 37.7 126.25
-T1 0 29 126.25
-T2 0 52.2 126.25
-T3 0 69.6 126.25
-T4 0 60.9 126.25
-T5 0 118.9 126.25
+T0 0 57.2 136
+T1 0 44 136
+T2 0 79.2 136
+T3 0 105.6 136
+T4 0 92.4 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -36194,19 +36194,19 @@ Total Task : 95
 Meet Task : 91
 Miss Task : 4
 Meet Ratio : 0.957895
-Energy Consumption : 8710.05
+Energy Consumption : 12031.8
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8693.85
+Energy Consumption : 12000.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 065
 -------------
@@ -36228,19 +36228,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 58 126.25
-T1 0 20.3 126.25
-T2 0 37.7 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 30.8 136
+T2 0 57.2 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 37.7 126.25
-T1 0 31.9 126.25
-T2 0 23.2 126.25
-T3 0 31.9 126.25
-T4 0 60.9 126.25
-T5 0 118.9 126.25
+T0 0 57.2 136
+T1 0 48.4 136
+T2 0 35.2 136
+T3 0 48.4 136
+T4 0 92.4 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -36832,19 +36832,19 @@ Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8724.9
+Energy Consumption : 12060.4
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8764.05
+Energy Consumption : 12135.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 066
 -------------
@@ -36866,19 +36866,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 52.2 126.25
-T1 0 23.2 126.25
-T2 0 84.1 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 79.2 136
+T1 0 35.2 136
+T2 0 127.6 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 66.7 126.25
-T1 0 17.4 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 29 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 26.4 136
+T2 0 22 136
+T3 0 22 136
+T4 0 44 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -37515,19 +37515,19 @@ Total Task : 120
 Meet Task : 102
 Miss Task : 18
 Meet Ratio : 0.85
-Energy Consumption : 8630.4
+Energy Consumption : 11878.4
 =========== GW_1 ===========
 Total Task : 185
 Meet Task : 185
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 067
 -------------
@@ -37549,19 +37549,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 34.8 126.25
-T1 0 29 126.25
-T2 0 58 126.25
-T3 0 63.8 126.25
-T4 0 60.9 126.25
-T5 0 121.8 126.25
+T0 0 52.8 136
+T1 0 44 136
+T2 0 88 136
+T3 0 96.8 136
+T4 0 92.4 136
+T5 0 184.8 136
 GW1
-T0 0 43.5 126.25
-T1 0 29 126.25
-T2 0 37.7 126.25
-T3 0 66.7 126.25
-T4 0 63.8 126.25
-T5 0 130.5 126.25
+T0 0 66 136
+T1 0 44 136
+T2 0 57.2 136
+T3 0 101.2 136
+T4 0 96.8 136
+T5 0 198 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -38081,19 +38081,19 @@ Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8679
+Energy Consumption : 11972
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8683.05
+Energy Consumption : 11979.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 068
 -------------
@@ -38115,19 +38115,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 52.2 126.25
-T2 0 31.9 126.25
-T3 0 31.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 83.6 136
+T1 0 79.2 136
+T2 0 48.4 136
+T3 0 48.4 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 49.3 126.25
-T1 0 26.1 126.25
-T2 0 23.2 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 39.6 136
+T2 0 35.2 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -38699,19 +38699,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8749.2
+Energy Consumption : 12107.2
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8830.2
+Energy Consumption : 12263.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 069
 -------------
@@ -38733,19 +38733,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 69.6 126.25
-T1 0 31.9 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 48.4 136
+T2 0 44 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 34.8 126.25
-T1 0 34.8 126.25
-T2 0 49.3 126.25
-T3 0 69.6 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 52.8 136
+T1 0 52.8 136
+T2 0 74.8 136
+T3 0 105.6 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -39243,19 +39243,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_1 ===========
 Total Task : 120
 Meet Task : 112
 Miss Task : 8
 Meet Ratio : 0.933333
-Energy Consumption : 8695.2
+Energy Consumption : 12003.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 070
 -------------
@@ -39277,19 +39277,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 52.2 126.25
-T2 0 49.3 126.25
-T3 0 81.2 126.25
-T4 0 75.4 126.25
-T5 0 118.9 126.25
+T0 0 57.2 136
+T1 0 79.2 136
+T2 0 74.8 136
+T3 0 123.2 136
+T4 0 114.4 136
+T5 0 180.4 136
 GW1
-T0 0 49.3 126.25
-T1 0 58 126.25
-T2 0 69.6 126.25
-T3 0 63.8 126.25
-T4 0 124.7 126.25
-T5 0 118.9 126.25
+T0 0 74.8 136
+T1 0 88 136
+T2 0 105.6 136
+T3 0 96.8 136
+T4 0 189.2 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -39707,19 +39707,19 @@ Total Task : 105
 Meet Task : 96
 Miss Task : 9
 Meet Ratio : 0.914286
-Energy Consumption : 8774.85
+Energy Consumption : 12156.6
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8760
+Energy Consumption : 12128
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 071
 -------------
@@ -39741,19 +39741,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 104.4 126.25
-T1 0 52.2 126.25
-T2 0 72.5 126.25
-T3 0 130.5 126.25
-T4 0 121.8 126.25
-T5 0 116 126.25
+T0 0 158.4 136
+T1 0 79.2 136
+T2 0 110 136
+T3 0 198 136
+T4 0 184.8 136
+T5 0 176 136
 GW1
-T0 0 87 126.25
-T1 0 145 126.25
-T2 0 75.4 126.25
-T3 0 124.7 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 132 136
+T1 0 220 136
+T2 0 114.4 136
+T3 0 189.2 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -40029,19 +40029,19 @@ Total Task : 65
 Meet Task : 61
 Miss Task : 4
 Meet Ratio : 0.938462
-Energy Consumption : 8826.15
+Energy Consumption : 12255.4
 =========== GW_1 ===========
 Total Task : 55
 Meet Task : 51
 Miss Task : 4
 Meet Ratio : 0.927273
-Energy Consumption : 8715.45
+Energy Consumption : 12042.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 072
 -------------
@@ -40063,19 +40063,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 113.1 126.25
-T1 0 49.3 126.25
-T2 0 63.8 126.25
-T3 0 121.8 126.25
-T4 0 118.9 126.25
-T5 0 118.9 126.25
+T0 0 171.6 136
+T1 0 74.8 136
+T2 0 96.8 136
+T3 0 184.8 136
+T4 0 180.4 136
+T5 0 180.4 136
 GW1
-T0 0 107.3 126.25
-T1 0 49.3 126.25
-T2 0 37.7 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 162.8 136
+T1 0 74.8 136
+T2 0 57.2 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -40411,19 +40411,19 @@ Total Task : 65
 Meet Task : 61
 Miss Task : 4
 Meet Ratio : 0.938462
-Energy Consumption : 8841
+Energy Consumption : 12284
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 85
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 073
 -------------
@@ -40445,19 +40445,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 142.1 126.25
-T1 0 29 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 215.6 136
+T1 0 44 136
+T2 0 44 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 52.2 126.25
-T1 0 58 126.25
-T2 0 69.6 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 79.2 136
+T1 0 88 136
+T2 0 105.6 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -40829,19 +40829,19 @@ Total Task : 80
 Meet Task : 80
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8878.8
+Energy Consumption : 12356.8
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8754.6
+Energy Consumption : 12117.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 074
 -------------
@@ -40863,19 +40863,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 95.7 126.25
-T1 0 49.3 126.25
-T2 0 89.9 126.25
-T3 0 66.7 126.25
-T4 0 60.9 126.25
-T5 0 118.9 126.25
+T0 0 145.2 136
+T1 0 74.8 136
+T2 0 136.4 136
+T3 0 101.2 136
+T4 0 92.4 136
+T5 0 180.4 136
 GW1
-T0 0 95.7 126.25
-T1 0 52.2 126.25
-T2 0 43.5 126.25
-T3 0 136.3 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 145.2 136
+T1 0 79.2 136
+T2 0 66 136
+T3 0 206.8 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -41211,19 +41211,19 @@ Total Task : 75
 Meet Task : 75
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8845.05
+Energy Consumption : 12291.8
 =========== GW_1 ===========
 Total Task : 75
 Meet Task : 75
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8845.05
+Energy Consumption : 12291.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 075
 -------------
@@ -41245,19 +41245,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 34.8 126.25
-T2 0 14.5 126.25
-T3 0 63.8 126.25
-T4 0 60.9 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 52.8 136
+T2 0 22 136
+T3 0 96.8 136
+T4 0 92.4 136
+T5 0 176 136
 GW1
-T0 0 43.5 126.25
-T1 0 31.9 126.25
-T2 0 17.4 126.25
-T3 0 34.8 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 48.4 136
+T2 0 26.4 136
+T3 0 52.8 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -41889,19 +41889,19 @@ Total Task : 145
 Meet Task : 137
 Miss Task : 8
 Meet Ratio : 0.944828
-Energy Consumption : 8703.3
+Energy Consumption : 12018.8
 =========== GW_1 ===========
 Total Task : 155
 Meet Task : 151
 Miss Task : 4
 Meet Ratio : 0.974194
-Energy Consumption : 8776.2
+Energy Consumption : 12159.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 076
 -------------
@@ -41923,19 +41923,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 69.6 126.25
-T1 0 14.5 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 22 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 14.5 126.25
-T3 0 14.5 126.25
-T4 0 14.5 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 22 136
+T3 0 22 136
+T4 0 22 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -42630,19 +42630,19 @@ Total Task : 125
 Meet Task : 120
 Miss Task : 5
 Meet Ratio : 0.96
-Energy Consumption : 8749.2
+Energy Consumption : 12107.2
 =========== GW_1 ===========
 Total Task : 205
 Meet Task : 205
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 077
 -------------
@@ -42664,19 +42664,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 46.4 126.25
-T2 0 92.8 126.25
-T3 0 72.5 126.25
-T4 0 60.9 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 70.4 136
+T2 0 140.8 136
+T3 0 110 136
+T4 0 92.4 136
+T5 0 176 136
 GW1
-T0 0 127.6 126.25
-T1 0 34.8 126.25
-T2 0 136.3 126.25
-T3 0 118.9 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 193.6 136
+T1 0 52.8 136
+T2 0 206.8 136
+T3 0 180.4 136
+T4 0 180.4 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -43017,19 +43017,19 @@ Total Task : 95
 Meet Task : 86
 Miss Task : 9
 Meet Ratio : 0.905263
-Energy Consumption : 8712.75
+Energy Consumption : 12037
 =========== GW_1 ===========
 Total Task : 60
 Meet Task : 55
 Miss Task : 5
 Meet Ratio : 0.916667
-Energy Consumption : 8723.55
+Energy Consumption : 12057.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 078
 -------------
@@ -43051,19 +43051,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 55.1 126.25
-T1 0 43.5 126.25
-T2 0 34.8 126.25
-T3 0 31.9 126.25
-T4 0 133.4 126.25
-T5 0 116 126.25
+T0 0 83.6 136
+T1 0 66 136
+T2 0 52.8 136
+T3 0 48.4 136
+T4 0 202.4 136
+T5 0 176 136
 GW1
-T0 0 31.9 126.25
-T1 0 31.9 126.25
-T2 0 60.9 126.25
-T3 0 31.9 126.25
-T4 0 29 126.25
-T5 0 116 126.25
+T0 0 48.4 136
+T1 0 48.4 136
+T2 0 92.4 136
+T3 0 48.4 136
+T4 0 44 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -43605,19 +43605,19 @@ Total Task : 110
 Meet Task : 106
 Miss Task : 4
 Meet Ratio : 0.963636
-Energy Consumption : 8735.7
+Energy Consumption : 12081.2
 =========== GW_1 ===========
 Total Task : 145
 Meet Task : 141
 Miss Task : 4
 Meet Ratio : 0.972414
-Energy Consumption : 8776.2
+Energy Consumption : 12159.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 079
 -------------
@@ -43639,19 +43639,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 46.4 126.25
-T1 0 23.2 126.25
-T2 0 23.2 126.25
-T3 0 72.5 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 70.4 136
+T1 0 35.2 136
+T2 0 35.2 136
+T3 0 110 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 104.4 126.25
-T1 0 52.2 126.25
-T2 0 69.6 126.25
-T3 0 69.6 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 158.4 136
+T1 0 79.2 136
+T2 0 105.6 136
+T3 0 105.6 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -44109,19 +44109,19 @@ Total Task : 145
 Meet Task : 133
 Miss Task : 12
 Meet Ratio : 0.917241
-Energy Consumption : 8719.5
+Energy Consumption : 12050
 =========== GW_1 ===========
 Total Task : 70
 Meet Task : 70
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 080
 -------------
@@ -44143,19 +44143,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 40.6 126.25
-T1 0 23.2 126.25
-T2 0 20.3 126.25
-T3 0 40.6 126.25
-T4 0 37.7 126.25
-T5 0 136.3 126.25
+T0 0 61.6 136
+T1 0 35.2 136
+T2 0 30.8 136
+T3 0 61.6 136
+T4 0 57.2 136
+T5 0 206.8 136
 GW1
-T0 0 46.4 126.25
-T1 0 26.1 126.25
-T2 0 40.6 126.25
-T3 0 66.7 126.25
-T4 0 66.7 126.25
-T5 0 118.9 126.25
+T0 0 70.4 136
+T1 0 39.6 136
+T2 0 61.6 136
+T3 0 101.2 136
+T4 0 101.2 136
+T5 0 180.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -44763,19 +44763,19 @@ Total Task : 165
 Meet Task : 161
 Miss Task : 4
 Meet Ratio : 0.975758
-Energy Consumption : 8801.85
+Energy Consumption : 12208.6
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8696.55
+Energy Consumption : 12005.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 081
 -------------
@@ -44797,19 +44797,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 66.7 126.25
-T1 0 14.5 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 22 136
+T2 0 44 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 52.2 126.25
-T1 0 26.1 126.25
-T2 0 14.5 126.25
-T3 0 31.9 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 79.2 136
+T1 0 39.6 136
+T2 0 22 136
+T3 0 48.4 136
+T4 0 88 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -45431,19 +45431,19 @@ Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8754.6
+Energy Consumption : 12117.6
 =========== GW_1 ===========
 Total Task : 160
 Meet Task : 160
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8770.8
+Energy Consumption : 12148.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 082
 -------------
@@ -45465,19 +45465,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 34.8 126.25
-T1 0 127.6 126.25
-T2 0 92.8 126.25
-T3 0 87 126.25
-T4 0 130.5 126.25
-T5 0 118.9 126.25
+T0 0 52.8 136
+T1 0 193.6 136
+T2 0 140.8 136
+T3 0 132 136
+T4 0 198 136
+T5 0 180.4 136
 GW1
-T0 0 49.3 126.25
-T1 0 58 126.25
-T2 0 72.5 126.25
-T3 0 60.9 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 88 136
+T2 0 110 136
+T3 0 92.4 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -45849,19 +45849,19 @@ Total Task : 80
 Meet Task : 66
 Miss Task : 14
 Meet Ratio : 0.825
-Energy Consumption : 8681.7
+Energy Consumption : 11977.2
 =========== GW_1 ===========
 Total Task : 95
 Meet Task : 86
 Miss Task : 9
 Meet Ratio : 0.905263
-Energy Consumption : 8712.75
+Energy Consumption : 12037
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 083
 -------------
@@ -45883,19 +45883,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 98.6 126.25
-T1 0 72.5 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 149.6 136
+T1 0 110 136
+T2 0 88 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 60.9 126.25
-T1 0 40.6 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 92.4 136
+T1 0 61.6 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -46277,19 +46277,19 @@ Total Task : 70
 Meet Task : 70
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8878.8
+Energy Consumption : 12356.8
 =========== GW_1 ===========
 Total Task : 105
 Meet Task : 101
 Miss Task : 4
 Meet Ratio : 0.961905
-Energy Consumption : 8684.4
+Energy Consumption : 11982.4
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 084
 -------------
@@ -46311,19 +46311,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 40.6 126.25
-T1 0 159.5 126.25
-T2 0 69.6 126.25
-T3 0 63.8 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 61.6 136
+T1 0 242 136
+T2 0 105.6 136
+T3 0 96.8 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 58 126.25
-T1 0 23.2 126.25
-T2 0 31.9 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 88 136
+T1 0 35.2 136
+T2 0 48.4 136
+T3 0 44 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -46820,19 +46820,19 @@ Total Task : 85
 Meet Task : 76
 Miss Task : 9
 Meet Ratio : 0.894118
-Energy Consumption : 8695.2
+Energy Consumption : 12003.2
 =========== GW_1 ===========
 Total Task : 150
 Meet Task : 150
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8824.8
+Energy Consumption : 12252.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 085
 -------------
@@ -46854,19 +46854,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 66.7 126.25
-T1 0 14.5 126.25
-T2 0 14.5 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 22 136
+T2 0 22 136
+T3 0 44 136
+T4 0 44 136
+T5 0 176 136
 GW1
-T0 0 49.3 126.25
-T1 0 23.2 126.25
-T2 0 37.7 126.25
-T3 0 72.5 126.25
-T4 0 66.7 126.25
-T5 0 116 126.25
+T0 0 74.8 136
+T1 0 35.2 136
+T2 0 57.2 136
+T3 0 110 136
+T4 0 101.2 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -47474,19 +47474,19 @@ Total Task : 165
 Meet Task : 165
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 117
 Miss Task : 8
 Meet Ratio : 0.936
-Energy Consumption : 8689.8
+Energy Consumption : 11992.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 086
 -------------
@@ -47508,19 +47508,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 179.8 126.25
-T1 0 217.5 126.25
-T2 0 188.5 126.25
-T3 0 133.4 126.25
-T4 0 130.5 126.25
-T5 0 121.8 126.25
+T0 0 272.8 136
+T1 0 330 136
+T2 0 286 136
+T3 0 202.4 136
+T4 0 198 136
+T5 0 184.8 136
 GW1
-T0 0 58 126.25
-T1 0 20.3 126.25
-T2 0 34.8 126.25
-T3 0 118.9 126.25
-T4 0 118.9 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 30.8 136
+T2 0 52.8 136
+T3 0 180.4 136
+T4 0 180.4 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -47848,19 +47848,19 @@ Total Task : 35
 Meet Task : 35
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8885.55
+Energy Consumption : 12369.8
 =========== GW_1 ===========
 Total Task : 115
 Meet Task : 107
 Miss Task : 8
 Meet Ratio : 0.930435
-Energy Consumption : 8665.5
+Energy Consumption : 11946
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 087
 -------------
@@ -47882,19 +47882,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 118.9 126.25
-T2 0 84.1 126.25
-T3 0 136.3 126.25
-T4 0 130.5 126.25
-T5 0 118.9 126.25
+T0 0 66 136
+T1 0 180.4 136
+T2 0 127.6 136
+T3 0 206.8 136
+T4 0 198 136
+T5 0 180.4 136
 GW1
-T0 0 43.5 126.25
-T1 0 60.9 126.25
-T2 0 75.4 126.25
-T3 0 72.5 126.25
-T4 0 124.7 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 92.4 136
+T2 0 114.4 136
+T3 0 110 136
+T4 0 189.2 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -48247,19 +48247,19 @@ Total Task : 75
 Meet Task : 66
 Miss Task : 9
 Meet Ratio : 0.88
-Energy Consumption : 8676.3
+Energy Consumption : 11966.8
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8750.55
+Energy Consumption : 12109.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 088
 -------------
@@ -48281,19 +48281,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 107.3 126.25
-T1 0 37.7 126.25
-T2 0 37.7 126.25
-T3 0 75.4 126.25
-T4 0 127.6 126.25
-T5 0 121.8 126.25
+T0 0 162.8 136
+T1 0 57.2 136
+T2 0 57.2 136
+T3 0 114.4 136
+T4 0 193.6 136
+T5 0 184.8 136
 GW1
-T0 0 40.6 126.25
-T1 0 29 126.25
-T2 0 78.3 126.25
-T3 0 75.4 126.25
-T4 0 142.1 126.25
-T5 0 127.6 126.25
+T0 0 61.6 136
+T1 0 44 136
+T2 0 118.8 136
+T3 0 114.4 136
+T4 0 215.6 136
+T5 0 193.6 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -48701,19 +48701,19 @@ Total Task : 80
 Meet Task : 80
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_1 ===========
 Total Task : 110
 Meet Task : 102
 Miss Task : 8
 Meet Ratio : 0.927273
-Energy Consumption : 8715.45
+Energy Consumption : 12042.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 089
 -------------
@@ -48735,19 +48735,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 20.3 126.25
-T2 0 40.6 126.25
-T3 0 37.7 126.25
-T4 0 29 126.25
-T5 0 29 126.25
+T0 0 74.8 136
+T1 0 30.8 136
+T2 0 61.6 136
+T3 0 57.2 136
+T4 0 44 136
+T5 0 44 136
 GW1
-T0 0 63.8 126.25
-T1 0 17.4 126.25
-T2 0 63.8 126.25
-T3 0 116 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 96.8 136
+T1 0 26.4 136
+T2 0 96.8 136
+T3 0 176 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -49305,19 +49305,19 @@ Total Task : 160
 Meet Task : 160
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8770.8
+Energy Consumption : 12148.8
 =========== GW_1 ===========
 Total Task : 105
 Meet Task : 97
 Miss Task : 8
 Meet Ratio : 0.92381
-Energy Consumption : 8673.6
+Energy Consumption : 11961.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 090
 -------------
@@ -49339,19 +49339,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 52.2 126.25
-T1 0 55.1 126.25
-T2 0 31.9 126.25
-T3 0 127.6 126.25
-T4 0 121.8 126.25
-T5 0 116 126.25
+T0 0 79.2 136
+T1 0 83.6 136
+T2 0 48.4 136
+T3 0 193.6 136
+T4 0 184.8 136
+T5 0 176 136
 GW1
-T0 0 81.2 126.25
-T1 0 58 126.25
-T2 0 46.4 126.25
-T3 0 34.8 126.25
-T4 0 66.7 126.25
-T5 0 58 126.25
+T0 0 123.2 136
+T1 0 88 136
+T2 0 70.4 136
+T3 0 52.8 136
+T4 0 101.2 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -49773,19 +49773,19 @@ Total Task : 95
 Meet Task : 91
 Miss Task : 4
 Meet Ratio : 0.957895
-Energy Consumption : 8741.1
+Energy Consumption : 12091.6
 =========== GW_1 ===========
 Total Task : 100
 Meet Task : 100
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8838.3
+Energy Consumption : 12278.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 091
 -------------
@@ -49807,19 +49807,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 113.1 126.25
-T1 0 75.4 126.25
-T2 0 75.4 126.25
-T3 0 66.7 126.25
-T4 0 127.6 126.25
-T5 0 124.7 126.25
+T0 0 171.6 136
+T1 0 114.4 136
+T2 0 114.4 136
+T3 0 101.2 136
+T4 0 193.6 136
+T5 0 189.2 136
 GW1
-T0 0 69.6 126.25
-T1 0 14.5 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 22 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -50224,19 +50224,19 @@ Total Task : 60
 Meet Task : 56
 Miss Task : 4
 Meet Ratio : 0.933333
-Energy Consumption : 8853.15
+Energy Consumption : 12307.4
 =========== GW_1 ===========
 Total Task : 125
 Meet Task : 120
 Miss Task : 5
 Meet Ratio : 0.96
-Energy Consumption : 8749.2
+Energy Consumption : 12107.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 092
 -------------
@@ -50258,19 +50258,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 66.7 126.25
-T1 0 14.5 126.25
-T2 0 29 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 101.2 136
+T1 0 22 136
+T2 0 44 136
+T3 0 88 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 69.6 126.25
-T1 0 29 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 105.6 136
+T1 0 44 136
+T2 0 88 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -50752,19 +50752,19 @@ Total Task : 130
 Meet Task : 130
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_1 ===========
 Total Task : 95
 Meet Task : 91
 Miss Task : 4
 Meet Ratio : 0.957895
-Energy Consumption : 8722.2
+Energy Consumption : 12055.2
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 093
 -------------
@@ -50786,19 +50786,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 34.8 126.25
-T2 0 92.8 126.25
-T3 0 66.7 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 57.2 136
+T1 0 52.8 136
+T2 0 140.8 136
+T3 0 101.2 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 52.2 126.25
-T1 0 23.2 126.25
-T2 0 40.6 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 79.2 136
+T1 0 35.2 136
+T2 0 61.6 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -51312,19 +51312,19 @@ Total Task : 110
 Meet Task : 102
 Miss Task : 8
 Meet Ratio : 0.927273
-Energy Consumption : 8703.3
+Energy Consumption : 12018.8
 =========== GW_1 ===========
 Total Task : 135
 Meet Task : 127
 Miss Task : 8
 Meet Ratio : 0.940741
-Energy Consumption : 8743.8
+Energy Consumption : 12096.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 094
 -------------
@@ -51346,19 +51346,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 43.5 126.25
-T1 0 78.3 126.25
-T2 0 29 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 66 136
+T1 0 118.8 136
+T2 0 44 136
+T3 0 44 136
+T4 0 88 136
+T5 0 176 136
 GW1
-T0 0 58 126.25
-T1 0 20.3 126.25
-T2 0 147.9 126.25
-T3 0 121.8 126.25
-T4 0 121.8 126.25
-T5 0 116 126.25
+T0 0 88 136
+T1 0 30.8 136
+T2 0 224.4 136
+T3 0 184.8 136
+T4 0 184.8 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -51810,19 +51810,19 @@ Total Task : 115
 Meet Task : 111
 Miss Task : 4
 Meet Ratio : 0.965217
-Energy Consumption : 8743.8
+Energy Consumption : 12096.8
 =========== GW_1 ===========
 Total Task : 100
 Meet Task : 86
 Miss Task : 14
 Meet Ratio : 0.86
-Energy Consumption : 8652
+Energy Consumption : 11920
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 095
 -------------
@@ -51844,19 +51844,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 37.7 126.25
-T1 0 31.9 126.25
-T2 0 26.1 126.25
-T3 0 29 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 57.2 136
+T1 0 48.4 136
+T2 0 39.6 136
+T3 0 44 136
+T4 0 176 136
+T5 0 176 136
 GW1
-T0 0 66.7 126.25
-T1 0 31.9 126.25
-T2 0 63.8 126.25
-T3 0 58 126.25
-T4 0 116 126.25
-T5 0 116 126.25
+T0 0 101.2 136
+T1 0 48.4 136
+T2 0 96.8 136
+T3 0 88 136
+T4 0 176 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -52360,19 +52360,19 @@ Total Task : 150
 Meet Task : 138
 Miss Task : 12
 Meet Ratio : 0.92
-Energy Consumption : 8673.6
+Energy Consumption : 11961.6
 =========== GW_1 ===========
 Total Task : 90
 Meet Task : 86
 Miss Task : 4
 Meet Ratio : 0.955556
-Energy Consumption : 8727.6
+Energy Consumption : 12065.6
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 096
 -------------
@@ -52394,19 +52394,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 66.7 126.25
-T1 0 31.9 126.25
-T2 0 31.9 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 29 126.25
+T0 0 101.2 136
+T1 0 48.4 136
+T2 0 48.4 136
+T3 0 44 136
+T4 0 44 136
+T5 0 44 136
 GW1
-T0 0 34.8 126.25
-T1 0 55.1 126.25
-T2 0 101.5 126.25
-T3 0 159.5 126.25
-T4 0 145 126.25
-T5 0 133.4 126.25
+T0 0 52.8 136
+T1 0 83.6 136
+T2 0 154 136
+T3 0 242 136
+T4 0 220 136
+T5 0 202.4 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -52883,19 +52883,19 @@ Total Task : 140
 Meet Task : 140
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_1 ===========
 Total Task : 85
 Meet Task : 72
 Miss Task : 13
 Meet Ratio : 0.847059
-Energy Consumption : 8685.75
+Energy Consumption : 11985
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 097
 -------------
@@ -52917,19 +52917,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 60.9 126.25
-T1 0 43.5 126.25
-T2 0 31.9 126.25
-T3 0 29 126.25
-T4 0 58 126.25
-T5 0 58 126.25
+T0 0 92.4 136
+T1 0 66 136
+T2 0 48.4 136
+T3 0 44 136
+T4 0 88 136
+T5 0 88 136
 GW1
-T0 0 139.2 126.25
-T1 0 63.8 126.25
-T2 0 58 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 116 126.25
+T0 0 211.2 136
+T1 0 96.8 136
+T2 0 88 136
+T3 0 88 136
+T4 0 88 136
+T5 0 176 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -53335,19 +53335,19 @@ Total Task : 120
 Meet Task : 120
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8851.8
+Energy Consumption : 12304.8
 =========== GW_1 ===========
 Total Task : 65
 Meet Task : 65
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8878.8
+Energy Consumption : 12356.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 098
 -------------
@@ -53369,19 +53369,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 46.4 126.25
-T1 0 43.5 126.25
-T2 0 43.5 126.25
-T3 0 87 126.25
-T4 0 133.4 126.25
-T5 0 118.9 126.25
+T0 0 70.4 136
+T1 0 66 136
+T2 0 66 136
+T3 0 132 136
+T4 0 202.4 136
+T5 0 180.4 136
 GW1
-T0 0 43.5 126.25
-T1 0 31.9 126.25
-T2 0 17.4 126.25
-T3 0 34.8 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 66 136
+T1 0 48.4 136
+T2 0 26.4 136
+T3 0 52.8 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -53953,19 +53953,19 @@ Total Task : 100
 Meet Task : 96
 Miss Task : 4
 Meet Ratio : 0.96
-Energy Consumption : 8785.65
+Energy Consumption : 12177.4
 =========== GW_1 ===========
 Total Task : 170
 Meet Task : 170
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 099
 -------------
@@ -53987,19 +53987,19 @@ GW 0.3
 Task 300 1000 0.3
 ---------- O F L D ------------
 GW0
-T0 0 49.3 126.25
-T1 0 63.8 126.25
-T2 0 60.9 126.25
-T3 0 58 126.25
-T4 0 58 126.25
-T5 0 118.9 126.25
+T0 0 74.8 136
+T1 0 96.8 136
+T2 0 92.4 136
+T3 0 88 136
+T4 0 88 136
+T5 0 180.4 136
 GW1
-T0 0 49.3 126.25
-T1 0 31.9 126.25
-T2 0 14.5 126.25
-T3 0 29 126.25
-T4 0 29 126.25
-T5 0 58 126.25
+T0 0 74.8 136
+T1 0 48.4 136
+T2 0 22 136
+T3 0 44 136
+T4 0 44 136
+T5 0 88 136
 GW2
 T0 0 0 0
 ---------- Dispach ------------
@@ -54561,27 +54561,32 @@ Total Task : 95
 Meet Task : 91
 Miss Task : 4
 Meet Ratio : 0.957895
-Energy Consumption : 8726.25
+Energy Consumption : 12063
 =========== GW_1 ===========
 Total Task : 170
 Meet Task : 170
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 8797.8
+Energy Consumption : 12200.8
 =========== GW_2 ===========
 Total Task : 4
 Meet Task : 4
 Miss Task : 0
 Meet Ratio : 1
-Energy Consumption : 7825.8
+Energy Consumption : 10328.8
 -------------
 100
 -------------
 ============== Average Result ==============
 Meet Ratio : 0.954936
-Energy Consumption : 8756.64
+Energy Consumption : 12121.5
 Response time of Meet : 1020945
 Cloud server energy : 0
-Fog devices energy : 7825
+Fog devices energy : 10328
+
+GW_Eng : 12124.9
+GW_Eng : 12118.2
+GW_Eng : 10328.8
+
 HyerP : 800000
 Miss set : 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 23 26 27 28 29 30 31 32 33 34 35 36 37 38 39 41 42 44 45 46 47 48 49 50 51 52 53 54 55 57 58 59 61 62 63 64 65 66 67 68 69 70 71 72 73 74 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 99 100 size: 9

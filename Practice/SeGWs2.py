@@ -22,7 +22,7 @@ def delay_1ms():
    s = time.time()
    while True:
        f = time.time()
-       if f-s >= 0.01:
+       if f-s >= 0.001:
            break
 
 class MyTCPHandler(SocketServer.BaseRequestHandler):
@@ -42,7 +42,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                 {"Exe":0.13,"Period":2,"Deadline":0,'Arrival':-2,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"state":0,"GW":1,"VD":0},
                 {"Exe":0.47,"Period":8,"Deadline":0,'Arrival':-8,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"state":0,"GW":1,"VD":0}]
         '''
-        Task =[{"Exe":0.044,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"CC":0,"GW1":1,"GW3":0.3},
+        Task =[{"Exe":0.088,"Period":0.2,"Deadline":0,'Arrival':-0.2,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"CC":0,"GW1":1,"GW3":0.3},
                 {"Exe":0.036,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"CC":0,"GW1":1,"GW3":0.3},
                 {"Exe":0.159,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":2,"VD":0,"CC":0,"GW1":1,"GW3":0.3}]
         Result ={"Meet":0,"Miss":0,"Total":0}
@@ -56,7 +56,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         c21.settimeout(0.0)
         
         idle = 1
-        hyperperiod = 40
+        hyperperiod = 80
         timetick = 0
 
         #print datetime.datetime.now().strftime("%H:%M:%S")," Start"
@@ -129,7 +129,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                             if timetick>=d['Arrival'] and d['Remain']>0:
                                 sched_new = d
                         else:
-                            if sched_new['Arrival']>d['Arrival'] and timetick>=d['Arrival'] and d['Remain']>0:
+                            if sched_new['Arrival']>=d['Arrival'] and timetick>=d['Arrival'] and d['Remain']>0:
                                 sched_new = d
                 
                 #===== Run =====

@@ -31,8 +31,9 @@ void sched_new(Node* GW){
 			if(it->deadline <= timeTick){				// task arrival
 				it->deadline += it->period;
 				it->virtualD = it->deadline;
-				it->uplink = (it->target == -1)? offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic : fogTransfer;
-				it->dwlink = (it->target == -1)? offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic : fogTransfer;
+
+				it->uplink = (it->target == -1)? (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic : fogTransfer;
+				it->dwlink = (it->target == -1)? (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic : fogTransfer;
 				it->target = (it->target != -1)? 999 : -1;
 				it->vm = -1;
 				it->remaining = it->uplink;
@@ -201,8 +202,8 @@ void sched_fifo(Node* GW){
 			if(it->deadline <= timeTick){				// task arrival
 				it->deadline += it->period;
 				it->virtualD = it->deadline;
-				it->uplink = offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic;
-				it->dwlink = offloadTransfer+ceil((float)it->exec/WBANpayload)+_traffic;
+				it->uplink = (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic;
+				it->dwlink = (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic;
 				it->remaining = it->uplink;
 				it->cnt += 1;
 
@@ -560,7 +561,12 @@ void EDF(){
 						
 						GW->currTask->uplink--;
 						GW->currTask->remaining = GW->currTask->uplink;
-						GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						if(GW->currTask->uplink > GW->currTask->dwlink-proc){
+							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
+						}
+						else{
+							GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						}
 						//Migration to Fog device
 						if(GW->currTask->uplink <= 0){
 							debug(("offload_fog !\r\n")); char *state=""; Time("offload_fog");
@@ -590,7 +596,12 @@ void EDF(){
 						
 						GW->currTask->dwlink--;
 						GW->currTask->remaining = GW->currTask->dwlink;
-						GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						if(GW->currTask->dwlink < proc){
+							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
+						}
+						else{
+							GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						}
 						
 						if(GW->currTask->dwlink <= 0){
 							debug(("finish_fog !\r\n")); Time("finish_fog");
@@ -662,7 +673,12 @@ void EDF(){
 
 						GW->currTask->uplink--;
 						GW->currTask->remaining = GW->currTask->uplink;
-						GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						if(GW->currTask->uplink > GW->currTask->dwlink-proc){
+							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
+						}
+						else{
+							GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						}
 
 						if(GW->currTask->uplink <= 0){
 							debug(("offload_cloud !\r\n")); Time("offload_cloud");
@@ -679,7 +695,12 @@ void EDF(){
 
 						GW->currTask->dwlink--;
 						GW->currTask->remaining = GW->currTask->dwlink;
-						GW->result.energy += p_idle + p_trans;
+						if(GW->currTask->dwlink < proc){
+							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
+						}
+						else{
+							GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						}
 
 						if(GW->currTask->dwlink <= 0){
 							debug(("finish_cluod !\r\n")); Time("finish_cloud");
@@ -797,7 +818,12 @@ void FIFO(){
 				if(GW->currTask->uplink > 0){
 					GW->currTask->uplink--;
 					GW->currTask->remaining = GW->currTask->uplink;
-					GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+					if(GW->currTask->uplink > GW->currTask->dwlink-proc){
+							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
+						}
+						else{
+							GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						}
 
 					if(GW->currTask->uplink <= 0){
 						debug(("offload_cloud !\r\n")); Time("offload_cloud");
@@ -810,7 +836,12 @@ void FIFO(){
 				else if((GW->currTask->uplink <=0) && (GW->currTask->dwlink > 0)){
 					GW->currTask->dwlink--;
 					GW->currTask->remaining = GW->currTask->dwlink;
-					GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+					if(GW->currTask->dwlink < proc){
+							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
+						}
+					else{
+							GW->result.energy += p_idle + p_trans;	// calculate GW offloading energy
+						}
 
 					if(GW->currTask->dwlink <= 0){
 						debug(("finish_cluod !\r\n")); Time("finish_cloud");

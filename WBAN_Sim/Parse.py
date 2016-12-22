@@ -46,6 +46,32 @@ def main():
                 task += 1
         output.write('\n\n')
 
+    output.writelines("GW_Eng\nGW1\tGW2\tGW3\n")
+    task = 3
+    policy = 1
+    for k in range(6): #3 4 5 6 8 10
+        uti = 0.5
+        for j in range(4):  #0.5 1.0 1.5 2.0
+            filename = "Result_GW-3_Task-"+str(task)+"_U"+str(uti)+"00000_"+str(policy)+".txt"
+            file = open(filename, 'r')
+            line = file.read().split("============== Average Result ==============\n")[1]
+            file.close()
+            gwEng = line.split("\n")[6].split(' : ')[1]
+            output.write(gwEng)
+            output.write('\t')
+            gwEng = line.split("\n")[7].split(' : ')[1]
+            output.write(gwEng)
+            output.write('\t')
+            gwEng = line.split("\n")[8].split(' : ')[1]
+            output.write(gwEng)
+            output.write('\n')
+            uti += 0.5
+        if task >= 6:
+            task +=2
+        else:
+            task += 1
+    output.write('\n\n')
+
     #Energy = float(line.split("\n")[1].split(' : ')[1])
     #print type(Meet)
     #print type(Energy)

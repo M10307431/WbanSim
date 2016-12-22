@@ -22,8 +22,10 @@ using namespace std;
 #define AOFLDF 3
 #define SeGW 4
 int policyOFLD = NOFLD;	// 0:nver, 1:my, 2:always
+
 int sameP=0;
 vector<int> missSet;
+
 /*=================================
 		  System componet
 ==================================*/
@@ -31,7 +33,6 @@ Node* NodeHead = new Node;	// Node head
 Node* GW = new Node;		// Gateway
 Task* taskgen = new Task;	// task
 Task* idleTask = new Task;	// idle task
-
 
 /*=================================
 		  Setting
@@ -46,6 +47,7 @@ int NodeNum = 3;	// # of GW Node
 int TaskNum = 20;	// # of Tasks in each GW
 float total_U = 2.0;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
+float m = 0.5;			// migration factor	 1.0 <<---energy------------load--->> 0.0
 
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
@@ -64,13 +66,14 @@ const int battery = 5*700*3600/1000;	// 5v * 2600mA *3600s	//700mAh
 const float speedRatio = 5;	// remoteSpeed / localSpeed
 const int WBANpayload = 128; // WBAN payload for normalized (byte)
 //--------Power-------------------------------------------------------
-const float p_idle = 1.55;		// idle (W)
-const float p_comp	= 2.9-1.55;	// full load
-const float p_trans = 0.3;		// wifi trans
+const float p_idle = 1.8;		// idle (W)	1.55
+const float p_comp	= 4.4-1.8;	// full load	29.-1.55
+const float p_trans = 0.5;		// wifi trans	0.3
 const int cloudp_idle = 223;	// server idle power (W)
 const int cloudp_actv = 368;	// server active power
 //--------Time--------------------------------------------------------
-const int _traffic = 0; 
+const float _traffic = 1/0.5;			// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
+const int proc = 5;
 const int offloadTransfer = 25;	// global trans time (ms)
 const int fogTransfer = 5;		// local trans
 /*=================================
@@ -171,6 +174,7 @@ int main(){
 
 	Result* Result_avg = new Result;
 	Result_avg->clear();
+	vector<double> GW_Eng(NodeNum, 0);
 
 	for(int set=0;set<Set;++set) {
 		printf("------------- Set %03d -------------\n",set+1);
@@ -213,6 +217,7 @@ int main(){
 			GW = GW->nextNode;
 			GW->result.calculate();
 			printResult(GW);
+			GW_Eng[GW->id] += GW->result.energy;	// each GW energy
 			if(GW->nextNode != NULL){
 				Result_avg->energy += GW->result.energy;
 				Result_avg->meet_ratio += GW->result.meet_ratio;
@@ -239,7 +244,14 @@ int main(){
 	fs << "Energy Consumption : " << Result_avg->energy/(Set*2) << endl;
 	fs << "Response time of Meet : " << Result_avg->resp << endl;
 	fs << "Cloud server energy : " << Result_avg->serverEng/Set << endl;
-	fs << "Fog devices energy : " << Result_avg->fogEng/Set << endl;
+	fs << "Fog devices energy : " << Result_avg->fogEng/Set << endl << endl;
+	
+	GW = NodeHead;
+	while(GW->nextNode != NULL) {
+		GW = GW->nextNode;
+		fs << "GW_Eng : " << GW_Eng[GW->id]/Set << endl;
+	}
+	fs << endl;
 
 	fs << "HyerP : " << sameP << "\nMiss set : ";
 	for(int i=0;i<missSet.size();++i){

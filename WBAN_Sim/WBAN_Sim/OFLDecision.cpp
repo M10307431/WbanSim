@@ -21,12 +21,13 @@ float calEnergy(bool remote, int exec, float Eng) {
 	
 	if(!remote){
 		
-		Eng =  (p_idle + p_comp)*exec; // + (p_idle + p_trans)*t_trans;
+		Eng =  (p_idle + p_comp)*exec; 
 		return Eng;
 	}
 	else{
 		
-		Eng =  (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer + (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer;	//+ (p_idle + p_comp)*(exec/speedRatio)
+		//Eng =  (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer + (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer;
+		Eng =  2*((p_idle + p_trans)*(offloadTransfer-proc) + (p_idle + p_comp )*proc);
 		return Eng;
 	}
 }

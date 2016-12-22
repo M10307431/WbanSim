@@ -96,7 +96,8 @@ class service(SocketServer.BaseRequestHandler):
                         ADM = 1
                         if taskCC[0]['GW']==1:
                             GW1 = taskCC
-                            Task[0]['time'] = timetick
+                            if len(Task):
+                                Task[0]['time'] = timetick
                             self.request.send(pickle.dumps(Task))
                             self.request.settimeout(None)
                             recv = self.request.recv(1024)
@@ -105,7 +106,8 @@ class service(SocketServer.BaseRequestHandler):
                             self.request.send(pickle.dumps(GW3))
                         elif taskCC[0]['GW']==2:
                             GW2 = taskCC
-                            Task[0]['time'] = timetick
+                            if len(Task):
+                                Task[0]['time'] = timetick
                             self.request.send(pickle.dumps(Task))
                             self.request.settimeout(None)
                             recv = self.request.recv(1024)
@@ -114,7 +116,8 @@ class service(SocketServer.BaseRequestHandler):
                             self.request.send(pickle.dumps(GW3))
                         elif taskCC[0]['GW']==3:
                             GW3 = taskCC
-                            Task[0]['time'] = timetick
+                            if len(Task):
+                                Task[0]['time'] = timetick
                             self.request.send(pickle.dumps(Task))
                             self.request.settimeout(None)
                             recv = self.request.recv(1024)

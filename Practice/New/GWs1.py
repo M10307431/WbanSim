@@ -36,22 +36,23 @@ class  ADM(threading.Thread):
         global CC
         global GW2
         global GW3
+
         adm1 = socket(AF_INET, SOCK_STREAM)
         adm1.connect((CChost, CCport))
         print 'ADM connected'
         while True:
             try:
                 adm1.send(pickle.dumps(Task))
-                CC = adm1.recv(4096)
-                CC = pickle.loads(CC)
+                cc = adm1.recv(4096)
+                CC = pickle.loads(cc)
                 #print "CC"
                 adm1.send("GW2")
-                GW2 = adm1.recv(4096)
-                GW2 = pickle.loads(GW2)
+                gw2 = adm1.recv(4096)
+                GW2 = pickle.loads(gw2)
                 #print "GW2"
                 adm1.send("GW3")
-                GW3 = adm1.recv(4096)
-                GW3 = pickle.loads(GW3)
+                gw3 = adm1.recv(4096)
+                GW3 = pickle.loads(gw3)
                 #print "GW3"
                 time.sleep(0.001)
             except:
@@ -69,6 +70,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
     def handle(self):
         global cc1
         global c13
+        global Task
         global CC
         global GW2
         global GW3
@@ -221,22 +223,24 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                                 resp3 = 0
                                 FMW2 = 0
                                 FMW3 = 0
-                                for g in GW2:
-                                    if g['Deadline'] < d['VD'] + GW2[0]['time']:
-                                        resp2 += g['Remain']
-                                '''for g3 in GW3:
-                                    if g3['Deadline'] < d['VD'] + GW3[0]['time']:
-                                        resp3 += g3['Remain']
-                                if (resp2+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW2[0]['uti']):
-                                    FMW2 = m*GW2[0]['batt']-(1-m)*GW2[0]['uti']
-                                if (resp3+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW3[0]['uti']):
-                                    FMW3 = m*GW3[0]['batt']-(1-m)*GW3[0]['uti']
+                                if len(GW2):
+                                    for g in GW2:
+                                        if g['Deadline'] < d['VD'] + GW2[0]['time']:
+                                            resp2 += g['Remain']
+                                    if (resp2+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW2[0]['uti']):
+                                        FMW2 = m*GW2[0]['batt']-(1-m)*GW2[0]['uti']
+                                if len(GW3):
+                                    for g3 in GW3:
+                                        if g3['Deadline'] < d['VD'] + GW3[0]['time']:
+                                            resp3 += g3['Remain']
+                                    if (resp3+d['Exe']) <= d['VD'] and d['Exe']/d['VD'] < (1.0-GW3[0]['uti']):
+                                        FMW3 = m*GW3[0]['batt']-(1-m)*GW3[0]['uti']
                                 if FMW2 > FMW3 and FMW2 > 0:
                                     d['OFLD'] = 2
                                 elif FMW3 > FMW2 and FMW3 >0:
                                     d['OFLD'] = 3
                                 else:
-                                    d['OFLD'] = -999'''
+                                    d['OFLD'] = -999
                                                                 
                             if(d['OFLD'] == -999):
                                 d['Remain'] = d['Exe']
@@ -382,7 +386,9 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         pass
 
 if __name__=="__main__":
-    Task = []
+    Task =[{"Exe":0.045,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
+                {"Exe":0.198,"Period":0.4,"Deadline":0,'Arrival':-0.4,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
+                {"Exe":0.040,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0}]
     CC = []
     GW2 = []
     GW3 = []

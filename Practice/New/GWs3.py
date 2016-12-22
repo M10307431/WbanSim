@@ -340,7 +340,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         pass
 
 if __name__=="__main__":
-    Task = []
+    Task =[{"Exe":0.3,"Period":1,"Deadline":0,'Arrival':-1,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":3,"VD":0,"batt":1.0,"uti":0,"time":0}]
     CC = []
     GW1 = []
     GW2 = []

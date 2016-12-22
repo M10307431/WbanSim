@@ -59,7 +59,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         c13.settimeout(0.0)
         
         idle = 1
-        hyperperiod = 40
+        hyperperiod = 80
         timetick = 0
 
         #print datetime.datetime.now().strftime("%H:%M:%S")," Start"
@@ -134,7 +134,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                             if timetick>=d['Arrival'] and d['Remain']>0:
                                 sched_new = d
                         else:
-                            if sched_new['Arrival']>d['Arrival'] and timetick>=d['Arrival'] and d['Remain']>0:
+                            if sched_new['Arrival']>=d['Arrival'] and timetick>=d['Arrival'] and d['Remain']>0:
                                 sched_new = d
                 
                 #===== Run =====

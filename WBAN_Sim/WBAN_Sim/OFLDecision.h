@@ -18,6 +18,7 @@ extern const float p_trans;
 extern const float t_trans;
 extern const int offloadTransfer;
 extern const int fogTransfer;
+extern const int proc;
 //bool remote = false;	// 0:local, 1:remote
 
 float calEnergy(bool remote, int exec, float Eng);	// remote 0:local, 1:remote

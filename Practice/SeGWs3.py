@@ -22,7 +22,7 @@ def delay_1ms():
    s = time.time()
    while True:
        f = time.time()
-       if f-s >= 0.01:
+       if f-s >= 0.001:
            break
 
 class MyTCPHandler(SocketServer.BaseRequestHandler):
@@ -72,14 +72,14 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         offloadingTrans = 0.025
         fogtrans = 0.005
         speedratio = 5
-        #===== OFLD =====
+        '''#===== OFLD =====
         print 'Offloading Decision'
         for t in Task:
             engL = (p_idle+p_comp)*t['Exe']
             engR = 2*(p_idle+p_trans+p_comp/2.0)*offloadingTrans
             if(engL > engR):
                 t['OFLDorg'] = -1 if(t['Exe'] > 0.1) else -999
-            print "Task",t['id'],' ',t['OFLDorg']
+            print "Task",t['id'],' ',t['OFLDorg']'''
         
         taskcur = None
         try:
