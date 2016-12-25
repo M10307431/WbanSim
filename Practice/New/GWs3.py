@@ -52,7 +52,7 @@ class  ADM(threading.Thread):
                 GW2 = adm3.recv(4096)
                 GW2 = pickle.loads(GW2)
                 #print "GW2"
-                time.sleep(0.001)
+                #time.sleep(0.001)
             except:
                 pass
 
@@ -155,7 +155,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                         else:
                             taskCB2['Remain'] = taskCB2['Exe']
                             taskCB2['state'] = 2
-                            taskCB2['Deadline'] = timetick + taskCB2['VD']-fogtrans
+                            taskCB2['Deadline'] = timetick + taskCB2['VD']
                             taskCB2['Arrival'] = 0
                             Task.append(taskCB2)
                             print "Timetick=",timetick,"\tTASK",taskCB2['id'],"(",taskCB2['Cnt'],")\tfromGW2"
@@ -173,7 +173,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
                         else:
                             taskCB1['Remain'] = taskCB1['Exe']
                             taskCB1['state'] = 2
-                            taskCB1['Deadline'] = timetick + taskCB1['VD']-fogtrans
+                            taskCB1['Deadline'] = timetick + taskCB1['VD']
                             taskCB1['Arrival'] = 0
                             Task.append(taskCB1)
                             print "Timetick=",timetick,"\tTASK",taskCB1['id'],"(",taskCB1['Cnt'],")\tfromGW1"
@@ -344,9 +344,9 @@ if __name__=="__main__":
     CC = []
     GW1 = []
     GW2 = []
-    CChost='140.118.206.169'
+    CChost='140.118.172.123'
     CCport=12345
-    Lhost='140.118.206.169'
+    Lhost='192.168.0.103'
     Lport=22222
     HOST, PORT = "", 33333
     threadadm = ADM()

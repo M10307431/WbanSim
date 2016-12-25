@@ -178,7 +178,7 @@ struct Node{
 
 	void MW(int battSum, float utiSum, int pt){
 
-		batt = 1.0 - (battery-result.energy)/battery;
+		batt = 1.0 - ((float)battery-result.energy)/(float)battery;
 		
 		if(currTask->id != 999 && currTask->deadline < pt){			// idle task
 			block = currTask->remaining;

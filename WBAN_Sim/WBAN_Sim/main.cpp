@@ -47,7 +47,7 @@ int NodeNum = 3;	// # of GW Node
 int TaskNum = 20;	// # of Tasks in each GW
 float total_U = 2.0;	// total Utilization
 float lowest_U = 0.05;	// lowest Utilization
-float m = 0.5;			// migration factor	 1.0 <<---energy------------load--->> 0.0
+float m = 0.8;			// migration factor	 1.0 <<---energy------------load--->> 0.0
 
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
@@ -62,7 +62,7 @@ int fogserver =0;		// fog server num off/on
 /*=================================
           Parameter
 =================================*/
-const int battery = 5*700*3600/1000;	// 5v * 2600mA *3600s	//700mAh
+const int battery = 5*1000*3600/1000;	// 5v * 2600mA *3600s	//700mAh
 const float speedRatio = 5;	// remoteSpeed / localSpeed
 const int WBANpayload = 128; // WBAN payload for normalized (byte)
 //--------Power-------------------------------------------------------
@@ -72,7 +72,7 @@ const float p_trans = 0.5;		// wifi trans	0.3
 const int cloudp_idle = 223;	// server idle power (W)
 const int cloudp_actv = 368;	// server active power
 //--------Time--------------------------------------------------------
-const float _traffic = 1/0.5;			// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
+const float _traffic = 1;			// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
 const int proc = 5;
 const int offloadTransfer = 25;	// global trans time (ms)
 const int fogTransfer = 5;		// local trans

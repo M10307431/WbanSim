@@ -561,7 +561,7 @@ void EDF(){
 						
 						GW->currTask->uplink--;
 						GW->currTask->remaining = GW->currTask->uplink;
-						if(GW->currTask->uplink > GW->currTask->dwlink-proc){
+						if(GW->currTask->uplink > GW->currTask->dwlink-(proc-1)){
 							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
 						}
 						else{
@@ -596,7 +596,7 @@ void EDF(){
 						
 						GW->currTask->dwlink--;
 						GW->currTask->remaining = GW->currTask->dwlink;
-						if(GW->currTask->dwlink < proc){
+						if(GW->currTask->dwlink < proc-1){
 							GW->result.energy += p_idle + p_comp;	// calculate GW offloading energy
 						}
 						else{
