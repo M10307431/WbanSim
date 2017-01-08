@@ -1,6 +1,6 @@
 Set = 100
 NodeNum = 3
-TaskNum = 3
+TaskNum = 10
 total_U = 1.0
 policyOFLD = AOFLDC
 schedPolicy = EDF
