@@ -1,4 +1,4 @@
-
+'''
 tasknum = 5
 uti = 1.0
 if tasknum == 3 and uti ==0.5:
@@ -70,3 +70,11 @@ for t in Task2:
         t['OFLDorg'] = -1 if(2*fogtrans+t['Exe'] > 2*offloadingTrans+t['Exe']/speedratio) else 3
 
     print "Task2",t['id'],' ',t['OFLDorg']
+'''
+import time
+s = time.time()
+x= 0
+for i in range(10000):
+    x*=i
+f = time.time()
+print f-s

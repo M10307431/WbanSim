@@ -163,7 +163,7 @@ class ThreadedTCPServer(SocketServer.ThreadingMixIn, SocketServer.TCPServer):
 if __name__ == "__main__":
     t = ThreadedTCPServer(('',12345), service)
     timetick = 0
-    speed = 5
+    speed = 1
     sched = 0
     lock = 0
     Task = []

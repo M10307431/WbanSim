@@ -68,7 +68,7 @@ void sched_new(Node* GW){
 		sort(GW->local_q.wait_q.begin(), GW->local_q.wait_q.end(), minDeadline);	// sort by deadline min -> max
 
 		for(deque<Task>::iterator it=GW->local_q.wait_q.begin(); it!=GW->local_q.wait_q.end();){
-			if(it->deadline <= timeTick){				// task arrival
+			if(it->deadline == timeTick){				// task arrival
 				it->deadline += it->period;				
 				it->remaining = it->exec;
 				it->cnt += 1;
@@ -131,6 +131,14 @@ void sched_new(Node* GW){
 			GW->currTask = idleTask;
 			sched_new(GW);
 		}
+		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){
+			GW->currTask->remaining = 0;
+			GW->currTask->deadline = GW->currTask->virtualD;
+			GW->remote_q.wait_q.push_back(*GW->currTask);
+			GW->currTask = idleTask;
+			GW->result.miss++;
+			sched_new(GW);
+		}
 
 	}
 	// local_q
@@ -153,7 +161,15 @@ void sched_new(Node* GW){
 			GW->local_q.wait_q.push_back(*GW->currTask);
 			GW->currTask = idleTask;
 			sched_new(GW);
-		}	
+		}
+		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){
+			GW->currTask->remaining = 0;
+			GW->currTask->deadline = GW->currTask->virtualD;
+			GW->local_q.wait_q.push_back(*GW->currTask);
+			GW->currTask = idleTask;
+			GW->result.miss++;
+			sched_new(GW);
+		}
 	}
 }
 
@@ -373,7 +389,7 @@ void EvaluationFog(Task *task){
 
 	while(target->nextNode != NULL){
 		target = target->nextNode;
-		target->MW(battSum, utiSum, task->deadline);
+		target->MW(task->localEng, utiSum, task->deadline);
 		target->ADM(task->exec, task->virtualD-task->dwlink, task->uplink);
 		//printf("(%d,%f,%d,%f)\t",target->batt,target->current_U,target->block,target->migratWeight);
 	}
@@ -404,6 +420,13 @@ void EvaluationFog(Task *task){
 		task->target = task->parent;
 		task->deadline = task->virtualD;	// original deadline
 		task->remaining = task->exec;
+	}
+	else if(task->target == 999){
+		task->remaining = 0;
+		task->deadline = task->virtualD;
+		GW->remote_q.wait_q.push_back(*GW->currTask);
+		GW->currTask = idleTask;
+		GW->result.miss++;
 	}
 	else{
 		target = NodeHead;

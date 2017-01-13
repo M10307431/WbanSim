@@ -176,9 +176,10 @@ struct Node{
 		}
 	}
 
-	void MW(int battSum, float utiSum, int pt){
+	void MW(int Eng, float utiSum, int pt){
 
-		batt = 1.0 - ((float)battery-result.energy)/(float)battery;
+		float Q;
+		Q = (batt*(float)battery-result.energy-Eng)/(float)battery;
 		
 		if(currTask->id != 999 && currTask->deadline < pt){			// idle task
 			block = currTask->remaining;
@@ -208,7 +209,7 @@ struct Node{
 			}
 		}*/
 
-		migratWeight = migration_factor*batt - (1.0-migration_factor)*(current_U);
+		migratWeight = migration_factor*Q - (1.0-migration_factor)*(current_U);
 	}
 
 	void ADM(int exec, int deadline2, int uplink){

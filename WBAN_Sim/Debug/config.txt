@@ -1,6 +1,6 @@
 Set = 100
 NodeNum = 3
-TaskNum = 20
-total_U = 2.0
-policyOFLD = SeGW
-schedPolicy = FIFO
+TaskNum = 5
+total_U = 1.0
+policyOFLD = myOFLD
+schedPolicy = EDF

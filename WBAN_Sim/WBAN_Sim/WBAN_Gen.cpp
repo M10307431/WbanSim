@@ -81,9 +81,11 @@ void WBAN_Gen(){
 			break;
 
 		float remain_U = total_U;
+		//GW->batt = total_U;
 		// last GW as a fog server with light load
 		if(GW->id == NodeNum-fogserver-1){
 			remain_U = 0.3;
+			///GW->batt = 0.25;
 			// set task parameters to node
 			GW->task_q.at(0).id = 0;										// task id
 			GW->task_q.at(0).cnt = 0;										// task counter
@@ -125,9 +127,9 @@ void WBAN_Gen(){
 			GW->task_q.at(t).uti = (float)GW->task_q.at(t).exec/P.at(t);	// task utilization
 			GW->total_U += GW->task_q.at(t).uti;							// node total utilization
 		}
-		
+		///total_U = 0.75;
 	}
-
+	///total_U = 1.0;
 }
 
 /*=================================
