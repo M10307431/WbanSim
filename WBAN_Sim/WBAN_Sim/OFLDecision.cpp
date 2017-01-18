@@ -17,7 +17,7 @@ using namespace std;
 
 float Eng = 0;	// (mJ)
 
-float calEnergy(bool remote, int exec, float Eng) {
+float calEnergy(bool remote, int exec, float Eng) {		// power model
 	
 	if(!remote){
 		
@@ -26,7 +26,6 @@ float calEnergy(bool remote, int exec, float Eng) {
 	}
 	else{
 		
-		//Eng =  (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer + (p_idle + p_trans + (float)p_comp/2.0)*offloadTransfer;
 		Eng =  2*((p_idle + p_trans)*(offloadTransfer-proc) + (p_idle + p_comp )*proc);
 		return Eng;
 	}
@@ -37,7 +36,7 @@ void OFLD(Node* GW){
 	if(GW->task_q.empty()){
 		printf("GW_%d has't any tasks.\n", GW->id);
 	}
-	else if(policyOFLD == SeGW){
+	else if(policyOFLD == SeGW){	// 如果是SeGW，則採用他自己的決策
 		SeGW_OFLD(GW);
 	}
 	else{
@@ -45,30 +44,29 @@ void OFLD(Node* GW){
 			int exec = it->exec;
 			
 			// calculate energy
-			it->localEng = calEnergy(0, exec, Eng);
-			it->remoteEng = calEnergy(1, exec, Eng);
+			it->localEng = calEnergy(0, exec, Eng);		// 計算local energy
+			it->remoteEng = calEnergy(1, exec, Eng);	// 計算remote energy
 			
 			// set offloading flag
 			//////////////////////////////////////
 			if(policyOFLD==NOFLD){
-				it->offload = false;
+				it->offload = false;		// 全都在local執行
 			}
 			else if(policyOFLD==AOFLDC){
-				it->offload = true;
-				it->vm = NodeNum-1;
+				it->offload = true;			// 全都在cloud執行
+				it->vm = NodeNum-1;			// 第三顆node (每顆GW都有一顆VM，在本實驗不考慮cloud partition問題，所以只使用GW3的VM來存放cloud相關資訊)
 			}
-			else if(policyOFLD==AOFLDF){
+			else if(policyOFLD==AOFLDF){	// 全都放cloud + fog (已無使用，code也不完整，可忽略) 
 				it->offload = true;
 				it->target = -1;	// offloading to cloud is slower than origin >> fog
 				//it->target = ((it->target == -1)&&(2*fogTransfer+(exec/2) < 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
 
 			}
 			else if(policyOFLD==myOFLD){
-				if((it->localEng > it->remoteEng)){
+				if((it->localEng > it->remoteEng)){		// energy saving
 					it->offload = true;
-					it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// offloading to cloud is slower than origin >> fog
-					it->target = ((it->target == -1)&&(2*fogTransfer+(exec/fogspeed) > 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
-					//it->virtualD = (it->target != -1)? (it->deadline-offloadTransfer): (it->deadline-fogTransfer);
+					it->target = (exec > 2*offloadTransfer+(exec/speedRatio))? -1 : 999;	// exec小於cloud時間則放Fog
+					//it->target = ((it->target == -1)&&(2*fogTransfer+(exec/fogspeed) > 2*offloadTransfer+(exec/speedRatio)))? -1 : 999;	// 
 				}
 				else{
 					it->offload = false;
@@ -94,7 +92,7 @@ void SeGW_OFLD(Node* GW){
 			if(it->remoteEng > it->localEng){
 				it->offload = false;
 			}
-			else if(it->exec <= 100) {
+			else if(it->exec <= 100) {	// 當exec屬於short則放local，在本實驗小於等於最小period則設定為short exec
 				it->offload = false;
 			}
 			else{

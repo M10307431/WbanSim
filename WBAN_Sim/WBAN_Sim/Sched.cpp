@@ -19,7 +19,7 @@ using namespace std;
 #define SeGW 4
 
 /*======== subfunction ============*/
-bool minDeadline(Task i, Task j) {return (i.deadline < j.deadline || (i.deadline == j.deadline && i.remaining < j.remaining));}
+bool minDeadline(Task i, Task j) {return (i.deadline < j.deadline || (i.deadline == j.deadline && i.remaining < j.remaining));}	// 以deadline做sorting
 
 void sched_new(Node* GW){
 	// task awake or sleep?
@@ -28,12 +28,13 @@ void sched_new(Node* GW){
 		sort(GW->remote_q.wait_q.begin(), GW->remote_q.wait_q.end(), minDeadline);	// sort by deadline min -> max
 
 		for(deque<Task>::iterator it=GW->remote_q.wait_q.begin(); it!=GW->remote_q.wait_q.end();){
-			if(it->deadline <= timeTick){				// task arrival
-				it->deadline += it->period;
-				it->virtualD = it->deadline;
+			if(it->deadline <= timeTick){		// task arrival
+				it->deadline += it->period;		// deadline 更新	
+				it->virtualD = it->deadline;	// 原deadline暫存
 
-				it->uplink = (it->target == -1)? (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic : fogTransfer;
-				it->dwlink = (it->target == -1)? (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic : fogTransfer;
+				it->uplink = (it->target == -1)? (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic : fogTransfer;	// 計算uplink時間 (traffic代表bandwidth大小，WBANPayload為資料大小的基數，取ceil為mapping不同exec所擁有的資料大小的傳輸時間)
+				it->dwlink = (it->target == -1)? (offloadTransfer+ceil((float)it->exec/WBANpayload))*_traffic : fogTransfer;	// downlink設定也與uplink所需時間一樣，即資料大小不變
+				// run-time的offloading decision
 				it->target = (it->target != -1)? 999 : -1;
 				it->vm = -1;
 				it->remaining = it->uplink;
@@ -44,11 +45,10 @@ void sched_new(Node* GW){
 				}
 
 				if(policyOFLD==myOFLD) {
-					it->deadline = (it->target != -1)? (it->virtualD-it->dwlink-it->exec) : (it->virtualD-it->dwlink-it->exec/speedRatio);	//virtual deadline
+					it->deadline = (it->target != -1)? (it->virtualD-it->dwlink) : (it->virtualD-it->dwlink);	//virtual deadline
 				}
 
 				if(policyOFLD==AOFLDC){
-					//it->deadline--;
 					it->vm = NodeNum-1;
 				}
 
@@ -98,7 +98,7 @@ void sched_new(Node* GW){
 				find minDeadline task to execute
 	===========================================================*/
 	// remote_q
-	if((!GW->remote_q.ready_q.empty()) && (GW->remote_q.ready_q.begin()->deadline < GW->currTask->deadline)) {   
+	if((!GW->remote_q.ready_q.empty()) && (GW->remote_q.ready_q.begin()->deadline < GW->currTask->deadline)) {		// preempt   
 		if(GW->currTask->id != idleTask->id){
 			if(GW->currTask->offload){
 				GW->remote_q.ready_q.push_back(*GW->currTask);
@@ -131,7 +131,7 @@ void sched_new(Node* GW){
 			GW->currTask = idleTask;
 			sched_new(GW);
 		}
-		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){
+		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){		// addmission control ，不能做就丟了 
 			GW->currTask->remaining = 0;
 			GW->currTask->deadline = GW->currTask->virtualD;
 			GW->remote_q.wait_q.push_back(*GW->currTask);
@@ -162,7 +162,7 @@ void sched_new(Node* GW){
 			GW->currTask = idleTask;
 			sched_new(GW);
 		}
-		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){
+		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){		// addmission control ，不能做就丟了
 			GW->currTask->remaining = 0;
 			GW->currTask->deadline = GW->currTask->virtualD;
 			GW->local_q.wait_q.push_back(*GW->currTask);
@@ -279,7 +279,9 @@ void sched_fifo(Node* GW){
 
 
 int traffic = 0;
-
+/************************************
+			Cloud Server
+************************************/
 void cludServer(){
 	GW = NodeHead;
 
@@ -314,10 +316,10 @@ void cludServer(){
 			sort(GW->Cloud.begin(), GW->Cloud.end(), minDeadline);	// sort by deadline min -> max
 				
 			GW->Cloud.front().remaining -= speedRatio; debug(("cloud\r\n"));
-			GW->result.serverEng += cloudp_actv;
+			GW->result.serverEng += cloudp_actv;	//計算cloud power
 
 			if(GW->Cloud.front().remaining <= 0){
-				GW->Cloud.front().deadline = GW->Cloud.front().virtualD;
+				GW->Cloud.front().deadline = GW->Cloud.front().virtualD;	// 回復原deadline
 				GW->Cloud.front().remaining = GW->Cloud.front().dwlink;
 
 				Node *src = new Node;
@@ -326,7 +328,7 @@ void cludServer(){
 					src = src->nextNode;
 					if(src->id == GW->Cloud.front().parent){
 						Time("cloud_back");
-						src->TBS.push_back(GW->Cloud.front());
+						src->TBS.push_back(GW->Cloud.front());	// 丟回source GW
 						break;
 					}
 				}
@@ -352,29 +354,28 @@ void EvaluationVM(Task *task){
 
 	while(target->nextNode != NULL){
 		target = target->nextNode->nextNode->nextNode;
-		target->cloudADM(task->exec, task->virtualD-task->dwlink, task->uplink);
+		target->cloudADM(task->exec, task->virtualD-task->dwlink, task->uplink);	// 計算cloud admission control
 	}
 
 	target = NodeHead;
 	float temp_CCadm = INT_MAX;
 	while (target->nextNode != NULL) {
 		target = target->nextNode->nextNode->nextNode;
-		//cout << target->CCadm << ", "; 
+		
 		if((target->CCadm < temp_CCadm) && (target->CCadm > 0)){
 			task->vm = target->id;
 		}
 	}
 
-	if(task->vm == -1){
+	if(task->vm == -1){		// 找不到適合的VM -> admission fail >> 改成試試fog執行
 		task->vm = 999;
 	}
 
-	//cout << endl;
 	target = NULL;
 
 }
 
-void to_Cloud(Task *task){
+void to_Cloud(Task *task){				// offloading to cloud
 	target = NodeHead;
 	while(target->nextNode != NULL){
 		target = target->nextNode;
@@ -389,9 +390,9 @@ void EvaluationFog(Task *task){
 
 	while(target->nextNode != NULL){
 		target = target->nextNode;
-		target->MW(task->localEng, utiSum, task->deadline);
-		target->ADM(task->exec, task->virtualD-task->dwlink, task->uplink);
-		//printf("(%d,%f,%d,%f)\t",target->batt,target->current_U,target->block,target->migratWeight);
+		target->MW(task->localEng, utiSum, task->deadline);					// 計算 migration weight
+		target->ADM(task->exec, task->virtualD-task->dwlink, task->uplink);	// 計算 admission control
+		
 	}
 	
 	target = NodeHead;
@@ -399,9 +400,7 @@ void EvaluationFog(Task *task){
 	float temp_U = target->nextNode->current_U;
 	float temp_ADM = target->nextNode->admin;
 	while (target->nextNode != NULL) {
-		target = target->nextNode;
-		//cout << target->admin << "," << target->current_U << "\t"; 
-		//if((target->id != task->parent) && ((target->admin < temp_ADM) || (target->admin == temp_ADM && target->current_U < temp_U)) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
+		target = target->nextNode;			// 尋找 addmission 有過 & U 夠放 & 最大migration weight的GW	
 		if((target->admin < task->period-task->dwlink-task->uplink) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
 			if(temp_MW == 0){
 				temp_MW = target->migratWeight;
@@ -414,9 +413,8 @@ void EvaluationFog(Task *task){
 		}
 	}
 	
-	//cout << endl;
 	// can not find proper dest >> local running
-	if(task->target == 999 || task->target == task->parent){
+	if(task->target == 999 || task->target == task->parent){	//回local執行
 		task->target = task->parent;
 		task->deadline = task->virtualD;	// original deadline
 		task->remaining = task->exec;
@@ -428,7 +426,7 @@ void EvaluationFog(Task *task){
 		GW->currTask = idleTask;
 		GW->result.miss++;
 	}
-	else{
+	else{									// target GW 預約此task 的資訊
 		target = NodeHead;
 		while (target->nextNode != NULL){
 			target = target->nextNode;
@@ -439,7 +437,7 @@ void EvaluationFog(Task *task){
 	target = NULL;
 }
 //============================== Retuen migration target ============================
-Node *findMigraDest(Task *task){
+Node *findMigraDest(Task *task){		// 尋找target GW的位置並回覆
 	
 	target = NodeHead;
 	while (target->nextNode != NULL) {
@@ -453,7 +451,7 @@ Node *findMigraDest(Task *task){
 	return target;
 }
 
-Node *backMigraSrc(Task *task){
+Node *backMigraSrc(Task *task){			// 尋找source GW的位置並回覆
 	parent = NodeHead;
 	while (parent->nextNode != NULL) {
 		parent = parent->nextNode;
@@ -466,7 +464,7 @@ Node *backMigraSrc(Task *task){
 	return parent;
 }
 
-void Migration(Node* src, Node* dest){
+void Migration(Node* src, Node* dest){	// 執行migration
 	
 	dest->TBS.push_back(*src->currTask);
 	src->currTask = idleTask;
@@ -490,10 +488,11 @@ void EDF(){
 		traffic = 0;
 		debug(("head\r\n"));
 
-		cludServer();				// cloud computing
+		cludServer();	// cloud computing
 		debug(("TimeTick : %d\t GW_%d\t T_%d\r\n", timeTick, GW->id, GW->currTask->id));
 		
 		GW = NodeHead;
+		// 從buffer中把task拿進來或拿回來
 		while (GW->nextNode != NULL){
 			GW = GW->nextNode;
 			debug(("TBS0\r\n"));
@@ -506,7 +505,7 @@ void EDF(){
 					GW->TBS.front().deadline = GW->TBS.front().virtualD; //- GW->TBS.front().dwlink;	
 				}
 				else{
-					GW->TBS.front().deadline = GW->TBS.front().virtualD; // phase 3 origin deadline
+					GW->TBS.front().deadline = GW->TBS.front().virtualD; //  origin deadline
 				}
 			
 				GW->remote_q.ready_q.push_back(GW->TBS.front());
@@ -516,16 +515,16 @@ void EDF(){
 			}
 			debug(("TBS1\r\n"));
 
-			GW->update_U();				// update current total utilization
-			battSum += GW->batt;
-			utiSum += GW->current_U;
-			traffic += GW->Cloud.size();
+			GW->update_U();				// update current utilization
+			//battSum += GW->batt;
+			//utiSum += GW->current_U;
+			//traffic += GW->Cloud.size();
 		}
 		
 		GW = NodeHead;
 		while (GW->nextNode != NULL){
 			GW = GW->nextNode;
-
+			// 計算miss 
 			if((GW->currTask->deadline <= timeTick) && (GW->currTask->remaining > 0)) {	
 				if(GW->currTask->offload){
 					debug(("miss_r !\r\n")); Time("miss_r");
@@ -562,18 +561,16 @@ void EDF(){
 				
 				if(policyOFLD == myOFLD){
 					if(GW->currTask->target == -1 && GW->currTask->vm == -1){
-						EvaluationVM(GW->currTask);
+						EvaluationVM(GW->currTask);		// 計算cloud admission
 					}
 
 					// Evaluate Fog migration target at first running
 					if(GW->currTask->target == 999 || GW->currTask->vm == 999){
-						EvaluationFog(GW->currTask);
+						EvaluationFog(GW->currTask);	// 計算 Fog admission
 					}
 				}
 				
-
 				debug(("--_r !\r\n"));
-				//GW->result.energy += (p_idle+(float)p_comp/4.0);	// calculate GW offloading energy (proccessing(light loading) + transmission)
 
 				/*=========================================
 							  Fog offfloading
@@ -657,8 +654,8 @@ void EDF(){
 							  Cloud offfloading
 				==========================================*/
 				else{
-					if(GW->currTask->vm == 999){
-						GW->ADM(GW->currTask->exec, GW->currTask->virtualD, 0);
+					if(GW->currTask->vm == 999){	// cloud & fog 都不行 -> 試試local
+						GW->ADM(GW->currTask->exec, GW->currTask->virtualD, 0); // admission control
 						if(GW->admin-GW->currTask->remaining <= GW->currTask->virtualD-timeTick && 1.0-GW->current_U > GW->currTask->uti){
 							GW->currTask->vm = -999;
 							GW->currTask->deadline = GW->currTask->virtualD;
@@ -667,7 +664,7 @@ void EDF(){
 							debug(("--_l_cloud !\r\n"));
 							GW->result.energy += (p_comp + p_idle);  // calculate GW computing energy
 						}
-						else{
+						else{						// local admission fail
 							GW->currTask->deadline = GW->currTask->virtualD;
 							Time("VM miss");
 							GW->result.miss++;
@@ -675,7 +672,7 @@ void EDF(){
 							GW->currTask = idleTask;
 						}
 					}
-					else if(GW->currTask->vm == -999){
+					else if(GW->currTask->vm == -999){			 // local run
 						GW->currTask->remaining -= GW->speed;
 						debug(("--_l_cloud !\r\n"));
 				

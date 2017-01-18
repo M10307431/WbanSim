@@ -3,10 +3,10 @@ l:\m10307431\wban\wban_sim\wban_sim\struct.h(182): warning C4244: '=' : 將 'dou
 l:\m10307431\wban\wban_sim\wban_sim\struct.h(212): warning C4244: '=' : 將 'double' 轉換為 'float'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\struct.h(255): warning C4244: '+=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\struct.h(259): warning C4244: '=' : 將 'const float' 轉換為 'int'，由於型別不同，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(49): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(50): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
-l:\m10307431\wban\wban_sim\wban_sim\main.cpp(69): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(53): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(54): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(70): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
+l:\m10307431\wban\wban_sim\wban_sim\main.cpp(71): warning C4305: '正在初始化' : 從 'double' 轉換為 'const float'，是由較大的型別轉換為較小的型別，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(84): warning C4244: '引數' : 將 'time_t' 轉換為 'unsigned int'，由於型別不同，可能導致資料遺失
 l:\m10307431\wban\wban_sim\wban_sim\main.cpp(99): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 請參閱 'strtok' 的宣告
