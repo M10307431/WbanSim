@@ -1,0 +1,6 @@
+GW-1_Task-5U-1.0_Local.txt
+
+Meet : 1100
+Miss : 0
+Total : 1100
+Meet Ratio : 1.0

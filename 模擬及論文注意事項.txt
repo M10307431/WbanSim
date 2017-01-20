@@ -1,0 +1,15 @@
+Data size計算方式
+
+128為基數，凡 exec 不足 128 皆以128做計算
+
+128的由來 : A Survey on Wireless Body Area Networks for eHealthcare Systems in Residential Environments
+網路速度為12Mbps
+由傳輸時間回推data size
+
+data size = (floor (exec/128) + 20ms ) * 12Mbps 
+
+
+所以論文中 The data size of each task aries from $240kB$ to $324kB$~\cite{gia2015fog}. 就是這樣算來的
+
+最小的data size為240
+最大的則由最大period U=1的情況去算，也就是exec = 1000 >>data size = 324kB

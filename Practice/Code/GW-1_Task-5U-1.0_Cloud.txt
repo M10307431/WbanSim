@@ -1,0 +1,6 @@
+GW-1_Task-5U-1.0_Cloud.txt
+
+Meet : 499
+Miss : 657
+Total : 1100
+Meet Ratio : 0.453636363636

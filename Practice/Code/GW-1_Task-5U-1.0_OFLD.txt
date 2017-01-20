@@ -1,0 +1,6 @@
+GW-1_Task-5U-1.0_OFLD.txt
+
+Meet : 1063
+Miss : 61
+Total : 1100
+Meet Ratio : 0.966363636364

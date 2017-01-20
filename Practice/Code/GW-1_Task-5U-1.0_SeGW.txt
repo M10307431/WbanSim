@@ -1,0 +1,6 @@
+GW-1_Task-5U-1.0_SeGW.txt
+
+Meet : 937
+Miss : 163
+Total : 1100
+Meet Ratio : 0.851818181818

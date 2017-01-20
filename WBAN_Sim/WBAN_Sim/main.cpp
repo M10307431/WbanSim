@@ -245,8 +245,8 @@ int main(){
 	fs << "Meet Ratio : " << Result_avg->meet_ratio/(Set*2) << endl;
 	fs << "Energy Consumption : " << Result_avg->energy/(Set*2) << endl;
 	fs << "Response time of Meet : " << Result_avg->resp << endl;
-	fs << "Cloud server energy : " << Result_avg->serverEng/Set << endl;
-	fs << "Fog devices energy : " << Result_avg->fogEng/Set << endl << endl;
+	fs << "Cloud server energy : " << Result_avg->serverEng/(Set*2) << endl;
+	fs << "Fog devices energy : " << Result_avg->fogEng/(Set*2) << endl << endl;
 	
 	GW = NodeHead;
 	while(GW->nextNode != NULL) {
