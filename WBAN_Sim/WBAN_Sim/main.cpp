@@ -51,7 +51,7 @@ int NodeNum = 3;	// # of GW Node
 int TaskNum = 5;	// # of Tasks in each GW
 float total_U = 1.0;		// total Utilization in each GW
 float lowest_U = 0.05;		// lowest Utilization
-float m = 0.2;				// migration factor	 1.0 <<---energy------------load--->> 0.0
+float m = 0.5;				// migration factor	 1.0 <<---energy------------load--->> 0.0
 const float _traffic = 1/0.5;	// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
 
 int period[] = {100, 200, 400, 800, 1000};

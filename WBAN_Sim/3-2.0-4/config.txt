@@ -1,6 +1,6 @@
 Set = 100
 NodeNum = 3
-TaskNum = 8
+TaskNum = 5
 total_U = 2.0
 policyOFLD = SeGW
 schedPolicy = FIFO
