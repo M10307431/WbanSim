@@ -46,7 +46,9 @@ void Create(){
 		// last GW as a fog server without any tasks (NodeNum-1)
 		if(GW->id >= NodeNum-fogserver-1){
 			taskgen = new Task;
-			GW->task_q.push_back(*taskgen);
+			if(GW431){
+				GW->task_q.push_back(*taskgen);	// 如果在做4:3:1的時候要將這打開，才有GW3的task可以存放
+			}
 		}
 		else{
 			for(int t=0; t<TaskNum; ++t){
@@ -84,19 +86,24 @@ void WBAN_Gen(){
 		//GW->batt = total_U;
 		// last GW as a fog server with light load
 		if(GW->id == NodeNum-fogserver-1){
-			remain_U = 0.3;
+			if(!GW431){
+				break;
+			}
+			else{
+				remain_U = 0.25;
 			///GW->batt = 0.25;
 			// set task parameters to node
-			GW->task_q.at(0).id = 0;										// task id
-			GW->task_q.at(0).cnt = 0;										// task counter
-			GW->task_q.at(0).parent = GW->id;								// GW id
-			GW->task_q.at(0).period = 1000;								// task period
-			GW->task_q.at(0).deadline = 1000;									// task deadline
-			GW->task_q.at(0).exec = 0.3 *1000* GW->speed;						// task execution
-			GW->task_q.at(0).remaining = 0.3 * 1000 *GW->speed;					// task remaining time
-			GW->task_q.at(0).uti = 0.3;	// task utilization
-			GW->total_U += GW->task_q.at(0).uti;							// node total utilization
-			break;
+				GW->task_q.at(0).id = 0;										// task id
+				GW->task_q.at(0).cnt = 0;										// task counter
+				GW->task_q.at(0).parent = GW->id;								// GW id
+				GW->task_q.at(0).period = 100;								// task period
+				GW->task_q.at(0).deadline = 100;									// task deadline
+				GW->task_q.at(0).exec = 0.25 *100* GW->speed;						// task execution
+				GW->task_q.at(0).remaining = 0.25 * 100 *GW->speed;					// task remaining time
+				GW->task_q.at(0).uti = 0.25;	// task utilization
+				GW->total_U += GW->task_q.at(0).uti;							// node total utilization
+				break;
+			}
 		}
 		
 		vector<float> U;
@@ -121,15 +128,15 @@ void WBAN_Gen(){
 			GW->task_q.at(t).cnt = 0;										// task counter
 			GW->task_q.at(t).parent = GW->id;								// GW id
 			GW->task_q.at(t).period = P.at(t);								// task period
-			GW->task_q.at(t).deadline = P.at(t);									// task deadline
+			GW->task_q.at(t).deadline = P.at(t);							// task deadline
 			GW->task_q.at(t).exec = U.at(t) * P.at(t);						// task execution
 			GW->task_q.at(t).remaining = U.at(t) * P.at(t);					// task remaining time
 			GW->task_q.at(t).uti = (float)GW->task_q.at(t).exec/P.at(t);	// task utilization
 			GW->total_U += GW->task_q.at(t).uti;							// node total utilization
 		}
-		///total_U = 0.75;
+		if(GW431){total_U = 0.75;}
 	}
-	///total_U = 1.0;
+	if(GW431){total_U = 1.0;}
 }
 
 /*=================================
@@ -213,9 +220,11 @@ void Output_WBAN(){
 	while (GW != NULL){
 		cout << "Gateway Node : "<< GW->id << "\tU = " << GW->total_U << endl;
 		input << "GW " << GW->total_U << endl;
-		for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
-			cout << "\t T" << it->id << " = (" << it->exec << ", " << it->period << ", " << it->uti << ")\n";
-			input << "Task "<< it->exec << " " << it->period << " " << it->uti << "\n";
+		if(!GW->task_q.empty()){
+			for(deque<Task>::iterator it=GW->task_q.begin(); it!=GW->task_q.end(); ++it){
+				cout << "\t T" << it->id << " = (" << it->exec << ", " << it->period << ", " << it->uti << ")\n";
+				input << "Task "<< it->exec << " " << it->period << " " << it->uti << "\n";
+			}
 		}
 		cout<<endl;
 		GW = GW->nextNode;

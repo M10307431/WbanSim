@@ -45,7 +45,7 @@ def main():
     subprocess.Popen(["WBAN_Sim.exe"])
     os.chdir("..\\3-2.0-4") # change current path
     subprocess.Popen(["WBAN_Sim.exe"])
- 
+
 if __name__ == "__main__":
     main()
     print("End of main")

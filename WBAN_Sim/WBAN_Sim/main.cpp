@@ -48,11 +48,13 @@ char* inputPath = "input.txt";			// input 路徑
 fstream fs, config, input;
 int Set = 100;		// # of task set
 int NodeNum = 3;	// # of GW Node
-int TaskNum = 5;	// # of Tasks in each GW
+int TaskNum = 3;	// # of Tasks in each GW
 float total_U = 1.0;		// total Utilization in each GW
-float lowest_U = 0.05;		// lowest Utilization
-float m = 0.5;				// migration factor	 1.0 <<---energy------------load--->> 0.0
-const float _traffic = 1/0.5;	// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
+float lowest_U = 0.049;		// lowest Utilization
+float m = 0.8;				// migration factor	 1.0 <<---energy------------load--->> 0.0
+const float _traffic = 1;	// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
+
+bool GW431 = true;
 
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
@@ -63,7 +65,7 @@ int fogserver =0;		// fog server num off/on (gen task時，決定是否要保留空負載的f
 /*=================================
           Parameter
 =================================*/
-const int battery = 5*1000*3600/1000;	// 5v * 2600mA *3600s	//700mAh
+const int battery = 5*2600*3600/1000;	// 5v * 2600mA *3600s	//700mAh
 const float speedRatio = 5;				// remoteSpeed / localSpeed
 const int WBANpayload = 128;			// WBAN payload for normalized (byte)
 //--------Power-------------------------------------------------------
@@ -195,11 +197,15 @@ int main(){
 		while(GW->nextNode != NULL) {
 			GW = GW->nextNode;
 			GW->result.clear();
+			if(GW431){
+				GW->batt = GW->total_U;		//在做4:3:1時要打開，設定batt
+			}
+
 			if(GW->nextNode != NULL){
 				OFLD(GW);				// offloadinf decision
 			}
 			dispatch(GW);				// dispatch
-			//}
+			
 			if(GW->nextNode == NULL){	//fog GW 速度設定
 				GW->speed = fogspeed;
 			}

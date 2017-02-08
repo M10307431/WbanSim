@@ -180,7 +180,7 @@ struct Node{
 
 		float Q;
 		Q = (batt*(float)battery-result.energy-Eng)/(float)battery;
-		
+		/*
 		if(currTask->id != 999 && currTask->deadline < pt){			// idle task
 			block = currTask->remaining;
 		}
@@ -193,22 +193,22 @@ struct Node{
 				block += it->remaining;
 			}
 		}
-		/*for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end(); ++it){
+		for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end(); ++it){
 			if(it->deadline <= pt && it->deadline >= timeTick){
 				block += it->remaining;
 			}
-		}*/
+		}
 		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end(); ++it){
 			if(it->deadline <= pt && it->deadline >= timeTick){
 				block += it->remaining;
 			}
 		}
-		/*for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end(); ++it){
+		for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end(); ++it){
 			if(it->deadline <= pt && it->deadline >= timeTick){
 				block += it->remaining;
 			}
-		}*/
-
+		}
+		*/
 		migratWeight = migration_factor*Q - (1.0-migration_factor)*(current_U);
 	}
 
@@ -217,17 +217,20 @@ struct Node{
 		int exec_pr = (currTask->deadline <= deadline2)? currTask->remaining : 0;
 		
 		for(deque<Task>::iterator it=local_q.ready_q.begin(); it!=local_q.ready_q.end(); ++it){
-			if(it->deadline <= deadline2 && it->deadline >= timeTick){
+			if(it->deadline < deadline2 && it->deadline >= timeTick){
 				exec_pr += it->remaining/speed;
 			}
 		}
 		for(deque<Task>::iterator it=remote_q.ready_q.begin(); it!=remote_q.ready_q.end(); ++it){
-			if(it->deadline <= deadline2 && it->deadline >= timeTick && it->parent != id){
+			if(it->deadline < deadline2 && it->deadline >= timeTick){
+				exec_pr += it->remaining/speed;
+			}/*
+			if(it->deadline < deadline2 && it->deadline >= timeTick && it->parent != id){
 				exec_pr += it->remaining/speed;
 			}
 			else if(it->deadline <= deadline2 && it->deadline >= timeTick){
 				exec_pr += (it->target != -1)? it->exec/speed : it->remaining;
-			}
+			}*/
 		}
 		for(deque<Task>::iterator it=local_q.wait_q.begin(); it!=local_q.wait_q.end(); ++it){
 			if(it->deadline+it->period <= deadline2){
@@ -235,12 +238,13 @@ struct Node{
 			}
 		}
 		for(deque<Task>::iterator it=remote_q.wait_q.begin(); it!=remote_q.wait_q.end(); ++it){
-			if((it->target != -1) && (it->deadline+it->period <= deadline2)){
+			exec_pr += it->uplink;
+			/*if((it->target != -1) && (it->deadline+it->period <= deadline2)){
 				exec_pr += it->exec/speed;
 			}
 			else if((it->target == -1) && (it->deadline+it->period-offloadTransfer-it->exec/speedRatio <= deadline2)){
 				exec_pr += it->uplink;
-			}
+			}*/
 		}
 		
 		admin = exec_pr + exec/speed + remaingFog;

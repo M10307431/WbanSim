@@ -131,7 +131,8 @@ void sched_new(Node* GW){
 			GW->currTask = idleTask;
 			sched_new(GW);
 		}
-		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){		// addmission control ，不能做就丟了 
+		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD && ((GW->currTask->target ==-1 && GW->currTask->vm != -1) || (GW->currTask->target != 999 && GW->currTask->target != -1))){		// addmission control ，不能做就丟了 
+			Time("ADM_miss");
 			GW->currTask->remaining = 0;
 			GW->currTask->deadline = GW->currTask->virtualD;
 			GW->remote_q.wait_q.push_back(*GW->currTask);
@@ -163,6 +164,7 @@ void sched_new(Node* GW){
 			sched_new(GW);
 		}
 		else if(GW->currTask->deadline < timeTick + GW->currTask->remaining && policyOFLD==myOFLD){		// addmission control ，不能做就丟了
+			Time("ADM miss");
 			GW->currTask->remaining = 0;
 			GW->currTask->deadline = GW->currTask->virtualD;
 			GW->local_q.wait_q.push_back(*GW->currTask);
@@ -369,6 +371,10 @@ void EvaluationVM(Task *task){
 
 	if(task->vm == -1){		// 找不到適合的VM -> admission fail >> 改成試試fog執行
 		task->vm = 999;
+		task->uplink = fogTransfer;
+		task->dwlink = fogTransfer;
+		task->remaining = task->uplink;
+		task->deadline = task->virtualD - task->dwlink;
 	}
 
 	target = NULL;
@@ -401,7 +407,7 @@ void EvaluationFog(Task *task){
 	float temp_ADM = target->nextNode->admin;
 	while (target->nextNode != NULL) {
 		target = target->nextNode;			// 尋找 addmission 有過 & U 夠放 & 最大migration weight的GW	
-		if((target->admin < task->period-task->dwlink-task->uplink) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
+		if((target->id != task->parent)&&(target->admin < task->period-task->dwlink-task->uplink) && (target->admin > 0) && (1.0-target->current_U >= task->exec/target->speed/(task->virtualD-task->dwlink)) && (target->current_U <= 1.0)){
 			if(temp_MW == 0){
 				temp_MW = target->migratWeight;
 				task->target = target->id;
@@ -418,14 +424,21 @@ void EvaluationFog(Task *task){
 		task->target = task->parent;
 		task->deadline = task->virtualD;	// original deadline
 		task->remaining = task->exec;
+		if(task->deadline < task->remaining + timeTick){
+			task->remaining = 0;
+			task->deadline = task->virtualD;
+			GW->remote_q.wait_q.push_back(*GW->currTask);
+			GW->currTask = idleTask;
+			GW->result.miss++;
+		}
 	}
-	else if(task->target == 999){
+	/*else if(task->target == 999){
 		task->remaining = 0;
 		task->deadline = task->virtualD;
 		GW->remote_q.wait_q.push_back(*GW->currTask);
 		GW->currTask = idleTask;
 		GW->result.miss++;
-	}
+	}*/
 	else{									// target GW 預約此task 的資訊
 		target = NodeHead;
 		while (target->nextNode != NULL){
@@ -501,8 +514,8 @@ void EDF(){
 				
 				GW->remote_q.ready_q.push_front(*GW->currTask);		// currTask 暫存，不知明原因執行push時會將currTask修改到
 				//virtual deadline
-				if((GW->TBS.front().target != -1) && (GW->TBS.front().parent != GW->id)){ // phase 2 deadline
-					GW->TBS.front().deadline = GW->TBS.front().virtualD; //- GW->TBS.front().dwlink;	
+				if(GW->TBS.front().parent != GW->id){ // phase 2 deadline
+					GW->TBS.front().deadline = GW->TBS.front().virtualD - GW->TBS.front().dwlink;	
 				}
 				else{
 					GW->TBS.front().deadline = GW->TBS.front().virtualD; //  origin deadline
@@ -538,6 +551,7 @@ void EDF(){
 						delete parent;
 					}
 					else{
+						Time("fog miss");
 						GW->result.miss++;
 						GW->currTask->deadline = GW->currTask->virtualD;	// restore origin deadline
 						GW->remote_q.wait_q.push_back(*GW->currTask);
@@ -557,7 +571,7 @@ void EDF(){
 			/*******************************************
 							Offfloading
 			*******************************************/
-			if(GW->currTask->offload){
+			if(GW->currTask->offload && GW->currTask->id != idleTask->id){
 				
 				if(policyOFLD == myOFLD){
 					if(GW->currTask->target == -1 && GW->currTask->vm == -1){
@@ -653,7 +667,7 @@ void EDF(){
 				/*=========================================
 							  Cloud offfloading
 				==========================================*/
-				else{
+				else if(GW->currTask->id != idleTask->id){
 					if(GW->currTask->vm == 999){	// cloud & fog 都不行 -> 試試local
 						GW->ADM(GW->currTask->exec, GW->currTask->virtualD, 0); // admission control
 						if(GW->admin-GW->currTask->remaining <= GW->currTask->virtualD-timeTick && 1.0-GW->current_U > GW->currTask->uti){

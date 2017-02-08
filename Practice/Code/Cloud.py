@@ -49,7 +49,7 @@ def scheduler():
             break
         
         #===== exec =====
-        time.sleep(0.01)
+        time.sleep(0.001)
         timetick += 0.001
         if taskcur!=None and lock==0:
             idle = 1
