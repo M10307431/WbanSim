@@ -362,11 +362,11 @@ if __name__=="__main__":
                     {"Exe":0.262,"Period":0.4,"Deadline":0,'Arrival':-0.4,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
                     {"Exe":0.040,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0}]    
     elif tasknum == 5 and uti == 1.0:
-        Task =[{"Exe":0.023,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
-                    {"Exe":0.100,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':4,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
-                    {"Exe":0.044,"Period":0.2,"Deadline":0,'Arrival':-0.2,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
-                    {"Exe":0.028,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
-                    {"Exe":0.102,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':5,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0}]
+        Task =[{"Exe":0.102,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':1,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
+                    {"Exe":0.023,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':2,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
+                    {"Exe":0.100,"Period":0.8,"Deadline":0,'Arrival':-0.8,"Remain":0,'id':3,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
+                    {"Exe":0.044,"Period":0.2,"Deadline":0,'Arrival':-0.2,"Remain":0,'id':4,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0},
+                    {"Exe":0.028,"Period":0.1,"Deadline":0,'Arrival':-0.1,"Remain":0,'id':5,"Cnt":0,"OFLD":-999,"OFLDorg":-999,"state":0,"GW":1,"VD":0,"batt":1.0,"uti":0,"time":0}]
     else:
         raw_input('Task setting Error!')
     

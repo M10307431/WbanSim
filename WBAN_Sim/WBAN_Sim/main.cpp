@@ -54,7 +54,8 @@ float lowest_U = 0.049;		// lowest Utilization
 float m = 0.8;				// migration factor	 1.0 <<---energy------------load--->> 0.0
 const float _traffic = 1;	// 1/bandwidth(0-1.0)  >> 1, 1/0.75, 1/0.5
 
-bool GW431 = true;
+bool GW431 = false;
+bool batt431 = false;
 
 int period[] = {100, 200, 400, 800, 1000};
 int HyperPeriod = 4000;
@@ -197,7 +198,7 @@ int main(){
 		while(GW->nextNode != NULL) {
 			GW = GW->nextNode;
 			GW->result.clear();
-			if(GW431){
+			if(batt431){
 				GW->batt = GW->total_U;		//在做4:3:1時要打開，設定batt
 			}
 

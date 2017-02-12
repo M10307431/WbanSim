@@ -16,7 +16,7 @@ extern float total_U;	// total Utilization
 extern float lowest_U;	// lowest Utilization
 
 extern bool GW431;
-
+extern bool batt431;
 extern int period[];
 extern int HyperPeriod;
 
